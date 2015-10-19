@@ -95,3 +95,6 @@ endif
 " Load pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+
+" Load color scheme
+colorscheme desert
