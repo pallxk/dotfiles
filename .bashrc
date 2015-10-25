@@ -10,3 +10,8 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+
+# Set up default editor
+hash vim 2> /dev/null && VISUAL=vim || VISUAL=vi
+export VISUAL
+export EDITOR="$VISUAL"
