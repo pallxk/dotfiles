@@ -1,7 +1,8 @@
 # global .gitignore file
 #
-# Run the following command to set it up:
-#   git config --global core.excludesfile ~/.gitignore_global
+# Place this file as `~/.config/git/ignore`,
+# or run the following command to set it up:
+#   git config --global core.excludesfile /path/to/.gitignore_global
 
 # Compiled source #
 ###################
