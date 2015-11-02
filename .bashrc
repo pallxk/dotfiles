@@ -5,9 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Apply a fancy color scheme
-[[ -f colorschemes/default.sh ]] && . colorschemes/default.sh
-
 # Load rc files from .bashrc.d
 if test -d .bashrc.d/; then
 	for rcfile in .bashrc.d/*.sh; do

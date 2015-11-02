@@ -1,0 +1,1 @@
+../colorschemes/flat-ui-mintty/flat-mintty
