@@ -1,9 +1,9 @@
-[submodule "colorschemes/flat-ui-mintty"]
-	path = colorschemes/flat-ui-mintty
+[submodule "bash/colorschemes/flat-ui-mintty"]
+	path = bash/colorschemes/flat-ui-mintty
 	url = https://github.com/geekjuice/flat-ui-mintty.git
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
+[submodule "vim/.vim/bundle/vim-pathogen"]
+	path = vim/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
-[submodule ".vim/bundle/vim-colorschemes"]
-	path = .vim/bundle/vim-colorschemes
+[submodule "vim/.vim/bundle/vim-colorschemes"]
+	path = vim/.vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
