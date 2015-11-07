@@ -96,6 +96,32 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 
+" Show tabs, trailing spaces and so on
+set list
+" Useful unicode characters for listchars:
+"   «: U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+"   ¬: U+00AC NOT SIGN
+"   »: U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+"   ·: U+00B7 MIDDLE DOT
+"   ↲: U+21B2 DOWNWARDS ARROW WITH TIP LEFTWARDS
+"   ␣: U+2423 OPEN BOX
+"   █: U+2588 FULL BLOCK
+"   ▸: U+25B8 BLACK RIGHT-POINTING SMALL TRIANGLE
+let support_unicode = &encoding == "utf-8" && &term != "linux"
+if support_unicode
+  " listchars using unicode
+  set listchars=tab:▸\ ,trail:·,extends:»,precedes:«
+else
+  " listchars using ascii
+  set listchars=tab:\|\ ,trail:-,extends:>,precedes:<
+endif
+" Support for "space" item in "listchars" is added in patch 7.4.710
+if v:version > 704 || v:version == 704 && has("patch710")
+  if support_unicode
+    "set listchars+=space:·
+  endif
+endif
+
 " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
 " across (heterogeneous) systems easier.
 if has('win32') || has('win64')
