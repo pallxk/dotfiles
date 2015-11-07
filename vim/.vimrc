@@ -1,5 +1,9 @@
 " .vimrc
 
+" vimrc files are searched in order and only the first one found is read.
+" Unix:       $HOME/.vimrc, $HOME/.vim/vimrc
+" MS-Windows: $HOME/_vimrc, $HOME/.vimrc, $HOME/vimfiles/vimrc, $VIM/_vimrc
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
