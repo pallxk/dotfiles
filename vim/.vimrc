@@ -96,7 +96,7 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 
-" Show tabs, trailing spaces and so on
+" Show tabs and other listchars
 set list
 " Useful unicode characters for listchars:
 "   «: U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
@@ -110,11 +110,15 @@ set list
 let support_unicode = &encoding == "utf-8" && &term != "linux"
 if support_unicode
   " listchars using unicode
-  set listchars=tab:▸\ ,trail:·,extends:»,precedes:«
+  set listchars=tab:▸\ ,extends:»,precedes:«
+  "set listchars+=trail:·
 else
   " listchars using ascii
-  set listchars=tab:\|\ ,trail:-,extends:>,precedes:<
+  set listchars=tab:\|\ ,extends:>,precedes:<
+  "set listchars+=trail:-
 endif
+" Trailing blanks are highlighted with plugin 'vim-better-whitespace'
+
 " Support for "space" item in "listchars" is added in patch 7.4.710
 if v:version > 704 || v:version == 704 && has("patch710")
   if support_unicode
