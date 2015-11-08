@@ -4,6 +4,11 @@
 " Unix:       $HOME/.vimrc, $HOME/.vim/vimrc
 " MS-Windows: $HOME/_vimrc, $HOME/.vimrc, $HOME/vimfiles/vimrc, $VIM/_vimrc
 
+" Set vim internal character encoding
+set encoding=utf-8
+" Specify the character encoding used in this vimrc
+scriptencoding utf-8
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
