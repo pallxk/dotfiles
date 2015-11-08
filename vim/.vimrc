@@ -104,23 +104,30 @@ endif
 " Show tabs and other listchars
 set list
 " Useful unicode characters for listchars:
+"   ¦: U+00A6 BROKEN BAR
 "   «: U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
 "   ¬: U+00AC NOT SIGN
 "   »: U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
 "   ·: U+00B7 MIDDLE DOT
 "   ↲: U+21B2 DOWNWARDS ARROW WITH TIP LEFTWARDS
 "   ␣: U+2423 OPEN BOX
+"   │: U+2502 BOX DRAWINGS LIGHT VERTICAL
+"   ┆: U+2506 BOX DRAWINGS LIGHT TRIPLE DASH VERTICAL
 "   █: U+2588 FULL BLOCK
 "   ▸: U+25B8 BLACK RIGHT-POINTING SMALL TRIANGLE
 let support_unicode = &encoding == "utf-8" && &term != "linux"
 if support_unicode
   " listchars using unicode
-  set listchars=tab:▸\ ,extends:»,precedes:«
+  set listchars=tab:│\ ,extends:»,precedes:«
   "set listchars+=trail:·
+  let g:indentLine_char = '│'
+  let g:indentLine_first_char = '│'
 else
   " listchars using ascii
   set listchars=tab:\|\ ,extends:>,precedes:<
   "set listchars+=trail:-
+  let g:indentLine_char = '|'
+  let g:indentLine_first_char = '|'
 endif
 " Trailing blanks are highlighted with plugin 'vim-better-whitespace'
 
@@ -143,3 +150,7 @@ execute pathogen#infect()
 
 " Load color scheme
 colorscheme desert
+
+" indentLine settings
+" See :help concealcursor
+let g:indentLine_concealcursor = 'nc'
