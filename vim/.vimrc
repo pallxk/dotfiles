@@ -9,6 +9,12 @@ set encoding=utf-8
 " Specify the character encoding used in this vimrc
 scriptencoding utf-8
 
+" Set fonts
+if has("win32") || has("win64")
+  set guifont=Consolas:h12
+  set guifontwide=SimHei:h12
+endif
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
