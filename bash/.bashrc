@@ -12,6 +12,13 @@ if test -d .bashrc.d/; then
 	done
 	unset rcfile
 fi
+# Load rc files from .bashrc.d/after
+if test -d .bashrc.d/after/; then
+	for rcfile in .bashrc.d/after/*.sh; do
+		test -r "$rcfile" && . "$rcfile"
+	done
+	unset rcfile
+fi
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
