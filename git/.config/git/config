@@ -1,0 +1,4 @@
+# Include this git config by running the following command:
+#   git config --global include.path .config/git/config
+[push]
+	default = simple
