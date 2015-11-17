@@ -144,6 +144,22 @@ if v:version > 704 || v:version == 704 && has("patch710")
   endif
 endif
 
+" Alt+u to toggle search highlighting (`less`-style)
+" "v:hlsearch" variable is added in patch 7.4.079
+if v:version > 704 || v:version == 704 && has("patch79")
+  if has("gui_running")
+    nnoremap <expr> <M-u>  (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\n"
+  else
+    nnoremap <expr> <Esc>u (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\n"
+  endif
+else
+  if has("gui_running")
+    nnoremap <M-u>  :set hlsearch! <CR>
+  else
+    nnoremap <Esc>u :set hlsearch! <CR>
+  endif
+endif
+
 " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
 " across (heterogeneous) systems easier.
 if has('win32') || has('win64')
