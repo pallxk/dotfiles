@@ -2,3 +2,13 @@
 #   git config --global include.path .config/git/config
 [push]
 	default = simple
+[alias]
+	# Several commonly used shortcuts
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	# Unstage changes
+	unstage = reset HEAD --
+	# Show last commit log
+	last = log -1 HEAD
