@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# NAME
+# 	ts - timestamp input
+
+# SYNOPSIS
+# 	ts [OPTION]... [+FORMAT]
+# 	ts [-u|--utc|--universal] [MMDDhhmm[[CC]YY]][.ss]]
+# 	(see date(1))
+
+# DESCRIPTION
+# 	ts adds a timestamp to the beginning of each line of input.
+#
+# 	This script is a wrapper around `date' command, all options to `ts' are
+# 	passed to `date' as is, with default date format changed to `%H:%M:%S'.
+#
+# 	This script is intended to be a simple alternative to `ts' of
+# 	`moreutils' package.
+
+# EXAMPLES
+# 	Ping with timestamps
+#
+# 		$ ping localhost | ts
+
+# SEE ALSO
+# 	date(1)
+# 	ts(1) (in package `moreutils')
+
+
+# default date format to time (%H:%M:%S)
+declare -a date_opts="+%T"
+[ $# -gt 0 ] && date_opts=("$@")
+
+while read; do
+	echo "`date "${date_opts[@]}"` $REPLY"
+done
