@@ -20,6 +20,25 @@ if test -d .bashrc.d/after/; then
 	unset rcfile
 fi
 
+
+# A Better Bash History
+# =====================
+
+# Append to the history file, instead of overwriting it
+shopt -s histappend
+# Ignore lines matching the previous entry (ignoredups)
+# Ignore lines which begin with a space character (ignorespace)
+HISTCONTROL=ignoreboth
+# The maximum number of lines contained in the history file
+HISTFILESIZE=10000
+# The number of commands to remeber in the command history
+HISTSIZE=2000
+# Write time stamps to the history file, but not displaying them
+HISTTIMEFORMAT=
+# Write time stamps to the history file, and format them when displaying
+HISTTIMEFORMAT='%m-%d %H:%M '
+
+
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
