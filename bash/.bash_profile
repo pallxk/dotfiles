@@ -16,6 +16,12 @@ pathmunge () {
     esac
 }
 
+# include ruby bin directories in PATH
+for dir in ~/.gem/ruby/*/bin; do
+	test -d "$dir" && pathmunge "$dir"
+done
+unset dir
+
 # set PATH so it includes user's private bin if it exists
 [[ -d ~/bin ]] && pathmunge ~/bin
 [[ -d ~/bin/after ]] && pathmunge ~/bin/after after
