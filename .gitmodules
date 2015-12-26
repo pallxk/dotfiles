@@ -13,3 +13,6 @@
 [submodule "vim/.vim/bundle/indentLine"]
 	path = vim/.vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vim/.vim/bundle/bx_vimim_dict"]
+	path = vim/.vim/bundle/bx_vimim_dict
+	url = https://github.com/idxuanjun/bx_vimim_dict.git
