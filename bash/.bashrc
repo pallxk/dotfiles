@@ -5,6 +5,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Autorun
+if [[ -z $SSH_AUTH_SOCK ]] && hash ssh-agent 2> /dev/null; then
+	# A login shell has its first character of argument zero as a -,
+	# remove that when executed as a subprocess of the ssh-agent.
+	exec ssh-agent "${0#-}" "$@"
+fi
+
 # Load rc files from .bashrc.d
 if test -d .bashrc.d/; then
 	for rcfile in .bashrc.d/*.sh; do
