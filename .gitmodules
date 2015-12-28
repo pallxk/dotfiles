@@ -16,3 +16,6 @@
 [submodule "vim/.vim/bundle/bx_vimim_dict"]
 	path = vim/.vim/bundle/bx_vimim_dict
 	url = https://github.com/idxuanjun/bx_vimim_dict.git
+[submodule "vim/.vim/bundle/vim-json"]
+	path = vim/.vim/bundle/vim-json
+	url = https://github.com/elzr/vim-json.git

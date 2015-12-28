@@ -178,3 +178,6 @@ colorscheme desert
 " indentLine settings
 " See :help concealcursor
 let g:indentLine_concealcursor = 'nc'
+
+" vim-json settings
+let g:vim_json_syntax_concealcursor = 'nc'
