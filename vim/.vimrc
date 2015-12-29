@@ -162,6 +162,19 @@ else
   endif
 endif
 
+" Disable certain pathogen bundles
+let g:pathogen_disabled = []
+
+" Preserve eol situation
+" or ':set bin noeol' to keep the last line free of eol
+if v:version > 704 || v:version == 704 && has("patch785")
+  let g:pathogen_disabled += ['PreserveNoEOL']
+  set nofixeol
+else
+  " PreserveNoEOL settings
+  let g:PreserveNoEOL = 1
+endif
+
 " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
 " across (heterogeneous) systems easier.
 if has('win32') || has('win64')
