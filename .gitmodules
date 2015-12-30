@@ -7,6 +7,9 @@
 [submodule "vim/.vim/bundle/vim-colorschemes"]
 	path = vim/.vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/.vim/bundle/editorconfig-vim"]
+	path = vim/.vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/.vim/bundle/PreserveNoEOL"]
 	path = vim/.vim/bundle/PreserveNoEOL
 	url = https://github.com/vim-scripts/PreserveNoEOL.git
