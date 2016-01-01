@@ -21,3 +21,5 @@
 	# List files marked as "assume unchanged" (see git-update-index(1))
 	ls-assumed = !git ls-files -v | grep ^[[:lower:]]
 	ls-assumed-unchanged = !git ls-files -v | grep ^[[:lower:]]
+[credential]
+	helper = cache --timeout=3600
