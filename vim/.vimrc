@@ -194,3 +194,7 @@ let g:indentLine_concealcursor = 'nc'
 
 " vim-json settings
 let g:vim_json_syntax_concealcursor = 'nc'
+
+" vim-markdown settings
+" Highlight YAML frontmatter as used by Jekyll
+let g:vim_markdown_frontmatter = 1
