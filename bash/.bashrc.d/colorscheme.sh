@@ -1,1 +1,1 @@
-../../shell/colorschemes/flat-ui-mintty/flat-mintty
+../../shell/.colorschemes/flat-ui-mintty/flat-mintty
