@@ -1,5 +1,5 @@
-[submodule "bash/colorschemes/flat-ui-mintty"]
-	path = bash/colorschemes/flat-ui-mintty
+[submodule "shell/colorschemes/flat-ui-mintty"]
+	path = shell/colorschemes/flat-ui-mintty
 	url = https://github.com/geekjuice/flat-ui-mintty.git
 [submodule "vim/.vim/bundle/vim-pathogen"]
 	path = vim/.vim/bundle/vim-pathogen
