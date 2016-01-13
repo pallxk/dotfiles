@@ -1,0 +1,19 @@
+#!/bin/sh
+# Translate colon separated path to line separated path, and print.
+
+# Use "$PATH" as default, or "$1" if provided.
+case $# in
+	0)
+		exec <<< "$PATH"
+		;;
+	1)
+		exec <<< "$1"
+		;;
+	*)
+		echo >&2 Warning: Provided $# arguments, at most 1 is needed.
+		echo >&2 Warning: Using '$1' as PATH variable.
+		exec <<< "$1"
+		;;
+esac
+
+tr : '\n'
