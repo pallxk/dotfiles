@@ -1,37 +1,48 @@
 [submodule "shell/.colorschemes/flat-ui-mintty"]
 	path = shell/.colorschemes/flat-ui-mintty
 	url = https://github.com/geekjuice/flat-ui-mintty.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-pathogen"]
 	path = vim/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-colorschemes"]
 	path = vim/.vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/editorconfig-vim"]
 	path = vim/.vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/PreserveNoEOL"]
 	path = vim/.vim/bundle/PreserveNoEOL
 	url = https://github.com/vim-scripts/PreserveNoEOL.git
-	ignore = untracked
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-better-whitespace"]
 	path = vim/.vim/bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/indentLine"]
 	path = vim/.vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/bx_vimim_dict"]
 	path = vim/.vim/bundle/bx_vimim_dict
 	url = https://github.com/idxuanjun/bx_vimim_dict.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-json"]
 	path = vim/.vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-markdown"]
 	path = vim/.vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-surround"]
 	path = vim/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+	ignore = dirty
 [submodule "vim/.vim/bundle/vim-repeat"]
 	path = vim/.vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+	ignore = dirty
