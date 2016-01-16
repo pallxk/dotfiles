@@ -1,15 +1,27 @@
 # dotfiles
 Various config files and scripts for linux -- managed via *GNU Stow*
 
-### Quick Setup
+
+## Quick Setup
+
+### Installation
+
 ```
 cd
-git clone https://github.com/pallxk/dotfiles.git
+git clone --recursive https://github.com/pallxk/dotfiles.git
 cd dotfiles
 
 # Install `stow` first, see 'Installing' section below for instructions.
 stow bash       # or any other package you want
 # If conflicts reported, backup and remove original ones, and try again.
+```
+
+### Update
+
+```
+cd ~/dotfiles
+git pull
+git submodule update --init
 ```
 
 
