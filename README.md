@@ -45,3 +45,13 @@ GNU Stow is a symlink farm manager which takes distinct packages of software and
 
 ## Related Work on Dotfiles
 * https://github.com/xero/dotfiles (custom linux config files - managed via gnu stow)
+
+## LICENSE
+
+Licensed under [The MIT License](LICENSE.txt).
+
+Copyright (c) 2016 pallxk <https://github.com/pallxk>
+
+---
+
+All code snippets from others are attributed in commit messages and/or along with the code.
