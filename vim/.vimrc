@@ -188,6 +188,9 @@ execute pathogen#infect()
 " Load color scheme
 colorscheme desert
 
+" emmet-vim settings
+let g:user_emmet_leader_key = '<C-j>'
+
 " indentLine settings
 " See :help concealcursor
 let g:indentLine_concealcursor = 'nc'

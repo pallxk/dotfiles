@@ -46,3 +46,7 @@
 	path = vim/.vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/emmet-vim"]
+	path = vim/.vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+	ignore = dirty
