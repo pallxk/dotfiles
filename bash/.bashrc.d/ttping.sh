@@ -16,24 +16,29 @@ ttping () {
 		#  Windows style: 'Request timed out.'
 		local timedout='timed out'
 
+		# Title for the terminal
+		local title
+
 		# Parse output of ping
 		grep --line-buffered -Po "$time|$unreachable|$timedout" \
 		| while read; do
 			# Set terminal title.
+			case "$REPLY" in
+				*ms)
+					title="$REPLY"
+					;;
+				$timedout)
+					title="!! Timed out"
+					;;
+				$unreachable)
+					title="!! Host Down"
+					;;
+			esac
+
 			# Redirect escape sequences to stderr,
 			# so that terminal title is set in time,
 			# even if output of this function is piped.
-			case "$REPLY" in
-				*ms)
-					>&2 echo -ne "\e]0;$REPLY\a"
-					;;
-				$timedout)
-					>&2 echo -ne "\e]0;!! Timed out\a"
-					;;
-				$unreachable)
-					>&2 echo -ne "\e]0;!! Host Down\a"
-					;;
-			esac
+			>&2 echo -ne "\e]0;$title\a"
 		done
 	)
 }
