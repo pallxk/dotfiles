@@ -27,7 +27,10 @@ ttping () {
 				*ms)
 					>&2 echo -ne "\e]0;$REPLY\a"
 					;;
-				$unreachable|$timedout)
+				$timedout)
+					>&2 echo -ne "\e]0;!! Timed out\a"
+					;;
+				$unreachable)
 					>&2 echo -ne "\e]0;!! Host Down\a"
 					;;
 			esac
