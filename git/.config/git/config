@@ -1,5 +1,16 @@
-# Include this git config by running the following command:
+# If you are running git with version lower than **1.7.12 (08/20/12)**,
+# include this git config by running the following command:
 #   git config --global include.path .config/git/config
+# Otherwise, this file (`$XDG_CONFIG_HOME/git/config`) is read along with
+# `~/.gitconfig` by default.
+#
+# Note: Any single-valued variable set in this file will be overwritten by
+# whatever is in `~/.gitconfig`.
+#
+# Note: When writing global options, `git-config` writes to global
+# `~/.gitconfig` file, or writes to `$XDG_CONFIG_HOME/git/config` file if it
+# exists and the `~/.gitconfig` file doesn't.
+
 [push]
 	default = simple
 [alias]
