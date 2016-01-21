@@ -19,6 +19,7 @@
 	br = branch
 	ci = commit
 	st = status
+	dt = difftool
 	# Unstage changes
 	unstage = reset HEAD --
 	# Show last commit log
@@ -34,3 +35,7 @@
 	ls-assumed-unchanged = !git ls-files -v | grep ^[[:lower:]]
 [credential]
 	helper = cache --timeout=3600
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
