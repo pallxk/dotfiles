@@ -46,7 +46,6 @@ HISTTIMEFORMAT=
 HISTTIMEFORMAT='%m-%d %H:%M '
 
 
-alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # Set up default editor
