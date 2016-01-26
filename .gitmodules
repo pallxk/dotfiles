@@ -50,3 +50,7 @@
 	path = vim/.vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 	ignore = dirty
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+	ignore = dirty
