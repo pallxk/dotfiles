@@ -19,7 +19,10 @@
 	br = branch
 	ci = commit
 	st = status
+	d  = diff
+	dc = diff --cached
 	dt = difftool
+	dtc = difftool --cached
 	# Unstage changes
 	unstage = reset HEAD --
 	# Show last commit log
