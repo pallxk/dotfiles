@@ -54,3 +54,7 @@
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/vim-ps1"]
+	path = vim/.vim/bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git
+	ignore = dirty
