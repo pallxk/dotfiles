@@ -25,6 +25,8 @@
 	dtc = difftool --cached
 	# Unstage changes
 	unstage = reset HEAD --
+	# Amend commit, and renew the author timestamp
+	amend = commit --amend --reset-author
 	# Show last commit log
 	last = log -1 HEAD
 	# Set "assume unchanged" bit
