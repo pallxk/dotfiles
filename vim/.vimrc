@@ -199,5 +199,7 @@ let g:indentLine_concealcursor = 'nc'
 let g:vim_json_syntax_concealcursor = 'nc'
 
 " vim-markdown settings
+" Disable Vim Markdown specific folding (currently buggy)
+let g:vim_markdown_folding_disabled = 1
 " Highlight YAML frontmatter as used by Jekyll
 let g:vim_markdown_frontmatter = 1
