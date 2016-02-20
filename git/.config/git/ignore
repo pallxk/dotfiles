@@ -46,6 +46,8 @@ Thumbs.db
 ### Vim ###
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
+# Do NOT ignore files under .ssh
+!.ssh/
 *.un~
 Session.vim
 .netrwhist
