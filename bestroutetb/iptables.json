@@ -1,0 +1,14 @@
+{
+	"output": "iptables-return-cn.sh",
+	"profile": "custom",
+	"route.net": "cn,0.0.0.0/8,10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16,224.0.0.0/4,240.0.0.0/4",
+	"rule-format": "iptables -t nat -A $chain -d %prefix/%length %gw\n",
+	"default-gateway": false,
+	"gateway.net": "-j RETURN",
+	"gateway.vpn": "-p tcp -j REDIRECT --to-ports $local_port",
+	"group-gateway": true,
+	"group-name.net": "Direct",
+	"group-name.vpn": "Shadowsocks",
+	"group-header": "# Begin %name\n",
+	"group-footer": "# End %name\n"
+}
