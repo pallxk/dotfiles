@@ -191,6 +191,10 @@ colorscheme desert
 " vim-airline settings
 set laststatus=2
 
+" vim-gitgutter settings
+" The delay before diff markers are computed (in ms)
+set updatetime=500
+
 " emmet-vim settings
 let g:user_emmet_leader_key = '<C-j>'
 
