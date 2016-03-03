@@ -66,3 +66,7 @@
 	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+	ignore = dirty
