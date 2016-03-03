@@ -62,3 +62,7 @@
 	path = vim/.vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/vim-airline"]
+	path = vim/.vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+	ignore = dirty

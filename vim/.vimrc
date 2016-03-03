@@ -188,6 +188,9 @@ execute pathogen#infect()
 " Load color scheme
 colorscheme desert
 
+" vim-airline settings
+set laststatus=2
+
 " emmet-vim settings
 let g:user_emmet_leader_key = '<C-j>'
 
