@@ -198,6 +198,8 @@ set updatetime=500
 
 " emmet-vim settings
 let g:user_emmet_leader_key = '<C-j>'
+let g:user_emmet_settings = webapi#json#decode(
+\  join( readfile( expand( '~/.vim/emmet-snippets.json' ) ), "\n" ) )
 
 " indentLine settings
 " See :help concealcursor

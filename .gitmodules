@@ -74,3 +74,7 @@
 	path = vim/.vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/webapi-vim"]
+	path = vim/.vim/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim.git
+	ignore = dirty
