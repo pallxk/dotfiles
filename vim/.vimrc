@@ -45,6 +45,11 @@ set incsearch		" do incremental searching
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+" Yank the characters under the cursor until the end of the line.
+" This behavior is more logical, and consistent with *C*, *D*,
+" but not Vi-compatible.
+map Y y$
+
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
