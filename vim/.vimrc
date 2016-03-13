@@ -134,14 +134,14 @@ if support_unicode
   " listchars using unicode
   set listchars=tab:│\ ,extends:»,precedes:«
   "set listchars+=trail:·
-  let g:indentLine_char = '│'
-  let g:indentLine_first_char = '│'
+  "let g:indentLine_char = '│'
+  "let g:indentLine_first_char = '│'
 else
   " listchars using ascii
   set listchars=tab:\|\ ,extends:>,precedes:<
   "set listchars+=trail:-
-  let g:indentLine_char = '|'
-  let g:indentLine_first_char = '|'
+  "let g:indentLine_char = '|'
+  "let g:indentLine_first_char = '|'
 endif
 " Trailing blanks are highlighted with plugin 'vim-better-whitespace'
 
@@ -208,7 +208,11 @@ let g:user_emmet_settings = webapi#json#decode(
 
 " indentLine settings
 " See :help concealcursor
-let g:indentLine_concealcursor = 'nc'
+"let g:indentLine_concealcursor = 'nc'
+
+" vim-indent-guides settings
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_guide_size = 1
 
 " vim-json settings
 let g:vim_json_syntax_concealcursor = 'nc'

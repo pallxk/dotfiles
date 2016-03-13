@@ -22,9 +22,9 @@
 	path = vim/.vim/bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
 	ignore = dirty
-[submodule "vim/.vim/bundle/indentLine"]
-	path = vim/.vim/bundle/indentLine
-	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vim/.vim/bundle/vim-indent-guides"]
+	path = vim/.vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
 	ignore = dirty
 [submodule "vim/.vim/bundle/bx_vimim_dict"]
 	path = vim/.vim/bundle/bx_vimim_dict
