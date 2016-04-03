@@ -1,4 +1,5 @@
 " .vimrc
+" vim:et:ts=2:sw=2:
 
 " vimrc files are searched in order and only the first one found is read.
 " Unix:       $HOME/.vimrc, $HOME/.vim/vimrc
