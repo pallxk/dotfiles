@@ -173,6 +173,15 @@ else
   endif
 endif
 
+" Ctrl+Shift+U to toggle case of word
+if has("gui_running")
+  nnoremap <C-S-u>      g~iwe
+  inoremap <C-S-u> <Esc>g~iwea
+else
+  nnoremap          g~iwe
+  inoremap     <Esc>g~iwea
+endif
+
 " Disable certain pathogen bundles
 let g:pathogen_disabled = []
 
