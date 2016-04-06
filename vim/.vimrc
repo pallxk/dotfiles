@@ -161,15 +161,23 @@ endif
 " "v:hlsearch" variable is added in patch 7.4.079
 if v:version > 704 || v:version == 704 && has("patch79")
   if has("gui_running")
-    nnoremap <expr> <M-u>  (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\n"
+    nnoremap <expr> <M-u>
+      \           (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\n"
+    inoremap <expr> <M-u>
+      \ '<Esc>' . (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\na"
   else
-    nnoremap <expr> <Esc>u (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\n"
+    nnoremap <expr> <Esc>u
+      \           (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\n"
+    inoremap <expr> <Esc>u
+      \ '<Esc>' . (&hls && v:hlsearch ? ':nohls' : ':set hls') . "\na"
   endif
 else
   if has("gui_running")
-    nnoremap <M-u>  :set hlsearch! <CR>
+    nnoremap <M-u>       :set hlsearch! <CR>
+    inoremap <M-u>  <Esc>:set hlsearch! <CR>a
   else
-    nnoremap <Esc>u :set hlsearch! <CR>
+    nnoremap <Esc>u      :set hlsearch! <CR>
+    inoremap <Esc>u <Esc>:set hlsearch! <CR>a
   endif
 endif
 
