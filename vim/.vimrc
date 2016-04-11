@@ -43,6 +43,10 @@ set incsearch		" do incremental searching
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 
+" Swap functions of "," & "\"
+let mapleader = ","
+noremap \ ,
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
