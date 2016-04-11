@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Create ~/.gitconfig if not exists so that config like user.name & user.email
+# can go there.
+touch ~/.gitconfig
+
 # Get current git version.
 # Output of `git --version` looks like this:
 #   git version 2.6.2
