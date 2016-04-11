@@ -47,6 +47,12 @@ set incsearch		" do incremental searching
 let mapleader = ","
 noremap \ ,
 
+" Make editing $MYVIMRC easier
+" Edit Vimrc
+nnoremap <Leader>ev :split  $MYVIMRC<CR>
+" Source Vimrc
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
