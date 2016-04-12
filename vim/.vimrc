@@ -69,6 +69,13 @@ inoremap <C-U> <C-G>u<C-U>
 " http://shallowsky.com/blog/linux/editors/vim-ctrl-space.html
 imap <Nul> <Space>
 
+" Jump to the first start of a change
+" (Not working when changes are made at the first line)
+nmap [C gg]c
+" Jump to the last start of a change
+" (Not working when changes are made at the last line)
+nmap ]C G[c
+
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
