@@ -14,6 +14,8 @@
 [push]
 	default = simple
 [alias]
+	# Alias to list aliases
+	alias = config --get-regexp ^alias\\.
 	# Several commonly used shortcuts
 	co = checkout
 	br = branch
