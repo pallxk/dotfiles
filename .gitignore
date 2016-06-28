@@ -3,3 +3,6 @@ bash/.bashrc.d/**/local.sh
 
 # tmux plugins installed by "Tmux Plugin Manager"
 tmux/.tmux/plugins/
+
+# vim spell files
+vim/.vim/spell/*.spl
