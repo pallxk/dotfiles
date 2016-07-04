@@ -10,7 +10,8 @@ PKG_LIST=$(dirname $0)/npm.txt
 # No not continue if file not found
 [ -f "$PKG_LIST" ] || exit 1
 
-[ $UID -ne 0 ] && sudo=sudo
+# If not running as root and sudo is available, use that
+[ $UID -ne 0 ] && $(hash sudo 2> /dev/null) && sudo=sudo
 [ "$DEBUG" = 1 ] && echo "sudo=$sudo"
 
 while read pkg || [ "$pkg" ]; do
