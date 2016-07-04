@@ -9,6 +9,10 @@ PKG_LIST=$(dirname $0)/npm.txt
 
 [ $UID -ne 0 ] && sudo=sudo
 
-for pkg in $(cat "$PKG_LIST"); do
+while read pkg || [ "$pkg" ]; do
+	# Ignore empty lines
+	[ "$pkg" ] || continue
+	# Ignore lines beginning with a hash (#)
+	[ "${pkg:0:1}" = \# ] && continue
 	$sudo npm install -g $pkg
-done
+done < "$PKG_LIST"

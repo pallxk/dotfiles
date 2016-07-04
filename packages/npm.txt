@@ -1,9 +1,13 @@
+# Package Managers
 bower
 
+# Building Systems
 gulp
 grunt
 
+# Web Servers
 http-server
 serve
 
+# Misc
 npm-check-updates
