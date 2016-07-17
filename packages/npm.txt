@@ -11,3 +11,9 @@ serve
 
 # Misc
 npm-check-updates
+
+
+# Development
+
+## TypeScript
+typings
