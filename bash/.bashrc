@@ -6,10 +6,24 @@
 [[ $- != *i* ]] && return
 
 # Autorun
+## Autorun ssh-agent
 if [[ -z $SSH_AUTH_SOCK ]] && hash ssh-agent 2> /dev/null; then
 	# A login shell has its first character of argument zero as a -,
 	# remove that when executed as a subprocess of the ssh-agent.
 	exec ssh-agent "${0#-}" "$@"
+fi
+
+## Autorun tmux
+if [[ -z $TMUX ]] && hash tmux 2> /dev/null; then
+	printf '\ntmux session list:\n'
+
+	if tmux ls; then
+		# If tmux sessions exist, just display the session list.
+		echo
+	else
+		# If no tmux sessions exist, start one.
+		tmux
+	fi
 fi
 
 # Load rc files from .bashrc.d
