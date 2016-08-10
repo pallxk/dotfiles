@@ -41,6 +41,8 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 " Do not spell check Asian words
 set spelllang+=cjk
+" Use 2 as 'A page is the number of lines in the window minus two.'
+set scrolloff=2
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
