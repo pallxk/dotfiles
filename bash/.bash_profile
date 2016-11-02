@@ -16,6 +16,9 @@ pathmunge () {
     esac
 }
 
+# Set umask if not set
+[ `umask` = 0000 ] && umask 022
+
 # include ruby bin directories in PATH
 for dir in ~/.gem/ruby/*/bin; do
 	test -d "$dir" && pathmunge "$dir"
