@@ -11,6 +11,9 @@
 # `~/.gitconfig` file, or writes to `$XDG_CONFIG_HOME/git/config` file if it
 # exists and the `~/.gitconfig` file doesn't.
 
+[core]
+	# Always wrap long lines
+	pager = less -+S
 [push]
 	default = simple
 [alias]
