@@ -118,3 +118,8 @@ esac
 hash vim 2> /dev/null && VISUAL=vim || VISUAL=vi
 export VISUAL
 export EDITOR="$VISUAL"
+
+# Include Windows PATH if running under WSL
+if grep -qi Microsoft /proc/sys/kernel/osrelease; then
+	PATH=$PATH:/mnt/c/Windows/System32:/mnt/c/Windows
+fi
