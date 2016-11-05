@@ -16,6 +16,8 @@
 	pager = less -+S
 [push]
 	default = simple
+[merge]
+	defaultToUpstream = true
 [alias]
 	# Alias to list aliases
 	alias = config --get-regexp ^alias\\.
