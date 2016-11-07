@@ -1,0 +1,15 @@
+ascii
+curl
+dos2unix
+git
+htop
+ipcalc
+nodejs
+ruby
+socat
+stow
+tig
+tmux
+tree
+vim
+wget
