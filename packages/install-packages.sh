@@ -19,7 +19,7 @@ if [ "$DEBUG" = 1 ]; then
 fi
 
 
-# No not continue if file not found
+# Do not continue if file not found
 [ -f "$PKG_LIST" ] || exit 1
 
 # If not running as root and sudo is required and available, use that
