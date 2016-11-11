@@ -1,2 +1,3 @@
 apt-file
 netcat
+openjdk-8-jre
