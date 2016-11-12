@@ -2,8 +2,8 @@
 bower
 
 # Building Systems
-gulp
-grunt
+gulp-cli
+grunt-cli
 
 # Web Servers
 http-server
