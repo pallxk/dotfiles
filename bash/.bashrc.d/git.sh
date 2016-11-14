@@ -1,4 +1,8 @@
 # Proxy git to insert default options
+
+# Only source this if git installed
+command -v git > /dev/null || return
+
 git () {
 	# Get the command of git
 	local command="$1"
