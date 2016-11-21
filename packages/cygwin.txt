@@ -1,1 +1,8 @@
+make
 nc
+# Required by ruby gems with native extensions
+ruby-devel
+# Required by ruby gem 'nokogiri'
+libgmp-devel
+libiconv-devel
+zlib-devel
