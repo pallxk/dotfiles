@@ -12,7 +12,7 @@ git () {
 	local defaults=()
 
 	# git p4
-	if [ "$command" = "p4" ]; then
+	if [ "$command" = "p4" -a $# -gt 0 ]; then
 		# "--verbose" cannot be used with "--help"
 		if [[ $* != *--help* ]]; then
 			defaults=("--verbose")
