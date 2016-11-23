@@ -20,5 +20,5 @@ git () {
 	fi
 
 	# Execute the original command with defaults inserted
-	command git "$command" "$@" "${defaults[@]}"
+	command git $command "$@" "${defaults[@]}"
 }
