@@ -2,6 +2,7 @@ apt-file
 build-essential
 netcat
 openjdk-8-jre
+p7zip-full
 # Required by ruby gems with native extensions
 ruby-dev
 # Required by ruby gem 'nokogiri'

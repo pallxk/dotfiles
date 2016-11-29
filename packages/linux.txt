@@ -6,6 +6,7 @@ git
 htop
 ipcalc
 nodejs
+p7zip
 ruby
 socat
 stow
