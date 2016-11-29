@@ -1,2 +1,5 @@
 bundler
+jekyll
+kramdown
+octopress
 tmuxinator
