@@ -10,6 +10,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+
+    # Output raw ANSI color escape sequences
+    alias less='less -R'
+
+    # Colorize diff output
+    command -v colordiff > /dev/null && alias diff='colordiff'
 fi
 
 # some more ls aliases

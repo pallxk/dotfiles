@@ -1,4 +1,5 @@
 ascii
+colordiff
 curl
 dos2unix
 git
