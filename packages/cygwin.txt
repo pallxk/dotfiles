@@ -1,3 +1,4 @@
+bind-utils
 gcc-core
 make
 nc

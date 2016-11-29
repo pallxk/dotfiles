@@ -1,5 +1,6 @@
 apt-file
 build-essential
+dnsutils
 netcat
 openjdk-8-jre
 p7zip-full
