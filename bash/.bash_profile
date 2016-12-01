@@ -3,15 +3,35 @@
 # User wide environment and startup programs, for login setup
 # Functions and aliases go in ~/.bashrc
 
+# SYNOPSIS:
+#   pathmunge [path_variable] path [after]
+# EXAMPLES:
+#   pathmunge ~/bin
+#   pathmunge ~/bin/after after
+#   pathmunge MANPATH ~/man
+#   pathmunge INFOPATH ~/info after
 pathmunge () {
-    case ":${PATH}:" in
+    # The path variable (which is ended with PATH, case-sensitive) to be munged
+    # (defaults to PATH)
+    local pathvar
+    if [[ $1 = *PATH ]]; then
+        pathvar="$1"
+        shift
+    else
+        pathvar=PATH
+    fi
+
+    # Munge the path variable
+    case ":${!pathvar}:" in
         *:"$1":*)
             ;;
         *)
             if [ "$2" = "after" ] ; then
-                PATH=$PATH:$1
+                # `eval` is required here, otherwise the assignment as a whole
+                # is seen as a command.
+                eval ${pathvar}='${!pathvar}:$1'
             else
-                PATH=$1:$PATH
+                eval ${pathvar}='$1:${!pathvar}'
             fi
     esac
 }
