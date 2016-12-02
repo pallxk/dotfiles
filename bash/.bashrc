@@ -126,3 +126,7 @@ esac
 hash vim 2> /dev/null && VISUAL=vim || VISUAL=vi
 export VISUAL
 export EDITOR="$VISUAL"
+
+# UnZip and ZipInfo environment options
+export UNZIP='-O CP936'
+export ZIPINFO='-O CP936'
