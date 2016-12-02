@@ -20,9 +20,19 @@ fi
 
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
+# List entries by column with indicator appended
 alias l='ls -CF'
+# List in a long format
+alias ll='ls -l'
+# List only hidden entries
+alias l.='ls -d .*'
+alias ll.='ls -dl .*'
+# List all entries (not including . & ..)
+alias la='ls -A'
+alias lla='ls -Al'
+# List only directories themselves
+alias ld='ls -d */'
+alias lld='ls -dl */'
 
 
 # Be safe
