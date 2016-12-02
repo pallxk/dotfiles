@@ -63,6 +63,9 @@ HISTTIMEFORMAT=
 HISTTIMEFORMAT='%m-%d %H:%M '
 
 
+# Disallow existing regular files to be overwritten by redirection of output
+set -o noclobber
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
