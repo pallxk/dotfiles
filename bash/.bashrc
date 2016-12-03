@@ -79,55 +79,74 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color) color_prompt=yes;;
-esac
+# Set prompt string
+PROMPT_COMMAND=__prompt_command
+__prompt_command () {
+	# No 'xtrace' for PROMPT_COMMAND, restore it before return
+	[[ $- = *x* ]] && set +x && local xtrace=1
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-force_color_prompt=yes
+	local color_prompt force_color_prompt
 
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
+	# uncomment for a colored prompt, if the terminal has the capability;
+	# turned off by default to not distract the user: the focus in a
+	# terminal window should be on the output of commands, not on the prompt
+	force_color_prompt=yes
 
-# set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
+	if [ -n "$force_color_prompt" ]; then
+	    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+		# We have color support; assume it's compliant with Ecma-48
+		# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+		# a case would tend to support setf rather than setaf.)
+		color_prompt=yes
+	    fi
+	else
+		# set a fancy prompt (non-color, unless we know we "want" color)
+		case "$TERM" in
+		    xterm-color) color_prompt=yes;;
+		esac
+	fi
 
-if [ "$color_prompt" = yes ]; then
-    if [ "$SSH_TTY" ]; then
-        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W \[\033[00m\]\$ '
-    else
-        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] \[\033[01;34m\]\W \[\033[00m\]\$ '
-    fi
-else
-    if [ "$SSH_TTY" ]; then
-        PS1='[${debian_chroot:+($debian_chroot)}\u@\h \W]\$ '
-    else
-        PS1='[${debian_chroot:+($debian_chroot)}\u \W]\$ '
-    fi
-fi
-unset color_prompt force_color_prompt
+	# set variable identifying the chroot you work in (used in the prompt below)
+	if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+	    debian_chroot=$(cat /etc/debian_chroot)
+	fi
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+	local username hostname pwd sign
+
+	if [ "$color_prompt" = yes ]; then
+		username='\[\033[01;32m\]\u\[\033[00m\]'
+		     pwd='\[\033[01;34m\]\W\[\033[00m\]'
+		    sign='\$'
+
+		if [ "$SSH_TTY" ]; then
+			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
+		fi
+
+		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${sign} "
+	else
+		username='\u'
+		     pwd='\W'
+		    sign='\$'
+
+		if [ "$SSH_TTY" ]; then
+			hostname='@\h'
+		fi
+
+		PS1="[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${sign} "
+	fi
+
+	# If this is an xterm set the title to user@host:dir
+	case "$TERM" in
+		xterm*|rxvt*)
+		    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+		    ;;
+		*)
+		    ;;
+	esac
+
+	# Restore 'xtrace' shell option
+	[ "${xtrace}" ] && set -x
+}
 
 
 # Set up default editor
