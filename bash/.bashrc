@@ -115,7 +115,7 @@ __prompt_command () {
 
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
-		     pwd='\[\033[01;34m\]\W\[\033[00m\]'
+		     pwd='\[\033[01;34m\]\w\[\033[00m\]'
 		    sign='\$\[\033[00;32m\]'
 
 		if [ "$SSH_TTY" ]; then
@@ -127,7 +127,7 @@ __prompt_command () {
 		trap 'printf "\033[00m"' DEBUG
 	else
 		username='\u'
-		     pwd='\W'
+		     pwd='\w'
 		    sign='\$'
 
 		if [ "$SSH_TTY" ]; then
