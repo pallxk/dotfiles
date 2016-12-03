@@ -88,6 +88,9 @@ __prompt_command () {
 	# No 'xtrace' for PROMPT_COMMAND, restore it before return
 	[[ $- = *x* ]] && set +x && local xtrace=1
 
+	# Calculate run time of last command
+	timer_stop
+
 	local color_prompt force_color_prompt
 
 	# uncomment for a colored prompt, if the terminal has the capability;
@@ -114,24 +117,29 @@ __prompt_command () {
 	    debian_chroot=$(cat /etc/debian_chroot)
 	fi
 
-	local username hostname pwd code sign
+	local username hostname pwd time code sign
 
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
 		     pwd='\[\033[01;34m\]\w\[\033[00m\]'
 		    sign='\$\[\033[00;32m\]'
 
+		# Remove color settings for command string before executing it
+		debugcmd='printf "\033[00m"'
+
 		if [ "$SSH_TTY" ]; then
 			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
+		fi
+
+		if [ $time_diff -ge 3 ]; then
+			time='\[\033[01;33m\](${time_diff}s)\[\033[00m\] '
 		fi
 
 		if [ $ret -ne 0 ]; then
 			code='\[\033[01;31m\]($?)\[\033[00m\] '
 		fi
 
-		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${code}${sign} "
-		# Remove color settings for command string before executing it
-		trap 'printf "\033[00m"' DEBUG
+		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${time}${code}${sign} "
 	else
 		username='\u'
 		     pwd='\w'
@@ -141,11 +149,15 @@ __prompt_command () {
 			hostname='@\h'
 		fi
 
+		if [ $time_diff -ge 3 ]; then
+			time='(${time_diff}s) '
+		fi
+
 		if [ $ret -ne 0 ]; then
 			code='($?) '
 		fi
 
-		PS1="[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${code}${sign} "
+		PS1="[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${time}${code}${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
@@ -160,6 +172,21 @@ __prompt_command () {
 	# Restore 'xtrace' shell option
 	[ "${xtrace}" ] && set -x
 }
+
+# $timer is set only when user entered command is going to be executed
+timer_start () {
+	timer=${timer:-$SECONDS}
+}
+
+# This is called only when $PS1 is going to be shown
+timer_stop () {
+	time_diff=$(($SECONDS - ${timer:-0}))
+	unset timer
+}
+
+# Call once to init some variables
+__prompt_command
+trap "${debugcmd:-:}; timer_start" DEBUG
 
 
 # Set up default editor
