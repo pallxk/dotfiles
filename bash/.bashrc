@@ -82,6 +82,9 @@ shopt -s checkwinsize
 # Set prompt string
 PROMPT_COMMAND=__prompt_command
 __prompt_command () {
+	# Remember the exit code of last command or it will get overwritten here
+	local ret=$?
+
 	# No 'xtrace' for PROMPT_COMMAND, restore it before return
 	[[ $- = *x* ]] && set +x && local xtrace=1
 
@@ -111,7 +114,7 @@ __prompt_command () {
 	    debian_chroot=$(cat /etc/debian_chroot)
 	fi
 
-	local username hostname pwd sign
+	local username hostname pwd code sign
 
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
@@ -122,7 +125,11 @@ __prompt_command () {
 			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
 		fi
 
-		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${sign} "
+		if [ $ret -ne 0 ]; then
+			code='\[\033[01;31m\]($?)\[\033[00m\] '
+		fi
+
+		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${code}${sign} "
 		# Remove color settings for command string before executing it
 		trap 'printf "\033[00m"' DEBUG
 	else
@@ -134,7 +141,11 @@ __prompt_command () {
 			hostname='@\h'
 		fi
 
-		PS1="[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${sign} "
+		if [ $ret -ne 0 ]; then
+			code='($?) '
+		fi
+
+		PS1="[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${code}${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
