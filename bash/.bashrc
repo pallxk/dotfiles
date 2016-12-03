@@ -116,13 +116,15 @@ __prompt_command () {
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
 		     pwd='\[\033[01;34m\]\W\[\033[00m\]'
-		    sign='\$'
+		    sign='\$\[\033[00;32m\]'
 
 		if [ "$SSH_TTY" ]; then
 			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
 		fi
 
 		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${sign} "
+		# Remove color settings for command string before executing it
+		trap 'printf "\033[00m"' DEBUG
 	else
 		username='\u'
 		     pwd='\W'
