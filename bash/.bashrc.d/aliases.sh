@@ -50,3 +50,10 @@ alias ln='ln -i'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Show top 10 history command on screen
+history-top () {
+    # Reset the history formatting locally, so that history parsing can work
+    local HISTTIMEFORMAT
+    history | awk '{a[$2]++;n++}END{for(i in a){print a[i] " " a[i]/n*100 "% " i}}' | sort -rn | head
+}
