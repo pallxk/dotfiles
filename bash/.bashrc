@@ -106,9 +106,17 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W \[\033[00m\]\$ '
+    if [ "$SSH_TTY" ]; then
+        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W \[\033[00m\]\$ '
+    else
+        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] \[\033[01;34m\]\W \[\033[00m\]\$ '
+    fi
 else
-    PS1='[${debian_chroot:+($debian_chroot)}\u@\h \W]\$ '
+    if [ "$SSH_TTY" ]; then
+        PS1='[${debian_chroot:+($debian_chroot)}\u@\h \W]\$ '
+    else
+        PS1='[${debian_chroot:+($debian_chroot)}\u \W]\$ '
+    fi
 fi
 unset color_prompt force_color_prompt
 
