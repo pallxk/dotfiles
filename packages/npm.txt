@@ -16,4 +16,6 @@ npm-check-updates
 # Development
 
 ## TypeScript
+# Deprecated in favor of Typings, but kept for legacy projects
+tsd
 typings
