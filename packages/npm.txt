@@ -15,6 +15,9 @@ npm-check-updates
 
 # Development
 
+## Babel
+babel-cli
+
 ## TypeScript
 # Deprecated in favor of Typings, but kept for legacy projects
 tsd
