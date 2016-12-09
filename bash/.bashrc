@@ -132,14 +132,14 @@ __prompt_command () {
 		fi
 
 		if [ $time_diff -ge 3 ]; then
-			time='\[\033[01;33m\](${time_diff}s)\[\033[00m\] '
+			time=' \[\033[01;33m\](${time_diff}s)\[\033[00m\]'
 		fi
 
 		if [ $ret -ne 0 ]; then
-			code='\[\033[01;31m\]($?)\[\033[00m\] '
+			code=' \[\033[01;31m\]($?)\[\033[00m\]'
 		fi
 
-		PS1="${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd} ${time}${code}${sign} "
+		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}${time}${code}\n${sign} "
 	else
 		username='\u'
 		     pwd='\w'
@@ -150,14 +150,14 @@ __prompt_command () {
 		fi
 
 		if [ $time_diff -ge 3 ]; then
-			time='(${time_diff}s) '
+			time=' (${time_diff}s)'
 		fi
 
 		if [ $ret -ne 0 ]; then
-			code='($?) '
+			code=' ($?)'
 		fi
 
-		PS1="[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${time}${code}${sign} "
+		PS1="\n[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${time}${code}\n${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
