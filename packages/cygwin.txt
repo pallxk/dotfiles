@@ -2,6 +2,7 @@ bind-utils
 gcc-core
 make
 nc
+openssh
 # Required by ruby gems with native extensions
 ruby-devel
 # Required by ruby gem 'nokogiri'
