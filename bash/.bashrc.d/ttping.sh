@@ -23,14 +23,17 @@ ttping () {
 		grep --line-buffered -Po "$time|$unreachable|$timedout" \
 		| while read; do
 			# Set terminal title.
+			# Support: bash 4.3.11 (and neighboring versions)
+			# Unbalenced right parenthesis in case construct in
+			# process substitution causes bug for bash scanner.
 			case "$REPLY" in
-				*ms)
+				(*ms)
 					title="$REPLY"
 					;;
-				$timedout)
+				($timedout)
 					title="!! Timed out"
 					;;
-				$unreachable)
+				($unreachable)
 					title="!! Host Down"
 					;;
 			esac
