@@ -3,8 +3,10 @@ basedir=`dirname "$0"`
 
 
 # Node.js
-#curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+if [ ! -e /etc/apt/sources.list.d/nodesource.list ]; then
+	#curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+	curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+fi
 
 
 for list in linux ubuntu; do
