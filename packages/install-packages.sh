@@ -9,6 +9,7 @@
 
 [ "$DEBUG" = 2 ] && set -x
 
+# Process arguments
 COMMAND="$1"
 PKG_LIST="$2"
 USE_SUDO="$3"
@@ -18,12 +19,14 @@ if [ "$DEBUG" = 1 ]; then
 	echo "USE_SUDO=$USE_SUDO"
 fi
 
-
 # Do not continue if file not found
 [ -f "$PKG_LIST" ] || exit 1
 
 # Exit early when killed
 trap "exit 1" SIGINT SIGTERM
+
+# Init variables
+sudo=
 
 # If not running as root and sudo is required and available, use that
 [ "$USE_SUDO" = true ] && [ $UID -ne 0 ] && $(hash sudo 2> /dev/null) && sudo=sudo
