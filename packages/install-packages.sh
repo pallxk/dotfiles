@@ -29,7 +29,11 @@ trap "exit 1" SIGINT SIGTERM
 sudo=
 
 # If not running as root and sudo is required and available, use that
-[ "$USE_SUDO" = true ] && [ $UID -ne 0 ] && $(hash sudo 2> /dev/null) && sudo=sudo
+if [ "$USE_SUDO" = true ] && [ $UID -ne 0 ] && $(hash sudo 2> /dev/null); then
+	sudo="sudo -n"
+	# Cache sudo credential
+	sudo -v
+fi
 [ "$DEBUG" = 1 ] && echo "sudo=$sudo"
 
 while read pkg || [ "$pkg" ]; do
@@ -42,5 +46,5 @@ while read pkg || [ "$pkg" ]; do
 
 	cmd="$sudo $COMMAND $pkg"
 	[ "$DEBUG" = 1 ] && echo "cmd=$cmd"
-	$cmd
+	$cmd < /dev/null
 done < "$PKG_LIST"
