@@ -46,7 +46,7 @@ done
 unset dir
 
 # Add RVM to PATH for scripting
-pathmunge ~/.rvm/bin after
+[[ -d ~/.rvm/bin ]] && pathmunge ~/.rvm/bin after
 
 # set PATH so it includes user's private bin if it exists
 [[ -d ~/bin ]] && pathmunge ~/bin
