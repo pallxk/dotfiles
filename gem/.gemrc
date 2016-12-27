@@ -1,3 +1,4 @@
 # Read about the gemrc format at http://guides.rubygems.org/command-reference/#gem-environment
 
-gem: --user-install
+# RVM requires no --user-install
+#gem: --user-install
