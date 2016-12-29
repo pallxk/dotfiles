@@ -221,6 +221,13 @@ if has('win32') || has('win64')
   set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
 endif
 
+" pathogen blacklist
+let g:pathogen_blacklist = []
+if ! has('python') && ! has('python3')
+  " UltiSnips requires py >= 2.7 or py3
+  call add(g:pathogen_blacklist, 'ultisnips')
+endif
+
 " Load pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
