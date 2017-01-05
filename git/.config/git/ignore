@@ -42,13 +42,23 @@
 ehthumbs.db
 Thumbs.db
 
+
 # Created by https://www.gitignore.io/api/vim
+
 ### Vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
 # Do NOT ignore files under .ssh
 !.ssh/
-*.un~
+# session
 Session.vim
+# temporary
 .netrwhist
 *~
+# auto-generated tag files
+tags
+
+# End of https://www.gitignore.io/api/vim
