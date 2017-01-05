@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # Translate colon separated path to line separated path, and print.
 
 # Use "$PATH" as default, or "$1" if provided.
