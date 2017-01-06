@@ -1,1 +1,8 @@
+# Split the view horizontally
+set vertical-split = no
+# Height of the lower view in a split view
+set split-view-height = 75%
+# Ignore case in searches
+set ignore-case = yes
+# Wrap long lines
 set wrap-lines = yes
