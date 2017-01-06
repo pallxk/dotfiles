@@ -4,6 +4,8 @@ dnsutils
 netcat
 openjdk-8-jre
 p7zip-full
+python-dev
+python-pip
 # Required by ruby gems with native extensions
 ruby-dev
 # Required by ruby gem 'nokogiri'

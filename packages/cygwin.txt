@@ -3,6 +3,7 @@ gcc-core
 make
 nc
 openssh
+python-devel
 # Required by ruby gems with native extensions
 ruby-devel
 # Required by ruby gem 'nokogiri'
