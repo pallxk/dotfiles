@@ -1,8 +1,8 @@
 apt-file
 build-essential
+default-jre
 dnsutils
 netcat
-openjdk-8-jre
 p7zip-full
 python-dev
 python-pip
