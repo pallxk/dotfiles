@@ -2,7 +2,7 @@
 
 # Create folder structure beforehand, so that dotfiles in different repos can
 # be stowed together.
-dirs="$HOME/.bashrc.d/after $HOME/bin $HOME/.config"
+dirs="$HOME/.bashrc.d/after $HOME/bin/after $HOME/.config"
 
 for dir in $dirs; do
 	[ -e "$dir" ] || mkdir -p "$dir"
