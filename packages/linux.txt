@@ -5,6 +5,7 @@ dos2unix
 git
 htop
 ipcalc
+nmap
 nodejs
 p7zip
 python
