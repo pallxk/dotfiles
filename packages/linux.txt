@@ -8,6 +8,7 @@ ipcalc
 nmap
 nodejs
 p7zip
+patch
 python
 ruby
 socat
