@@ -51,3 +51,5 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[git-p4]
+	skipSubmitEdit = true
