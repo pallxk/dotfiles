@@ -23,3 +23,6 @@ babel-cli
 # Deprecated in favor of Typings, but kept for legacy projects
 tsd
 typings
+
+## Stylesheets
+less
