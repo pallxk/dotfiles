@@ -21,9 +21,11 @@ npm-check-updates
 babel-cli
 
 ## TypeScript
+tslint
+typescript
+typings
 # Deprecated in favor of Typings, but kept for legacy projects
 tsd
-typings
 
 ## Stylesheets
 less
