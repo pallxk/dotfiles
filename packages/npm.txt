@@ -1,5 +1,6 @@
 # Package Managers
 bower
+yarn
 
 # Building Systems
 gulp-cli
