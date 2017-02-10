@@ -13,5 +13,8 @@
   },
 
   // Control whether tslint is enabled for JavaScript files or not.
-  "tslint.jsEnable": true
+  "tslint.jsEnable": true,
+
+  // Configure glob patterns of file paths to exclude from linting
+  "tslint.exclude": "**/{lib,out,dist}/**"
 }
