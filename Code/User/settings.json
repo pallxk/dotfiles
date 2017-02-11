@@ -16,5 +16,12 @@
   "tslint.jsEnable": true,
 
   // Configure glob patterns of file paths to exclude from linting
-  "tslint.exclude": "**/{lib,out,dist}/**"
+  "tslint.exclude": "**/{lib,out,dist}/**",
+
+  // List of extension you wish to install in the form of (publisher).(extensionName)
+  "extension-manager.extensions": [
+    "EditorConfig.EditorConfig",
+    "eg2.tslint",
+    "vscodevim.vim"
+  ]
 }
