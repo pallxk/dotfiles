@@ -117,12 +117,13 @@ __prompt_command () {
 	    debian_chroot=$(cat /etc/debian_chroot)
 	fi
 
-	local username hostname pwd time code sign
+	local username hostname pwd time code sign cmd
 
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
 		     pwd='\[\033[01;34m\]\w\[\033[00m\]'
-		    sign='\$\[\033[00;32m\]'
+		    sign='\$'
+		     cmd='\[\033[00;32m\]'
 
 		# Remove color settings for command string before executing it
 		debugcmd='printf "\033[00m"'
@@ -139,7 +140,7 @@ __prompt_command () {
 			code=' \[\033[01;31m\]($?)\[\033[00m\]'
 		fi
 
-		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}${time}${code}\n${sign} "
+		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}${time}${code}\n${sign} ${cmd}"
 	else
 		username='\u'
 		     pwd='\w'
