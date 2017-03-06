@@ -3,6 +3,12 @@
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
 
+  // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+  "editor.renderWhitespace": "boundary",
+
+  // Controls whether the editor should render indent guides
+  "editor.renderIndentGuides": true,
+
   // Configure glob patterns for excluding files and folders.
   "files.exclude": {
     "**/.git": true,
