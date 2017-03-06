@@ -90,3 +90,7 @@
 	path = vim/.vim/bundle/pegjs-vim
 	url = https://github.com/alunny/pegjs-vim.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/yats.vim"]
+	path = vim/.vim/bundle/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim.git
+	ignore = dirty
