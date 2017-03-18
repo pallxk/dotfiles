@@ -17,8 +17,9 @@ npm-check-updates
 
 # Development
 
-## Babel
+## JavaScript
 babel-cli
+requirejs
 
 ## TypeScript
 tslint
