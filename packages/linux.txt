@@ -3,6 +3,7 @@ colordiff
 curl
 dos2unix
 git
+git-extras
 htop
 ipcalc
 nmap
