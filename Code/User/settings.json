@@ -32,5 +32,6 @@
     "EditorConfig.EditorConfig",
     "eg2.tslint",
     "vscodevim.vim"
-  ]
+  ],
+  "window.zoomLevel": 0
 }
