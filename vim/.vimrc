@@ -101,6 +101,9 @@ if has("autocmd")
   " No modeline in gitrebase as in gitcommit.
   autocmd FileType gitrebase setlocal nomodeline
 
+  " Treat *.rul as InstallShield files by default
+  autocmd BufNewFile,BufRead *.rul setf ishd
+
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
