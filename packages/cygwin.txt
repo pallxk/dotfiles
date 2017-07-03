@@ -1,6 +1,7 @@
 bind-utils
 chere
 gcc-core
+gcc-g++
 make
 nc
 openssh
