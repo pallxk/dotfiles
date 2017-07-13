@@ -21,6 +21,15 @@
   // Check if a global install TypeScript compiler (e.g. tsc) differs from the used TypeScript language service.
   "typescript.check.tscVersion": false,
 
+  // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu), prefer C:\Windows\sysnative over C:\Windows\System32 to use the 64-bit versions.
+  "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\bash.exe",
+
+  // The command line arguments to use when on the Windows terminal.
+  "terminal.integrated.shellArgs.windows": ["/bin/xhere", "/bin/bash"],
+
+  // Get rid of that annoying message that shows up everytime you make a new file
+  "vim.disableAnnoyingNeovimMessage": true,
+
   // Control whether tslint is enabled for JavaScript files or not.
   "tslint.jsEnable": true,
 
@@ -33,5 +42,7 @@
     "eg2.tslint",
     "vscodevim.vim"
   ],
+
+  // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
   "window.zoomLevel": 0
 }
