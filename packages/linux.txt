@@ -21,3 +21,4 @@ tree
 vim
 wget
 xdg-user-dirs
+yarn
