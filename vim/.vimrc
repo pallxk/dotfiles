@@ -245,6 +245,10 @@ set laststatus=2
 " The delay before diff markers are computed (in ms)
 set updatetime=500
 
+" Vim YouCompleteMe settings
+let g:ycm_server_python_interpreter = '/usr/bin/python2'
+let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
 " emmet-vim settings
 let g:user_emmet_leader_key = '<C-j>'
 let g:user_emmet_settings = webapi#json#decode(
