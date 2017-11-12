@@ -22,10 +22,10 @@
   "typescript.check.tscVersion": false,
 
   // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu), prefer C:\Windows\sysnative over C:\Windows\System32 to use the 64-bit versions.
-  "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
 
   // The command line arguments to use when on the Windows terminal.
-  "terminal.integrated.shellArgs.windows": ["/bin/xhere", "/bin/bash"],
+  "terminal.integrated.shellArgs.windows": ["-l"],
 
   // Get rid of that annoying message that shows up everytime you make a new file
   "vim.disableAnnoyingNeovimMessage": true,
