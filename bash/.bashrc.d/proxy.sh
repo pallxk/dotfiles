@@ -1,10 +1,10 @@
 # Export various "protocol_proxy" variables,
 # using corresponding uppercase or lowercase variable values if available,
-# otherwise, using the default value: 'http://127.0.0.1:1080/'.
+# otherwise, using the default value: 'http://127.0.0.1:8080/'.
 function proxy_on() {
 	# http
 	if [[ -z $http_proxy && -z $HTTP_PROXY ]]; then
-		http_proxy=http://127.0.0.1:1080/
+		http_proxy=http://127.0.0.1:8080/
 		HTTP_PROXY=$http_proxy
 	elif [[ -z $http_proxy ]]; then
 		http_proxy=$HTTP_PROXY
