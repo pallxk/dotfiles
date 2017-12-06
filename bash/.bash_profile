@@ -62,6 +62,9 @@ for dir in ~/.gem/ruby/*/bin; do
 done
 unset dir
 
+# Add Yarn global to PATH
+[[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin after
+
 # Add RVM to PATH for scripting
 [[ -d ~/.rvm/bin ]] && pathmunge ~/.rvm/bin after
 
