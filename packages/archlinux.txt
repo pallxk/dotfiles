@@ -1,5 +1,6 @@
 bind-tools
 gnu-netcat
 jre8-openjdk
+openbsd-netcat
 pkgfile
 python-pip

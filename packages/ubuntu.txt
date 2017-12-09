@@ -2,7 +2,7 @@ apt-file
 build-essential
 default-jre
 dnsutils
-netcat
+netcat-openbsd
 p7zip-full
 python-dev
 python-pip
