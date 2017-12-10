@@ -5,8 +5,8 @@
 set $mod Mod4
 set $terminal terminator
 
-# set default desktop layout (default is tiling)
-# workspace_layout tabbed <stacking|tabbed>
+# set default desktop layout (default is tiling) <default|stacking|tabbed>
+workspace_layout tabbed
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
