@@ -11,9 +11,8 @@ if [[ -z $SSH_AUTH_SOCK ]] && hash ssh-agent 2> /dev/null; then
 	exec ssh-agent "${0#-}" "$@"
 fi
 
-## Autorun tmux
-## (Do not auto run tmux on Cygwin as it takes a long time before response)
-if [[ $(uname -s) != CYGWIN* ]]; then
+## Autorun tmux for SSH sessions
+if [[ $SSH_TTY ]]; then
 	if [[ -z $TMUX ]] && hash tmux 2> /dev/null; then
 		printf '\ntmux session list:\n'
 
