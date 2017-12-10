@@ -1,4 +1,4 @@
 #!/bin/sh
 basedir=`dirname "$0"`
 
-"$basedir/install-packages.sh" "npm install -g" "$basedir/npm.txt" true
+"$basedir/install-packages.sh" "yarn global add" "$basedir/npm.txt"
