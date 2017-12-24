@@ -12,6 +12,7 @@ serve
 
 # Misc
 npm-check-updates
+npx
 
 
 # Development
