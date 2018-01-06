@@ -9,6 +9,12 @@
   // Controls whether the editor should render indent guides
   "editor.renderIndentGuides": true,
 
+  // Controls if the explorer should ask for confirmation when deleting a file via the trash.
+  "explorer.confirmDelete": false,
+
+  // Controls if the explorer should ask for confirmation to move files and folders via drag and drop.
+  "explorer.confirmDragAndDrop": false,
+
   // Configure glob patterns for excluding files and folders.
   "files.exclude": {
     "**/.git": true,
