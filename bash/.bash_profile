@@ -57,10 +57,11 @@ fi
 [ `umask` = 0000 ] && umask 022
 
 # include ruby bin directories in PATH
-for dir in ~/.gem/ruby/*/bin; do
-	test -d "$dir" && pathmunge "$dir"
-done
-unset dir
+# (Prefer using rvm)
+#for dir in ~/.gem/ruby/*/bin; do
+#	test -d "$dir" && pathmunge "$dir"
+#done
+#unset dir
 
 # Add Yarn global to PATH
 [[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin after
