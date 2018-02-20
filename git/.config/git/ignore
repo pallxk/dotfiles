@@ -56,6 +56,10 @@ Thumbs.db
 .vscode/
 
 
+### Bundler ###
+vendor/bundle
+
+
 # Created by https://www.gitignore.io/api/vim
 
 ### Vim ###
