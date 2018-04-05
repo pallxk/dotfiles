@@ -63,6 +63,12 @@ fi
 #done
 #unset dir
 
+# Include Applications bin directories in PATH
+for dir in ~/Applications/*/bin; do
+	test -d "$dir" && pathmunge "$dir"
+done
+unset dir
+
 # Add Yarn global to PATH
 [[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin after
 
