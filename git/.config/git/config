@@ -14,6 +14,10 @@
 [core]
 	# Always wrap long lines
 	pager = less -+S
+[color]
+	# Support git <1.8.4
+	# color.ui = auto by default since git 1.8.4
+	ui = auto
 [push]
 	default = simple
 [merge]
