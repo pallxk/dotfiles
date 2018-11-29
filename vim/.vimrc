@@ -11,3 +11,13 @@ set encoding=utf-8
 scriptencoding utf-8
 
 source ~/.vim/common.vimrc
+
+
+" Ctrl+Shift+U to toggle case of word
+if has("gui_running")
+  nnoremap <C-S-u>          g~iwe
+  inoremap <C-S-u>     <Esc>g~iwea
+else
+  nnoremap <Char-0x95>      g~iwe
+  inoremap <Char-0x95> <Esc>g~iwea
+endif
