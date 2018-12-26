@@ -26,7 +26,9 @@ if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
   set backup		" keep a backup file (restore to previous version)
+  set backupdir=~/vim.tmp,.
   set undofile		" keep an undo file (undo changes after closing)
+  set undodir=~/vim.tmp,.
 endif
 set history=50		" keep 50 lines of command line history
 set number		" print the line number
