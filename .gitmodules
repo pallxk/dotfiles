@@ -98,3 +98,7 @@
 	path = vim/.vim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/vim-terraform"]
+	path = vim/.vim/bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
+	ignore = dirty
