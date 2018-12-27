@@ -263,3 +263,8 @@ let g:vim_json_syntax_concealcursor = 'nc'
 let g:vim_markdown_folding_disabled = 1
 " Highlight YAML frontmatter as used by Jekyll
 let g:vim_markdown_frontmatter = 1
+
+" vim-terraform settings
+" https://github.com/hashivim/vim-terraform
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
