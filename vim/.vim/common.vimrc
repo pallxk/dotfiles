@@ -264,6 +264,10 @@ let g:vim_markdown_folding_disabled = 1
 " Highlight YAML frontmatter as used by Jekyll
 let g:vim_markdown_frontmatter = 1
 
+" vim-go settings
+" vim-go requires Vim >= 7.4.1689
+let g:go_version_warning = 0
+
 " vim-terraform settings
 " https://github.com/hashivim/vim-terraform
 let g:terraform_align=1
