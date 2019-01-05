@@ -102,3 +102,7 @@
 	path = vim/.vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/Dockerfile.vim"]
+	path = vim/.vim/bundle/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim.git
+	ignore = dirty
