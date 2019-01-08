@@ -66,6 +66,10 @@ inoremap <C-U> <C-G>u<C-U>
 " http://shallowsky.com/blog/linux/editors/vim-ctrl-space.html
 imap <Nul> <Space>
 
+" Map Shift-Enter
+map [13;2u <PageDown>
+imap [13;2u <CR>
+
 " Jump to the first start of a change
 " (Not working when changes are made at the first line)
 nmap [C gg]c
