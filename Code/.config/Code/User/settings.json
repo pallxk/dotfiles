@@ -66,4 +66,6 @@
   "remote.host": "127.0.0.1",
   // If set to true, error for remote.port already in use won't be shown anymore.
   "remote.dontShowPortAlreadyInUseError": true,
+
+  "editor.renderFinalNewline": true,
 }
