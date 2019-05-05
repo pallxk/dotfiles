@@ -11,21 +11,6 @@ if [[ -z $SSH_AUTH_SOCK ]] && hash ssh-agent 2> /dev/null; then
 	exec ssh-agent "${0#-}" "$@"
 fi
 
-## Autorun tmux for SSH sessions
-if [[ $SSH_TTY ]]; then
-	if [[ -z $TMUX ]] && hash tmux 2> /dev/null; then
-		printf '\ntmux session list:\n'
-
-		if tmux ls; then
-			# If tmux sessions exist, just display the session list.
-			echo
-		else
-			# If no tmux sessions exist, start one.
-			tmux
-		fi
-	fi
-fi
-
 # Load rc files from .bashrc.d
 if test -d ~/.bashrc.d/; then
 	for rcfile in ~/.bashrc.d/*.{sh,bash}; do
