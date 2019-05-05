@@ -11,20 +11,11 @@ if [[ -z $SSH_AUTH_SOCK ]] && hash ssh-agent 2> /dev/null; then
 	exec ssh-agent "${0#-}" "$@"
 fi
 
-# Load rc files from .bashrc.d
-if test -d ~/.bashrc.d/; then
-	for rcfile in ~/.bashrc.d/*.{sh,bash}; do
-		test -r "$rcfile" && . "$rcfile"
-	done
-	unset rcfile
-fi
-# Load rc files from .bashrc.d/after
-if test -d ~/.bashrc.d/after/; then
-	for rcfile in ~/.bashrc.d/after/*.{sh,bash}; do
-		test -r "$rcfile" && . "$rcfile"
-	done
-	unset rcfile
-fi
+# Load rc files from ".bashrc.d" and ".bashrc.d/after"
+for rcfile in ~/.bashrc.d/{,after}/*.{sh,bash}; do
+	test -r "$rcfile" && . "$rcfile"
+done
+unset rcfile
 
 
 # Disallow existing regular files to be overwritten by redirection of output
