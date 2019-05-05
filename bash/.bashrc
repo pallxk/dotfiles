@@ -39,10 +39,6 @@ shopt -s checkwinsize
 shopt -s globstar
 
 
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
-
 # Set up default editor
 hash vim 2> /dev/null && VISUAL=vim || VISUAL=vi
 export VISUAL
