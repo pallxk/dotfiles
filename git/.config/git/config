@@ -49,6 +49,8 @@
 	# List files marked as "assume unchanged" (see git-update-index(1))
 	ls-assumed = !git ls-files -v | grep ^[[:lower:]]
 	ls-assumed-unchanged = !git ls-files -v | grep ^[[:lower:]]
+	# gitignore.io
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
 [credential]
 	helper = cache --timeout=3600
 [diff]
