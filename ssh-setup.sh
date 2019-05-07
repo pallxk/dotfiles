@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # SSH requires strict permissions on files and dirs
 umask 077
