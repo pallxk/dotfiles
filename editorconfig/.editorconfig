@@ -1,0 +1,80 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+
+
+# Markdown
+[*.{md,markdown}]
+# Many Markdown processors assume that tab stops are set at multiples of four.
+indent_size = 4
+# Trailing whitespaces are significant to Markdown documents in some syntax.
+trim_trailing_whitespace = false
+
+# YAML
+[*.{yml,yaml}]
+# Tab characters must not be used in indentation.
+indent_style = space
+# Code examples in YAML specifications use 2-space indentation.
+# Other numbers are also fine.
+indent_size = 2
+
+# JSON (JavaScript Object Notation)
+# Following examples in Google JSON Style Guide
+# https://google.github.io/styleguide/jsoncstyleguide.xml
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Shell
+# Following Google Shell Style Guide
+# https://google.github.io/styleguide/shell.xml
+[*.{sh,bash}]
+indent_style = space
+indent_size = 2
+
+# HTML
+# Following Google HTML/CSS Style Guide
+# https://google.github.io/styleguide/htmlcssguide.xml
+[*.{htm,html}]
+indent_style = space
+indent_size = 2
+
+# CSS
+# Following Google HTML/CSS Style Guide
+# https://google.github.io/styleguide/htmlcssguide.xml
+[*.{css,less,sass,scss}]
+indent_style = space
+indent_size = 2
+
+# JavaScript
+# Following Google JavaScript Style Guide
+# https://google.github.io/styleguide/javascriptguide.xml
+[*.{js,jsx}]
+indent_style = space
+indent_size = 2
+
+# npm's package.json
+# Following the style of generated package.json by `npm init`
+[package.json]
+indent_style = space
+indent_size = 2
+
+# Bower
+# Following the style of generated bower.json by `bower init`
+[bower.json]
+indent_style = space
+indent_size = 2
+
+# Vimscript
+# Following Google Vimscript Style Guide:
+#   https://google.github.io/styleguide/vimscriptguide.xml
+# This style is also used in Vimscripts shipped with vim.
+[*.vim{,rc}]
+indent_style = space
+indent_size = 2
