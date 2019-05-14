@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+#set -o xtrace
+
+region=`aws configure get region || echo ap-northeast-1`
+repos=`aws codecommit list-repositories | jq -r '.repositories | map(.repositoryName) | join("\n")'`
+
+for repo in $repos; do
+  # _ is the separator in repo name
+  dir=${repo/_/\/}
+  git clone git-codecommit.$region.amazonaws.com:/v1/repos/$repo $dir
+done
