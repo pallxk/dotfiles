@@ -1,5 +1,10 @@
 # Set prompt string
-PROMPT_COMMAND=__prompt_command
+if [ -z "$PROMPT_COMMAND" ]; then
+	PROMPT_COMMAND=__prompt_command
+else
+	PROMPT_COMMAND="__prompt_command; $PROMPT_COMMAND; timer_clear"
+fi
+
 __prompt_command () {
 	# Remember the exit code of last command or it will get overwritten here
 	local ret=$?
@@ -101,6 +106,11 @@ timer_start () {
 # This is called only when $PS1 is going to be shown
 timer_stop () {
 	time_diff=$(($SECONDS - ${timer:-0}))
+	unset timer
+}
+
+# Clear timer only
+timer_clear () {
 	unset timer
 }
 
