@@ -109,3 +109,8 @@
 [submodule "Applications/Applications/rmate"]
 	path = Applications/Applications/rmate
 	url = https://github.com/aurora/rmate.git
+	ignore = dirty
+[submodule "terraform/Applications/tfenv"]
+	path = terraform/Applications/tfenv
+	url = https://github.com/tfutils/tfenv.git
+	ignore = dirty
