@@ -6,8 +6,11 @@ set -o pipefail
 
 region=`aws configure get region || echo ap-northeast-1`
 repos=`aws codecommit list-repositories | jq -r '.repositories | map(.repositoryName) | join("\n")'`
+filter=$1
 
 for repo in $repos; do
+  # Test repo name with filter
+  [[ $repo = $filter* ]] || continue
   # _ is the separator in repo name
   dir=${repo/_/\/}
   git clone git-codecommit.$region.amazonaws.com:/v1/repos/$repo $dir
