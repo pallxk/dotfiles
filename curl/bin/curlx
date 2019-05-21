@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" "$@"

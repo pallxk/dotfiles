@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -H "Accept: application/x-yaml" -H "Content-Type: application/x-yaml" "$@"
