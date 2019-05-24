@@ -10,7 +10,7 @@ GIT_PS1_DESCRIBESTYLE=default
 GIT_PS1_SHOWCOLORHINTS=1
 
 LF=$'\n'
-my_git_prompt='PS1="$(__git_ps1 "$LF[%s]") $PS1"'
+my_git_prompt='PS1="$(__git_ps1 "\e[36m$LF[%s]\e[0m") $PS1"'
 if [ -z "$PROMPT_COMMAND" ]; then
 	PROMPT_COMMAND=$my_git_prompt
 else
