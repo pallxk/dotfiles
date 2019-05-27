@@ -13,5 +13,5 @@ for repo in $repos; do
   [[ $repo = $filter* ]] || continue
   # _ is the separator in repo name
   dir=${repo/_/\/}
-  git clone git-codecommit.$region.amazonaws.com:/v1/repos/$repo $dir
+  git clone --recursive git-codecommit.$region.amazonaws.com:/v1/repos/$repo $dir
 done
