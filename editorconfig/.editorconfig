@@ -78,3 +78,9 @@ indent_size = 2
 [*.vim{,rc}]
 indent_style = space
 indent_size = 2
+
+# Terraform
+# The canonical format and style used by `terraform fmt`
+[*.{tf,tfvars}]
+indent_style = space
+indent_size = 2
