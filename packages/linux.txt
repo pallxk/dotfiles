@@ -20,6 +20,7 @@ strace
 tig
 tmux
 tree
+unzip
 vim
 wget
 xdg-user-dirs
