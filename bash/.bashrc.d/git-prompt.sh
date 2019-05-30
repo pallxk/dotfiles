@@ -1,6 +1,16 @@
-[ -f /usr/share/git-core/contrib/completion/git-prompt.sh ] || return
+# Possible locations of git-prompt.sh
+GIT_PROMPT_SH_PATH=(
+	/usr/share/git/git-prompt.sh
+	/usr/share/git/completion/git-prompt.sh
+	/usr/share/git-core/contrib/completion/git-prompt.sh
+)
+for GIT_PROMPT_SH in "${GIT_PROMPT_SH_PATH[@]}"; do
+	[ -f "$GIT_PROMPT_SH" ] && git_prompt_sh=$GIT_PROMPT_SH
+done
 
-. /usr/share/git-core/contrib/completion/git-prompt.sh
+[ "$git_prompt_sh" ] || return
+
+. "$git_prompt_sh"
 
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
