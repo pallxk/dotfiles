@@ -5,3 +5,4 @@ jre-openjdk
 openbsd-netcat
 pkgfile
 python-pip
+terraform

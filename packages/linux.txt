@@ -1,7 +1,10 @@
+ansible
 ascii
 awscli
 colordiff
 curl
+docker
+docker-compose
 dos2unix
 git
 git-extras
