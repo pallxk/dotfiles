@@ -1,4 +1,5 @@
 ascii
+awscli
 colordiff
 curl
 dos2unix
@@ -6,6 +7,7 @@ git
 git-extras
 htop
 ipcalc
+jq
 nmap
 nodejs
 p7zip
