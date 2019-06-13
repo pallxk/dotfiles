@@ -1,0 +1,38 @@
+! Filco minila style keyboard layout
+
+!         Caps_Lock -> Mode_switch
+! Shift + Caps_Lock -> Caps_Lock
+keycode  66 = Mode_switch Caps_Lock
+! Escape and `/~
+keycode   9 = Escape asciitilde grave asciitilde
+keycode  49 = grave asciitilde Escape
+! Function keys
+keycode  10 = 1 exclam F1
+keycode  11 = 2 at F2
+keycode  12 = 3 numbersign F3
+keycode  13 = 4 dollar F4
+keycode  14 = 5 percent F5
+keycode  15 = 6 asciicircum F6
+keycode  16 = 7 ampersand F7
+keycode  17 = 8 asterisk F8
+keycode  18 = 9 parenleft F9
+keycode  19 = 0 parenright F10
+keycode  20 = minus underscore F11
+keycode  21 = equal plus F12
+! Arrow keys
+keycode  26 = e E Up
+keycode  39 = s S Left
+keycode  40 = d D Down
+keycode  41 = f F Right
+! Navigation keys
+keycode  31 = i I Print Sys_Req
+keycode  32 = o O Scroll_Lock
+keycode  33 = p P Pause Break
+keycode  44 = j J Insert
+keycode  45 = k K Home
+keycode  46 = l L Prior
+keycode  58 = m M Delete
+keycode  59 = comma less End
+keycode  60 = period greater Next
+! Backspace
+keycode  47 = semicolon colon BackSpace
