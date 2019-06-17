@@ -1,8 +1,9 @@
 ! Filco minila style keyboard layout
 
-!         Caps_Lock -> Mode_switch
-! Shift + Caps_Lock -> Caps_Lock
-keycode  66 = Mode_switch Caps_Lock
+! Caps_Lock          -> Mode_switch
+! Caps_Lock + Super_L-> Caps_Lock
+keycode  66 = Mode_switch
+keycode 133 = Super_L Super_L Caps_Lock
 ! Escape and `/~
 keycode   9 = Escape asciitilde grave asciitilde
 keycode  49 = grave asciitilde Escape
