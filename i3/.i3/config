@@ -279,6 +279,8 @@ mode "resize" {
 #bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
+# Automatically load configuration of multiple monitors
+exec --no-startup-id autorandr --change
 exec --no-startup-id vncserver :1
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1
