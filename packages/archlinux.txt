@@ -1,5 +1,6 @@
 aws-cli
 bind-tools
+deepin-screenshot
 gnu-netcat
 jre-openjdk
 openbsd-netcat
