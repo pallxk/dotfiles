@@ -27,6 +27,26 @@ font xft:Noto Sans 10
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+# Mouse bindings ------------------------------------------------------
+
+# The middle button over a titlebar kills the window
+bindsym --release button2 kill
+
+# The middle button and a modifer over any part of the window kills the window
+bindsym --whole-window $mod+button2 kill
+
+# The right button toggles floating
+bindsym button3 floating toggle
+bindsym $mod+button3 floating toggle
+
+# The side buttons move the window around
+bindsym button6 move left
+bindsym button7 move right
+bindsym button8 move left
+bindsym button9 move right
+
+#/Mouse bindings ------------------------------------------------------
+
 # start a terminal
 bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+Return exec $terminal -e 'ssh devbox'
