@@ -48,8 +48,10 @@ bindsym button9 move right
 #/Mouse bindings ------------------------------------------------------
 
 # start a terminal
-bindsym $mod+Return exec $terminal
-bindsym $mod+Shift+Return exec $terminal -e 'ssh devbox'
+bindsym $mod+Return          exec $terminal
+bindsym $mod+KP_Enter        exec $terminal
+bindsym $mod+Shift+Return    exec $terminal -e 'ssh devbox'
+bindsym $mod+Shift+RKP_Enter exec $terminal -e 'ssh devbox'
 
 # kill focused window
 bindsym $mod+Shift+q kill
