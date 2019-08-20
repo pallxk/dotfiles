@@ -19,6 +19,7 @@ for rcfile in ~/.bashrc.d/async/*.{sh,bash}; do
 	test -r "$rcfile" && . "$rcfile" &
 done
 unset rcfile
+disown -ar
 
 
 # Disallow existing regular files to be overwritten by redirection of output
