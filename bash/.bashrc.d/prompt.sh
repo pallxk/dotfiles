@@ -10,7 +10,12 @@ __prompt_command () {
 	local ret=$?
 
 	# No 'xtrace' for PROMPT_COMMAND, restore it before return
-	[[ $- = *x* ]] && set +x && local xtrace=1
+	if [[ $- = *x* ]]; then
+		set +x
+		local xtrace=1
+	else
+		local xtrace=
+	fi
 
 	# Calculate run time of last command
 	timer_stop
@@ -64,10 +69,14 @@ __prompt_command () {
 
 		if [ $time_diff -ge 3 ]; then
 			time=' \[\033[01;33m\](${time_diff}s)\[\033[00m\]'
+		else
+			time=
 		fi
 
 		if [ $ret -ne 0 ]; then
 			code=' \[\033[01;31m\]($?)\[\033[00m\]'
+		else
+			code=
 		fi
 
 		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}${time}${code}\n${sign} ${cmd}"
@@ -82,10 +91,14 @@ __prompt_command () {
 
 		if [ $time_diff -ge 3 ]; then
 			time=' (${time_diff}s)'
+		else
+			time=
 		fi
 
 		if [ $ret -ne 0 ]; then
 			code=' ($?)'
+		else
+			code=
 		fi
 
 		PS1="\n[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${time}${code}\n${sign} "
