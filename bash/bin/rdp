@@ -1,0 +1,2 @@
+#!/bin/sh
+xfreerdp +fonts +compression /w:1920 /h:1030 "$@"
