@@ -48,10 +48,14 @@ bindsym button9 move right
 #/Mouse bindings ------------------------------------------------------
 
 # start a terminal
-bindsym $mod+Return          exec $terminal
-bindsym $mod+KP_Enter        exec $terminal
-bindsym $mod+Shift+Return    exec $terminal -e 'ssh devbox'
-bindsym $mod+Shift+RKP_Enter exec $terminal -e 'ssh devbox'
+bindsym $mod+Return              exec $terminal
+bindsym $mod+KP_Enter            exec $terminal
+bindsym $mod+Shift+Return        exec $terminal -T floating
+bindsym $mod+Shift+KP_Enter      exec $terminal -T floating
+bindsym Mod1+Mod4+Return         exec $terminal -e 'ssh devbox'
+bindsym Mod1+Mod4+KP_Enter       exec $terminal -e 'ssh devbox'
+bindsym Mod1+Mod4+Shift+Return   exec $terminal -e 'ssh devbox' -T floating
+bindsym Mod1+Mod4+Shift+KP_Enter exec $terminal -e 'ssh devbox' -T floating
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -290,6 +294,9 @@ for_window [class="xfreerdp"] floating disable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
+
+# enable floating for windows titled floating
+for_window [title="(?i)floating"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
