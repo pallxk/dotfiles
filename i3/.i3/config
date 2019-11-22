@@ -114,8 +114,12 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # or, use tab keys:
-bindsym $mod+Tab focus right
-bindsym $mod+Shift+Tab focus left
+# Mod1 (Alt) for focusing window
+bindsym Mod1+Tab focus right
+bindsym Mod1+Shift+Tab focus left
+# Mod4 (Super) for focusing output
+bindsym Mod4+Tab focus output right
+bindsym Mod4+Shift+Tab focus output left
 
 # move focused window
 bindsym $mod+Shift+j move left
