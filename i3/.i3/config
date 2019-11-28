@@ -52,10 +52,14 @@ bindsym $mod+Return              exec $terminal
 bindsym $mod+KP_Enter            exec $terminal
 bindsym $mod+Shift+Return        exec $terminal -T floating
 bindsym $mod+Shift+KP_Enter      exec $terminal -T floating
-bindsym Mod1+Mod4+Return         exec $terminal -e 'ssh devbox'
-bindsym Mod1+Mod4+KP_Enter       exec $terminal -e 'ssh devbox'
-bindsym Mod1+Mod4+Shift+Return   exec $terminal -e 'ssh devbox' -T floating
-bindsym Mod1+Mod4+Shift+KP_Enter exec $terminal -e 'ssh devbox' -T floating
+# start a terminal for remote session
+# `bash -i` to make bash interactive, read .bashrc and run sourced OSC commands;
+# mosh itself does not support OSC commands.
+# https://en.wikipedia.org/wiki/ANSI_escape_code#Escape_sequences
+bindsym Mod1+Mod4+Return         exec $terminal -e 'bash -ic "mosh devbox"'
+bindsym Mod1+Mod4+KP_Enter       exec $terminal -e 'bash -ic "mosh devbox"'
+bindsym Mod1+Mod4+Shift+Return   exec $terminal -e 'bash -ic "mosh devbox"' -T floating
+bindsym Mod1+Mod4+Shift+KP_Enter exec $terminal -e 'bash -ic "mosh devbox"' -T floating
 
 # kill focused window
 bindsym $mod+Shift+q kill
