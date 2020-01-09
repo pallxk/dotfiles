@@ -15,9 +15,6 @@ fi
 for rcfile in ~/.bashrc.d/{,after}/*.{sh,bash}; do
 	test -r "$rcfile" && . "$rcfile"
 done
-for rcfile in ~/.bashrc.d/async/*.{sh,bash}; do
-	test -r "$rcfile" && . "$rcfile" &
-done
 unset rcfile
 disown -ar
 
