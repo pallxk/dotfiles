@@ -1,5 +1,7 @@
 # Enable tab completion for az
 
-completion_file=~/lib/azure-cli/az.completion
+# Arch Linux AUR package "azure-cli"
+[ -f /opt/azure-cli/az.completion ] && . /opt/azure-cli/az.completion && return
 
-[ -f "$completion_file" ] && . "$completion_file"
+# azure-cli official install script default location
+[ -f ~/lib/azure-cli/az.completion ] && . ~/lib/azure-cli/az.completion && return
