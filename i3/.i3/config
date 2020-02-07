@@ -126,9 +126,12 @@ bindsym $mod+Right focus right
 # Mod1 (Alt) for focusing window
 bindsym Mod1+Tab focus right
 bindsym Mod1+Shift+Tab focus left
-# Mod4 (Super) for focusing output
-bindsym Mod4+Tab focus output right
-bindsym Mod4+Shift+Tab focus output left
+# Mod4 (Super) for focusing workspace
+bindsym Mod4+Tab workspace next_on_output
+bindsym Mod4+Shift+Tab workspace prev_on_output
+# Mod1 (Alt) + Mod4 (Super) for focusing output
+bindsym Mod1+Mod4+Tab focus output right
+bindsym Mod1+Mod4+Shift+Tab focus output left
 
 # move focused window
 bindsym $mod+Shift+$left move left
