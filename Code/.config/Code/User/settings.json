@@ -68,5 +68,8 @@
   "remote.dontShowPortAlreadyInUseError": true,
 
   "editor.renderFinalNewline": true,
+
+  // Remote - SSH
+  //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
 }
 // vim:ft=javascript
