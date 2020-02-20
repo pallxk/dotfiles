@@ -13,10 +13,12 @@
 [profiles]
   [[default]]
     cursor_color = "#aaaaaa"
+    scrollback_infinite = True
     scrollbar_position = hidden
   [[Presentation]]
     background_color = "#ffffff"
     cursor_color = "#aaaaaa"
     font = Monospace 16
     foreground_color = "#000000"
+    scrollback_infinite = True
     use_system_font = False
