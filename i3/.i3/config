@@ -50,6 +50,21 @@ bindsym button7 move right
 bindsym button8 move left
 bindsym button9 move right
 
+bindsym --whole-window $mod+button6 move container to workspace prev
+bindsym --whole-window $mod+button7 move container to workspace next
+bindsym --whole-window $mod+button8 move container to workspace prev
+bindsym --whole-window $mod+button9 move container to workspace next
+
+bindsym --whole-window $mod+Ctrl+button6 move container to workspace prev; workspace prev
+bindsym --whole-window $mod+Ctrl+button7 move container to workspace next; workspace next
+bindsym --whole-window $mod+Ctrl+button8 move container to workspace prev; workspace prev
+bindsym --whole-window $mod+Ctrl+button9 move container to workspace next; workspace next
+
+bindsym --whole-window Mod1+Mod4+button6 move workspace to output left
+bindsym --whole-window Mod1+Mod4+button7 move workspace to output right
+bindsym --whole-window Mod1+Mod4+button8 move workspace to output left
+bindsym --whole-window Mod1+Mod4+button9 move workspace to output right
+
 #/Mouse bindings ------------------------------------------------------
 
 # start a terminal
