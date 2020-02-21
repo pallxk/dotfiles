@@ -39,6 +39,11 @@ bindsym --whole-window $mod+button2 kill
 bindsym button3 floating toggle
 bindsym $mod+button3 floating toggle
 
+# $mod + scroll up to disable floating
+bindsym --whole-window $mod+button4 floating disable
+# $mod + scroll down to enable floating
+bindsym --whole-window $mod+button5 floating enable
+
 # The side buttons move the window around
 bindsym button6 move left
 bindsym button7 move right
