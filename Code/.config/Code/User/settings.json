@@ -71,5 +71,13 @@
 
   // Remote - SSH
   //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
+
+  "terraform.indexing": {
+    "enabled": false
+  },
+  "terraform.languageServer": {
+    "enabled": true,
+    "args": []
+  }
 }
 // vim:ft=javascript
