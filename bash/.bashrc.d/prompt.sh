@@ -63,7 +63,7 @@ __prompt_command () {
 			debugcmd='printf "\033[00m"'
 		fi
 
-		if [ "$SSH_TTY" ]; then
+		if [ "$SSH_TTY" -o "$TERM_PROGRAM" = vscode ]; then
 			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
 		fi
 
@@ -85,7 +85,7 @@ __prompt_command () {
 		     pwd='\w'
 		    sign='\$'
 
-		if [ "$SSH_TTY" ]; then
+		if [ "$SSH_TTY" -o "$TERM_PROGRAM" = vscode ]; then
 			hostname='@\h'
 		fi
 
