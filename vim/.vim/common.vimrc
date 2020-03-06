@@ -44,6 +44,10 @@ set scrolloff=2
 let mapleader = ","
 noremap \ ,
 
+" F5 to run current script
+nnoremap <F5> :!%:p<CR>
+inoremap <F5> <Esc>:w<CR>:!%:p<CR>
+
 " Make editing $MYVIMRC easier
 " Vimrc Editing
 nnoremap <Leader>ve :split  $MYVIMRC<CR>
