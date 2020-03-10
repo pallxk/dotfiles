@@ -4,7 +4,7 @@ basedir=`dirname "$0"`
 
 # Node.js
 if [ ! -e /etc/apt/sources.list.d/nodesource.list ]; then
-	curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 fi
 
 # Yarn
