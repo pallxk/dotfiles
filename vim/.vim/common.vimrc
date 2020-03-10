@@ -44,6 +44,9 @@ set scrolloff=2
 let mapleader = ","
 noremap \ ,
 
+" :w!! to save file with sudo
+cmap w!! w !sudo tee % > /dev/null
+
 " F5 to save and run current script
 nnoremap <F5> :w<CR>:!"%:p"<CR>
 inoremap <F5> <Esc>:w<CR>:!"%:p"<CR>
