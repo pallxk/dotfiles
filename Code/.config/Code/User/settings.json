@@ -72,6 +72,9 @@
   // Remote - SSH
   //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
 
+  "[terraform]": {
+    "editor.formatOnSave": true
+  },
   "terraform.indexing": {
     "enabled": false
   },
