@@ -33,9 +33,6 @@
   // The command line arguments to use when on the Windows terminal.
   "terminal.integrated.shellArgs.windows": ["-l"],
 
-  // Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.
-  "update.mode": "none",
-
   // Get rid of that annoying message that shows up everytime you make a new file
   "vim.disableAnnoyingNeovimMessage": true,
 
