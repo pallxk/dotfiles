@@ -31,7 +31,9 @@
   "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
 
   // The command line arguments to use when on the Windows terminal.
-  "terminal.integrated.shellArgs.windows": ["-l"],
+  "terminal.integrated.shellArgs.windows": [
+    "-l"
+  ],
 
   // Get rid of that annoying message that shows up everytime you make a new file
   "vim.disableAnnoyingNeovimMessage": true,
@@ -53,7 +55,9 @@
 
   // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
   "window.zoomLevel": 0,
+
   "gitlens.currentLine.enabled": false,
+
   //-------- Remote VSCode configuration --------
   // Port number to use for connection.
   "remote.port": 52698,
@@ -72,9 +76,11 @@
   "[terraform]": {
     "editor.formatOnSave": true
   },
+
   "terraform.indexing": {
     "enabled": false
   },
+
   "terraform.languageServer": {
     "enabled": true,
     "args": []
