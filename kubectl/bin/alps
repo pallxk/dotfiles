@@ -1,3 +1,3 @@
 #!/bin/sh -x
 
-kubectl run --generator=run-pod/v1 alps --image=testcab/alps --rm -it
+kubectl run alps --image=testcab/alps --rm -it
