@@ -85,6 +85,9 @@
   "terraform.languageServer": {
     "enabled": true,
     "args": []
-  }
+  },
+
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimPath": "/usr/bin/nvim"
 }
 // vim:ft=javascript
