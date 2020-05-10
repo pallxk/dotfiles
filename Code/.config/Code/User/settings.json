@@ -1,13 +1,15 @@
 // Place your settings in this file to overwrite the default settings
 {
-  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
-  "editor.tabSize": 2,
+  "editor.renderFinalNewline": true,
+
+  // Controls whether the editor should render indent guides
+  "editor.renderIndentGuides": true,
 
   // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
   "editor.renderWhitespace": "boundary",
 
-  // Controls whether the editor should render indent guides
-  "editor.renderIndentGuides": true,
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
 
   // Controls if the explorer should ask for confirmation when deleting a file via the trash.
   "explorer.confirmDelete": false,
@@ -24,8 +26,11 @@
     "**/*~": true
   },
 
-  // Check if a global install TypeScript compiler (e.g. tsc) differs from the used TypeScript language service.
-  "typescript.check.tscVersion": false,
+  "gitlens.currentLine.enabled": false,
+
+  // Remote - SSH
+  //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
+  "remote.SSH.useLocalServer": true,
 
   // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu), prefer C:\Windows\sysnative over C:\Windows\System32 to use the 64-bit versions.
   "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
@@ -34,45 +39,6 @@
   "terminal.integrated.shellArgs.windows": [
     "-l"
   ],
-
-  // Get rid of that annoying message that shows up everytime you make a new file
-  "vim.disableAnnoyingNeovimMessage": true,
-
-  "eslint.packageManager": "yarn",
-
-  // Control whether tslint is enabled for JavaScript files or not.
-  "tslint.jsEnable": true,
-
-  // Configure glob patterns of file paths to exclude from linting
-  "tslint.exclude": "**/{lib,out,dist}/**",
-
-  // List of extension you wish to install in the form of (publisher).(extensionName)
-  "extension-manager.extensions": [
-    "EditorConfig.EditorConfig",
-    "eg2.tslint",
-    "vscodevim.vim"
-  ],
-
-  // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
-  "window.zoomLevel": 0,
-
-  "gitlens.currentLine.enabled": false,
-
-  //-------- Remote VSCode configuration --------
-  // Port number to use for connection.
-  "remote.port": 52698,
-  // Launch the server on start up.
-  "remote.onstartup": true,
-  // Address to listen on.
-  "remote.host": "127.0.0.1",
-  // If set to true, error for remote.port already in use won't be shown anymore.
-  "remote.dontShowPortAlreadyInUseError": true,
-
-  "editor.renderFinalNewline": true,
-
-  // Remote - SSH
-  //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
-  "remote.SSH.useLocalServer": true,
 
   "[terraform]": {
     "editor.formatOnSave": true
@@ -87,7 +53,23 @@
     "args": []
   },
 
+  // Configure glob patterns of file paths to exclude from linting
+  "tslint.exclude": "**/{lib,out,dist}/**",
+
+  // Control whether tslint is enabled for JavaScript files or not.
+  "tslint.jsEnable": true,
+
+  // Check if a global install TypeScript compiler (e.g. tsc) differs from the used TypeScript language service.
+  "typescript.check.tscVersion": false,
+
+  // Get rid of that annoying message that shows up everytime you make a new file
+  "vim.disableAnnoyingNeovimMessage": true,
+
   "vscode-neovim.useWSL": true,
-  "vscode-neovim.neovimPath": "/usr/bin/nvim"
+
+  "vscode-neovim.neovimPath": "/usr/bin/nvim",
+
+  // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
+  "window.zoomLevel": 0,
 }
 // vim:ft=javascript
