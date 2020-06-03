@@ -45,6 +45,9 @@ for dir in ~/Applications/*/bin; do
 done
 unset dir
 
+# Add dotnet tools
+[[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools after
+
 # Add Yarn global to PATH
 [[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin after
 
