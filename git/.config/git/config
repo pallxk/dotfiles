@@ -18,6 +18,8 @@
 	# Support git <1.8.4
 	# color.ui = auto by default since git 1.8.4
 	ui = auto
+[pull]
+	ff = only
 [push]
 	default = simple
 [merge]
