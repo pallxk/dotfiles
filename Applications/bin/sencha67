@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -x ~/Applications/Sencha/Cmd/6.7.0.63/sencha ]; then
+	exec ~/Applications/Sencha/Cmd/6.7.0.63/sencha "$@"
+else
+	exec ~/Applications/Sencha/Cmd/6.7.*/sencha "$@"
+fi
