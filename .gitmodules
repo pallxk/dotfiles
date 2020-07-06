@@ -114,3 +114,7 @@
 	path = terraform/Applications/tfenv
 	url = https://github.com/tfutils/tfenv.git
 	ignore = dirty
+[submodule "vim/.vim/pack/tpope/start/sleuth"]
+	path = vim/.vim/pack/tpope/start/sleuth
+	url = https://github.com/tpope/vim-sleuth.git
+	ignore = dirty
