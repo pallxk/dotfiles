@@ -8,8 +8,8 @@ set ignore-case = yes
 set wrap-lines = yes
 
 # File history view
-bind blame H !sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
-bind blob H !sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
-bind diff H !sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
-bind status H !sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
-bind tree H !sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
+bind blame H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
+bind blob H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
+bind diff H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
+bind status H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
+bind tree H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
