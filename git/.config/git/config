@@ -55,6 +55,7 @@
 	helper = cache --timeout=3600
 [diff]
 	tool = vimdiff
+	wsErrorHighlight = all
 [difftool]
 	prompt = false
 [git-p4]
