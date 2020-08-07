@@ -81,6 +81,18 @@
         "command": "workbench.action.openEditorAtIndex9"
     },
     {
+        "key": "j",
+        "command": "vscode-neovim.compositeEscape1",
+        "when": "neovim.mode == insert",
+        "args": "j"
+    },
+    {
+        "key": "k",
+        "command": "vscode-neovim.compositeEscape2",
+        "when": "neovim.mode == insert",
+        "args": "k"
+    },
+    {
         "key": "ctrl+b",
         "command": "-vscode-neovim.ctrl-b",
         "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
