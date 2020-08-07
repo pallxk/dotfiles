@@ -20,6 +20,8 @@
 	ui = auto
 [pull]
 	ff = only
+[rebase]
+	autoStash = true
 [push]
 	default = simple
 [merge]
