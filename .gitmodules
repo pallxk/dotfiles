@@ -118,3 +118,7 @@
 	path = vim/.vim/pack/tpope/start/sleuth
 	url = https://github.com/tpope/vim-sleuth.git
 	ignore = dirty
+[submodule "vim/.vim/bundle/vim-easyescape"]
+	path = vim/.vim/bundle/vim-easyescape
+	url = https://github.com/zhou13/vim-easyescape
+	ignore = dirty

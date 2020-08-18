@@ -51,6 +51,10 @@ cmap w!! w !sudo tee % > /dev/null
 nnoremap <F5> :w<CR>:!"%:p"<CR>
 inoremap <F5> <Esc>:w<CR>:!"%:p"<CR>
 
+" jk/kj to escape
+"inoremap jk <Esc>
+"inoremap kj <Esc>
+
 " Make editing $MYVIMRC easier
 " Vimrc Editing
 nnoremap <Leader>ve :split  $MYVIMRC<CR>
