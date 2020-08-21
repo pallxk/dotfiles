@@ -40,6 +40,12 @@
 	dtc = difftool --cached
 	# Unstage changes
 	unstage = reset HEAD --
+	# grep
+	# https://stackoverflow.com/a/39583968/3463091
+	ack = -c color.grep.linenumber=\"bold yellow\" \
+	      -c color.grep.filename=\"bold green\" \
+	      -c color.grep.match=\"reverse yellow\" \
+	      grep --break --heading --line-number
 	# Amend commit, and renew the author timestamp
 	amend = commit --amend --allow-empty --reset-author
 	# Show last commit log
