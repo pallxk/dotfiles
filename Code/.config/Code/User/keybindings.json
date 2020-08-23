@@ -1,6 +1,14 @@
 // Place your key bindings in this file to override the defaults
 [
     {
+        "key": "ctrl+k ctrl+alt+s",
+        "command": "git.stageSelectedRanges"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "git.unstageSelectedRanges"
+    },
+    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
     },
