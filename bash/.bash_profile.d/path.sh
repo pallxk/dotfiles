@@ -45,6 +45,9 @@ for dir in ~/Applications/*/bin; do
 done
 unset dir
 
+# Add Homebrew
+[[ -d /home/linuxbrew/.linuxbrew/bin ]] && pathmunge /home/linuxbrew/.linuxbrew/bin after
+
 # Add dotnet tools
 [[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools after
 
