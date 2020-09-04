@@ -63,7 +63,7 @@ __prompt_command () {
 			debugcmd='printf "\033[00m"'
 		fi
 
-		if [ "$SSH_TTY" -o "$TERM_PROGRAM" = vscode ]; then
+		if [ "${SSH_TTY-}" -o "${TERM_PROGRAM-}" = vscode ]; then
 			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
 		fi
 
@@ -79,13 +79,13 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}${time}${code}\n${sign} ${cmd}"
+		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
 	else
 		username='\u'
 		     pwd='\w'
 		    sign='\$'
 
-		if [ "$SSH_TTY" -o "$TERM_PROGRAM" = vscode ]; then
+		if [ "${SSH_TTY-}" -o "${TERM_PROGRAM-}" = vscode ]; then
 			hostname='@\h'
 		fi
 
@@ -101,7 +101,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="\n[${debian_chroot:+($debian_chroot)}${username}${hostname} ${pwd}]${time}${code}\n${sign} "
+		PS1="\n[${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
