@@ -19,7 +19,7 @@ done
 
 
 # Do necessary setup
-setups="filesystem git ssh"
+setups="filesystem git"
 
 for setup in $setups; do
 	"$dirname/$setup-setup.sh"
