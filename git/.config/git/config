@@ -12,6 +12,8 @@
 # exists and the `~/.gitconfig` file doesn't.
 
 [core]
+	# Enable long path (> 260) support for builtin commands in Git for Windows.
+	longpaths = true
 	# Always wrap long lines
 	pager = less -+S
 [color]
