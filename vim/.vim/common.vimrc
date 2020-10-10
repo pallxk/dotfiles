@@ -271,6 +271,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_guide_size = 1
 
 " vim-json settings
+let g:vim_json_syntax_conceal = 0
 let g:vim_json_syntax_concealcursor = 'nc'
 
 " vim-markdown settings
