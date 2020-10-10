@@ -28,6 +28,7 @@
     "**/*~": true
   },
 
+  "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
 
   "gitlens.hover.currentLine.over": "line",
