@@ -1,6 +1,16 @@
 // Place your key bindings in this file to override the defaults
 [
     {
+        "key": "shift+alt+r",
+        "command": "revealFileInOS",
+        "when": "remoteName != 'wsl'"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "editor.action.joinLines",
+        "when": "!inSearchEditor && !searchViewletFocus"
+    },
+    {
         "key": "ctrl+k ctrl+alt+s",
         "command": "git.stageSelectedRanges"
     },
@@ -129,6 +139,11 @@
     {
         "key": "ctrl+9",
         "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.view.remote",
+        "when": "!inSearchEditor && !(editorHasCodeActionsProvider && editorTextFocus && !editorReadonly)"
     },
     {
         "key": "j",
