@@ -57,6 +57,11 @@
         "when": "debugState == 'stopped'"
     },
     {
+        "key": "ctrl+shift+e",
+        "command": "editor.debug.action.selectionToRepl",
+        "when": "inDebugMode && editorHasSelection"
+    },
+    {
         "key": "ctrl+k l",
         "command": "workbench.action.navigateLast"
     },
