@@ -39,6 +39,11 @@
   "java.implementationsCodeLens.enabled": true,
   "java.referencesCodeLens.enabled": true,
 
+  // Remote VSCode
+  // @ext:rafaelmaiolla.remote-vscode
+  "remote.onstartup": true,
+  "remote.dontShowPortAlreadyInUseError": true,
+
   // Remote - SSH
   //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
   "remote.SSH.connectTimeout": 30,
