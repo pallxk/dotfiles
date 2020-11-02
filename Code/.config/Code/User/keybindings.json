@@ -74,6 +74,10 @@
         "command": "workbench.action.closeEditorsToTheRight"
     },
     {
+        "key": "ctrl+k ctrl+enter",
+        "command": "workbench.action.keepEditor"
+    },
+    {
         "key": "alt+1",
         "command": "-workbench.action.openEditorAtIndex1"
     },
