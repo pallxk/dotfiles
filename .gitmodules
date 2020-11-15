@@ -1,7 +1,3 @@
-[submodule "shell/.colorschemes/flat-ui-mintty"]
-	path = shell/.colorschemes/flat-ui-mintty
-	url = https://github.com/geekjuice/flat-ui-mintty.git
-	ignore = dirty
 [submodule "vim/.vim/bundle/vim-pathogen"]
 	path = vim/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
