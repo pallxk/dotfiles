@@ -1,7 +1,7 @@
 
 # See; https://www.brow.sh/donate/
 # By showing your support you can disable the app's branding and nags to donate.
-browsh_supporter = "♥"
+browsh_supporter = "I have shown my support for Browsh"
 
 # The page to show at startup. Browsh will fail to boot if this URL is not accessible
 startup-url = "http://www.brow.sh"
