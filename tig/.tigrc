@@ -7,6 +7,10 @@ set ignore-case = yes
 # Wrap long lines
 set wrap-lines = yes
 
+# Save horizontal screen estate for portrait display
+set main-view-date-display = relative-compact
+set main-view-author-maxwidth = 11
+
 # File history view
 bind blame H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
 bind blob H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
