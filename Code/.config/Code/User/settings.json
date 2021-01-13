@@ -33,6 +33,9 @@
 
   "gitlens.hover.currentLine.over": "line",
 
+  // Groovy
+  "groovyLint.insight.enable": false,
+
   // Java
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.semanticHighlighting.enabled": true,
