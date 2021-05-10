@@ -1,5 +1,31 @@
 // Place your settings in this file to overwrite the default settings
 {
+  // streetsidesoftware.code-spell-checker
+  "cSpell.userWords": [
+    "azurecr",
+    "azurerm",
+    "eclipselink",
+    "embeddable",
+    "entrypoint",
+    "failover",
+    "fullchain",
+    "hashicorp",
+    "jakartaee",
+    "jboss",
+    "jdwp",
+    "keda",
+    "kubelet",
+    "kubernetes",
+    "multitenant",
+    "openjdk",
+    "pipefail",
+    "privkey",
+    "rsql",
+    "servlet",
+    "tfenv",
+    "toolchain"
+  ],
+
   "editor.renderFinalNewline": true,
 
   // Controls whether the editor should render indent guides
