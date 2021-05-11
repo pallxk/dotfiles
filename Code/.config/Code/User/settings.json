@@ -121,7 +121,9 @@
 
 
   "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.tabCloseButton": "off",
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.wrapTabs": true,
 
   "workbench.sideBar.location": "right",
 
