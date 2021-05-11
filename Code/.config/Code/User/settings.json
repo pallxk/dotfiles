@@ -119,5 +119,8 @@
 
 
   "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.untitled.hint": "hidden",
+
+  "workbench.experimental.useCustomHover": true,
 }
 // vim:ft=javascript
