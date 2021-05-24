@@ -11,7 +11,7 @@ dirname="$(dirname $0)"
 
 
 # Stow various packages (stow 'bash' last)
-dirs="gem git readline shell ssh tig tmux vim xdg"
+dirs="Applications curl Code editorconfig gem git gradle kubectl pip readline rvm ssh terraform tig tmux vim xdg"
 
 for dir in $dirs; do
 	stow "$dir" -d "$dirname" -t ~
