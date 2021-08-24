@@ -70,5 +70,7 @@
 	wsErrorHighlight = all
 [difftool]
 	prompt = false
+[difftool "idiff"]
+	cmd = diff -i $LOCAL $REMOTE
 [git-p4]
 	skipSubmitEdit = true
