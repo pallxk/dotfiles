@@ -114,3 +114,7 @@
 	path = vim/.vim/bundle/vim-easyescape
 	url = https://github.com/zhou13/vim-easyescape
 	ignore = dirty
+[submodule "java/Applications/jenv"]
+	path = java/Applications/jenv
+	url = https://github.com/jenv/jenv.git
+	ignore = dirty
