@@ -177,6 +177,7 @@
   // @ext:rafaelmaiolla.remote-vscode
   "remote.onstartup": true,
   "remote.dontShowPortAlreadyInUseError": true,
+  "remote.host": "0.0.0.0",
 
   // Remote - SSH
   //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
