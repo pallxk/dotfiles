@@ -196,13 +196,8 @@
     "editor.formatOnSave": true
   },
 
-  "terraform.indexing": {
-    "enabled": false
-  },
-
-  "terraform.languageServer": {
-    "enabled": true,
-    "args": []
+  "terraform-ls.experimentalFeatures": {
+    "prefillRequiredFields": true
   },
 
   // Configure glob patterns of file paths to exclude from linting
