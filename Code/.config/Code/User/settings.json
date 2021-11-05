@@ -228,5 +228,9 @@
   "workbench.sideBar.location": "right",
 
   "workbench.experimental.useCustomHover": true,
+
+  "[powershell]": {
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  },
 }
 // vim:ft=javascript
