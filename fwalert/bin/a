@@ -1,7 +1,0 @@
-#!/bin/sh
-
-set -eu
-
-curl https://fwalert.com/"$FWALERT_TRIGGER_ID" \
-	--get \
-	--data-urlencode "message=$* @$(date +%T)"
