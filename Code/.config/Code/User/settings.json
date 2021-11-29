@@ -164,10 +164,11 @@
     "**/*~": true
   },
 
+  // GitLens
+  "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
-
-  "gitlens.hover.currentLine.over": "line",
+  "gitlens.hovers.currentLine.over": "line",
 
   // Groovy
   "groovyLint.insight.enable": false,
