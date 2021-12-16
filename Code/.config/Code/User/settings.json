@@ -198,8 +198,15 @@
   "remote.SSH.connectTimeout": 30,
   "remote.SSH.useLocalServer": true,
 
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.files.newUntitledFile",  // ctrl+n
+    "-workbench.action.quickOpen",              // ctrl+p
+    "-workbench.action.terminal.focusFind",     // ctrl+f
+    "-workbench.action.terminal.killEditor",    // ctrl+w
+    "workbench.action.togglePanel",             // ctrl+j
+  ],
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.sendKeybindingsToShell": true,
 
   // The path of the shell that the terminal uses on Windows. When using shells shipped with Windows (cmd, PowerShell or Bash on Ubuntu), prefer C:\Windows\sysnative over C:\Windows\System32 to use the 64-bit versions.
   "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
