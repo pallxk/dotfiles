@@ -241,6 +241,8 @@
   "vscode-neovim.useWSL": false,
 
 
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.untitled.hint": "hidden",
