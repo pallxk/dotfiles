@@ -21,7 +21,7 @@
 	# color.ui = auto by default since git 1.8.4
 	ui = auto
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
 	ff = only
 [rebase]
