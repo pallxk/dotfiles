@@ -194,5 +194,15 @@
     {
         "key": "ctrl+shift+d",
         "command": "-cgroovy.organizeDependences"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "workbench.action.terminal.moveToEditor",
+        "when": "focusedView == 'terminal'"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "workbench.action.terminal.moveToTerminalPanel",
+        "when": "activeEditor == 'terminalEditor'"
     }
 ]
