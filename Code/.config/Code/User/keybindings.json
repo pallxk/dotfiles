@@ -204,5 +204,30 @@
         "key": "ctrl+alt+`",
         "command": "workbench.action.terminal.moveToTerminalPanel",
         "when": "activeEditor == 'terminalEditor'"
+    },
+    {
+        "key": "ctrl+r shift+x",
+        "command": "-npm-script.terminate-script",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+r l",
+        "command": "-npm-script.showOutput",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+r t",
+        "command": "-npm-script.test",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+r shift+r",
+        "command": "-npm-script.run",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+r r",
+        "command": "-npm-script.rerun-last-script",
+        "when": "!terminalFocus"
     }
 ]
