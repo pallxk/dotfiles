@@ -194,7 +194,6 @@
 
   // Remote VSCode
   // @ext:rafaelmaiolla.remote-vscode
-  "remote.onstartup": true,
   "remote.dontShowPortAlreadyInUseError": true,
   "remote.host": "127.0.0.1",
 
