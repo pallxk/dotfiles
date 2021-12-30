@@ -192,6 +192,8 @@
   "java.implementationsCodeLens.enabled": true,
   "java.referencesCodeLens.enabled": true,
 
+  "redhat.telemetry.enabled": false,
+
   // Remote VSCode
   // @ext:rafaelmaiolla.remote-vscode
   "remote.dontShowPortAlreadyInUseError": true,
