@@ -147,7 +147,7 @@
     },
     {
         "key": "ctrl+9",
-        "command": "workbench.action.openEditorAtIndex9"
+        "command": "workbench.action.lastEditorInGroup"
     },
     {
         "key": "ctrl+shift+r",
