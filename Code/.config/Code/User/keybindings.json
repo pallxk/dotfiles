@@ -11,14 +11,6 @@
         "when": "!inSearchEditor && !searchViewletFocus"
     },
     {
-        "key": "ctrl+k ctrl+alt+s",
-        "command": "git.stageSelectedRanges"
-    },
-    {
-        "key": "ctrl+k ctrl+u",
-        "command": "git.unstageSelectedRanges"
-    },
-    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
     },
@@ -60,22 +52,6 @@
         "key": "ctrl+shift+e",
         "command": "editor.debug.action.selectionToRepl",
         "when": "inDebugMode && editorHasSelection"
-    },
-    {
-        "key": "ctrl+k l",
-        "command": "workbench.action.navigateLast"
-    },
-    {
-        "key": "ctrl+k ctrl+shift+o",
-        "command": "workbench.action.closeOtherEditors"
-    },
-    {
-        "key": "ctrl+k ctrl+shift+r",
-        "command": "workbench.action.closeEditorsToTheRight"
-    },
-    {
-        "key": "ctrl+k ctrl+enter",
-        "command": "workbench.action.keepEditor"
     },
     {
         "key": "alt+1",
