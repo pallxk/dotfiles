@@ -205,5 +205,10 @@
         "key": "ctrl+r r",
         "command": "-npm-script.rerun-last-script",
         "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     }
 ]

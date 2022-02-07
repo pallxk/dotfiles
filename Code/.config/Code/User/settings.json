@@ -204,7 +204,8 @@
   "remote.SSH.connectTimeout": 30,
   "remote.SSH.useLocalServer": true,
 
-  "terminal.integrated.allowChords": false,
+  // For macOS, it's command+k for chords, and does not conflict with ctrl+k in terminal.
+  "terminal.integrated.allowChords": true,
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.files.newUntitledFile",  // ctrl+n
     "-workbench.action.quickOpen",              // ctrl+p
