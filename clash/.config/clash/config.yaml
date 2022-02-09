@@ -24,6 +24,13 @@ proxies:
 
 proxy-groups:
 
+rule-providers:
+  work:
+    behavior: classical
+    type: file
+    path: ./work.yaml
+
 rules:
+  - RULE-SET,work,proxy
   - GEOIP,CN,DIRECT
   - MATCH,proxy
