@@ -228,5 +228,9 @@
     {
         "key": "cmd+]",
         "command": "workbench.action.openNextRecentlyUsedEditor"
+    },
+    {
+        "key": "ctrl+alt+0",
+        "command": "vaulty.decrypt"
     }
 ]
