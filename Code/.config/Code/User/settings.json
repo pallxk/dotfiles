@@ -1,5 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
+  // dhoeric.ansible-vault
+  "ansibleVault.keyfile": "~/.ansible-vault-pass",
+
   // streetsidesoftware.code-spell-checker
   "cSpell.enableFiletypes": [
     "Log",
