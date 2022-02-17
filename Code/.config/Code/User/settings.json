@@ -229,6 +229,7 @@
     "workbench.action.togglePanel",             // ctrl+j
   ],
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.scrollback": 10000,
 
@@ -239,6 +240,8 @@
   "terminal.integrated.shellArgs.windows": [
     "-l"
   ],
+
+  "terminal.integrated.tabs.enabled": false,
 
   "[terraform]": {
     "editor.formatOnSave": true
