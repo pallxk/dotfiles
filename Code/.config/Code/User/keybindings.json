@@ -232,5 +232,90 @@
     {
         "key": "ctrl+alt+0",
         "command": "vaulty.decrypt"
-    }
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "terminalFocus && terminalCount >= 1"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.terminal.focusAtIndex2",
+        "when": "terminalFocus && terminalCount >= 2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus && terminalCount >= 3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.terminal.focusAtIndex4",
+        "when": "terminalFocus && terminalCount >= 4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.terminal.focusAtIndex5",
+        "when": "terminalFocus && terminalCount >= 5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.terminal.focusAtIndex6",
+        "when": "terminalFocus && terminalCount >= 6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.terminal.focusAtIndex7",
+        "when": "terminalFocus && terminalCount >= 7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.terminal.focusAtIndex8",
+        "when": "terminalFocus && terminalCount >= 8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.terminal.focusAtIndex9",
+        "when": "terminalFocus && terminalCount >= 9"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 1"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 2"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 3"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 4"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 5"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 6"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 7"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalCount == 8"
+    },
 ]
