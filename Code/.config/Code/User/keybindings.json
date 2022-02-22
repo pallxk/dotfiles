@@ -230,6 +230,16 @@
         "command": "workbench.action.openNextRecentlyUsedEditor"
     },
     {
+        "key": "alt+cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!isMac"
+    },
+    {
         "key": "ctrl+alt+0",
         "command": "vaulty.decrypt"
     },
