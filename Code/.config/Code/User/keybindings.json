@@ -240,6 +240,15 @@
         "when": "!isMac"
     },
     {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenView",
+        "when": "!terminalFocus && !inViewsPicker"
+    },
+    {
         "key": "ctrl+alt+0",
         "command": "vaulty.decrypt"
     },
