@@ -337,4 +337,14 @@
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus && terminalCount == 8"
     },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "workbench.action.openRemoteSettings",
+        "when": "remote.sshContext && !isMac"
+    },
+    {
+        "key": "cmd+oem_comma",
+        "command": "workbench.action.openRemoteSettings",
+        "when": "remote.sshContext && isMac"
+    },
 ]
