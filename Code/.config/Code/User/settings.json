@@ -277,7 +277,7 @@
 
   "workbench.sideBar.location": "right",
 
-  "workbench.experimental.useCustomHover": true,
+  "workbench.experimental.layoutControl.enabled": true,
 
   "[powershell]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
