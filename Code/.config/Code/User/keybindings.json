@@ -448,4 +448,10 @@
         "command": "workbench.action.toggleAuxiliaryBar",
         "when": "isMac"
     },
+
+    {
+        "key": "cmd+k cmd+o",
+        "command": "workbench.action.files.openFileFolder",
+        "when": "isMacNative && openFolderWorkspaceSupport"
+    },
 ]
