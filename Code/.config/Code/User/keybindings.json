@@ -437,4 +437,15 @@
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && isMac"
     },
+
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.toggleAuxiliaryBar",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.toggleAuxiliaryBar",
+        "when": "isMac"
+    },
 ]
