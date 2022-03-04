@@ -53,6 +53,112 @@
         "command": "editor.debug.action.selectionToRepl",
         "when": "inDebugMode && editorHasSelection"
     },
+
+    // editor - macOS
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.lastEditorInGroup"
+    },
+
+    // editor group - macOS
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+4",
+        "command": "-workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "cmd+5",
+        "command": "-workbench.action.focusFifthEditorGroup"
+    },
+    {
+        "key": "cmd+6",
+        "command": "-workbench.action.focusSixthEditorGroup"
+    },
+    {
+        "key": "cmd+7",
+        "command": "-workbench.action.focusSeventhEditorGroup"
+    },
+    {
+        "key": "cmd+8",
+        "command": "-workbench.action.focusEighthEditorGroup"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.focusFifthEditorGroup"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "workbench.action.focusSixthEditorGroup"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "workbench.action.focusSeventhEditorGroup"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.focusEighthEditorGroup"
+    },
+
+    // editor - windows
     {
         "key": "alt+1",
         "command": "-workbench.action.openEditorAtIndex1"
@@ -91,40 +197,50 @@
     },
     {
         "key": "ctrl+1",
-        "command": "workbench.action.openEditorAtIndex1"
+        "command": "workbench.action.openEditorAtIndex1",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+2",
-        "command": "workbench.action.openEditorAtIndex2"
+        "command": "workbench.action.openEditorAtIndex2",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+3",
-        "command": "workbench.action.openEditorAtIndex3"
+        "command": "workbench.action.openEditorAtIndex3",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+4",
-        "command": "workbench.action.openEditorAtIndex4"
+        "command": "workbench.action.openEditorAtIndex4",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+5",
-        "command": "workbench.action.openEditorAtIndex5"
+        "command": "workbench.action.openEditorAtIndex5",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+6",
-        "command": "workbench.action.openEditorAtIndex6"
+        "command": "workbench.action.openEditorAtIndex6",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+7",
-        "command": "workbench.action.openEditorAtIndex7"
+        "command": "workbench.action.openEditorAtIndex7",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+8",
-        "command": "workbench.action.openEditorAtIndex8"
+        "command": "workbench.action.openEditorAtIndex8",
+        "when": "!isMac"
     },
     {
         "key": "ctrl+9",
-        "command": "workbench.action.lastEditorInGroup"
+        "command": "workbench.action.lastEditorInGroup",
+        "when": "!isMac"
     },
+
     {
         "key": "ctrl+shift+r",
         "command": "workbench.view.remote",
