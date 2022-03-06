@@ -166,6 +166,10 @@
     "yamldecode"
   ],
 
+  "diffEditor.codeLens": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+
   "editor.mouseWheelZoom": true,
 
   "editor.renderFinalNewline": true,
