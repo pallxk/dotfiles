@@ -10,6 +10,8 @@
         "command": "editor.action.joinLines",
         "when": "!inSearchEditor && !searchViewletFocus"
     },
+
+    // editor navigation
     {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
@@ -18,6 +20,25 @@
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor"
     },
+    {
+        "key": "cmd+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.openPreviousRecentlyUsedEditor"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.openNextRecentlyUsedEditor"
+    },
+
     {
         "key": "ctrl+\\",
         "command": "workbench.action.debug.continue",
@@ -326,24 +347,6 @@
         "key": "cmd+k",
         "command": "-workbench.action.terminal.clear",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "cmd+[",
-        "command": "-editor.action.outdentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+]",
-        "command": "-editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+[",
-        "command": "workbench.action.openPreviousRecentlyUsedEditor"
-    },
-    {
-        "key": "cmd+]",
-        "command": "workbench.action.openNextRecentlyUsedEditor"
     },
     {
         "key": "alt+cmd+j",
