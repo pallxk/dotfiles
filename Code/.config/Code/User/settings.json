@@ -216,6 +216,8 @@
 
   "redhat.telemetry.enabled": false,
 
+  "remote.autoForwardPortsSource": "process",
+
   // Remote VSCode
   // @ext:rafaelmaiolla.remote-vscode
   "remote.dontShowPortAlreadyInUseError": true,
