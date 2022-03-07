@@ -32,11 +32,11 @@
     },
     {
         "key": "cmd+[",
-        "command": "workbench.action.openPreviousRecentlyUsedEditor"
+        "command": "workbench.action.navigateBack"
     },
     {
         "key": "cmd+]",
-        "command": "workbench.action.openNextRecentlyUsedEditor"
+        "command": "workbench.action.navigateForward"
     },
 
     {
