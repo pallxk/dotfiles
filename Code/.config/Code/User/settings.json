@@ -204,11 +204,14 @@
     "**/*~": true
   },
 
+  "git.autofetch": true,
+  "git.ignoreLimitWarning": true,
+
   // GitLens
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.keymap": "alternate",
 
   // Groovy
   "groovyLint.insight.enable": false,
