@@ -1,5 +1,27 @@
 // Place your key bindings in this file to override the defaults
 [
+    // indent & outdent
+    {
+        "key": "cmd+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
     {
         "key": "shift+alt+r",
         "command": "revealFileInOS",
@@ -19,16 +41,6 @@
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "cmd+[",
-        "command": "-editor.action.outdentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+]",
-        "command": "-editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "cmd+[",
