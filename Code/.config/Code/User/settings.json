@@ -193,6 +193,13 @@
   // Controls if the explorer should ask for confirmation to move files and folders via drag and drop.
   "explorer.confirmDragAndDrop": false,
 
+  "files.associations": {
+    // Ansible playbook
+    "**/ansible/**/*.{yml,yaml}": "ansible",
+    // Ansible vars
+    "**/{group_vars,host_vars}/**": "ansible",
+  },
+
   "files.autoSave": "off",
 
   // Configure glob patterns for excluding files and folders.
