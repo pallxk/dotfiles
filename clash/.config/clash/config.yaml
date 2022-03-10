@@ -13,16 +13,18 @@ mixed-port: 7890
 external-controller: 127.0.0.1:9090
 allow-lan: false
 mode: rule
-log-level: warning
+log-level: info
 
-proxies:
-- name: proxy
-  type: socks5
-  server: localhost
-  port: 1080
-  udp: true
+proxy-providers:
+  proxies:
+    type: file
+    path: ./proxies.yaml
 
 proxy-groups:
+- name: proxy
+  type: select
+  use:
+  - proxies
 
 rule-providers:
   work:
