@@ -274,11 +274,18 @@
         "when": "!isMac"
     },
 
+    // Activity Bar
     {
         "key": "ctrl+shift+r",
         "command": "workbench.view.remote",
-        "when": "!inSearchEditor && !(editorHasCodeActionsProvider && editorTextFocus && !editorReadonly)"
+        "when": "!isMac && !inSearchEditor && !inQuickOpen && !editorHasCodeActionsProvider && !vscodeKubernetesDescribeContext"
     },
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.view.remote",
+        "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
+    },
+
     {
         "key": "j",
         "command": "vscode-neovim.compositeEscape1",
