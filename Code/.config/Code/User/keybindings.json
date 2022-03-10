@@ -478,6 +478,12 @@
 
     // terminal - windows
     {
+        "key": "ctrl+k ctrl+k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u000b" },   // ctrl-k
+        "when": "terminalFocus && !isMac"
+    },
+    {
         "key": "ctrl+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
         "when": "!isMac && terminalGroupCount >= 1"
