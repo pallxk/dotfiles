@@ -32,12 +32,17 @@ proxy-groups:
   - proxies
 
 rule-providers:
+  private:
+    behavior: classical
+    type: file
+    path: ./private.yaml
   work:
     behavior: classical
     type: file
     path: ./work.yaml
 
 rules:
+  - RULE-SET,private,proxy
   - RULE-SET,work,proxy
   - GEOIP,PRIVATE,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
