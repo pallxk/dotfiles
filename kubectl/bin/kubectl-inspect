@@ -1,0 +1,2 @@
+#!/bin/sh
+kubectl get "$@" -o yaml | bat -l yaml -p

@@ -1,0 +1,2 @@
+#!/bin/sh
+kubectl get secret "$@" -o yaml | https api.cab/k8s-secret -b
