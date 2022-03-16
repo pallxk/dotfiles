@@ -402,6 +402,10 @@
         "command": "workbench.action.terminal.scrollToNextCommand",
         "when": "terminalFocus"
     },
+    {
+        "key": "alt+`",
+        "command": "openInTerminal"
+    },
 
     // terminal - macOS
     {
