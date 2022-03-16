@@ -391,6 +391,18 @@
         "command": "vaulty.decrypt"
     },
 
+    // terminal
+    {
+        "key": "ctrl+shift+pageup",
+        "command": "workbench.action.terminal.scrollToPreviousCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+pagedown",
+        "command": "workbench.action.terminal.scrollToNextCommand",
+        "when": "terminalFocus"
+    },
+
     // terminal - macOS
     {
         "key": "cmd+alt+1",
