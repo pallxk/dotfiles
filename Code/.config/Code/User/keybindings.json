@@ -286,6 +286,12 @@
         "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
     },
 
+    // Explorer
+    {
+        "key": "alt+backspace",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+
     {
         "key": "j",
         "command": "vscode-neovim.compositeEscape1",
