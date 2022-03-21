@@ -513,6 +513,11 @@
         "when": "terminalFocus && !isMac"
     },
     {
+        "key": "ctrl+k ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!isMac"
+    },
+    {
         "key": "ctrl+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
         "when": "!isMac && terminalGroupCount >= 1"
