@@ -647,4 +647,16 @@
         "command": "workbench.action.files.openFileFolder",
         "when": "isMacNative && openFolderWorkspaceSupport"
     },
+
+    // GitHub Copilot
+    {
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated"
+    },
+    {
+        "key": "ctrl+k ctrl+enter",
+        "command": "github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated"
+    },
 ]
