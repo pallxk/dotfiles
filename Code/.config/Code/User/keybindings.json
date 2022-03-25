@@ -411,6 +411,16 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
     },
     {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
         "key": "ctrl+shift+pageup",
         "command": "workbench.action.terminal.scrollToPreviousCommand",
         "when": "terminalFocus"
