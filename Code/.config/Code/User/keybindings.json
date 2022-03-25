@@ -401,6 +401,16 @@
 
     // terminal
     {
+        "key": "shift+home",
+        "command": "workbench.action.terminal.scrollToTop",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "shift+end",
+        "command": "workbench.action.terminal.scrollToBottom",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
         "key": "ctrl+shift+pageup",
         "command": "workbench.action.terminal.scrollToPreviousCommand",
         "when": "terminalFocus"
