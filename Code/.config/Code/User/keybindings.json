@@ -89,6 +89,18 @@
         "when": "inDebugMode && editorHasSelection"
     },
 
+    // editor
+    {
+        "key": "ctrl+alt+pageup",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+pagedown",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+
     // editor - macOS
     {
         "key": "cmd+1",
