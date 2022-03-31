@@ -202,6 +202,11 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  "editor.guides.bracketPairs": true,
+
   "editor.mouseWheelZoom": true,
 
   "editor.renderFinalNewline": true,
