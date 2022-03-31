@@ -345,9 +345,12 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.wrapTabs": true,
 
+  "workbench.layoutControl.enabled": true,
+  "workbench.layoutControl.type": "both",
+
   "workbench.sideBar.location": "right",
 
-  "workbench.experimental.layoutControl.enabled": true,
+  "workbench.experimental.editor.dragAndDropIntoEditor.enabled": true,
 
   "[powershell]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
