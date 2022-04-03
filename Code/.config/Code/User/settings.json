@@ -244,9 +244,10 @@
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
 
+  // Controls whether the explorer should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element. Useful for Java package structures, for example.
+  "explorer.compactFolders": false,
   // Controls if the explorer should ask for confirmation when deleting a file via the trash.
   "explorer.confirmDelete": false,
-
   // Controls if the explorer should ask for confirmation to move files and folders via drag and drop.
   "explorer.confirmDragAndDrop": false,
 
@@ -284,6 +285,28 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.implementationsCodeLens.enabled": true,
   "java.referencesCodeLens.enabled": true,
+
+  "material-icon-theme.files.associations": {
+    // Ansible
+    "requirements.yml": "credits",
+  },
+  "material-icon-theme.folders.associations": {
+    // Ansible
+    "group_vars": "ansible",
+    "host_vars": "ansible",
+    "files": "template",
+    "roles": "template",
+    // CI
+    "pipelines": "ci",
+    // Config
+    "etc": "config",
+    // DevOps
+    "devops": "project",
+    // Helm
+    "charts": "kubernetes",
+  },
+  "material-icon-theme.languages.associations": {
+  },
 
   "redhat.telemetry.enabled": false,
 
