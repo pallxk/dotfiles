@@ -327,8 +327,10 @@
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.files.newUntitledFile",  // ctrl+n
     "-workbench.action.quickOpen",              // ctrl+p
+    "-workbench.action.terminal.copySelection", // ctrl+c
     "-workbench.action.terminal.focusFind",     // ctrl+f
     "-workbench.action.terminal.killEditor",    // ctrl+w
+    "-workbench.action.terminal.paste",         // ctrl+v
     "workbench.action.togglePanel",             // ctrl+j
   ],
   "terminal.integrated.copyOnSelection": true,
