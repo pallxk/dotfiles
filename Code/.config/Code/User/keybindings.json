@@ -348,16 +348,6 @@
         "command": "-cgroovy.organizeDependences"
     },
     {
-        "key": "ctrl+alt+`",
-        "command": "workbench.action.terminal.moveToEditor",
-        "when": "focusedView == 'terminal'"
-    },
-    {
-        "key": "ctrl+alt+`",
-        "command": "workbench.action.terminal.moveToTerminalPanel",
-        "when": "focusedView == '' && activeEditor == 'terminalEditor'"
-    },
-    {
         "key": "ctrl+r shift+x",
         "command": "-npm-script.terminate-script",
         "when": "!terminalFocus"
@@ -499,6 +489,13 @@
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
           "cwd": "${workspaceFolder}"
+        }
+    },
+    {
+        "key": "cmd+alt+`",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+          "cwd": "${fileDirname}"
         }
     },
 
@@ -649,6 +646,14 @@
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
           "cwd": "${workspaceFolder}"
+        },
+        "when": "!isMac"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+          "cwd": "${fileDirname}"
         },
         "when": "!isMac"
     },
