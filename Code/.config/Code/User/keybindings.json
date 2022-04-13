@@ -303,7 +303,14 @@
     // Explorer
     {
         "key": "alt+backspace",
-        "command": "workbench.files.action.collapseExplorerFolders"
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "activeViewlet == 'workbench.view.explorer'"
+    },
+    // Search
+    {
+        "key": "alt+backspace",
+        "command": "search.action.collapseSearchResults",
+        "when": "activeViewlet == 'workbench.view.search'"
     },
 
     {
