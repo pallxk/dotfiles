@@ -588,13 +588,23 @@
     },
     {
         "key": "ctrl+k ctrl+f",
-        "command": "workbench.action.terminal.findNext",
-        "when": "!isMac && terminalFocus && !terminalFindVisible"
+        "command": "workbench.action.terminal.focusFind",
+        "when": "!isMac && terminalFocus && !terminalFindFocused"
     },
     {
         "key": "ctrl+k ctrl+f",
+        "command": "workbench.action.terminal.findNext",
+        "when": "!isMac && terminalFindFocused"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+f",
         "command": "workbench.action.terminal.focusFind",
-        "when": "!isMac && terminalFocus && terminalFindVisible && !terminalFindFocused"
+        "when": "!isMac && terminalFocus && !terminalFindFocused"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+f",
+        "command": "workbench.action.terminal.findPrevious",
+        "when": "!isMac && terminalFindFocused"
     },
     {
         "key": "ctrl+k ctrl+b",
