@@ -6,6 +6,8 @@ After=network-online.target
 Type=notify
 NotifyAccess=all
 ExecStart=sh -c 'eval "$(ssh-agent)"; /usr/bin/sshuttle --remote %i --subnets %h/.config/sshuttle/%i.subnets @%h/.config/sshuttle/%i.conf'
+Restart=always
+RestartSec=60
 
 [Install]
 WantedBy=default.target
