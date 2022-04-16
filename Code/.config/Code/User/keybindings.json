@@ -1,5 +1,11 @@
 // Place your key bindings in this file to override the defaults
 [
+    {
+        "key": "shift+alt+r",
+        "command": "revealFileInOS",
+        "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
+    },
+
     // indent & outdent
     {
         "key": "cmd+[",
@@ -22,11 +28,6 @@
         "when": "editorTextFocus && !editorReadonly"
     },
 
-    {
-        "key": "shift+alt+r",
-        "command": "revealFileInOS",
-        "when": "remoteName != 'wsl'"
-    },
     {
         "key": "ctrl+shift+j",
         "command": "editor.action.joinLines",
