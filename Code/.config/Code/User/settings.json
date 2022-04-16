@@ -289,11 +289,15 @@
   "material-icon-theme.files.associations": {
     // Ansible
     "requirements.yml": "credits",
+    "vault.yml": "lock",
   },
   "material-icon-theme.folders.associations": {
     // Ansible
     "group_vars": "ansible",
     "host_vars": "ansible",
+    "inventories": "ansible",
+    "defaults": "mappings",
+    "vars": "mappings",
     "files": "template",
     "roles": "template",
     // CI
