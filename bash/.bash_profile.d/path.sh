@@ -48,6 +48,9 @@ unset dir
 # Add dotnet tools
 [[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools after
 
+# Add kubernetes plugins to PATH
+[[ -d ~/.krew/bin ]] && pathmunge ~/.krew/bin after
+
 # Add Yarn global to PATH
 [[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin after
 
