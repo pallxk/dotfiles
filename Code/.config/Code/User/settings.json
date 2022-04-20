@@ -276,6 +276,9 @@
     "**/ansible/**/*.{yml,yaml}": "ansible",
     // Ansible vars
     "**/{group_vars,host_vars}/**": "ansible",
+    // Kubernetes
+    "kubeconfig": "yaml",
+    "*.kubeconfig": "yaml",
   },
 
   "files.autoSave": "off",
