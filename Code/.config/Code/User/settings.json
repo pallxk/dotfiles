@@ -247,6 +247,8 @@
 
   "editor.guides.bracketPairs": true,
 
+  "editor.inlayHints.enabled": "onUnlessPressed",
+
   "editor.mouseWheelZoom": true,
 
   "editor.renderFinalNewline": true,
@@ -320,6 +322,14 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.implementationsCodeLens.enabled": true,
   "java.referencesCodeLens.enabled": true,
+
+  // JavaScript
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
 
   "material-icon-theme.files.associations": {
     // Ansible
@@ -420,6 +430,14 @@
 
   // Check if a global install TypeScript compiler (e.g. tsc) differs from the used TypeScript language service.
   "typescript.check.tscVersion": false,
+
+  // TypeScript
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
 
   // Get rid of that annoying message that shows up everytime you make a new file
   "vim.disableAnnoyingNeovimMessage": true,
