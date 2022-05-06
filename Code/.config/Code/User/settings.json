@@ -271,6 +271,18 @@
   // Controls if the explorer should ask for confirmation to move files and folders via drag and drop.
   "explorer.confirmDragAndDrop": false,
 
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock",
+    ".env": ".env.*",
+    "*": "${basename}.*.${extname}"
+  },
+
   "files.associations": {
     // Ansible playbook
     "**/ansible/**/*.{yml,yaml}": "ansible",
