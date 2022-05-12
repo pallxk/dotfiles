@@ -40,9 +40,9 @@ set spelllang+=cjk
 " Use 2 as 'A page is the number of lines in the window minus two.'
 set scrolloff=2
 
-" Swap functions of "," & "\"
-let mapleader = ","
-noremap \ ,
+" Swap functions of " " & "\"
+let mapleader = " "
+noremap \ <Space>
 
 " :w!! to save file with sudo
 cmap w!! w !sudo tee % > /dev/null
