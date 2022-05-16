@@ -244,6 +244,10 @@
         "command": "-workbench.action.openEditorAtIndex9"
     },
     {
+        "key": "alt+0",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
         "key": "ctrl+1",
         "command": "workbench.action.openEditorAtIndex1",
         "when": "!isMac"
