@@ -295,6 +295,9 @@
     "*": "${basename}.*.${extname}"
   },
 
+  "explorer.openEditors.minVisible": 9,
+  "explorer.openEditors.visible": 99,
+
   "files.associations": {
     // Ansible playbook
     "**/ansible/**/*.{yml,yaml}": "ansible",
