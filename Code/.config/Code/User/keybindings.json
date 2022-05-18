@@ -46,6 +46,21 @@
         "when": "!inQuickOpen"
     },
     {
+        "key": "alt+q",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
+        "when": "!inQuickOpen"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+shift+q",
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inQuickOpen"
+    },
+    {
         "key": "cmd+[",
         "command": "workbench.action.navigateBack"
     },
