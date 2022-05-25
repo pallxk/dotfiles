@@ -46,6 +46,10 @@
         "when": "!inQuickOpen"
     },
     {
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
         "key": "alt+q",
         "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
         "when": "!inQuickOpen"
