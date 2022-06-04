@@ -253,14 +253,18 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
+  "editor.cursorSurroundingLines": 3,
   "editor.mouseWheelZoom": true,
   "editor.renderFinalNewline": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120, 160 ],
+  "editor.suggestSelection": "first",
   "editor.tabSize": 2,
 
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  "editor.find.autoFindInSelection": "multiline",
 
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": true,
@@ -300,10 +304,8 @@
     "kubeconfig": "yaml",
     "*.kubeconfig": "yaml",
   },
-
   "files.autoSave": "off",
-
-  // Configure glob patterns for excluding files and folders.
+  "files.defaultLanguage": "${activeEditorLanguage}",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -312,8 +314,10 @@
     "**/*~": true
   },
 
+  "git.autoRepositoryDetection": "subFolders",
   "git.autofetch": true,
   "git.ignoreLimitWarning": true,
+  "git.untrackedChanges": "separate",
 
   // GitLens
   "gitlens.advanced.fileHistoryFollowsRenames": true,
@@ -390,10 +394,12 @@
     "workbench.action.togglePanel",                   // ctrl+j
     "workbench.files.action.collapseExplorerFolders", // alt+backspace
   ],
+  "terminal.integrated.confirmOnKill": "never",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.shellIntegration.enabled": true,
 
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.profiles.linux": {
@@ -447,7 +453,9 @@
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
   "vscode-neovim.useWSL": false,
 
+  "workbench.activityBar.visible": false,
 
+  "workbench.editor.preferHistoryBasedLanguageDetection": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.scrollToSwitchTabs": true,
