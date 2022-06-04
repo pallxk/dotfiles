@@ -4,7 +4,6 @@
   "ansibleVault.keyfile": "~/.ansible-vault-pass",
 
   // streetsidesoftware.code-spell-checker
-  "cSpell.enabled": true,
   "cSpell.enableFiletypes": [
     "Log",
     "ansible",
@@ -474,8 +473,6 @@
   "workbench.layoutControl.type": "both",
 
   "workbench.sideBar.location": "right",
-
-  "workbench.experimental.editor.dragAndDropIntoEditor.enabled": true,
 
   "[powershell]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
