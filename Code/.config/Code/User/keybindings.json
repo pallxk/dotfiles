@@ -5,6 +5,11 @@
         "command": "revealFileInOS",
         "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
     },
+    {
+        "key": "ctrl+shift+j",
+        "command": "editor.action.joinLines",
+        "when": "!inSearchEditor && !searchViewletFocus"
+    },
 
     // indent & outdent
     {
@@ -26,12 +31,6 @@
         "key": "ctrl+]",
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
-    },
-
-    {
-        "key": "ctrl+shift+j",
-        "command": "editor.action.joinLines",
-        "when": "!inSearchEditor && !searchViewletFocus"
     },
 
     // editor navigation
@@ -404,11 +403,6 @@
         "when": "!terminalFocus"
     },
     {
-        "key": "cmd+k",
-        "command": "-workbench.action.terminal.clear",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
         "key": "alt+cmd+j",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "isMac"
@@ -469,6 +463,12 @@
     },
 
     // terminal - macOS
+    {
+        "key": "cmd+k",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+
     {
         "key": "cmd+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
