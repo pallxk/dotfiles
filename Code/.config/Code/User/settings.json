@@ -259,7 +259,7 @@
 
   "editor.guides.bracketPairs": true,
 
-  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.inlayHints.enabled": "offUnlessPressed",
 
   "editor.mouseWheelZoom": true,
 
