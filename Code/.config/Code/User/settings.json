@@ -253,29 +253,21 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
+  "editor.mouseWheelZoom": true,
+  "editor.renderFinalNewline": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [ 80, 120, 160 ],
+  "editor.tabSize": 2,
+
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
   "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
 
   "editor.inlayHints.enabled": "offUnlessPressed",
 
-  "editor.mouseWheelZoom": true,
-
-  "editor.renderFinalNewline": true,
-
-  // Controls whether the editor should render indent guides
-  "editor.renderIndentGuides": true,
-
-  // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
-  "editor.renderWhitespace": "boundary",
-
-  "editor.rulers": [ 80, 120, 160 ],
-
   "editor.semanticHighlighting.enabled": true,
-
-  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
-  "editor.tabSize": 2,
 
   // Controls whether the explorer should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element. Useful for Java package structures, for example.
   "explorer.compactFolders": false,
@@ -425,12 +417,7 @@
       "icon": "terminal-powershell"
     }
   },
-
   "terminal.integrated.tabs.enabled": false,
-
-  "[terraform]": {
-    "editor.formatOnSave": true
-  },
 
   "terraform-ls.experimentalFeatures": {
     "prefillRequiredFields": true
@@ -476,6 +463,10 @@
 
   "[powershell]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  },
+
+  "[terraform]": {
+    "editor.formatOnSave": true
   },
 }
 // vim:ft=javascript
