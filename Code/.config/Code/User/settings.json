@@ -319,6 +319,8 @@
   "git.ignoreLimitWarning": true,
   "git.untrackedChanges": "separate",
 
+  "git.experimental.mergeEditor": true,
+
   // GitLens
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.blame.ignoreWhitespace": true,
@@ -366,6 +368,8 @@
   },
   "material-icon-theme.languages.associations": {
   },
+
+  "problems.defaultViewMode": "table",
 
   "redhat.telemetry.enabled": false,
 
@@ -452,6 +456,9 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
   "vscode-neovim.useWSL": false,
+
+  "window.experimental.commandCenter": true,
+  "window.experimental.windowControlsOverlay.enabled": true,
 
   "workbench.activityBar.visible": false,
 
