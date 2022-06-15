@@ -385,6 +385,8 @@
   "remote.SSH.connectTimeout": 30,
   "remote.SSH.useLocalServer": true,
 
+  "search.followSymlinks": false,
+
   // For macOS, it's command+k for chords, and does not conflict with ctrl+k in terminal.
   "terminal.integrated.allowChords": true,
   "terminal.integrated.commandsToSkipShell": [
