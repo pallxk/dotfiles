@@ -1,5 +1,22 @@
 // Place your settings in this file to overwrite the default settings
 {
+  // wwm.better-align
+  "alignment.surroundSpace": {
+    "arrow": [
+      1,
+      1
+    ],
+    "assignment": [
+      1,
+      1
+    ],
+    "colon": [
+      -1,
+      1
+    ],
+    "comment": 2
+  },
+
   // dhoeric.ansible-vault
   "ansibleVault.keyfile": "~/.ansible-vault-pass",
 
