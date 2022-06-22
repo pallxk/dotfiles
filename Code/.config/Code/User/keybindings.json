@@ -11,6 +11,13 @@
         "when": "!inSearchEditor && !searchViewletFocus"
     },
 
+    // suggest
+    {
+        "key": "shift+escape",
+        "command": "editor.action.inlineSuggest.hide",
+        "when": "inlineSuggestionVisible"
+    },
+
     // indent & outdent
     {
         "key": "cmd+[",
