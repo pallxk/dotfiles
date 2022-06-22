@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -eu
+
+# Check if file is ansible-vault encrypted
+ANSIBLE_VAULT_HEADER='$ANSIBLE_VAULT;'
+header=$(head -c15 "$1")
+
+if [ "$header" != "$ANSIBLE_VAULT_HEADER" ]; then
+  cat "$1"
+  exit
+fi
+
+ansible-vault view "$1" --vault-password-file "$(which ansible-vault-password-helper)"
