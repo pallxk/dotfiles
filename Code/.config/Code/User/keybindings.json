@@ -1,5 +1,22 @@
 // Place your key bindings in this file to override the defaults
 [
+    // Copy path
+    {
+        "key": "ctrl+alt+c",
+        "command": "copyFilePath",
+        "when": "!isMac && !fileMatchOrFolderMatchWithResourceFocus"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "search.action.copyPath",
+        "when": "!isMac && fileMatchOrFolderMatchWithResourceFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+c",
+        "command": "copyRelativeFilePath",
+        "when": "!isMac && !fileMatchOrFolderMatchWithResourceFocus"
+    },
+
     {
         "key": "shift+alt+r",
         "command": "revealFileInOS",
