@@ -118,3 +118,6 @@
 	path = java/Applications/jenv
 	url = https://github.com/jenv/jenv.git
 	ignore = dirty
+[submodule "backpack/Applications/backpack"]
+	path = backpack/Applications/backpack
+	url = https://github.com/sineemore/backpack
