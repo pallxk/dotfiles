@@ -445,10 +445,10 @@
         "command": "workbench.action.quickOpenView",
         "when": "!terminalFocus && !inViewsPicker"
     },
-    {
-        "key": "ctrl+alt+0",
-        "command": "vaulty.decrypt"
-    },
+    // {
+    //     "key": "ctrl+alt+0",
+    //     "command": "vaulty.decrypt"
+    // },
 
     // terminal
     {
