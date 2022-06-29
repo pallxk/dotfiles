@@ -823,6 +823,11 @@
         "command": "workbench.action.files.openFileFolder",
         "when": "isMacNative && openFolderWorkspaceSupport"
     },
+    {
+        "key": "cmd+k cmd+p",
+        "command": "workbench.action.showAllEditors",
+        "when": "isMac"
+    },
 
     // GitHub Copilot
     {
