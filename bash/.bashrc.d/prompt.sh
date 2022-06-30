@@ -2,7 +2,7 @@
 if [ -z "$PROMPT_COMMAND" ]; then
 	PROMPT_COMMAND=__prompt_command
 else
-	PROMPT_COMMAND="__prompt_command; $PROMPT_COMMAND; timer_clear"
+	PROMPT_COMMAND="__prompt_command; ${PROMPT_COMMAND%; }; timer_clear"
 fi
 
 __prompt_command () {
