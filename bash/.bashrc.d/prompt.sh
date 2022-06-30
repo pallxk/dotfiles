@@ -55,7 +55,13 @@ __prompt_command () {
 		     cmd='\[\033[00;32m\]'
 
 		# Remove color settings for command string before executing it
-		PS0="\033[00m"
+		if [ ${BASH_VERSINFO[0]} -eq 4 ] && [ ${BASH_VERSINFO[1]} -ge 4 ] || [ ${BASH_VERSINFO[0]} -gt 4 ]; then
+			# Bash >= 4.4 supports PS0
+			PS0="\033[00m"
+		else
+			# Fallback to use trap DEBUG
+			debugcmd='printf "\033[00m"'
+		fi
 
 		if [ "${SSH_TTY-}" -o "${TERM_PROGRAM-}" = vscode ]; then
 			hostname='\[\033[01;32m\]@\h\[\033[00m\]'
@@ -129,4 +135,4 @@ timer_clear () {
 
 # Call once to init some variables
 __prompt_command
-trap timer_start DEBUG
+trap "${debugcmd:-:}; timer_start" DEBUG
