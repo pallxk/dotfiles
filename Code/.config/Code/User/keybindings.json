@@ -342,9 +342,9 @@
         "when": "!isMac && !inRecentFilesPicker && !inSearchEditor && !vscodeKubernetesDescribeContext"
     },
     {
-        "key": "cmd+shift+r",
+        "key": "shift+cmd+r",
         "command": "workbench.view.remote",
-        "when": "isMac && !inRecentFilesPicker && !inSearchEditor && !vscodeKubernetesDescribeContext"
+        "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
     },
 
     // Explorer
