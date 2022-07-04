@@ -70,7 +70,8 @@
     },
     {
         "key": "ctrl+alt+p",
-        "command": "workbench.action.quickOpen"
+        "command": "workbench.action.quickOpen",
+        "when": "!isMac"
     },
     {
         "key": "alt+q",
