@@ -1,2 +1,2 @@
-hash nodenv 2> /dev/null || exit
+hash nodenv 2> /dev/null || return
 eval "$(nodenv init -)"
