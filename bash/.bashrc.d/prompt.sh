@@ -51,8 +51,18 @@ __prompt_command () {
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
 		     pwd='\[\033[01;34m\]\w\[\033[00m\]'
-		    sign='\$'
 		     cmd='\[\033[00;32m\]'
+
+		# sign
+		if [ "$UID" = 0 ] && [ "$HISTFILE" ]; then
+			sign='\[\033[4;31m\]#\[\033[0m\]'
+		elif [ "$UID" = 0 ]; then
+			sign='\[\033[0;31m\]#\[\033[0m\]'
+		elif [ "$HISTFILE" ]; then
+			sign='\[\033[4m\]\$\[\033[0m\]'
+		else
+			sign='\$'
+		fi
 
 		# Remove color settings for command string before executing it
 		if [ ${BASH_VERSINFO[0]} -eq 4 ] && [ ${BASH_VERSINFO[1]} -ge 4 ] || [ ${BASH_VERSINFO[0]} -gt 4 ]; then
@@ -83,7 +93,17 @@ __prompt_command () {
 	else
 		username='\u'
 		     pwd='\w'
-		    sign='\$'
+
+		# sign
+		if [ "$UID" = 0 ] && [ "$HISTFILE" ]; then
+			sign='#>'
+		elif [ "$UID" = 0 ]; then
+			sign='#'
+		elif [ "$HISTFILE" ]; then
+			sign='\$>'
+		else
+			sign='\$'
+		fi
 
 		if [ "${SSH_TTY-}" -o "${TERM_PROGRAM-}" = vscode ]; then
 			hostname='@\h'
