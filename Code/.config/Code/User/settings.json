@@ -164,9 +164,8 @@
   "git.autoRepositoryDetection": "subFolders",
   "git.autofetch": true,
   "git.ignoreLimitWarning": true,
+  "git.mergeEditor": true,
   "git.untrackedChanges": "separate",
-
-  "git.experimental.mergeEditor": true,
 
   // GitLens
   "gitlens.advanced.fileHistoryFollowsRenames": true,
@@ -310,7 +309,8 @@
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
   "vscode-neovim.useWSL": false,
 
-  "window.experimental.commandCenter": true,
+  "window.commandCenter": true,
+
   "window.experimental.windowControlsOverlay.enabled": true,
 
   "workbench.activityBar.visible": false,
