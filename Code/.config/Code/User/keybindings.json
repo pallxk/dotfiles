@@ -453,6 +453,17 @@
 
     // terminal
     {
+        "key": "f1",
+        "command": "workbench.action.showCommands",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
+    },
+
+    // terminal navigation
+    {
         "key": "shift+home",
         "command": "workbench.action.terminal.scrollToTop",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
