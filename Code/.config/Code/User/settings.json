@@ -108,6 +108,8 @@
 
   "editor.inlayHints.enabled": "offUnlessPressed",
 
+  "editor.inlineSuggest.enabled": true,
+
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fit",
@@ -166,6 +168,13 @@
   "git.ignoreLimitWarning": true,
   "git.mergeEditor": true,
   "git.untrackedChanges": "separate",
+
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
 
   // GitLens
   "gitlens.advanced.fileHistoryFollowsRenames": true,
