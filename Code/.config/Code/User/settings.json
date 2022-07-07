@@ -108,6 +108,10 @@
 
   "editor.inlayHints.enabled": "offUnlessPressed",
 
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.size": "fit",
+
   "editor.semanticHighlighting.enabled": true,
 
   "emmet.includeLanguages": {
