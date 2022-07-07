@@ -264,7 +264,6 @@
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.rightClickBehavior": "paste",
   "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.shellIntegration.enabled": true,
 
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.profiles.linux": {
