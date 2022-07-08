@@ -336,6 +336,48 @@
         "when": "!isMac"
     },
 
+    // editor group - Windows
+    {
+        "key": "alt+1",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+2",
+        "command": "workbench.action.focusSecondEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+3",
+        "command": "workbench.action.focusThirdEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+4",
+        "command": "workbench.action.focusFourthEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+5",
+        "command": "workbench.action.focusFifthEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+6",
+        "command": "workbench.action.focusSixthEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+7",
+        "command": "workbench.action.focusSeventhEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "alt+8",
+        "command": "workbench.action.focusEighthEditorGroup",
+        "when": "!isMac && !terminalFocus"
+    },
+
     // Activity Bar
     {
         "key": "ctrl+shift+r",
