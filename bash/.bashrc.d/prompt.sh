@@ -51,7 +51,7 @@ __prompt_command () {
 	if [ "$color_prompt" = yes ]; then
 		username='\[\033[01;32m\]\u\[\033[00m\]'
 		     pwd='\[\033[01;34m\]\w\[\033[00m\]'
-		     cmd='\[\033[00;32m\]'
+		     cmd="\[\033[00;${THEME_COLOR:-32}m\]"
 
 		# sign
 		if [ "$UID" = 0 ] && [ "$HISTFILE" ]; then
