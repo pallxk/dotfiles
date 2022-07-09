@@ -1,7 +1,9 @@
 alicloud
+alipay
 aliyun
 aliyuncs
 ansible
+appcenter
 archlinux
 auths
 autoscale
@@ -28,8 +30,10 @@ devel
 distutils
 dnat
 dockerconfigjson
+dockerhub
 dockerignore
 dotglob
+dropbear
 echarts
 eclipselink
 elif
@@ -97,6 +101,7 @@ neovim
 netfilter
 nindent
 noconfirm
+nodenv
 nofile
 noout
 nuget
@@ -107,6 +112,7 @@ omnisaas
 oneshot
 openapi
 openjdk
+openwrt
 outdent
 pipefail
 pipenv
@@ -126,6 +132,7 @@ publickey
 pushd
 pwsh
 pypi
+qualys
 querystring
 ratelimit
 realpath
@@ -135,6 +142,7 @@ referer
 remoting
 restylane
 retryable
+richtext
 roadmap
 rockspec
 rsql
@@ -145,6 +153,7 @@ sencha
 servlet
 setsubtract
 setvariable
+shadowsocks
 shopt
 skillset
 skopeo
