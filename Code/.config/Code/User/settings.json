@@ -17,9 +17,6 @@
     "comment": 2
   },
 
-  // dhoeric.ansible-vault
-  "ansibleVault.keyfile": "~/.ansible-vault-pass",
-
   // streetsidesoftware.code-spell-checker
   "cSpell.customDictionaries": {
     "personal": {
