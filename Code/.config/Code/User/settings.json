@@ -321,6 +321,9 @@
 
   "window.experimental.windowControlsOverlay.enabled": true,
 
+  "workbench.colorTheme": "Default Light+",
+  "workbench.iconTheme": "material-icon-theme",
+
   "workbench.activityBar.visible": false,
 
   "workbench.editor.preferHistoryBasedLanguageDetection": true,
@@ -336,6 +339,8 @@
   "workbench.layoutControl.type": "both",
 
   "workbench.sideBar.location": "right",
+
+  "workbench.view.alwaysShowHeaderActions": true,
 
   "[powershell]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
