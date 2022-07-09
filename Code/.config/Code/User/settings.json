@@ -234,6 +234,7 @@
   "minapp-vscode.disableAutoConfig": true,
 
   "problems.defaultViewMode": "table",
+  "problems.showCurrentInStatus": true,
 
   "redhat.telemetry.enabled": false,
 
@@ -325,6 +326,7 @@
   "vscode-neovim.useWSL": false,
 
   "window.commandCenter": true,
+  "window.zoomLevel": 1,
 
   "window.experimental.windowControlsOverlay.enabled": true,
 
