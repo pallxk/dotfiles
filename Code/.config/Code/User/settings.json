@@ -143,13 +143,23 @@
   "explorer.openEditors.visible": 99,
 
   "files.associations": {
-    // Ansible playbook
+    // Ansible
     "**/ansible/**/*.{yml,yaml}": "ansible",
-    // Ansible vars
     "**/{group_vars,host_vars}/**": "ansible",
+    "**/{handlers,tasks}/**/*.{yml,yaml}": "ansible",
+    // CSS
     "*.wxss": "css",
+    // JavaScript
     "*.wxs": "javascript",
-    // Kubernetes
+    // jsonc
+    "*.cjson": "jsonc",
+    // ssh_config
+    "ssh_config": "ssh_config",
+    "**/.ssh/*.conf": "ssh_config",
+    "**/ssh_config.d/*": "ssh_config",
+    // Terraform
+    "*.hcl": "terraform",
+    // yaml
     "kubeconfig": "yaml",
     "*.kubeconfig": "yaml",
   },
