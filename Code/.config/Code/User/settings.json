@@ -207,6 +207,8 @@
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
 
+  "json.maxItemsComputed": 10000,
+
   "material-icon-theme.files.associations": {
     // Ansible
     "requirements.yml": "credits",
@@ -251,6 +253,8 @@
   //"remote.SSH.path": "C:\\tools\\cygwin\\bin\\ssh.exe",
   "remote.SSH.connectTimeout": 30,
   "remote.SSH.useLocalServer": true,
+
+  "security.workspace.trust.untrustedFiles": "open",
 
   "search.followSymlinks": false,
 
