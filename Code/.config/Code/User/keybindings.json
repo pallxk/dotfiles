@@ -861,12 +861,12 @@
     },
 
     {
-        "key": "ctrl+oem_comma",
+        "key": "ctrl+,",
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && !isMac"
     },
     {
-        "key": "cmd+oem_comma",
+        "key": "cmd+,",
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && isMac"
     },
