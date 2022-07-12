@@ -396,6 +396,16 @@
         "command": "workbench.files.action.collapseExplorerFolders",
         "when": "activeViewlet == 'workbench.view.explorer'"
     },
+    {
+        "key": "ctrl+alt+s",
+        "command": "explorer.download",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+alt+s",
+        "command": "explorer.download",
+        "when": "isMac"
+    },
     // Search
     {
         "key": "alt+backspace",
