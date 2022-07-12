@@ -406,6 +406,16 @@
         "command": "explorer.download",
         "when": "isMac"
     },
+    {
+        "key": "ctrl+alt+o",
+        "command": "explorer.upload",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+alt+o",
+        "command": "explorer.upload",
+        "when": "isMac"
+    },
     // Search
     {
         "key": "alt+backspace",
