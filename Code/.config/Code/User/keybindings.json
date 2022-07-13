@@ -903,6 +903,18 @@
         "when": "isMac"
     },
 
+    // DevTools
+    {
+        "key": "alt+cmd+i",
+        "command": "workbench.action.toggleDevTools",
+        "when": "isMac && !isWeb"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.action.toggleDevTools",
+        "when": "!isMac && !isWeb"
+    },
+
     // GitHub Copilot
     {
         "key": "ctrl+enter",
