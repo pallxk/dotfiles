@@ -90,6 +90,18 @@
 
   # List services that you want to enable:
 
+  services.kmscon = {
+    enable = false;
+    extraConfig = ''
+      font-size=16
+    '';
+    fonts = [
+      { name = "wenquanyi"; package = pkgs.wqy_zenhei; }
+      { name = "dejavu"; package = pkgs.dejavu_fonts; }
+      { name = "mplus"; package = pkgs.mplus-outline-fonts.githubRelease; }
+    ];
+  };
+
   # Enable the OpenSSH daemon.
   services.openssh = {
     enable = true;
