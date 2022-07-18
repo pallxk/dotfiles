@@ -74,9 +74,16 @@
         "spacing": 10
     },
     "clock": {
+        "calendar-weeks-pos": "right",
         // "timezone": "America/New_York",
+        "timezones": [
+          "Asia/Shanghai",
+          "Etc/UTC"
+        ],
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%d %a %H:%M}",
+        "format-alt": "{:%Y-%m-%d}",
+        "format-calendar-weeks": "<small>{}</small>"
     },
     "cpu": {
         "format": "{usage}% ",
