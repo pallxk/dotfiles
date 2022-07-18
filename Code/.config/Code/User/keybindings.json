@@ -1,6 +1,8 @@
 // Place your key bindings in this file to override the defaults
 [
+    //
     // Copy path
+    //
     {
         "key": "ctrl+alt+c",
         "command": "copyFilePath",
@@ -16,26 +18,33 @@
         "command": "copyRelativeFilePath",
         "when": "!isMac && !fileMatchOrFolderMatchWithResourceFocus"
     },
-
+    //
+    // Reveal in explorer
+    //
     {
         "key": "shift+alt+r",
         "command": "revealFileInOS",
         "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
     },
+    //
+    // Join Lines
+    //
     {
         "key": "ctrl+shift+j",
         "command": "editor.action.joinLines",
         "when": "!inSearchEditor && !searchViewletFocus"
     },
-
+    //
     // suggest
+    //
     {
         "key": "shift+escape",
         "command": "editor.action.inlineSuggest.hide",
         "when": "inlineSuggestionVisible"
     },
-
+    //
     // indent & outdent
+    //
     {
         "key": "cmd+[",
         "command": "-editor.action.outdentLines",
@@ -56,8 +65,9 @@
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
     },
-
+    //
     // editor navigation
+    //
     {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor",
@@ -96,7 +106,9 @@
         "key": "cmd+]",
         "command": "workbench.action.navigateForward"
     },
-
+    //
+    // Debug
+    //
     {
         "key": "ctrl+\\",
         "command": "workbench.action.debug.continue",
@@ -132,8 +144,9 @@
         "command": "editor.debug.action.selectionToRepl",
         "when": "inDebugMode && editorHasSelection"
     },
-
+    //
     // editor
+    //
     {
         "key": "ctrl+alt+pageup",
         "command": "scrollLineUp",
@@ -144,8 +157,9 @@
         "command": "scrollLineDown",
         "when": "textInputFocus"
     },
-
+    //
     // editor - macOS
+    //
     {
         "key": "cmd+1",
         "command": "workbench.action.openEditorAtIndex1"
@@ -182,8 +196,9 @@
         "key": "cmd+9",
         "command": "workbench.action.lastEditorInGroup"
     },
-
+    //
     // editor group - macOS
+    //
     {
         "key": "cmd+1",
         "command": "-workbench.action.focusFirstEditorGroup"
@@ -248,8 +263,9 @@
         "key": "ctrl+8",
         "command": "workbench.action.focusEighthEditorGroup"
     },
-
+    //
     // editor - windows
+    //
     {
         "key": "alt+1",
         "command": "-workbench.action.openEditorAtIndex1"
@@ -335,8 +351,9 @@
         "command": "workbench.action.lastEditorInGroup",
         "when": "!isMac"
     },
-
+    //
     // editor group - Windows
+    //
     {
         "key": "alt+1",
         "command": "workbench.action.focusFirstEditorGroup",
@@ -377,8 +394,9 @@
         "command": "workbench.action.focusEighthEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
-
+    //
     // Activity Bar
+    //
     {
         "key": "ctrl+shift+r",
         "command": "workbench.view.remote",
@@ -389,8 +407,9 @@
         "command": "workbench.view.remote",
         "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
     },
-
+    //
     // Explorer
+    //
     {
         "key": "alt+backspace",
         "command": "workbench.files.action.collapseExplorerFolders",
@@ -416,13 +435,17 @@
         "command": "explorer.upload",
         "when": "isMac"
     },
+    //
     // Search
+    //
     {
         "key": "alt+backspace",
         "command": "search.action.collapseSearchResults",
         "when": "activeViewlet == 'workbench.view.search'"
     },
-
+    //
+    // neovim
+    //
     {
         "key": "j",
         "command": "vscode-neovim.compositeEscape1",
@@ -512,8 +535,9 @@
     //     "key": "ctrl+alt+0",
     //     "command": "vaulty.decrypt"
     // },
-
+    //
     // terminal
+    //
     {
         "key": "f1",
         "command": "workbench.action.showCommands",
@@ -523,8 +547,9 @@
         "key": "f1",
         "command": "-workbench.action.showCommands"
     },
-
+    //
     // terminal navigation
+    //
     {
         "key": "shift+home",
         "command": "workbench.action.terminal.scrollToTop",
@@ -559,14 +584,14 @@
         "key": "alt+`",
         "command": "openInTerminal"
     },
-
+    //
     // terminal - macOS
+    //
     {
         "key": "cmd+k",
         "command": "-workbench.action.terminal.clear",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
-
     {
         "key": "cmd+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
@@ -612,27 +637,25 @@
         "command": "workbench.action.terminal.focusAtIndex9",
         "when": "terminalGroupCount >= 9"
     },
-
     {
         "key": "cmd+shift+`",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         }
     },
     {
         "key": "cmd+alt+`",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${fileDirname}"
+            "cwd": "${fileDirname}"
         }
     },
-
     {
         "key": "cmd+alt+1",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 0"
     },
@@ -640,7 +663,7 @@
         "key": "cmd+alt+2",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 1"
     },
@@ -648,7 +671,7 @@
         "key": "cmd+alt+3",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 2"
     },
@@ -656,7 +679,7 @@
         "key": "cmd+alt+4",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 3"
     },
@@ -664,7 +687,7 @@
         "key": "cmd+alt+5",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 4"
     },
@@ -672,7 +695,7 @@
         "key": "cmd+alt+6",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 5"
     },
@@ -680,7 +703,7 @@
         "key": "cmd+alt+7",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 6"
     },
@@ -688,7 +711,7 @@
         "key": "cmd+alt+8",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 7"
     },
@@ -696,16 +719,19 @@
         "key": "cmd+alt+9",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "terminalGroupCount == 8"
     },
-
+    //
     // terminal - windows
+    //
     {
         "key": "ctrl+k ctrl+k",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "\u000b" },   // ctrl-k
+        "args": {
+            "text": "\u000b"
+        }, // ctrl-k
         "when": "terminalFocus && !isMac"
     },
     {
@@ -733,7 +759,6 @@
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "!isMac"
     },
-
     {
         "key": "ctrl+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
@@ -779,12 +804,11 @@
         "command": "workbench.action.terminal.focusAtIndex9",
         "when": "!isMac && terminalGroupCount >= 9"
     },
-
     {
         "key": "ctrl+shift+`",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac"
     },
@@ -792,16 +816,15 @@
         "key": "ctrl+alt+`",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${fileDirname}"
+            "cwd": "${fileDirname}"
         },
         "when": "!isMac"
     },
-
     {
         "key": "ctrl+alt+1",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 0"
     },
@@ -809,7 +832,7 @@
         "key": "ctrl+alt+2",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 1"
     },
@@ -817,7 +840,7 @@
         "key": "ctrl+alt+3",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 2"
     },
@@ -825,7 +848,7 @@
         "key": "ctrl+alt+4",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 3"
     },
@@ -833,7 +856,7 @@
         "key": "ctrl+alt+5",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 4"
     },
@@ -841,7 +864,7 @@
         "key": "ctrl+alt+6",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 5"
     },
@@ -849,7 +872,7 @@
         "key": "ctrl+alt+7",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 6"
     },
@@ -857,7 +880,7 @@
         "key": "ctrl+alt+8",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 7"
     },
@@ -865,11 +888,10 @@
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
-          "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}"
         },
         "when": "!isMac && terminalGroupCount == 8"
     },
-
     {
         "key": "ctrl+,",
         "command": "workbench.action.openRemoteSettings",
@@ -880,7 +902,6 @@
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && isMac"
     },
-
     {
         "key": "ctrl+0",
         "command": "workbench.action.toggleAuxiliaryBar",
@@ -891,7 +912,6 @@
         "command": "workbench.action.toggleAuxiliaryBar",
         "when": "isMac"
     },
-
     {
         "key": "cmd+k cmd+o",
         "command": "workbench.action.files.openFileFolder",
@@ -902,8 +922,9 @@
         "command": "workbench.action.showAllEditors",
         "when": "isMac"
     },
-
+    //
     // DevTools
+    //
     {
         "key": "alt+cmd+i",
         "command": "workbench.action.toggleDevTools",
@@ -914,8 +935,9 @@
         "command": "workbench.action.toggleDevTools",
         "when": "!isMac && !isWeb"
     },
-
+    //
     // GitHub Copilot
+    //
     {
         "key": "ctrl+enter",
         "command": "-github.copilot.generate",
