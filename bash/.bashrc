@@ -3,6 +3,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Window Manager
+# https://wiki.archlinux.org/title/Sway#Manually
+if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+  # https://github.com/swaywm/sway/issues/5834#issuecomment-736368825
+  WLR_NO_HARDWARE_CURSORS=1 exec sway
+fi
+
 # Autorun
 ## Autorun ssh-agent
 if [[ -z $SSH_AUTH_SOCK ]] && hash ssh-agent 2> /dev/null; then
