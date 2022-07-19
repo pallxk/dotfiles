@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+# Set the primary output to be the one rotated
+primary=$(xrandr | grep -E '(left|right) \(' | cut -d\  -f1)
+xrandr --output "$primary" --primary
