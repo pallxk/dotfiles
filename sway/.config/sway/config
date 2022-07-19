@@ -21,6 +21,10 @@ set $term terminator
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu bemenu-run
 
+### Behavior config
+#
+focus_on_window_activation smart
+
 ### Output configuration
 #
 include outputs
