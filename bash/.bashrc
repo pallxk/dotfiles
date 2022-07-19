@@ -11,6 +11,7 @@ if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
   export QT_IM_MODULE=fcitx
   export XMODIFIERS="@im=fcitx"
 
+  echo 'Launching sway...'
   # https://github.com/swaywm/sway/issues/5834#issuecomment-736368825
   WLR_NO_HARDWARE_CURSORS=1 exec sway
 fi
