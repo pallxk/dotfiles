@@ -24,13 +24,22 @@
     //         "default": ""
     //     }
     // },
+    // You must be a member of the input group to use this module.
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
-        "format": "{name} {icon}",
+        "scrolllock": false,
+        "format": {
+          "numlock": "#{icon}",
+          "capslock": "A{icon}",
+          "scrolllock": "S{icon}"
+        },
+        // Rely on CSS to show locked/unlocked
         "format-icons": {
-            "locked": "",
-            "unlocked": ""
+            "locked": "",
+            "unlocked": ""
+            // "locked": "",
+            // "unlocked": ""
         }
     },
     "sway/mode": {
