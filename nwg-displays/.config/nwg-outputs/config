@@ -1,6 +1,6 @@
 {
   "view-scale": 0.15,
   "snap-threshold": 10,
-  "indicator-timeout": 500,
+  "indicator-timeout": 1000,
   "custom-mode": []
 }
