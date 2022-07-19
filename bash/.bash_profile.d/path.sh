@@ -43,6 +43,9 @@ pathmunge () {
 for dir in ~/Applications/*/bin; do
 	test -d "$dir" && pathmunge "$dir"
 done
+for dir in ~/nativefier-apps/*; do
+	test -d "$dir" && pathmunge "$dir" after
+done
 unset dir
 
 # Add dotnet tools
