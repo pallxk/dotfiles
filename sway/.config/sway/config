@@ -77,6 +77,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_2048x1536.png fill
     # Kill focused window
     bindsym $mod+Shift+q kill
 
+    # Lock
+    bindsym Ctrl+Mod1+q exec swaylock --color 000000
+
     # Start your launcher
     bindsym $mod+d exec $menu
 
