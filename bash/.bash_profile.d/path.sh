@@ -39,15 +39,6 @@ pathmunge () {
 #done
 #unset dir
 
-# Include Applications bin directories in PATH
-for dir in ~/Applications/*/bin; do
-	test -d "$dir" && pathmunge "$dir"
-done
-for dir in ~/nativefier-apps/*; do
-	test -d "$dir" && pathmunge "$dir" after
-done
-unset dir
-
 # Add dotnet tools
 [[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools after
 
@@ -66,6 +57,15 @@ unset dir
 # set PATH so it includes user's private bin if it exists
 [[ -d ~/bin ]] && pathmunge ~/bin
 [[ -d ~/bin/after ]] && pathmunge ~/bin/after after
+
+# Include Applications bin directories in PATH
+for dir in ~/Applications/*/bin; do
+	test -d "$dir" && pathmunge "$dir" after
+done
+for dir in ~/nativefier-apps/*; do
+	test -d "$dir" && pathmunge "$dir" after
+done
+unset dir
 
 # include .bashrc if it exists
 [[ -f ~/.bashrc ]] && . ~/.bashrc
