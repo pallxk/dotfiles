@@ -91,7 +91,7 @@
   "diffEditor.renderSideBySide": false,
 
   "editor.cursorSurroundingLines": 3,
-  "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Courier New', monospace, FontAwesome",
   "editor.lineHeight": 18,
   "editor.mouseWheelZoom": true,
   "editor.renderFinalNewline": true,
@@ -277,7 +277,7 @@
   "terminal.integrated.confirmOnKill": "never",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.enableBell": true,
-  "terminal.integrated.fontFamily": "'M PLUS 1 Code', 'mplus Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'M PLUS 1 Code', 'mplus Nerd Font Mono', Consolas, 'Courier New', monospace, FontAwesome",
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.rightClickBehavior": "paste",
