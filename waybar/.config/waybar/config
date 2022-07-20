@@ -167,10 +167,16 @@
         "return-type": "json",
         "max-length": 40,
         "format-icons": {
+            "chromium": "",
+            "firefox": "",
             "spotify": "",
-            "default": "🎜"
+            // "vlc": "",
+            "default": ""
         },
         "escape": true,
+        "on-click": "playerctl play-pause",
+        "on-click-middle": "playerctl stop",
+        "on-click-right": "playerctl next",
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
