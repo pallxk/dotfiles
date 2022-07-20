@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+active_profile=$(pactl list | grep -Po '(?<=Active Profile: )(a2dp_sink|handsfree_head_unit)')
+
+case "$active_profile" in
+  a2dp_sink) target_profile=handsfree_head_unit;;
+  handsfree_head_unit) target_profile=a2dp_sink;;
+esac
+
+pactl set-card-profile 2 "$target_profile"
