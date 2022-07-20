@@ -1,5 +1,6 @@
 [global_config]
 [keybindings]
+  help = ""
 [profiles]
   [[default]]
     cursor_color = "#aaaaaa"
