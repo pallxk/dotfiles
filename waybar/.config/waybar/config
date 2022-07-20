@@ -102,7 +102,8 @@
         "format": "{}% "
     },
     "temperature": {
-        // "thermal-zone": 2,
+        // /sys/class/thermal/thermal_zone?/temp
+        "thermal-zone": 3,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
