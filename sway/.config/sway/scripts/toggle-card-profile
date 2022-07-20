@@ -2,11 +2,14 @@
 
 set -euxo pipefail
 
-active_profile=$(pactl list | grep -Po '(?<=Active Profile: )(a2dp_sink|handsfree_head_unit)')
+card_indexes=$(pactl list short cards | grep bluez_card | cut -f1)
+active_profile=$(pactl list cards | grep -Po '(?<=Active Profile: )(a2dp_sink|handsfree_head_unit)' | head -1)
 
 case "$active_profile" in
   a2dp_sink) target_profile=handsfree_head_unit;;
   handsfree_head_unit) target_profile=a2dp_sink;;
 esac
 
-pactl set-card-profile 2 "$target_profile"
+for card_index in $card_indexes; do
+  pactl set-card-profile "$card_index" "$target_profile"
+done
