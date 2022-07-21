@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for x in ~/.config/browser-selector/*.sh; do
+  [ -f "$x" ] && . "$x"
+done
+
+exec "${BROWSER:-firefox}" "$@"
