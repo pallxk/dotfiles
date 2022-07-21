@@ -160,7 +160,7 @@
         },
         "on-click": "pavucontrol",
         "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle; pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        "on-click-right": "$HOME/.config/sway/scripts/toggle-card-profile"
+        "on-click-right": "$HOME/.config/waybar/toggle-card-profile"
     },
     "custom/media": {
         "format": "{icon} {}",
