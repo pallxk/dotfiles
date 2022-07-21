@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+TOTP_DIR=~/.config/totp
+prefix=$1
+
+secret=$(jq --null-input --raw-output --exit-status \
+  "[ inputs[] ] | map(select( .name|startswith(\"$prefix\") )) | .[0].secret" \
+  "$TOTP_DIR"/*.json
+)
+
+echo "$secret" | oathtool --totp --base32 -
