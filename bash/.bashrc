@@ -48,3 +48,7 @@ shopt -s globstar
 hash vim 2> /dev/null && VISUAL=vim || VISUAL=vi
 export VISUAL
 export EDITOR="$VISUAL"
+
+# Set up default browser
+hash google-chrome-stable 2> /dev/null && BROWSER=google-chrome-stable
+export BROWSER
