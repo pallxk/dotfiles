@@ -948,4 +948,27 @@
         "command": "github.copilot.generate",
         "when": "editorTextFocus && github.copilot.activated"
     },
+    //
+    // emojisense
+    //
+    {
+        "key": "ctrl+alt+i",
+        "command": "emojisense.quickEmoji",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-emojisense.quickEmoji",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "emojisense.quickEmojitext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-emojisense.quickEmojitext",
+        "when": "editorTextFocus"
+    },
 ]
