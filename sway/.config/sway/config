@@ -128,6 +128,17 @@ exec swayidle -w \
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+    # Move focus on workspace
+    bindsym $mod+Ctrl+$left workspace prev
+    bindsym $mod+Ctrl+$down workspace prev
+    bindsym $mod+Ctrl+$up workspace next
+    bindsym $mod+Ctrl+$right workspace next
+    # Or use $mod+[up|down|left|right]
+    bindsym $mod+Ctrl+Left workspace prev
+    bindsym $mod+Ctrl+Down workspace prev
+    bindsym $mod+Ctrl+Up workspace next
+    bindsym $mod+Ctrl+Right workspace next
 #
 # Workspaces:
 #
