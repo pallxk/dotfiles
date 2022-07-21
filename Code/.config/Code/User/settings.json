@@ -336,6 +336,7 @@
   "vscode-neovim.useWSL": false,
 
   "window.commandCenter": true,
+  "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 1,
 
   "window.experimental.windowControlsOverlay.enabled": true,
