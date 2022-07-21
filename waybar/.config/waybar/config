@@ -76,7 +76,9 @@
         "format-icons": {
             "activated": "",
             "deactivated": ""
-        }
+        },
+        "on-click-middle": "swaylock --color 000000",
+        "on-click-right": "sudo chvt 6; sudo chvt 1"
     },
     "tray": {
         // "icon-size": 21,
