@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # clipboard (wl-clipboard) (wtype)
-set $copy wl-copy
+set $copy wl-copy --trim-newline
 set $paste wl-paste | wtype -
 # Your preferred terminal emulator
 set $term terminator
