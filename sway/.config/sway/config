@@ -218,6 +218,10 @@ exec swayidle -w \
     bindsym $mod+Shift+n exec makoctl restore
     bindsym $mod+Backspace exec makoctl dismiss
     bindsym $mod+Shift+Backspace exec makoctl dismiss --all
+#
+# Screenshot:
+#
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
 include /etc/sway/config.d/*
 include config.d/*
