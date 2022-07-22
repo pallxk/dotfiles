@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-TOTP_DIR=~/.config/totp
+TOTP_DIR=${TOTP_DIR:-~/.config/totp}
 prefix=$1
 
 secret=$(jq --null-input --raw-output --exit-status \
