@@ -233,9 +233,10 @@ exec swayidle -w \
     bindsym $mod+Backspace exec makoctl dismiss
     bindsym $mod+Shift+Backspace exec makoctl dismiss --all
 #
-# Screenshot:
+# Screen capture:
 #
     bindsym Print exec grim -g "$(slurp)" - | wl-copy
+    bindsym $mod+Print exec pkill -2 wf-recorder || wf-recorder -g "$(slurp)" -f ~/Captures/"$(date +%Y-%m-%d_%H-%M-%S)".mp4
 
 include /etc/sway/config.d/*
 include config.d/*
