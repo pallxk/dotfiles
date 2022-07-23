@@ -23,7 +23,7 @@ set $term_floating foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu bemenu-run
+set $menu bemenu-run -i -l 10 --fn 'monospace 12' -p '>' -W .5
 # Your preferred file manager
 set $fm thunar
 
