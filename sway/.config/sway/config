@@ -235,9 +235,18 @@ exec swayidle -w \
     bindsym $mod+Backspace exec makoctl dismiss
     bindsym $mod+Shift+Backspace exec makoctl dismiss --all
 #
-# Screen capture:
+# Screen shot:
 #
-    bindsym Print exec grim -g "$(slurp)" - | wl-copy
+    bindsym Print exec grimshot copy "$(echo -e 'active\narea\nwindow\noutput\nscreen' | $menu -p 'grimshot copy' || echo canceled)"
+    bindsym Shift+Print exec grimshot save "$(echo -e 'active\narea\nwindow\noutput\nscreen' | $menu -p 'grimshot save' || echo canceled)" ~/Captures/"$(date +%Y-%m-%d_%H-%M-%S)".png
+    bindsym Ctrl+Shift+Print exec grimshot --notify copy area
+    bindsym Mod1+Shift+Print exec grimshot --notify copy window
+    bindsym Mod1+Print exec grimshot --notify copy active
+    bindsym Ctrl+Mod1+Print exec grimshot --notify copy output
+    bindsym Ctrl+Print exec grimshot --notify copy screen
+#
+# Screen record:
+#
     bindsym $mod+Print exec pkill -2 wf-recorder || wf-recorder -g "$(slurp)" -f ~/Captures/"$(date +%Y-%m-%d_%H-%M-%S)".mp4
 
 include /etc/sway/config.d/*
