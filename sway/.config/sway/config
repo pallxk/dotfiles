@@ -94,7 +94,7 @@ exec swayidle -w \
     bindsym $mod+Shift+q kill
 
     # Lock
-    bindsym Ctrl+Mod1+q exec swaylock --color 000000
+    bindsym Ctrl+Mod1+q exec wlogout || swaylock --color 000000
 
     # Start your launcher
     bindsym $mod+d exec $menu_run
