@@ -186,7 +186,8 @@
         "interval": 2,
         "exec": "echo ",
         "exec-if": "sleep .5; pgrep wf-recorder",
-        "on-click-middle": "pkill -2 wf-recorder"
+        "on-click": "pkill -2 wf-recorder",
+        "on-click-middle": "pkill wf-recorder"
     }
 }
 
