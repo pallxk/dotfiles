@@ -23,7 +23,9 @@ set $term_floating foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu bemenu-run -i -l 10 --fn 'monospace 12' -p '>' -W .5
+set $menu_args -i -l 10 --fn 'monospace 12' -p '>' -W .5
+set $menu bemenu $menu_args
+set $menu_run bemenu-run $menu_args
 # Your preferred file manager
 set $fm thunar
 
@@ -95,7 +97,7 @@ exec swayidle -w \
     bindsym Ctrl+Mod1+q exec swaylock --color 000000
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec $menu_run
 
     # Start your file manager
     bindsym $mod+m exec swaymsg '[app_id=$fm workspace=__focused__] move scratchpad' || swaymsg '[app_id=$fm] focus' || $fm
