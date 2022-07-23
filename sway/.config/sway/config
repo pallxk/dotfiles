@@ -247,7 +247,13 @@ exec swayidle -w \
 #
 # Screen record:
 #
-    bindsym $mod+Print exec pkill -2 wf-recorder || wf-recorder -g "$(slurp)" -f ~/Captures/"$(date +%Y-%m-%d_%H-%M-%S)".mp4
+    bindsym $mod+Print exec pkill -2 wf-recorder || wf-recorder-helper save "$(echo -e 'active\narea\nwindow\noutput' | $menu -p 'wf-recorder (w/o audio)' || echo canceled)" ~/Captures/"$(date +%Y-%m-%d_%H-%M-%S)".mp4
+    bindsym $mod+Shift+Print exec pkill -2 wf-recorder || wf-recorder-helper --audio save "$(echo -e 'active\narea\nwindow\noutput' | $menu -p 'wf-recorder (w/ audio)' || echo canceled)" ~/Captures/"$(date +%Y-%m-%d_%H-%M-%S)".mp4
+    bindsym $mod+Ctrl+Shift+Print exec pkill -2 wf-recorder || wf-recorder-helper --notify save area
+    bindsym $mod+Mod1+Shift+Print exec pkill -2 wf-recorder || wf-recorder-helper --notify save window
+    bindsym $mod+Mod1+Print exec pkill -2 wf-recorder || wf-recorder-helper --notify save active
+    bindsym $mod+Ctrl+Mod1+Print exec pkill -2 wf-recorder || wf-recorder-helper --notify save output
+    bindsym $mod+Ctrl+Print exec pkill -2 wf-recorder || wf-recorder-helper --notify save output
 
 include /etc/sway/config.d/*
 include config.d/*
