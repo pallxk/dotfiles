@@ -85,6 +85,11 @@ exec swayidle -w \
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
+### Sound configuration
+#
+bindsym $mod+i exec pkill bemenu || pactl set-default-source "$(pactl list short sources | $menu -p source -W1 | cut -f2)"
+bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short sinks | $menu -p sink -W1 | cut -f2)"
+
 ### Key bindings
 #
 # Basics:
