@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "custom/record"],
     "modules-center": ["sway/window"],
-    "modules-right": ["network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "tray"],
+    "modules-right": ["custom/openconnect", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -194,6 +194,11 @@
         "exec-if": "sleep .5; pgrep wf-recorder",
         "on-click": "pkill -2 wf-recorder",
         "on-click-middle": "pkill wf-recorder"
+    },
+    "custom/openconnect": {
+        "interval": 10,
+        "exec": "pgrep -a openconnect | grep -o -P '([^/]+)(?=\\.config)' | tr '\\n' ' '",
+        "exec-if": "pgrep openconnect"
     }
 }
 
