@@ -106,8 +106,8 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
     bindsym Ctrl+Mod1+q exec wlogout || swaylock --color 000000
 
     # Start your launcher
-    bindsym $mod+d fullscreen disable; exec $menu_run
-    bindsym $mod+z fullscreen disable; exec wofi --show drun --allow-images
+    bindsym $mod+d fullscreen disable; exec pkill bemenu || $menu_run
+    bindsym $mod+z fullscreen disable; exec pkill wofi || wofi --show drun --allow-images
 
     # Start your file manager
     bindsym $mod+m exec swaymsg '[app_id=$fm workspace=__focused__] move scratchpad' || swaymsg '[app_id=$fm] focus' || $fm
