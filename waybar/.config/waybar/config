@@ -167,7 +167,7 @@
             "default": ["", "", ""]
         },
         "on-click": "pkill pavucontrol || pavucontrol",
-        "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle; pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click-middle": "if [ \"$(pactl list cards | grep -Po 'Active Profile: (handsfree|headset)')\" ]; then pactl set-source-mute @DEFAULT_SOURCE@ toggle; else pactl set-sink-mute @DEFAULT_SINK@ toggle; fi",
         "on-click-right": "$HOME/.config/waybar/toggle-card-profile"
     },
     "custom/media": {
