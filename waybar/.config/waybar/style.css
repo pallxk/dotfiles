@@ -201,7 +201,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: rgba(41, 128, 185, 0.2);
 }
 
 #tray > .passive {
