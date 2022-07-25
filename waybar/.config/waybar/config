@@ -197,6 +197,7 @@
     },
     "custom/openconnect": {
         "interval": 10,
+        "on-click-middle": "pkill openconnect",
         "exec": "pgrep -a openconnect | grep -o -P '([^/]+)(?=\\.config)' | tr '\\n' ' '",
         "exec-if": "pgrep openconnect"
     }
