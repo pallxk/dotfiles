@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+NATIVEFIER_APPS_DIR=${NATIVEFIER_APPS_DIR:-~/nativefier-apps}
+NATIVEFIER="nativefier --single-instance --tray"
+
+$NATIVEFIER 'https://calendar.google.com/?hl=en_US' --name GoogleCalendar
+$NATIVEFIER 'https://mail.google.com/'
+$NATIVEFIER 'https://messages.google.com/web/'
+$NATIVEFIER 'https://music.163.com/'
+$NATIVEFIER 'https://outlook.office.com/mail/'
+$NATIVEFIER 'https://teams.microsoft.com/_'
+$NATIVEFIER 'https://www.webpowered.tools/gauth/'
+$NATIVEFIER 'https://wx.qq.com/?lang=zh_CN'
+$NATIVEFIER 'https://yacd.haishan.me/'
