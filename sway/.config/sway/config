@@ -48,6 +48,9 @@ exec ~/.config/sway/scripts/set-primary-output
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_2048x1536.png fill
 #
+bindsym $mod+p exec pkill nwg-displays || nwg-displays
+bindsym $mod+Shift+p exec pkill arandr || arandr
+bindsym $mod+Ctrl+p exec wl-mirror "$(swaymsg -t get_outputs | jq -r .[].name | $menu)"
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
