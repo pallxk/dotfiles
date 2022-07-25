@@ -32,24 +32,23 @@ pathmunge () {
 }
 
 
+# Add Yarn global to PATH
+[[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin
+
+# Add RVM to PATH for scripting
+[[ -d ~/.rvm/bin ]] && pathmunge ~/.rvm/bin
+
+# Add kubernetes plugins to PATH
+[[ -d ~/.krew/bin ]] && pathmunge ~/.krew/bin
+
 # include ruby bin directories in PATH
 # (Prefer using rvm)
 #for dir in ~/.gem/ruby/*/bin; do
 #	test -d "$dir" && pathmunge "$dir"
 #done
-#unset dir
 
 # Add dotnet tools
-[[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools after
-
-# Add kubernetes plugins to PATH
-[[ -d ~/.krew/bin ]] && pathmunge ~/.krew/bin after
-
-# Add Yarn global to PATH
-[[ -d ~/.yarn/bin ]] && pathmunge ~/.yarn/bin after
-
-# Add RVM to PATH for scripting
-[[ -d ~/.rvm/bin ]] && pathmunge ~/.rvm/bin after
+[[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools
 
 # Add ~/.local/bin
 [[ -d ~/.local/bin ]] && pathmunge ~/.local/bin
@@ -65,9 +64,9 @@ done
 for dir in ~/nativefier-apps/*; do
 	test -d "$dir" && pathmunge "$dir" after
 done
-unset dir
 
 # include .bashrc if it exists
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
+unset dir
 unset -f pathmunge
