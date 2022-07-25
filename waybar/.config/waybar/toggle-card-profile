@@ -3,11 +3,15 @@
 set -euxo pipefail
 
 card_indexes=$(pactl list short cards | grep bluez_card | cut -f1)
-active_profile=$(pactl list cards | grep -Po '(?<=Active Profile: )(a2dp_sink|handsfree_head_unit)' | head -1)
+active_profile=$(pactl list cards | grep -Po '(?<=Active Profile: )(.+)' | grep -v output: | head -1)
 
 case "$active_profile" in
+  # PulseAudio
   a2dp_sink) target_profile=handsfree_head_unit;;
   handsfree_head_unit) target_profile=a2dp_sink;;
+  # PipeWire
+  a2dp-sink*) target_profile=headset-head-unit;;
+  headset-head-unit*) target_profile=a2dp-sink;;
 esac
 
 for card_index in $card_indexes; do
