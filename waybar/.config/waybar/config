@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "custom/record"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/openconnect", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "tray"],
+    "modules-right": ["custom/openconnect", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "upower", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -132,8 +132,8 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
+    "upower": {
+        "icon-size": 16
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
