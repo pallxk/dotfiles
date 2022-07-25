@@ -28,7 +28,7 @@ set $menu bemenu $menu_args
 set $menu_run bemenu-run $menu_args
 # Your preferred file manager
 set $fm thunar
-# set $electron_args --ozone-platform=wayland --enable-features=WebRTCPipeWireCapturer
+set $electron_args --enable-features=WebRTCPipeWireCapturer
 
 ### Behavior config
 #
