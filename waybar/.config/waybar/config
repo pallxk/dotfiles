@@ -166,7 +166,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol",
+        "on-click": "pkill pavucontrol || pavucontrol",
         "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle; pactl set-source-mute @DEFAULT_SOURCE@ toggle",
         "on-click-right": "$HOME/.config/waybar/toggle-card-profile"
     },
