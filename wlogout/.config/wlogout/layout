@@ -30,7 +30,7 @@
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "systemctl reboot -i",
     "text" : "Reboot (R)",
     "keybind" : "r"
 }
