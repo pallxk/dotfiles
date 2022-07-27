@@ -259,7 +259,7 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
 #
 # Connectivity:
 #
-    bindsym $mod+c exec 'pgrep openconnect || for c in ~/bin/*-openconnect; do "$c" & done'
+    bindsym $mod+c exec 'for c in ~/bin/*-openconnect; do "$c" & done'
 #
 # Screen shot:
 #
