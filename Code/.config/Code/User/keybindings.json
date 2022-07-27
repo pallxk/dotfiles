@@ -951,6 +951,17 @@
         "when": "editorTextFocus && github.copilot.activated"
     },
     //
+    // GitLens
+    //
+    {
+        "key": "alt+d",
+        "command": "gitlens.toggleFileChanges"
+    },
+    {
+        "key": "alt+m",
+        "command": "gitlens.toggleFileHeatmap"
+    },
+    //
     // emojisense
     //
     {
