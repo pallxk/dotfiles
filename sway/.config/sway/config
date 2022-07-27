@@ -115,6 +115,12 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
     # Start your file manager
     bindsym $mod+m exec swaymsg '[app_id=$fm workspace=__focused__] move scratchpad' || swaymsg '[app_id=$fm] focus' || $fm
 
+    # System monitor
+    bindsym Ctrl+Shift+Escape exec \
+           swaymsg '[class="^Conky$" workspace=__focused__] move scratchpad' \
+        || swaymsg '[class="^Conky$"]' focus \
+        || conky
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
