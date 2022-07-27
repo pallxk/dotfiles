@@ -91,6 +91,7 @@
           "Asia/Shanghai",
           "Etc/UTC"
         ],
+        "on-click-middle": "wtype -M Win -M Alt -M Shift l",
         "on-click-right": "wtype -M Win -M Alt l",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%d %a %H:%M}",
