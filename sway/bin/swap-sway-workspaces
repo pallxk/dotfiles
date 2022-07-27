@@ -1,0 +1,10 @@
+#!/bin/sh
+
+focused_workspace=$(swaymsg -t get_workspaces | jq 'map(select( .focused ))[0].num')
+visible_not_focused_workspace=$(swaymsg -t get_workspaces | jq 'map(select( (.focused|not) and .visible ))[0].num')
+
+swaymsg \
+  'move workspace to output right;' \
+  "workspace ${visible_not_focused_workspace};" \
+  'move workspace to output right;' \
+  "workspace ${focused_workspace}"

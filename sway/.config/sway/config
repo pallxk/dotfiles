@@ -200,6 +200,9 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
     bindsym $mod+Ctrl+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+    # Swap workspaces
+    bindsym $mod+Shift+s exec swap-sway-workspaces
 #
 # Layout stuff:
 #
