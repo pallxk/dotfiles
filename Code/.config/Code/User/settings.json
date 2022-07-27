@@ -367,6 +367,10 @@
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   },
 
+  "[shellscript]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",<>/?",
+  },
+
   "[terraform]": {
     "editor.formatOnSave": true
   },
