@@ -1,5 +1,16 @@
 [global_config]
+  always_split_with_profile = True
 [keybindings]
+  switch_to_tab_1 = <Primary><Alt>1
+  switch_to_tab_2 = <Primary><Alt>2
+  switch_to_tab_3 = <Primary><Alt>3
+  switch_to_tab_4 = <Primary><Alt>4
+  switch_to_tab_5 = <Primary><Alt>5
+  switch_to_tab_6 = <Primary><Alt>6
+  switch_to_tab_7 = <Primary><Alt>7
+  switch_to_tab_8 = <Primary><Alt>8
+  switch_to_tab_9 = <Primary><Alt>9
+  switch_to_tab_10 = <Primary><Alt>0
   help = ""
 [profiles]
   [[default]]
