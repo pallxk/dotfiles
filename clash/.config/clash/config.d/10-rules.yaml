@@ -1,0 +1,10 @@
+# https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
+rule-providers:
+  direct:
+    behavior: classical
+    type: file
+    path: ./rules/direct.yaml
+
+# https://lancellc.gitbook.io/clash/clash-config-file/rules
+rules:
+  - RULE-SET,direct,DIRECT

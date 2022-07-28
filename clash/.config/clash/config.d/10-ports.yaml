@@ -1,0 +1,16 @@
+# https://lancellc.gitbook.io/clash/clash-config-file/general#port
+
+# Port of HTTP(S) proxy server on the local end
+port: 8080
+
+# Port of SOCKS5 proxy server on the local end
+socks-port: 1080
+
+# HTTP(S) and SOCKS4(A)/SOCKS5 server on the same port
+mixed-port: 7890
+
+# Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
+# redir-port: 7892
+
+# Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
+# tproxy-port: 7893

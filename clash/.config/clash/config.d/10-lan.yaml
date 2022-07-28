@@ -1,0 +1,12 @@
+# https://lancellc.gitbook.io/clash/clash-config-file/general#allow-lan
+
+allow-lan: false  # allow other devices access
+
+bind-address: "*" # access by lan with a/some specific IP addresses
+                  # "*": bind all IP addresses
+                  # 192.168.122.11: bind a single IPv4 address
+                  # "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+
+# authentication:   # authentication of local SOCKS5/HTTP(S) server
+#   - "user1:pass1"
+#   - "user2:pass2"

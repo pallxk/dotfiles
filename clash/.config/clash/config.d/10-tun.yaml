@@ -1,0 +1,16 @@
+# https://lancellc.gitbook.io/clash/clash-config-file/tun
+
+tun:
+  enable: true
+# stack: system
+  stack: gvisor
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+
+
+# https://github.com/MetaCubeX/Clash.Meta#iptables-configuration
+
+# iptables:
+#   enable: true  # when tun is enabled, iptables cannot be set automatically
