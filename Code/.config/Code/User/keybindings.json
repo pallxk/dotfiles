@@ -66,6 +66,33 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     //
+    // workbench navigation
+    //
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.toggleAuxiliaryBar",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "workbench.action.toggleAuxiliaryBar",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+shift+0",
+        "command": "workbench.action.focusAuxiliaryBar",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+shift+0",
+        "command": "workbench.action.focusAuxiliaryBar",
+        "when": "isMac"
+    },
+    {
+        "key": "alt+0",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    //
     // editor navigation
     //
     {
@@ -908,16 +935,6 @@
         "key": "cmd+,",
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && isMac"
-    },
-    {
-        "key": "ctrl+0",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "!isMac"
-    },
-    {
-        "key": "cmd+0",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "isMac"
     },
     {
         "key": "cmd+k cmd+o",
