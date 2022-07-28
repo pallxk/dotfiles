@@ -250,6 +250,13 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 #
+# Quick Note:
+#
+    bindsym $mod+q exec \
+       swaymsg '[title="^Google Keep" window_role=pop-up workspace=__focused__] move scratchpad' \
+    || swaymsg '[title="^Google Keep" window_role=pop-up] move workspace current, focus' \
+    || dex "$(grep -lr 'Google Keep' ~/.local/share/applications)"
+#
 # Notifications:
 #
     bindsym $mod+n exec "makoctl invoke; makoctl dismiss"
