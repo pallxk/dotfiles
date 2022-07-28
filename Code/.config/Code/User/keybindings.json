@@ -443,6 +443,11 @@
         "command": "search.action.collapseSearchResults",
         "when": "activeViewlet == 'workbench.view.search'"
     },
+    {
+        "key": "alt+f",
+        "command": "list.toggleFilterOnType",
+        "when": "focusedView == workbench.explorer.fileView"
+    },
     //
     // neovim
     //
