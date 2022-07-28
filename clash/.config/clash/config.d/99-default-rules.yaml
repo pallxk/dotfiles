@@ -1,4 +1,11 @@
+rule-providers:
+  direct:
+    behavior: classical
+    type: file
+    path: ./rules/direct.yaml
+
 rules:
   - GEOIP,PRIVATE,DIRECT,no-resolve
+  - RULE-SET,direct,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,proxy
