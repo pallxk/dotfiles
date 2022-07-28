@@ -151,6 +151,9 @@
     "**/{handlers,tasks}/**/*.{yml,yaml}": "ansible",
     // CSS
     "*.wxss": "css",
+    // i3/sway
+    "**/sway/{config,outputs}": "i3",
+    "**/sway/**/*.conf": "i3",
     // JavaScript
     "*.wxs": "javascript",
     // jsonc
