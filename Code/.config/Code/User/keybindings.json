@@ -92,6 +92,11 @@
         "key": "alt+0",
         "command": "workbench.action.focusActiveEditorGroup"
     },
+    {
+        "key": "alt+0",
+        "command": "workbench.action.focusPanel",
+        "when": "focusedView == ''"
+    },
     //
     // editor navigation
     //
