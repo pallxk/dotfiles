@@ -471,6 +471,20 @@
     // Search
     //
     {
+        "key": "ctrl+e",
+        "command": "actions.findWithSelection",
+        "when": "!isMac"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
         "key": "alt+backspace",
         "command": "search.action.collapseSearchResults",
         "when": "activeViewlet == 'workbench.view.search'"
