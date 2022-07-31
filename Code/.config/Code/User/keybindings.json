@@ -30,9 +30,14 @@
     // Join Lines
     //
     {
-        "key": "ctrl+shift+j",
+        "key": "alt+meta+j",
         "command": "editor.action.joinLines",
-        "when": "!inSearchEditor && !searchViewletFocus"
+        "when": "!isMac && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "editor.action.joinLines",
+        "when": "isMac && !notebookEditorFocused"
     },
     //
     // suggest
