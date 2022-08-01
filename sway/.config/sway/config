@@ -174,10 +174,10 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
+    # $mod+\ or $mod+Shift+\, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+Backslash splith
+    bindsym $mod+Shift+Backslash splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
