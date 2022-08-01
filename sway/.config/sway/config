@@ -222,10 +222,6 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
     bindsym $mod+Backspace exec makoctl dismiss
     bindsym $mod+Shift+Backspace exec makoctl dismiss --all
 #
-# Connectivity:
-#
-    bindsym $mod+c exec 'for c in ~/bin/*-openconnect; do "$c" & done'
-#
 # Screen shot:
 #
     bindsym Print exec grimshot copy "$(echo -e 'active\narea\nwindow\noutput\nscreen' | $menu -p 'grimshot copy' || echo canceled)"
