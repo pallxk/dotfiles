@@ -26,6 +26,10 @@
         "command": "revealFileInOS",
         "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
     },
+    {
+        "key": "shift+alt+l",
+        "command": "revealInExplorer"
+    },
     //
     // Join Lines
     //
