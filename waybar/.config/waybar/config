@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "custom/record"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/openconnect", "custom/clash", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "upower", "tray"],
+    "modules-right": ["custom/openconnect", "custom/clash", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "custom/audio_idle_inhibitor", "upower", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -79,6 +79,11 @@
         },
         "on-click-middle": "swaylock --color 000000",
         "on-click-right": "sudo chvt 6; sudo chvt 1"
+    },
+    "custom/audio_idle_inhibitor": {
+        "format": " ",
+        "exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+        "return-type": "json"
     },
     "tray": {
         // "icon-size": 21,

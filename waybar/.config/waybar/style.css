@@ -222,6 +222,16 @@ label:focus {
     color: #2d3436;
 }
 
+#custom-audio_idle_inhibitor {
+    background-color: #ecf0f1;
+    color: #ecf0f1;
+}
+
+#custom-audio_idle_inhibitor.none {
+    background-color: #2d3436;
+    color: #2d3436;
+}
+
 #mpd {
     background-color: #66cc99;
     color: #2a5c45;
