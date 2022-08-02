@@ -28,6 +28,8 @@ set $menu bemenu $menu_args
 set $menu_run bemenu-run $menu_args
 # Your preferred file manager
 set $fm thunar
+# Your preferred browser
+set $browser google-chrome-stable
 set $electron_args --enable-features=WebRTCPipeWireCapturer
 
 ### Behavior config
@@ -214,6 +216,10 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
        swaymsg '[title="^Google Keep" window_role=pop-up workspace=__focused__] move scratchpad' \
     || swaymsg '[title="^Google Keep" window_role=pop-up] move workspace current, focus' \
     || dex "$(grep -lr 'Google Keep' ~/.local/share/applications)"
+#
+# Dictionary:
+#
+    bindsym Ctrl+Mod1+d exec '$browser --new-window "https://www.google.com/search?q=define+$(wl-paste -p)"'
 #
 # Notifications:
 #
