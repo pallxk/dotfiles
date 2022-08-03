@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "custom/record"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/openconnect", "custom/clash", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "custom/audio_idle_inhibitor", "upower", "tray"],
+    "modules-right": ["custom/ssh-f", "custom/openconnect", "custom/clash", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "custom/audio_idle_inhibitor", "upower", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -211,6 +211,11 @@
         "exec": "http :9090/proxies | jq -c '{ text: \"\", tooltip: (.proxies | map( select(.history|last) | (.name+\": \"+((.history|last).delay|tostring)) ))|join(\"\n\") }'",
         "exec-if": "systemctl is-active clash-meta@$USER",
         "return-type": "json"
+    },
+    "custom/ssh-f": {
+        "interval": 10,
+        "on-click-middle": "pkill -f 'ssh -f'",
+        "exec": "pgrep -af 'ssh -f' | grep -o -P '(?<=ssh -f )[A-Za-z0-9]+(\\.[A-Za-z0-9]+)?' | tr '\\n' ' '"
     },
     "custom/openconnect": {
         "interval": 10,
