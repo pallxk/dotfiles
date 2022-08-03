@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ "$1" = stop ]; then
+	sudo systemctl stop clash-meta@$USER
+else
+	sudo systemctl start clash-meta@$USER
+fi
