@@ -13,6 +13,16 @@
         "command": "outline.focus",
         "when": "isMac && focusedView != 'workbench.explorer.fileView' || isMac && !explorerResourceIsFolder"
     },
+    {
+        "key": "ctrl+alt+h",
+        "command": "timeline.focus",
+        "when": "!isMac"
+    },
+    {
+        "key": "alt+cmd+h",
+        "command": "timeline.focus",
+        "when": "isMac"
+    },
     //
     // Copy path
     //
