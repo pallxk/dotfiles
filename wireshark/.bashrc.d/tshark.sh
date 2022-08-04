@@ -1,0 +1,1 @@
+alias tshark='tshark --color'
