@@ -1,6 +1,19 @@
 // Place your key bindings in this file to override the defaults
 [
     //
+    // View
+    //
+    {
+        "key": "ctrl+alt+o",
+        "command": "outline.focus",
+        "when": "!isMac && focusedView != 'workbench.explorer.fileView' || !isMac && !explorerResourceIsFolder"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "outline.focus",
+        "when": "isMac && focusedView != 'workbench.explorer.fileView' || isMac && !explorerResourceIsFolder"
+    },
+    //
     // Copy path
     //
     {
@@ -479,12 +492,12 @@
     {
         "key": "ctrl+alt+o",
         "command": "explorer.upload",
-        "when": "!isMac"
+        "when": "!isMac && focusedView == 'workbench.explorer.fileView' && explorerResourceIsFolder"
     },
     {
         "key": "cmd+alt+o",
         "command": "explorer.upload",
-        "when": "isMac"
+        "when": "isMac && focusedView == 'workbench.explorer.fileView' && explorerResourceIsFolder"
     },
     //
     // Search
