@@ -964,6 +964,19 @@
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && isMac"
     },
+    //
+    // Open
+    //
+    {
+        "key": "ctrl+k ctrl+shift+o",
+        "command": "workbench.action.openWorkspace",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+k shift+cmd+o",
+        "command": "workbench.action.openWorkspace",
+        "when": "isMac"
+    },
     {
         "key": "cmd+k cmd+o",
         "command": "workbench.action.files.openFileFolder",
