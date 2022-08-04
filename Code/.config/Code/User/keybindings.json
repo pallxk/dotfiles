@@ -23,6 +23,26 @@
         "command": "timeline.focus",
         "when": "isMac"
     },
+    {
+        "key": "ctrl+alt+g",
+        "command": "gitlens.views.fileHistory.focus",
+        "when": "!isMac"
+    },
+    {
+        "key": "alt+cmd+g",
+        "command": "gitlens.views.fileHistory.focus",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+shift+alt+g",
+        "command": "gitlens.views.lineHistory.focus",
+        "when": "!isMac"
+    },
+    {
+        "key": "shift+alt+cmd+g",
+        "command": "gitlens.views.lineHistory.focus",
+        "when": "isMac"
+    },
     //
     // Copy path
     //
