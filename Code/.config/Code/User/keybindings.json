@@ -436,7 +436,7 @@
         "when": "!isMac && !terminalFocus"
     },
     //
-    // Activity Bar
+    // Remote
     //
     {
         "key": "ctrl+shift+r",
@@ -447,6 +447,16 @@
         "key": "shift+cmd+r",
         "command": "workbench.view.remote",
         "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+r",
+        "command": "~remote.forwardedPortsContainer",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+k shift+cmd+r",
+        "command": "~remote.forwardedPortsContainer",
+        "when": "isMac"
     },
     //
     // Explorer
