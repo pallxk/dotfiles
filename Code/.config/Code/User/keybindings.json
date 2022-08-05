@@ -87,6 +87,29 @@
         "when": "isMac && editorTextFocus && !editorReadonly"
     },
     //
+    // Format
+    //
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "editor.action.formatChanges",
+        "when": "!isMac && !editorHasSelection"
+    },
+    {
+        "key": "cmd+k cmd+f",
+        "command": "editor.action.formatChanges",
+        "when": "isMac && !editorHasSelection"
+    },
+    //
     // suggest
     //
     {
