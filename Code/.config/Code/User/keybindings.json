@@ -374,6 +374,11 @@
     // editor - windows
     //
     {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.closeOtherEditors",
+        "when": "!isMac"
+    },
+    {
         "key": "alt+1",
         "command": "-workbench.action.openEditorAtIndex1"
     },
