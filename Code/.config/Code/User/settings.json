@@ -156,6 +156,8 @@
     "**/sway/**/*.conf": "i3",
     // JavaScript
     "*.wxs": "javascript",
+    // Json
+    "*.tfstate.backup": "json",
     // jsonc
     "*.cjson": "jsonc",
     // ssh_config
