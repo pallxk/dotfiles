@@ -585,6 +585,19 @@
         "when": "focusedView == workbench.explorer.fileView"
     },
     //
+    // Terminal Search
+    //
+    {
+        "key": "f3",
+        "command": "workbench.action.terminal.findNext",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported"
+    },
+    {
+        "key": "f3",
+        "command": "-workbench.action.terminal.findNext",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    //
     // neovim
     //
     {
