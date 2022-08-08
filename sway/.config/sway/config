@@ -214,8 +214,8 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
 # Quick Note:
 #
     bindsym $mod+q exec \
-       swaymsg '[title="^Google Keep" window_role=pop-up workspace=__focused__] move scratchpad' \
-    || swaymsg '[title="^Google Keep" window_role=pop-up] move workspace current, focus' \
+       swaymsg '[title="^Google Keep" workspace=__focused__] move scratchpad' \
+    || swaymsg '[title="^Google Keep"] move workspace current, focus' \
     || dex "$(grep -lr 'Google Keep' ~/.local/share/applications)"
 #
 # Dictionary:
