@@ -1,0 +1,27 @@
+#!/bin/sh
+
+focused_workspace=$(swaymsg -t get_workspaces | jq 'map(select( .focused ))[0].num')
+visible_cons=$(swaymsg -t get_tree | jq ".nodes[].nodes[] | select(.name == \"$focused_workspace\") | recurse(.nodes[]) | select(.pid) | .id")
+
+for con in $visible_cons; do
+  if [ "$1" = --reverse ]; then
+
+    if [ -z "$target_con" ]; then
+      target_con=$con
+      continue
+    fi
+
+    swaymsg [con_id="$con"] swap container with con_id "$target_con"
+    target_con=$con
+
+  else
+
+    if [ -z "$first_con" ]; then
+      first_con=$con
+      continue
+    fi
+
+    swaymsg [con_id="$con"] swap container with con_id "$first_con"
+
+  fi
+done
