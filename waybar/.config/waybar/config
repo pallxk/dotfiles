@@ -109,7 +109,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         // /sys/class/thermal/thermal_zone?/temp
