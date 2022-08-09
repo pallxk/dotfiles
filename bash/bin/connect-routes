@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ "$1" = stop ]; then
+	configure-routes del
+else
+	configure-routes add
+fi
