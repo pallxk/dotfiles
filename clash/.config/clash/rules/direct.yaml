@@ -1,3 +1,4 @@
 payload:
 - DOMAIN-SUFFIX,lan
 - DOMAIN-SUFFIX,local
+- DOMAIN,ipinfo.io
