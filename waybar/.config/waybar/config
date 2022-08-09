@@ -90,6 +90,7 @@
         "spacing": 10
     },
     "clock": {
+        "interval": 1,
         "calendar-weeks-pos": "right",
         // "timezone": "America/New_York",
         "timezones": [
@@ -100,7 +101,7 @@
         "on-click-right": "wtype -M Win -M Alt l",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%d %a %H:%M}",
-        "format-alt": "{:%Y-%m-%d}",
+        "format-alt": "{:%d %a %H:%M:%S}",
         "format-calendar-weeks": "<small>{}</small>"
     },
     "cpu": {
