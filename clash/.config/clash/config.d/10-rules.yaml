@@ -5,6 +5,12 @@ rule-providers:
     type: file
     path: ./rules/direct.yaml
 
+  proxy:
+    behavior: classical
+    type: file
+    path: ./rules/proxy.yaml
+
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,proxy

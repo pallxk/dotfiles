@@ -1,8 +1,13 @@
 rule-providers:
-  direct:
+  default-direct:
     behavior: classical
     type: file
-    path: ./rules/direct.yaml
+    path: ./rules/default-direct.yaml
+
+  default-proxy:
+    behavior: classical
+    type: file
+    path: ./rules/default-proxy.yaml
 
 rules:
   # https://docs.metacubex.one/function/rule/intype
@@ -10,7 +15,8 @@ rules:
   - IN-TYPE,SOCKS,proxy
 
   - GEOIP,PRIVATE,DIRECT,no-resolve
-  - RULE-SET,direct,DIRECT
+  - RULE-SET,default-direct,DIRECT
+  - RULE-SET,default-proxy,proxy
 
   # https://github.com/Loyalsoldier/v2ray-rules-dat
   - GEOSITE,geolocation-cn,DIRECT
