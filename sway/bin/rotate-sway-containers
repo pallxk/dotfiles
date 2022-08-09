@@ -1,6 +1,6 @@
 #!/bin/sh
 
-focused_workspace=$(swaymsg -t get_workspaces | jq 'map(select( .focused ))[0].num')
+focused_workspace=$(swaymsg -t get_workspaces | jq -r 'map(select( .focused ))[0].name')
 visible_cons=$(swaymsg -t get_tree | jq ".nodes[].nodes[] | select(.name == \"$focused_workspace\") | recurse(.nodes[]) | select(.pid) | .id")
 
 for con in $visible_cons; do
