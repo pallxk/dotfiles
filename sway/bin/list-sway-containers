@@ -1,0 +1,13 @@
+#!/bin/sh
+
+jq_filter='
+  recurse( .nodes[] )
+| ., .floating_nodes[]
+| select( .type | endswith("con") )
+| select( .name != null )
+| (.id|tostring) + "\t" + (.type | .[0:5]) + "\t" + .name
+'
+
+swaymsg -t get_tree \
+  | jq -r "$jq_filter" \
+  | sort -n
