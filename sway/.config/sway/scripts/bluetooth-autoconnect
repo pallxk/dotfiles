@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-set -euxo pipefail
+set -uxo pipefail
 
-for dev in $(bluetoothctl paired-devices | cut -d\  -f2); do
+# bluetoothctl >= 5.65: bluetoothctl devices Paired
+# bluetoothctl <  5.65: bluetoothctl paired-devices
+for dev in $(bluetoothctl devices Paired | cut -d\  -f2); do
   bluetoothctl connect "$dev"
 done
