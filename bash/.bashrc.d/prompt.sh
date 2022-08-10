@@ -41,6 +41,9 @@ __prompt_command () {
 		esac
 	fi
 
+	# https://codeberg.org/dnkl/foot#jumping-between-prompts
+	prompt_marker='\[\033]133;A\033\]'
+
 	# set variable identifying the chroot you work in (used in the prompt below)
 	if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 	    debian_chroot=$(cat /etc/debian_chroot)
@@ -89,7 +92,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="\n${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
+		PS1="\n${prompt_marker}${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
 	else
 		username='\u'
 		     pwd='\w'
@@ -121,7 +124,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="\n[${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
+		PS1="\n${prompt_marker}[${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
