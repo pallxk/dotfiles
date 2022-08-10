@@ -13,7 +13,7 @@ if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
 
   echo 'Launching sway...'
   # https://github.com/swaywm/sway/issues/5834#issuecomment-736368825
-  WLR_NO_HARDWARE_CURSORS=1 exec sway
+  WLR_NO_HARDWARE_CURSORS=1 exec sway > ~/.config/sway/stdout 2> ~/.config/sway/stderr
 fi
 
 # Autorun
