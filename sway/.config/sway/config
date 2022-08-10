@@ -137,7 +137,7 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
 # Moving around:
 #
     # Switch focus by container name
-    bindsym $mod+Tab exec pkill wofi || swaymsg [con_id="$(list-sway-containers | wofi -d | cut -d '\t' -f1)"] focus
+    bindsym $mod+Tab fullscreen disable; exec pkill wofi || swaymsg [con_id="$(list-sway-containers | wofi -d | cut -d '\t' -f1)"] focus
     # Switch focus by label
     bindsym $mod+Shift+Tab exec pkill wmfocus || wmfocus
 
