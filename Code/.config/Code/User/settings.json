@@ -103,6 +103,8 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
+  "editor.experimental.stickyScroll.enabled": true,
+
   "editor.find.autoFindInSelection": "multiline",
 
   "editor.guides.bracketPairs": true,
@@ -266,6 +268,8 @@
   "security.workspace.trust.untrustedFiles": "open",
 
   "search.followSymlinks": false,
+
+  "task.experimental.reconnection": true,
 
   // For macOS, it's command+k for chords, and does not conflict with ctrl+k in terminal.
   "terminal.integrated.allowChords": true,
