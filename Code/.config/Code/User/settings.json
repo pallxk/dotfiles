@@ -128,6 +128,7 @@
   "explorer.confirmDelete": false,
   // Controls if the explorer should ask for confirmation to move files and folders via drag and drop.
   "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrderLexicographicOptions": "upper",
 
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
