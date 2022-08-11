@@ -5,9 +5,34 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "custom/record"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["custom/ssh-f", "custom/openvpn", "custom/openconnect", "custom/clash", "network", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "idle_inhibitor", "custom/audio_idle_inhibitor", "upower", "tray"],
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "custom/media",
+        "custom/record"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "custom/ssh-f",
+        "custom/openvpn",
+        "custom/openconnect",
+        "custom/clash",
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "keyboard-state",
+        "battery",
+        "clock",
+        "idle_inhibitor",
+        "custom/audio_idle_inhibitor",
+        "upower",
+        "tray"
+    ],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
