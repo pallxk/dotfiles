@@ -891,6 +891,14 @@
         "when": "terminalFocus && !isMac"
     },
     {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u000b"
+        }, // ctrl-k
+        "when": "terminalFocus && !isMac"
+    },
+    {
         "key": "ctrl+k ctrl+f",
         "command": "workbench.action.terminal.focusFind",
         "when": "!isMac && terminalFocus && !terminalFindFocused"
