@@ -6,6 +6,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "custom/folder",
         "sway/workspaces",
         "sway/mode",
         "custom/media",
@@ -33,6 +34,12 @@
         "upower",
         "tray"
     ],
+    "custom/folder": {
+        "format": "",
+        "on-click": "wtype -M Alt -M Shift m",
+        "on-click-middle": "pkill thunar; thunar --daemon",
+        "on-click-right": "thunar ~/Downloads"
+    },
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
