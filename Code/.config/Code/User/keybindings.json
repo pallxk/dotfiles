@@ -64,22 +64,22 @@
         "when": "isMac && focusedView == 'gitlens.views.fileHistory'"
     },
     {
-        "key": "ctrl+shift+alt+g",
+        "key": "ctrl+alt+l",
         "command": "gitlens.views.lineHistory.focus",
         "when": "!isMac && focusedView != 'gitlens.views.lineHistory'"
     },
     {
-        "key": "ctrl+shift+alt+g",
+        "key": "ctrl+alt+l",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "!isMac && focusedView == 'gitlens.views.lineHistory'"
     },
     {
-        "key": "shift+alt+cmd+g",
+        "key": "alt+cmd+l",
         "command": "gitlens.views.lineHistory.focus",
         "when": "isMac && focusedView != 'gitlens.views.lineHistory'"
     },
     {
-        "key": "shift+alt+cmd+g",
+        "key": "alt+cmd+l",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "isMac && focusedView == 'gitlens.views.lineHistory'"
     },
