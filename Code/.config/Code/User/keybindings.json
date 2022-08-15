@@ -548,14 +548,14 @@
         "when": "isMac"
     },
     {
-        "key": "ctrl+alt+o",
+        "key": "ctrl+alt+u",
         "command": "explorer.upload",
-        "when": "!isMac && focusedView == 'workbench.explorer.fileView' && explorerResourceIsFolder"
+        "when": "!isMac && explorerResourceIsFolder"
     },
     {
-        "key": "cmd+alt+o",
+        "key": "cmd+alt+u",
         "command": "explorer.upload",
-        "when": "isMac && focusedView == 'workbench.explorer.fileView' && explorerResourceIsFolder"
+        "when": "isMac && explorerResourceIsFolder"
     },
     //
     // Search
