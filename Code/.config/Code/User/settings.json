@@ -187,6 +187,7 @@
   "git.autofetch": true,
   "git.ignoreLimitWarning": true,
   "git.mergeEditor": true,
+  "git.repositoryScanMaxDepth": 2,
   "git.untrackedChanges": "separate",
 
   "github.copilot.enable": {
