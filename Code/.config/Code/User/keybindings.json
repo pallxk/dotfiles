@@ -6,42 +6,82 @@
     {
         "key": "ctrl+alt+o",
         "command": "outline.focus",
-        "when": "!isMac && focusedView != 'workbench.explorer.fileView' || !isMac && !explorerResourceIsFolder"
+        "when": "!isMac && focusedView != 'outline'"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!isMac && focusedView == 'outline'"
     },
     {
         "key": "alt+cmd+o",
         "command": "outline.focus",
-        "when": "isMac && focusedView != 'workbench.explorer.fileView' || isMac && !explorerResourceIsFolder"
+        "when": "isMac && focusedView != 'outline'"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "isMac && focusedView == 'outline'"
     },
     {
         "key": "ctrl+alt+h",
         "command": "timeline.focus",
-        "when": "!isMac"
+        "when": "!isMac && focusedView != 'timeline'"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!isMac && focusedView == 'timeline'"
     },
     {
         "key": "alt+cmd+h",
         "command": "timeline.focus",
-        "when": "isMac"
+        "when": "isMac && focusedView != 'timeline'"
+    },
+    {
+        "key": "alt+cmd+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "isMac && focusedView == 'timeline'"
     },
     {
         "key": "ctrl+alt+g",
         "command": "gitlens.views.fileHistory.focus",
-        "when": "!isMac"
+        "when": "!isMac && focusedView != 'gitlens.views.fileHistory'"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!isMac && focusedView == 'gitlens.views.fileHistory'"
     },
     {
         "key": "alt+cmd+g",
         "command": "gitlens.views.fileHistory.focus",
-        "when": "isMac"
+        "when": "isMac && focusedView != 'gitlens.views.fileHistory'"
+    },
+    {
+        "key": "alt+cmd+g",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "isMac && focusedView == 'gitlens.views.fileHistory'"
     },
     {
         "key": "ctrl+shift+alt+g",
         "command": "gitlens.views.lineHistory.focus",
-        "when": "!isMac"
+        "when": "!isMac && focusedView != 'gitlens.views.lineHistory'"
+    },
+    {
+        "key": "ctrl+shift+alt+g",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!isMac && focusedView == 'gitlens.views.lineHistory'"
     },
     {
         "key": "shift+alt+cmd+g",
         "command": "gitlens.views.lineHistory.focus",
-        "when": "isMac"
+        "when": "isMac && focusedView != 'gitlens.views.lineHistory'"
+    },
+    {
+        "key": "shift+alt+cmd+g",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "isMac && focusedView == 'gitlens.views.lineHistory'"
     },
     //
     // Copy path
