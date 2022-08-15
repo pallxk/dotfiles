@@ -214,6 +214,19 @@
         "command": "workbench.action.navigateForward"
     },
     //
+    // Build
+    //
+    {
+        "key": "ctrl+k ctrl+shift+b",
+        "command": "workbench.action.tasks.build",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+k shift+cmd+b",
+        "command": "workbench.action.tasks.build",
+        "when": "isMac"
+    },
+    //
     // Debug
     //
     {
