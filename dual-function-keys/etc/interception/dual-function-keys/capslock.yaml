@@ -1,0 +1,12 @@
+# https://gitlab.com/interception/linux/plugins/dual-function-keys
+
+TIMING:
+  TAP_MILLISEC: 200
+  DOUBLE_TAP_MILLISEC: 150
+
+# https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h
+MAPPINGS:
+  - KEY: KEY_CAPSLOCK
+    TAP: KEY_HANGEUL
+    HOLD: KEY_CAPSLOCK
+    HOLD_START: AFTER_RELEASE
