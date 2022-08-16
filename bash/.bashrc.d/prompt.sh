@@ -5,7 +5,24 @@ else
 	PROMPT_COMMAND="__prompt_command; ${PROMPT_COMMAND%; }; timer_clear"
 fi
 
+osc7_cwd() {
+    local strlen=${#PWD}
+    local encoded=""
+    local pos c o
+    for (( pos=0; pos<strlen; pos++ )); do
+        c=${PWD:$pos:1}
+        case "$c" in
+            [-/:_.!\'\(\)~[:alnum:]] ) o="${c}" ;;
+            * ) printf -v o '%%%02X' "'${c}" ;;
+        esac
+        encoded+="${o}"
+    done
+    printf '\e]7;file://%s%s\e\\' "${HOSTNAME}" "${encoded}"
+}
+
 __prompt_command () {
+	osc7_cwd
+
 	# Remember the exit code of last command or it will get overwritten here
 	local ret=$?
 
