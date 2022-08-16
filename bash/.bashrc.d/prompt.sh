@@ -109,7 +109,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="\n${prompt_marker}${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
+		PS1="${prompt_marker}\n${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
 	else
 		username='\u'
 		     pwd='\w'
@@ -141,7 +141,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="\n${prompt_marker}[${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
+		PS1="${prompt_marker}\n[${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
