@@ -20,6 +20,7 @@
         "custom/openvpn",
         "custom/openconnect",
         "custom/clash",
+        "custom/frpc",
         "network",
         "pulseaudio",
         "cpu",
@@ -235,6 +236,13 @@
         "exec-if": "sleep .5; pgrep wf-recorder",
         "on-click": "pkill -2 wf-recorder",
         "on-click-middle": "pkill wf-recorder"
+    },
+    "custom/frpc": {
+        "interval": 10,
+        "on-click": "sudo systemctl start frpc",
+        "on-click-middle": "sudo systemctl stop frpc",
+        "on-click-right": "sudo systemctl restart frpc",
+        "exec": "if [ $(systemctl is-active frpc) = active ]; then echo ''; else echo ''; fi"
     },
     "custom/clash": {
         "interval": 30,
