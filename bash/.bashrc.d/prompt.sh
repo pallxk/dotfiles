@@ -21,8 +21,6 @@ osc7_cwd() {
 }
 
 __prompt_command () {
-	osc7_cwd
-
 	# Remember the exit code of last command or it will get overwritten here
 	local ret=$?
 
@@ -36,6 +34,9 @@ __prompt_command () {
 
 	# Calculate run time of last command
 	timer_stop
+
+	# CWD integration
+	osc7_cwd
 
 	local color_prompt force_color_prompt
 
