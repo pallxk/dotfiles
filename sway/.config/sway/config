@@ -18,7 +18,8 @@ set $copy wl-copy --trim-newline
 set $paste wl-paste | wtype -
 # Your preferred terminal emulator
 set $term terminator
-set $term_floating foot
+set $term_floating footclient || foot
+set $term_floating_app_id foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -96,8 +97,8 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
 #
     # Start a terminal
     bindsym $mod+grave exec \
-           swaymsg '[app_id=foot workspace=__focused__] move scratchpad' \
-        || swaymsg '[app_id=$term_floating] move workspace current; [app_id=$term_floating] focus' \
+           swaymsg '[app_id=$term_floating_app_id workspace=__focused__] move scratchpad' \
+        || swaymsg '[app_id=$term_floating_app_id] move workspace current; [app_id=$term_floating_app_id] focus' \
         || $term_floating
     bindsym $mod+Return exec $term
     bindsym $mod+Shift+Return exec $term_floating
