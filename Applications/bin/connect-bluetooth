@@ -2,8 +2,14 @@
 
 set -uxo pipefail
 
+if [ "${1-}" = stop ]; then
+  action=disconnect
+else
+  action=connect
+fi
+
 # bluetoothctl >= 5.65: bluetoothctl devices Paired
 # bluetoothctl <  5.65: bluetoothctl paired-devices
 for dev in $(bluetoothctl devices Paired | cut -d\  -f2); do
-  bluetoothctl connect "$dev"
+  bluetoothctl "$action" "$dev"
 done
