@@ -247,7 +247,7 @@
     },
     "custom/clash": {
         "interval": 10,
-        "on-click": "wtype -M Win -M Alt y",
+        "on-click": "sudo systemctl start clash-meta@$USER",
         "on-click-middle": "sudo systemctl stop clash-meta@$USER",
         "on-click-right": "sudo systemctl restart clash-meta@$USER",
         "exec": "systemctl is-active clash-meta@$USER > /dev/null && http :9090/proxies | jq -c '{ text: \"\", tooltip: (.proxies | map( select(.history|last) | (.name+\": \"+((.history|last).delay|tostring)) ))|join(\"\n\") }' || jq -cn '{text: \"\", tooltip: \"clash not running\"}'",
