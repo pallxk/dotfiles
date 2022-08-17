@@ -21,6 +21,7 @@
         "custom/openconnect",
         "custom/clash",
         "custom/frpc",
+        "custom/routes",
         "network",
         "pulseaudio",
         "cpu",
@@ -236,6 +237,14 @@
         "exec-if": "sleep .5; pgrep wf-recorder",
         "on-click": "pkill -2 wf-recorder",
         "on-click-middle": "pkill wf-recorder"
+    },
+    "custom/routes": {
+        "interval": 10,
+        "on-click": "configure-routes add",
+        "on-click-middle": "configure-routes del",
+        "on-click-right": "configure-routes del; configure-routes add",
+        "exec": "if [ \"$(ip r | grep via | grep -v default)\" ]; then jq -cn '{text: \"\", tooltip: \"custom routes active\"}'; else jq -cn '{text: \"\", tooltip: \"custom routes inactive\"}'; fi",
+        "return-type": "json"
     },
     "custom/frpc": {
         "interval": 10,
