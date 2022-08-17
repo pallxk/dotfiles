@@ -245,7 +245,7 @@
         "exec": "systemctl is-active frpc > /dev/null && echo '' || echo ''"
     },
     "custom/clash": {
-        "interval": 30,
+        "interval": 10,
         "on-click": "wtype -M Win -M Alt y",
         "on-click-middle": "sudo systemctl stop clash-meta@$USER",
         "on-click-right": "sudo systemctl restart clash-meta@$USER",
