@@ -204,11 +204,11 @@
         "when": "isMac"
     },
     {
-        "key": "alt+0",
+        "key": "alt+j",
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
-        "key": "alt+0",
+        "key": "alt+j",
         "command": "workbench.action.focusPanel",
         "when": "focusedView == ''"
     },
