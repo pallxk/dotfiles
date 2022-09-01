@@ -205,12 +205,18 @@
     },
     {
         "key": "alt+j",
-        "command": "workbench.action.focusActiveEditorGroup"
+        "command": "workbench.action.focusPanel",
+        "when": "!panelFocus"
     },
     {
         "key": "alt+j",
-        "command": "workbench.action.focusPanel",
-        "when": "focusedView == ''"
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "panelFocus && editorAreaVisible"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelFocus && !editorAreaVisible"
     },
     //
     // editor navigation
