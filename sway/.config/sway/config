@@ -100,6 +100,10 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
            swaymsg '[app_id=$term_floating_app_id workspace=__focused__] move scratchpad' \
         || swaymsg '[app_id=$term_floating_app_id] move workspace current; [app_id=$term_floating_app_id] focus' \
         || $term_floating
+    bindsym $mod+Escape exec \
+           swaymsg '[app_id=$term_floating_app_id workspace=__focused__] move scratchpad' \
+        || swaymsg '[app_id=$term_floating_app_id] move workspace current; [app_id=$term_floating_app_id] focus' \
+        || $term_floating
     bindsym $mod+Return exec $term
     bindsym $mod+Shift+Return exec $term_floating
 
