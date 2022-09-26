@@ -1,3 +1,6 @@
+# One letter shortcut to git
+alias g=git
+
 # Proxy git to insert default options
 
 # Only source this if git installed
