@@ -201,6 +201,7 @@
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
+  "gitlens.defaultGravatarsStyle": "identicon",
   "gitlens.keymap": "alternate",
 
   // Groovy
