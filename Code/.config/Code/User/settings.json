@@ -91,7 +91,7 @@
   "diffEditor.renderSideBySide": false,
 
   "editor.cursorSurroundingLines": 3,
-  "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Courier New', monospace, FontAwesome",
+  "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
   "editor.lineHeight": 18,
   "editor.mouseWheelZoom": true,
   "editor.renderFinalNewline": true,
