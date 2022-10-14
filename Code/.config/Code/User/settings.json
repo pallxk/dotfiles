@@ -285,6 +285,7 @@
     "-workbench.action.terminal.paste",         // ctrl+v
     "search.action.collapseSearchResults",            // alt+backspace
     "workbench.action.togglePanel",                   // ctrl+j
+    "workbench.action.toggleSidebarVisibility",       // ctrl+alt+b (custom)
     "workbench.action.terminal.newWithCwd",           // ctrl+alt+1-9, required on Linux
     "workbench.files.action.collapseExplorerFolders", // alt+backspace
   ],
