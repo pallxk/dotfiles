@@ -43,7 +43,7 @@ pathmunge () {
 
 # include ruby bin directories in PATH
 # (Prefer using rvm)
-#for dir in ~/.gem/ruby/*/bin; do
+#for dir in ~/.local/share/gem/ruby/*/bin; do
 #	test -d "$dir" && pathmunge "$dir"
 #done
 
