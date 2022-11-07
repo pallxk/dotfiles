@@ -370,6 +370,10 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.wrapTabs": true,
 
+  "workbench.editorAssociations": {
+    "*.md": "default"
+  },
+
   "workbench.layoutControl.enabled": true,
   "workbench.layoutControl.type": "both",
 
