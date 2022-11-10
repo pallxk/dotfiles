@@ -343,6 +343,8 @@
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
 
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+
   // Get rid of that annoying message that shows up everytime you make a new file
   "vim.disableAnnoyingNeovimMessage": true,
 
@@ -373,6 +375,8 @@
   "workbench.editorAssociations": {
     "*.md": "default"
   },
+
+  "workbench.experimental.settingsProfiles.enabled": true,
 
   "workbench.layoutControl.enabled": true,
   "workbench.layoutControl.type": "both",
