@@ -651,6 +651,16 @@
         "command": "list.toggleFilterOnType",
         "when": "focusedView == workbench.explorer.fileView"
     },
+    {
+        "key": "alt+v",
+        "command": "search.action.viewAsTree",
+        "when": "focusedView == 'workbench.view.search' && !inTreeView"
+    },
+    {
+        "key": "alt+v",
+        "command": "search.action.viewAsList",
+        "when": "focusedView == 'workbench.view.search' && inTreeView"
+    },
     //
     // Terminal Search
     //
