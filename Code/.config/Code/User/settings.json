@@ -103,8 +103,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
-  "editor.experimental.stickyScroll.enabled": true,
-
   "editor.find.autoFindInSelection": "multiline",
 
   "editor.guides.bracketPairs": true,
@@ -119,6 +117,8 @@
   "editor.minimap.size": "fit",
 
   "editor.semanticHighlighting.enabled": true,
+
+  "editor.stickyScroll.enabled": true,
 
   "emmet.includeLanguages": {
     "wxml": "html"
