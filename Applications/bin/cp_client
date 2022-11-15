@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd "$(dirname "$0")/../Applications/cpyvpn"
+exec python -m cpyvpn.client "$@"

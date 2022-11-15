@@ -101,6 +101,10 @@
 	path = vim/.vim/bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
 	ignore = dirty
+[submodule "Applications/Applications/cpyvpn"]
+	path = Applications/Applications/cpyvpn
+	url = https://gitlab.com/cpvpn/cpyvpn.git
+	ignore = dirty
 [submodule "Applications/Applications/rmate"]
 	path = Applications/Applications/rmate
 	url = https://github.com/aurora/rmate.git
