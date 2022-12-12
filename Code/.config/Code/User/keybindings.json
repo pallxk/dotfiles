@@ -531,45 +531,45 @@
         "when": "!isMac"
     },
     //
-    // editor group - Windows
+    // editor group - Windows/Linux/chromeOS
     //
     {
-        "key": "alt+1",
+        "key": "ctrl+shift+1",
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+2",
+        "key": "ctrl+shift+2",
         "command": "workbench.action.focusSecondEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+3",
+        "key": "ctrl+shift+3",
         "command": "workbench.action.focusThirdEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+4",
+        "key": "ctrl+shift+4",
         "command": "workbench.action.focusFourthEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+5",
+        "key": "ctrl+shift+5",
         "command": "workbench.action.focusFifthEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+6",
+        "key": "ctrl+shift+6",
         "command": "workbench.action.focusSixthEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+7",
+        "key": "ctrl+shift+7",
         "command": "workbench.action.focusSeventhEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+8",
+        "key": "ctrl+shift+8",
         "command": "workbench.action.focusEighthEditorGroup",
         "when": "!isMac && !terminalFocus"
     },
