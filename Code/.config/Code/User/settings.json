@@ -322,9 +322,7 @@
   },
   "terminal.integrated.tabs.enabled": false,
 
-  "terraform-ls.experimentalFeatures": {
-    "prefillRequiredFields": true
-  },
+  "terraform.experimentalFeatures.prefillRequiredFields": true,
 
   // Configure glob patterns of file paths to exclude from linting
   "tslint.exclude": "**/{lib,out,dist}/**",
