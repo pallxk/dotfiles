@@ -759,6 +759,8 @@
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "!isMac"
     },
+    // Disable quick open view in terminal;
+    // Enable quick open view on Linux/ChromeOS.
     {
         "key": "ctrl+q",
         "command": "-workbench.action.quickOpenView"
@@ -767,6 +769,16 @@
         "key": "ctrl+q",
         "command": "workbench.action.quickOpenView",
         "when": "!terminalFocus && !inViewsPicker"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "!terminalFocus && inViewsPicker"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.quickOpenNavigatePreviousInViewPicker",
+        "when": "!terminalFocus && inViewsPicker"
     },
     // {
     //     "key": "ctrl+alt+0",
