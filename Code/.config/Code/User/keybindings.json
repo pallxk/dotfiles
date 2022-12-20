@@ -1241,4 +1241,17 @@
         "command": "-emojisense.quickEmojitext",
         "when": "editorTextFocus"
     },
+    //
+    // ChromeOS - spare ctrl+space for input method switch
+    //
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !isLinux && !isMac && !isWindows"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus && !isLinux && !isMac && !isWindows"
+    },
 ]
