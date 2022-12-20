@@ -249,8 +249,6 @@
   },
 
   "minapp-vscode.disableAutoConfig": true,
-
-  "problems.defaultViewMode": "table",
   "problems.showCurrentInStatus": true,
 
   "redhat.telemetry.enabled": false,
@@ -267,8 +265,11 @@
   "remote.SSH.connectTimeout": 30,
   "remote.SSH.useLocalServer": true,
 
+  "scm.defaultViewMode": "tree",
+
   "security.workspace.trust.untrustedFiles": "open",
 
+  "search.defaultViewMode": "tree",
   "search.followSymlinks": false,
 
   "task.experimental.reconnection": true,
