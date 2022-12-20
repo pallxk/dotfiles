@@ -60,7 +60,7 @@ __prompt_command () {
 	fi
 
 	# https://codeberg.org/dnkl/foot#jumping-between-prompts
-	prompt_marker='\[\033]133;A\033\]'
+	prompt_marker='\[\033]133;A\033\\\]'
 
 	# set variable identifying the chroot you work in (used in the prompt below)
 	if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
