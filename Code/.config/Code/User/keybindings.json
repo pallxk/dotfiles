@@ -1253,6 +1253,12 @@
         "command": "-emojisense.quickEmojitext",
         "when": "editorTextFocus"
     },
+    // Overtype
+    {
+        "key": "ctrl+shift+i",
+        "command": "-overtype.toggle",
+        "when": "editorFocus"
+    },
     //
     // ChromeOS - spare ctrl+space for input method switch
     //
