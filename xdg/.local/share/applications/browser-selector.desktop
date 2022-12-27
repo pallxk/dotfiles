@@ -3,6 +3,6 @@ Type=Application
 Name=browser-selector
 Comment=Browser Selector
 Terminal=false
-Exec=~/bin/browser-selector %U
+Exec=browser-selector %U
 Categories=Network;WebBrowser
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
