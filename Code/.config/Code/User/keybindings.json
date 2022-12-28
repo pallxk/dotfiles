@@ -231,11 +231,6 @@
         "command": "workbench.action.previousEditor",
         "when": "!inQuickOpen"
     },
-    {
-        "key": "ctrl+alt+p",
-        "command": "workbench.action.quickOpen",
-        "when": "!isMac"
-    },
     // for use in integrated terminal on chromeOS
     {
         "key": "cmd+p",
