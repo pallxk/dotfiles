@@ -1285,4 +1285,11 @@
         "command": "workbench.action.output.toggleOutput",
         "when": "isMac && workbench.panel.output.active"
     },
+    //
+    // Notifications
+    //
+    {
+        "key": "alt+n",
+        "command": "notifications.toggleList"
+    },
 ]
