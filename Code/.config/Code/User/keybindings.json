@@ -1267,4 +1267,22 @@
         "command": "-toggleSuggestionDetails",
         "when": "suggestWidgetVisible && textInputFocus && !isLinux && !isMac && !isWindows"
     },
+    //
+    // Toggle Output Panel
+    //
+    {
+        "key": "ctrl+shift+u",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "!isMac && workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+k ctrl+h",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "!isMac && workbench.panel.output.active"
+    },
+    {
+        "key": "cmd+k cmd+h",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "isMac && workbench.panel.output.active"
+    },
 ]
