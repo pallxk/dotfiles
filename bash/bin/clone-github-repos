@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+ORG=${1:?Please specify organization/user to clone}
+URL=sshUrl
+
+for url in $(gh repo list "$ORG" --limit 1000 --json "$URL" | jq -r .[]."$URL"); do
+  git clone "$url"
+done
