@@ -136,7 +136,7 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%d %a %H:%M}",
         "format-alt": "{:%d %a %H:%M:%S}",
-        "format-calendar-weeks": "<small>{}</small>"
+        "format-calendar-weeks": "<small>{:%V}</small>"
     },
     "cpu": {
         "format": "{usage}% ",
