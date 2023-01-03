@@ -3,7 +3,7 @@
 dns:
   enable: true
 
-  ipv6: false
+  ipv6: true
   listen: 0.0.0.0:35353
 
   use-hosts: true                # lookup hosts and return IP record

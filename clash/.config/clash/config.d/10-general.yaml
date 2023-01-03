@@ -19,4 +19,4 @@ secret: "" # Secret for RESTful API (Optional)
 #   redirect-to-tun:  # only hook traffic of the egress NIC and conflict with auto-route
 #     - ens33
 
-# ipv6: false
+ipv6: true
