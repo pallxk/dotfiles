@@ -1,0 +1,22 @@
+#!/usr/bin/env ansible-playbook
+
+# Example Usage:
+#   ansible-system -i example.com, --ask-pass -e ansible_port=22 -e ansible_user=root
+---
+- name: ansible-system
+  hosts: all
+  gather_facts: true
+  vars:
+    _:
+      ansible_distribution: "{{ ansible_distribution | default(omit) }}"
+      ansible_distribution_file_path: "{{ ansible_distribution_file_path | default(omit) }}"
+      ansible_distribution_file_variety: "{{ ansible_distribution_file_variety | default(omit) }}"
+      ansible_distribution_major_version: "{{ ansible_distribution_major_version | default(omit) }}"
+      ansible_distribution_release: "{{ ansible_distribution_release | default(omit) }}"
+      ansible_distribution_version: "{{ ansible_distribution_version | default(omit) }}"
+      ansible_lsb: "{{ ansible_lsb | default(omit) }}"
+      ansible_os_family: "{{ ansible_os_family | default(omit) }}"
+      ansible_system: "{{ ansible_system | default(omit) }}"
+  tasks:
+    - debug:
+        var: _
