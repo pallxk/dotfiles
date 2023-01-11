@@ -1,0 +1,11 @@
+#!/usr/bin/env ansible-playbook
+
+# Example Usage:
+#   ansible-facts -i example.com, --ask-pass -e ansible_port=22 -e ansible_user=root
+---
+- hosts: all
+  gather_facts: yes
+  tasks:
+    - name: ansible_facts
+      debug:
+        var: ansible_facts
