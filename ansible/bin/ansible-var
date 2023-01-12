@@ -1,0 +1,11 @@
+#!/usr/bin/env ansible-playbook
+
+# Example Usage:
+#   ansible-var -e var=ansible_default_ipv4 -i example.com, --ask-pass -e ansible_port=22 -e ansible_user=root
+---
+- hosts: all
+  gather_facts: true
+  tasks:
+    - name: vars
+      debug:
+        var: "{{ var | default('vars') }}"
