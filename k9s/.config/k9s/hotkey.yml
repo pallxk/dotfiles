@@ -1,0 +1,144 @@
+# $XDG_CONFIG_HOME/k9s/hotkey.yml
+
+hotKey:
+  a:
+    shortCut:    a
+    description: ServiceAccounts
+    command:     sa
+  A:
+    shortCut:    Shift-A
+    description: ApiServices
+    command:     apiservice
+
+  b:
+    shortCut:    b
+    description: RoleBindings
+    command:     rolebinding
+  B:
+    shortCut:    Shift-B
+    description: ClusterRoleBindings
+    command:     clusterrolebinding
+
+  # c: Copy
+  C:
+    shortCut:    Shift-C
+    description: CronJobs
+    command:     cj
+
+  d:
+    shortCut:    d
+    description: Deployments
+    command:     deploy
+  D:
+    shortCut:    Shift-D
+    description: DaemonSets
+    command:     ds
+
+  e:
+    shortCut:    e
+    description: Endpoints
+    command:     endpoints
+  E:
+    shortCut:    Shift-E
+    description: EndpointSlices
+    command:     endpointslices
+
+  # g: Goto Top
+  # G: Goto Bottom
+
+  # h: Left
+
+  i:
+    shortCut:    i
+    description: Ingresses
+    command:     ing
+  I:
+    shortCut:    Shift-I
+    description: IngressClasses
+    command:     ingressclass
+
+  # j: Down
+  J:
+    shortCut:    Shift-J
+    description: Jobs
+    command:     job
+
+  # k: Up
+
+  # l: Right
+  L:
+    shortCut:    Shift-L
+    description: Leases
+    command:     lease
+
+  m:
+    shortCut:    m
+    description: ConfigMaps
+    command:     cm
+
+  n:
+    shortCut:    n
+    description: Namespaces
+    command:     ns
+  N:
+    shortCut:    Shift-N
+    description: Nodes
+    command:     node
+
+  o:
+    shortCut:    o
+    description: Popeye
+    command:     pop
+
+  p:
+    shortCut:    p
+    description: Pods
+    command:     po
+  # P: Not working for unknown reason
+
+  r:
+    shortCut:    r
+    description: Roles
+    command:     role
+  R:
+    shortCut:    Shift-R
+    description: ClusterRoles
+    command:     clusterrole
+
+  s:
+    shortCut:    s
+    description: StatefulSets
+    command:     sts
+  S:
+    shortCut:    Shift-S
+    description: StorageClasses
+    command:     sc
+
+  u:
+    shortCut:    u
+    description: Services
+    command:     svc
+
+  t:
+    shortCut:    t
+    description: Events
+    command:     ev
+
+  v:
+    shortCut:    v
+    description: PersistentVolumes
+    command:     pv
+  V:
+    shortCut:    Shift-V
+    description: PersistentVolumeClaims
+    command:     pvc
+
+  x:
+    shortCut:    x
+    description: Secrets
+    command:     secret
+
+  z:
+    shortCut:    z
+    description: Contexts
+    command:     ctx
