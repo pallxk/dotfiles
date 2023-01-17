@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+BASE_URL=${1:?Please specify bitbucket base url}
+PROJECT=${2:-}
+CLONE_TYPE=ssh
+
+if [ "$PROJECT" ]; then
+  projects=$PROJECT
+else
+  projects=$(
+    curl \
+      "$BASE_URL"/rest/api/latest/projects \
+      -fsS \
+      -H "Authorization: Bearer $BITBUCKET_TOKEN" \
+    | jq -r '.values[].key'
+  )
+fi
+
+for project in $projects; do
+  echo "Project: $project"
+  mkdir -p "$project"
+
+  repos=$(
+    curl \
+      "$BASE_URL"/rest/api/latest/projects/"$project"/repos \
+      -fsS \
+      -H "Authorization: Bearer $BITBUCKET_TOKEN" \
+    | jq -r '.values[].links.clone[] | select(.name=="'$CLONE_TYPE'") | .href'
+  )
+
+  pushd "$project"
+  for repo in $repos; do
+    echo "Repo: $repo"
+    git clone "$repo"
+    echo
+  done
+  popd
+
+  echo
+done
