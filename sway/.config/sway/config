@@ -62,8 +62,8 @@ bindsym $mod+Ctrl+p exec wl-mirror "$(swaymsg -t get_outputs | jq -r .[].name | 
 # Example configuration:
 #
 exec swayidle -w \
-     timeout 600 'swaymsg "output * dpms off"; swaylock -f -c 000000' \
-          resume 'swaymsg "output * dpms on"' \
+     timeout 600 'swaymsg "output * power off"; swaylock -f -c 000000' \
+          resume 'swaymsg "output * power on"' \
     before-sleep 'swaylock -f -c 000000'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
