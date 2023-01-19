@@ -230,13 +230,6 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
 #
     bindsym Ctrl+Mod1+d exec '$browser --new-window "https://www.google.com/search?q=define+$(wl-paste -p)"'
 #
-# Notifications:
-#
-    bindsym $mod+n exec "makoctl invoke; makoctl dismiss"
-    bindsym $mod+Shift+n exec makoctl restore
-    bindsym $mod+Backspace exec makoctl dismiss
-    bindsym $mod+Shift+Backspace exec makoctl dismiss --all
-#
 # Screen shot:
 #
     bindsym Print exec grimshot copy "$(echo -e 'active\narea\nwindow\noutput\nscreen' | $menu -p 'grimshot copy' || echo canceled)"
