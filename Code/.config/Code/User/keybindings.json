@@ -606,6 +606,11 @@
         "when": "activeViewlet == 'workbench.view.explorer'"
     },
     {
+        "key": "shift+alt+f",
+        "command": "filesExplorer.findInFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
         "key": "ctrl+alt+s",
         "command": "explorer.download",
         "when": "!isMac"
