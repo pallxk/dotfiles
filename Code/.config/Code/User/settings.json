@@ -357,7 +357,7 @@
 
   "window.experimental.windowControlsOverlay.enabled": true,
 
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Default Light+ Experimental",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.activityBar.visible": false,
