@@ -102,16 +102,12 @@
         "when": "!isMac && !fileMatchOrFolderMatchWithResourceFocus"
     },
     //
-    // Reveal in explorer
+    // Reveal in OS
     //
     {
         "key": "shift+alt+r",
         "command": "revealFileInOS",
         "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
-    },
-    {
-        "key": "shift+alt+l",
-        "command": "revealInExplorer"
     },
     //
     // Join Lines
@@ -600,6 +596,10 @@
     //
     // Explorer
     //
+    {
+        "key": "alt+;",
+        "command": "revealInExplorer"
+    },
     {
         "key": "alt+shift+;",
         "command": "workbench.files.action.collapseExplorerFolders",
