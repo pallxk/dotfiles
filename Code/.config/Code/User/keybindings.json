@@ -601,7 +601,7 @@
     // Explorer
     //
     {
-        "key": "alt+backspace",
+        "key": "alt+shift+;",
         "command": "workbench.files.action.collapseExplorerFolders",
         "when": "activeViewlet == 'workbench.view.explorer'"
     },
@@ -648,7 +648,12 @@
         "when": "inFilesPicker && inQuickOpen"
     },
     {
-        "key": "alt+backspace",
+        "key": "alt+;",
+        "command": "search.action.expandSearchResults",
+        "when": "activeViewlet == 'workbench.view.search'"
+    },
+    {
+        "key": "alt+shift+;",
         "command": "search.action.collapseSearchResults",
         "when": "activeViewlet == 'workbench.view.search'"
     },
