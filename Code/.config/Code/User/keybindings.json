@@ -659,7 +659,7 @@
     },
     {
         "key": "alt+f",
-        "command": "list.toggleFilterOnType",
+        "command": "list.toggleFindMode",
         "when": "focusedView == workbench.explorer.fileView"
     },
     {
