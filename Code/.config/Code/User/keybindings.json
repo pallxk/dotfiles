@@ -46,7 +46,7 @@
     {
         "key": "ctrl+alt+g",
         "command": "gitlens.views.fileHistory.focus",
-        "when": "!isMac && focusedView != 'gitlens.views.fileHistory'"
+        "when": "!isMac && focusedView != 'gitlens.views.fileHistory' && focusedView != 'terminal'"
     },
     {
         "key": "ctrl+alt+g",
