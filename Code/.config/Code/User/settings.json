@@ -94,7 +94,6 @@
   "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
   "editor.lineHeight": 18,
   "editor.mouseWheelZoom": true,
-  "editor.renderFinalNewline": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120, 160 ],
   "editor.suggestSelection": "first",
