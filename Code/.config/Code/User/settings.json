@@ -351,6 +351,7 @@
   "vscode-neovim.useWSL": false,
 
   "window.commandCenter": true,
+  "window.menuBarVisibility": "classic",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
 
