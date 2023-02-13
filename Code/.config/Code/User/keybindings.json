@@ -630,13 +630,18 @@
         "command": "explorer.upload",
         "when": "isMac && explorerResourceIsFolder"
     },
+    {
+        "key": "ctrl+e",
+        "command": "explorer.newFolder",
+        "when": "!isMac && focusedView == 'workbench.explorer.fileView'"
+    },
     //
     // Search
     //
     {
         "key": "ctrl+e",
         "command": "actions.findWithSelection",
-        "when": "!isMac"
+        "when": "!isMac && editorFocus"
     },
     {
         "key": "ctrl+e",
