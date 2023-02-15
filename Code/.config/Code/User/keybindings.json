@@ -180,6 +180,16 @@
     // workbench navigation
     //
     {
+        "key": "ctrl+shift+/",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+shift+/",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "isMac"
+    },
+    {
         "key": "ctrl+shift+b",
         "command": "workbench.action.toggleAuxiliaryBar",
         "when": "!isMac"
