@@ -759,16 +759,6 @@
         "command": "-npm-script.rerun-last-script",
         "when": "!terminalFocus"
     },
-    {
-        "key": "alt+cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "isMac"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!isMac"
-    },
     // Disable quick open view in terminal;
     // Enable quick open view on Linux/ChromeOS.
     {
@@ -1286,6 +1276,65 @@
         "key": "ctrl+space",
         "command": "-toggleSuggestionDetails",
         "when": "suggestWidgetVisible && textInputFocus && !isLinux && !isMac && !isWindows"
+    },
+    //
+    // Panel
+    //
+    {
+        "key": "alt+shift+j",
+        "command": "workbench.action.alignPanelJustify",
+        "when": "panelVisible && panelAlignment != 'justify'"
+    },
+    {
+        "key": "alt+shift+j",
+        "command": "workbench.action.alignPanelCenter",
+        "when": "panelVisible && panelAlignment != 'center'"
+    },
+    //
+    // Panel - Windows/Linux/ChromeOS
+    //
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!isMac && panelMaximized"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!isMac && !panelMaximized"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.togglePanel",
+        "when": "!isMac && panelMaximized"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.alignPanelCenter",
+        "when": "!isMac && panelAlignment != 'center'"
+    },
+    //
+    // Panel - macOS
+    //
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "isMac && panelMaximized"
+    },
+    {
+        "key": "cmd+alt+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "isMac && !panelMaximized"
+    },
+    {
+        "key": "cmd+alt+j",
+        "command": "workbench.action.togglePanel",
+        "when": "isMac && panelMaximized"
+    },
+    {
+        "key": "cmd+alt+j",
+        "command": "workbench.action.alignPanelCenter",
+        "when": "isMac && panelAlignment != 'center'"
     },
     //
     // Toggle Output Panel
