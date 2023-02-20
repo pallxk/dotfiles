@@ -3,4 +3,4 @@ payload:
 - DOMAIN-SUFFIX,local
 - DOMAIN-SUFFIX,local.test.cab
 - DOMAIN-SUFFIX,msftconnecttest.com
-- DOMAIN,ipinfo.io
+- DOMAIN-SUFFIX,ip.sb
