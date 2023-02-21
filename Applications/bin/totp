@@ -8,7 +8,7 @@ prefix=${1-}
 # Print all names if no prefix provided
 if [ -z "$prefix" ]; then
   jq --null-input --raw-output --exit-status \
-    "[ inputs[] ] | map( del(.secret) )" \
+    "[ inputs[] ] | map( del(.secret) ) | sort_by(.name)" \
     "$TOTP_DIR"/*.json
   exit
 fi
