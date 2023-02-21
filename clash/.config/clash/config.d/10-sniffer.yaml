@@ -1,9 +1,16 @@
 # https://docs.metacubex.one/function/dns/sniffer
 sniffer:
   enable: true
-  sniffing:
-    - tls
-    - http
+  force-dns-mapping: false
+  parse-pure-ip: false
+  override-destination: true
+  sniff:
+    TLS:
+      ports:
+        - 443
+    HTTP:
+      ports:
+        - 80
 
   skip-domain:
     - 'Mijia Cloud'

@@ -18,7 +18,9 @@ dns:
 
   # Lookup domains via specific nameservers
   nameserver-policy:
-  # 'www.baidu.com': '114.114.114.114'
+    # 'www.baidu.com': '114.114.114.114'
+    geosite:gfw:
+      - 1.1.1.1#proxy
 
   # resolve dns nameserver host, should fill pure IP, aka Bootstrap DNS
   default-nameserver:
@@ -55,7 +57,3 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
-    # https://docs.metacubex.one/function/dns/fallback
-    # geosite中的分类使用fallback内的dns解析
-    geosite:
-      - gfw
