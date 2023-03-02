@@ -745,6 +745,10 @@
         "command": "-cgroovy.organizeDependences"
     },
     {
+        "key": "ctrl+shift+o",
+        "command": "-cgroovy.organizeImports"
+    },
+    {
         "key": "ctrl+r shift+x",
         "command": "-npm-script.terminate-script",
         "when": "!terminalFocus"
