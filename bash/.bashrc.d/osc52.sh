@@ -6,5 +6,9 @@ osc52() {
     content=$(cat /dev/stdin)
   fi
 
+  # Copy
   printf "\e]52;c;$(printf "%s" "$content" | base64)\a"
+
+  # Keep original output
+  echo "$content"
 }
