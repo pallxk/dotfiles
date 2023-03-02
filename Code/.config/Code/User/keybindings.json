@@ -84,6 +84,19 @@
         "when": "isMac && focusedView == 'gitlens.views.lineHistory'"
     },
     //
+    // Editor Split
+    //
+    {
+        "key": "ctrl+alt+\\",
+        "command": "workbench.action.splitEditorDown",
+        "when": "!isMac"
+    },
+    {
+        "key": "alt+cmd+\\",
+        "command": "workbench.action.splitEditorDown",
+        "when": "isMac"
+    },
+    //
     // Copy path
     //
     {
