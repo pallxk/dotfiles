@@ -4,22 +4,22 @@
     // View
     //
     {
-        "key": "ctrl+alt+o",
+        "key": "shift+ctrl+alt+o",
         "command": "outline.focus",
         "when": "!isMac && focusedView != 'outline'"
     },
     {
-        "key": "ctrl+alt+o",
+        "key": "shift+ctrl+alt+o",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "!isMac && focusedView == 'outline'"
     },
     {
-        "key": "alt+cmd+o",
+        "key": "shift+alt+cmd+o",
         "command": "outline.focus",
         "when": "isMac && focusedView != 'outline'"
     },
     {
-        "key": "alt+cmd+o",
+        "key": "shift+alt+cmd+o",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "isMac && focusedView == 'outline'"
     },
