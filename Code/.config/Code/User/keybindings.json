@@ -203,22 +203,12 @@
         "when": "isMac"
     },
     {
-        "key": "ctrl+shift+b",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "!isMac"
-    },
-    {
-        "key": "cmd+shift+b",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "isMac"
-    },
-    {
-        "key": "ctrl+shift+0",
+        "key": "ctrl+alt+0",
         "command": "workbench.action.focusAuxiliaryBar",
         "when": "!isMac"
     },
     {
-        "key": "cmd+shift+0",
+        "key": "alt+cmd+0",
         "command": "workbench.action.focusAuxiliaryBar",
         "when": "isMac"
     },
@@ -1055,9 +1045,9 @@
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "ctrl+alt+b",
+        "key": "ctrl+shift+b",
         "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!isMac"
+        "when": "!isMac && !taskCommandsRegistered || !isMac && terminalFocus"
     },
     {
         "key": "ctrl+alt+1",
