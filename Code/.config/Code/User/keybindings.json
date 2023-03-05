@@ -1388,4 +1388,12 @@
         "key": "alt+n",
         "command": "notifications.toggleList"
     },
+    //
+    // Zoom
+    //
+    {
+        "key": "ctrl+shift+-",
+        "command": "workbench.action.zoomOut",
+        "when": "!isMac"
+    },
 ]
