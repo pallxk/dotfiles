@@ -186,6 +186,9 @@ bindsym $mod+o exec pkill bemenu || pactl set-default-sink "$(pactl list short s
     bindsym $mod+Ctrl+Down workspace prev
     bindsym $mod+Ctrl+Up workspace next
     bindsym $mod+Ctrl+Right workspace next
+
+    # Move active window between displays
+    bindsym Mod1+Mod4+m mark --add a; [con_mark=a] move workspace next, focus; unmark a
 #
 # Layout stuff:
 #
