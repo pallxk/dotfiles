@@ -1417,6 +1417,6 @@
     {
         "key": "ctrl+shift+-",
         "command": "workbench.action.zoomOut",
-        "when": "!isMac"
+        "when": "isLinux"
     },
 ]
