@@ -22,17 +22,19 @@ dns:
     geosite:cn:
       - 114.114.114.114
     geosite:gfw:
-      # - 1.1.1.1#proxy
+      - 1.1.1.1#proxy
+      # - 1.0.0.1#proxy
 
       - 8.8.8.8#proxy
-      - 8.8.4.4#proxy
+      # - 8.8.4.4#proxy
 
   # resolve dns nameserver host, should fill pure IP, aka Bootstrap DNS
   default-nameserver:
-    # - 1.1.1.1
+    - 1.1.1.1
+    # - 1.0.0.1
 
     - 8.8.8.8
-    - 8.8.4.4
+    # - 8.8.4.4
 
     # - 114.114.114.114
 
@@ -52,15 +54,17 @@ dns:
     - 8.8.4.4
 
   nameserver:
-    # - 1.1.1.1#proxy
+    - 1.1.1.1#proxy
+    # - 1.0.0.1#proxy
 
-    - 8.8.8.8#proxy
-    - 8.8.4.4#proxy
+    - 8.8.8.8
+    # - 8.8.4.4
 
   # Concurrent request with nameserver, fallback used when GEOIP country isn't CN.
   fallback:
     # https://docs.metacubex.one/function/dns/fallback
     - '1.1.1.1#proxy'
+    - '8.8.8.8#proxy'
 
   # This is a countermeasure against DNS pollution attacks.
   fallback-filter:
