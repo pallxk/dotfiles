@@ -47,6 +47,10 @@ hotKey:
   # G: Goto Bottom
 
   # h: Left
+  H:
+    shortCut:    Shift-H
+    description: HorizontalPodAutoscalers
+    command:     hpa
 
   i:
     shortCut:    i
