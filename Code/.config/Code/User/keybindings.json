@@ -589,7 +589,7 @@
     {
         "key": "ctrl+shift+r",
         "command": "workbench.view.remote",
-        "when": "!isMac && !inRecentFilesPicker && !inSearchEditor && !vscodeKubernetesDescribeContext"
+        "when": "!isMac && !inRecentFilesPicker && !inSearchEditor && !terminalFindFocused && !vscodeKubernetesDescribeContext"
     },
     {
         "key": "shift+cmd+r",
