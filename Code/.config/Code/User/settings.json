@@ -290,6 +290,8 @@
     "workbench.action.toggleAuxiliaryBar",            // ctrl+alt+b
     "workbench.action.toggleSidebarVisibility",       // ctrl+shift+b (custom)
     "workbench.action.terminal.newWithCwd",           // ctrl+alt+1-9, required on Linux
+    "workbench.action.decreaseViewSize",              // ctrl+alt+-
+    "workbench.action.increaseViewSize",              // ctrl+alt+=
     "workbench.files.action.collapseExplorerFolders", // alt+backspace
   ],
   "terminal.integrated.confirmOnKill": "never",
