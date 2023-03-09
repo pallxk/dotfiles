@@ -19,6 +19,9 @@ else
 fi
 
 for project in $projects; do
+  # Lowercase project name to make it easier for navigation in terminal
+  project=${project,,}
+
   echo "Project: $project"
   mkdir -p "$project"
 
