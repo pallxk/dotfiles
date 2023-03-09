@@ -33,7 +33,15 @@ for project in $projects; do
   pushd "$project"
   for repo in $repos; do
     echo "Repo: $repo"
-    git clone "$repo"
+    dir=${repo##*/}
+    dir=${dir%.git}
+    if [ -d "$dir" ]; then
+      pushd "$dir"
+      git fetch
+      popd
+    else
+      git clone "$repo"
+    fi
     echo
   done
   popd
