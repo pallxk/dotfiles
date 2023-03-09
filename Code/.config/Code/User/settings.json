@@ -203,6 +203,9 @@
   "gitlens.defaultGravatarsStyle": "identicon",
   "gitlens.keymap": "alternate",
 
+  // Go
+  "go.toolsManagement.autoUpdate": true,
+
   // Groovy
   "groovyLint.insight.enable": false,
 
