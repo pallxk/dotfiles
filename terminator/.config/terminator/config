@@ -1,4 +1,5 @@
 [global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
   always_split_with_profile = True
 [keybindings]
   switch_to_tab_1 = <Primary><Alt>1
