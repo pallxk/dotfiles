@@ -49,8 +49,8 @@ hotKey:
   # h: Left
   H:
     shortCut:    Shift-H
-    description: HorizontalPodAutoscalers
-    command:     hpa
+    description: Helm
+    command:     helm
 
   i:
     shortCut:    i
@@ -115,8 +115,8 @@ hotKey:
     command:     sts
   S:
     shortCut:    Shift-S
-    description: StorageClasses
-    command:     sc
+    description: HorizontalPodAutoscaler
+    command:     hpa
 
   u:
     shortCut:    u
