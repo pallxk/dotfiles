@@ -13,10 +13,14 @@ if [ -z "$prefix" ]; then
   exit
 fi
 
-# Print the TOTP code for the selected prefix
-secret=$(jq --null-input --raw-output --exit-status \
-  "[ inputs[] ] | map(select( .name|startswith(\"$prefix\") )) | .[0].secret" \
+# Get the TOTP object for the selected prefix
+totp=$(jq --null-input --raw-output --exit-status \
+  "[ inputs[] ] | map(select( .name|startswith(\"$prefix\") )) | .[0]" \
   "$TOTP_DIR"/*.json
 )
 
-echo "$secret" | oathtool --totp --base32 -
+secret=$(jq -r .secret <<< "$totp")
+digits=$(jq -r ".digits // 6" <<< "$totp")
+period=$(jq -r ".period // 30" <<< "$totp")
+
+echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s -
