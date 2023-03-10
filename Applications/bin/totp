@@ -3,7 +3,12 @@
 set -euo pipefail
 
 TOTP_DIR=${TOTP_DIR:-~/.config/totp}
-prefix=${1-}
+
+prefix=
+if [ $# -ge 1 ]; then
+  prefix=${1}
+  shift
+fi
 
 # Print all names if no prefix provided
 if [ -z "$prefix" ]; then
@@ -23,4 +28,4 @@ secret=$(jq -r .secret <<< "$totp")
 digits=$(jq -r ".digits // 6" <<< "$totp")
 period=$(jq -r ".period // 30" <<< "$totp")
 
-echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s -
+echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -
