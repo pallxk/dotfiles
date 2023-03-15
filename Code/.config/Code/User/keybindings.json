@@ -195,7 +195,7 @@
     {
         "key": "ctrl+shift+/",
         "command": "workbench.action.toggleActivityBarVisibility",
-        "when": "!isMac"
+        "when": "!isMac && !terminalFocus"
     },
     {
         "key": "cmd+shift+/",
@@ -1018,6 +1018,14 @@
         "args": {
             "text": "\u000b"
         }, // ctrl-k
+        "when": "terminalFocus && !isMac"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u007f"
+        }, // ctrl-shift+/
         "when": "terminalFocus && !isMac"
     },
     {
