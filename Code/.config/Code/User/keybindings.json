@@ -1417,4 +1417,11 @@
         "command": "workbench.action.zoomOut",
         "when": "isLinux"
     },
+    //
+    // Python
+    //
+    {
+        "key": "ctrl+k i",
+        "command": "python.setInterpreter"
+    },
 ]
