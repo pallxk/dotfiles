@@ -380,7 +380,8 @@
   "workbench.editor.wrapTabs": true,
 
   "workbench.editorAssociations": {
-    "*.md": "default"
+    "*.md": "default",
+    "*.xlsx": "gc-excelviewer-excel-editor"
   },
 
   "workbench.experimental.settingsProfiles.enabled": true,
