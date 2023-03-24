@@ -624,6 +624,11 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
     {
+        "key": "alt+f2",
+        "command": "explorer.download",
+        "when": "!isMac"
+    },
+    {
         "key": "ctrl+alt+s",
         "command": "explorer.download",
         "when": "!isMac"
