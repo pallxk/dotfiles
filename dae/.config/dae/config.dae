@@ -1,4 +1,55 @@
 global {
+    # tproxy port to listen on. It is NOT a HTTP/SOCKS port, and is just used by eBPF program.
+    # In normal case, you do not need to use it.
+    tproxy_port: 12345
+
+    # Log level: error, warn, info, debug, trace.
+    log_level: info
+
+    # Node connectivity check.
+    # Host of URL should have both IPv4 and IPv6 if you have double stack in local.
+    # Considering traffic consumption, it is recommended to choose a site with anycast IP and less response.
+    tcp_check_url: 'http://keep-alv.google.com/generate_204'
+
+    # This DNS will be used to check UDP connectivity of nodes. And if dns_upstream below contains tcp, it also be used to check
+    # TCP DNS connectivity of nodes.
+    # This DNS should have both IPv4 and IPv6 if you have double stack in local.
+    udp_check_dns: 'dns.google:53'
+
+    check_interval: 30s
+
+    # Group will switch node only when new_latency <= old_latency - tolerance.
+    check_tolerance: 0
+
+    # The LAN interface to bind. Use it if you only want to proxy LAN instead of localhost.
+    # Multiple interfaces split by ",".
+    # lan_interface:
+
+    # The WAN interface to bind. Use it if you want to proxy localhost.
+    # Multiple interfaces split by ",".
+    wan_interface: auto
+
+    # Allow insecure TLS certificates. It is not recommended to turn it on unless you have to.
+    allow_insecure: false
+
+    # Optional values of dial_mode are:
+    # 1. "ip". Dial proxy using the IP from DNS directly. This allows your ipv4, ipv6 to choose the optimal path
+    #       respectively, and makes the IP version requested by the application meet expectations. For example, if you
+    #       use curl -4 ip.sb, you will request IPv4 via proxy and get a IPv4 echo. And curl -6 ip.sb will request IPv6.
+    #       This may solve some wierd full-cone problem if your are be your node support that.
+    # 2. "domain". Dial proxy using the domain from sniffing. This will relieve DNS pollution problem to a great extent
+    #       if have impure DNS environment. Generally, this mode brings faster proxy response time because proxy will
+    #       re-resolve the domain in remote, thus get better IP result to connect. This policy does not impact routing.
+    #       That is to say, domain rewrite will be after traffic split of routing and dae will not re-route it.
+    # 3. "domain+". Based on domain mode but do not check the reality of sniffed domain. It is useful for users whose
+    #       DNS requests do not go through dae but want faster proxy response time. Notice that, if DNS requests do not
+    #       go through dae, dae cannot split traffic by domain.
+    # 4. "domain++". Based on domain+ mode but force to re-route traffic using sniffed domain to partially recover
+    #       domain based traffic split ability. It doesn't work for direct traffic and consumes more CPU resources.
+    dial_mode: domain
+
+    # Disable waiting for network before pulling subscriptions.
+    disable_waiting_network: false
 }
 
 routing {
