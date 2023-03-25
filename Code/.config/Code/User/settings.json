@@ -163,6 +163,8 @@
     "*.tfstate.backup": "json",
     // jsonc
     "*.cjson": "jsonc",
+    // julia
+    "*.dae": "julia",   // The syntax highlighting for Julia works for *.dae
     // ssh_config
     "ssh_config": "ssh_config",
     "**/.ssh/*.conf": "ssh_config",
