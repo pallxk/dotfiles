@@ -52,5 +52,71 @@ global {
     disable_waiting_network: false
 }
 
+# See https://github.com/daeuniverse/dae/blob/main/docs/routing.md for full examples.
 routing {
+    ### Preset rules.
+
+    # If you bind to WAN and set upstream (in section "dns") to a DNS service in localhost (dnsmasq, adguard, etc.),
+    # to avoid loops, let them "must_direct", which makes DNS requests not redirect back to dae again.
+    # "pname" means process name.
+    pname(dnsmasq, systemd-resolved) && l4proto(udp) && dport(53) -> must_direct
+
+    # Network managers in localhost should be direct to avoid false negative network connectivity check when binding to
+    # WAN.
+    pname(NetworkManager) -> direct
+
+    # Put it in the front to prevent broadcast, multicast and other packets that should be sent to the LAN from being
+    # forwarded by the proxy.
+    # "dip" means destination IP.
+    dip(224.0.0.0/3, 'ff00::/8') -> direct
+
+    # This line allows you to access private addresses directly instead of via your proxy. If you really want to access
+    # private addresses in your proxy host network, modify the below line.
+    dip(geoip:private) -> direct
+
+    ### Write your rules below.
+
+    dip(geoip:cn) -> direct
+    domain(geosite:cn) -> direct
+
+    fallback: proxy
+}
+
+# Nodes defined here will be merged as a part of the global node pool.
+node {
+    # Add your node links here.
+    # Support socks5, http, https, ss, ssr, vmess, vless, trojan, trojan-go
+    'socks5://localhost:1080'
+}
+
+# Node group (outbound).
+group {
+    proxy {
+        # No filter. Use all nodes.
+
+        # Randomly select a node from the group for every connection.
+        #policy: random
+
+        # Select the first node from the group for every connection.
+        #policy: fixed(0)
+
+        # Select the node with min last latency from the group for every connection.
+        #policy: min
+
+        # Select the node with min moving average of latencies from the group for every connection.
+        policy: min_moving_avg
+    }
+
+    group2 {
+        # Filter nodes from the global node pool defined by the subscription and node section above.
+        filter: subtag(regex: '^my_', another_sub) && !name(keyword: 'ExpireAt:')
+
+        # Select the node with min average of the last 10 latencies from the group for every connection.
+        policy: min_avg10
+    }
+}
+
+# Subscriptions defined here will be resolved as nodes and merged as a part of the global node pool.
+# Support to give the subscription a tag, and filter nodes from a given subscription in the group section.
+subscription {
 }
