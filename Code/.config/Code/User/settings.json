@@ -160,6 +160,7 @@
     // JavaScript
     "*.wxs": "javascript",
     // Json
+    "*.sub": "json",  // https://shadowsocks.org/guide/sip008.html
     "*.tfstate.backup": "json",
     // jsonc
     "*.cjson": "jsonc",
