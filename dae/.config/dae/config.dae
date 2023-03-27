@@ -119,4 +119,5 @@ group {
 # Subscriptions defined here will be resolved as nodes and merged as a part of the global node pool.
 # Support to give the subscription a tag, and filter nodes from a given subscription in the group section.
 subscription {
+    private: 'file://subscriptions/private.sub'
 }
