@@ -354,6 +354,8 @@
 
   "typescript.tsserver.experimental.enableProjectDiagnostics": true,
 
+  "update.mode": "manual",
+
   // Get rid of that annoying message that shows up everytime you make a new file
   "vim.disableAnnoyingNeovimMessage": true,
 
