@@ -653,6 +653,11 @@
         "command": "explorer.newFolder",
         "when": "!isMac && focusedView == 'workbench.explorer.fileView'"
     },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "!isMac && focusedView == 'workbench.explorer.fileView'"
+    },
     //
     // Search
     //
