@@ -28,4 +28,7 @@ secret=$(jq -r .secret <<< "$totp")
 digits=$(jq -r ".digits // 6" <<< "$totp")
 period=$(jq -r ".period // 30" <<< "$totp")
 
-echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -
+# Calc OTP, output and copy it
+echo "$secret" \
+  | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" - \
+  | tee >(base64 | xargs printf "\e]52;c;%s\a")
