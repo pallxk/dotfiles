@@ -68,7 +68,7 @@ bindsym $mod+Ctrl+p exec wl-mirror "$(swaymsg -t get_outputs | jq -r .[].name | 
 # Example configuration:
 #
 exec swayidle -w \
-     timeout 600 'swaymsg "output * power off"' \
+     timeout 900 'swaymsg "output * power off"' \
      timeout 900 'swaylock -f -c 000000' \
           resume 'swaymsg "output * power on"' \
     before-sleep 'swaylock -f -c 000000'
