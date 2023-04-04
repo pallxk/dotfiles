@@ -1,6 +1,16 @@
 # One letter shortcut to git
 alias g=git
 
+# Load Git completion script
+if [ -f /usr/share/git/completion/git-completion.bash ]; then
+    . /usr/share/git/completion/git-completion.bash
+fi
+
+# Git alias 'g' completion
+if type __git_complete > /dev/null 2>&1; then
+	__git_complete g git
+fi
+
 # Proxy git to insert default options
 
 # Only source this if git installed
