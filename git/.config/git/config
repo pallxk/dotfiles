@@ -34,6 +34,7 @@
 	# Alias to list aliases
 	alias = config --get-regexp ^alias\\.
 	# Several commonly used shortcuts
+	a = add
 	co = checkout
 	br = branch
 	ci = commit
