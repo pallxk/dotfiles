@@ -454,6 +454,7 @@
         "key": "ctrl+alt+t",
         "command": "workbench.action.closeOtherEditors",
         "when": "!isMac"
+        // It's alt+cmd+t on mac defined by vscode system
     },
     {
         "key": "alt+1",
