@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+text=$1
+otp=$(grep -Po '\d{4,6}' <<< "$text" | head -1)
+
+if [ -t 1 ]; then
+  # Output and copy OTP if running interactively
+  echo "$otp" | tee >(base64 | xargs printf "\e]52;c;%s\a")
+else
+  # Otherwise output OTP only
+  echo "$otp"
+fi
