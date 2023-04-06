@@ -92,6 +92,8 @@
 
   "editor.cursorSurroundingLines": 3,
   "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
   "editor.lineHeight": 18,
   "editor.mouseWheelZoom": true,
   "editor.renderWhitespace": "boundary",
@@ -406,10 +408,6 @@
 
   "[shellscript]": {
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",<>/?",
-  },
-
-  "[terraform]": {
-    "editor.formatOnSave": true
   },
 }
 // vim:ft=javascript
