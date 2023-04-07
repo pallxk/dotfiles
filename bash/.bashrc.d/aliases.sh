@@ -1,8 +1,14 @@
 # Alias definitions.
 
-# enable color support of ls and also add handy aliases
+# set up color for ls
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
+# enable color support if has dircolors or on mac
+if [ -x /usr/bin/dircolors ] || [ "$(uname)" = Darwin ]; then
+    # enable color support of ls and also add handy aliases
+
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
