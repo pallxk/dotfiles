@@ -10,4 +10,6 @@ done
 
 
 # Create XDG user dirs
-hash xdg-user-dirs-update 2> /dev/null && xdg-user-dirs-update
+if hash xdg-user-dirs-update 2> /dev/null; then
+	xdg-user-dirs-update
+fi
