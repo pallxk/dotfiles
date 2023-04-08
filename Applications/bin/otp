@@ -15,7 +15,7 @@ fi
 # Print all names if no prefix provided
 if [ -z "$prefix" ]; then
   jq --null-input --raw-output --exit-status \
-    "[ inputs[] ] | map( del(.secret) ) | sort_by(.name)" \
+    "[ inputs[] ] | map( del(.secret, .token, .pin) ) | sort_by(.name)" \
     "$OTP_DIR"/*.json
   exit
 fi
@@ -26,12 +26,27 @@ otp=$(jq --null-input --raw-output --exit-status \
   "$OTP_DIR"/*.json
 )
 
-secret=$(jq -r .secret <<< "$otp")
-digits=$(jq -r ".digits // 6" <<< "$otp")
-period=$(jq -r ".period // 30" <<< "$otp")
+# Get type. Supports TOTP (default) and SecurID now.
+type=$(jq -r '.type // "totp"' <<< "$otp")
+type=${type,,}
 
-# Calc OTP
-otp=$(echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -)
+# TOTP
+if [ "$type" = totp ]; then
+  secret=$(jq -r .secret <<< "$otp")
+  digits=$(jq -r ".digits // 6" <<< "$otp")
+  period=$(jq -r ".period // 30" <<< "$otp")
+
+  # Calc OTP
+  otp=$(echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -)
+elif [ "$type" = securid ]; then
+  token=$(jq -r .token <<< "$otp")
+  pin=$(jq -r .pin <<< "$otp")
+
+  # Calc OTP
+  otp=$(echo "$pin" | stoken --token="$token" --stdin)
+else
+  echo >&2 "Unsupported type $type"
+fi
 
 if [ -t 1 ]; then
   # Output and copy OTP if running interactively
