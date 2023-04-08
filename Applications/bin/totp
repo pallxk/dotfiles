@@ -8,6 +8,8 @@ prefix=
 if [ $# -ge 1 ]; then
   prefix=${1}
   shift
+elif [ ! -t 0 ]; then
+  prefix=$(cat /dev/stdin)
 fi
 
 # Print all names if no prefix provided
