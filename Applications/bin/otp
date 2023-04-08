@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-TOTP_DIR=${TOTP_DIR:-~/.config/totp}
+OTP_DIR=${OTP_DIR:-~/.config/otp}
 
 prefix=
 if [ $# -ge 1 ]; then
@@ -16,19 +16,19 @@ fi
 if [ -z "$prefix" ]; then
   jq --null-input --raw-output --exit-status \
     "[ inputs[] ] | map( del(.secret) ) | sort_by(.name)" \
-    "$TOTP_DIR"/*.json
+    "$OTP_DIR"/*.json
   exit
 fi
 
-# Get the TOTP object for the selected prefix
-totp=$(jq --null-input --raw-output --exit-status \
+# Get the OTP object for the selected prefix
+otp=$(jq --null-input --raw-output --exit-status \
   "[ inputs[] ] | map(select( .name|startswith(\"$prefix\") )) | .[0]" \
-  "$TOTP_DIR"/*.json
+  "$OTP_DIR"/*.json
 )
 
-secret=$(jq -r .secret <<< "$totp")
-digits=$(jq -r ".digits // 6" <<< "$totp")
-period=$(jq -r ".period // 30" <<< "$totp")
+secret=$(jq -r .secret <<< "$otp")
+digits=$(jq -r ".digits // 6" <<< "$otp")
+period=$(jq -r ".period // 30" <<< "$otp")
 
 # Calc OTP
 otp=$(echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -)
