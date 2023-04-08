@@ -406,6 +406,10 @@
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   },
 
+  "[python]": {
+    "editor.formatOnType": true
+  },
+
   "[shellscript]": {
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",<>/?",
   },
