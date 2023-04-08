@@ -1439,7 +1439,13 @@
     //
     {
         "key": "ctrl+k i",
-        "command": "python.setInterpreter"
+        "command": "python.setInterpreter",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+k i",
+        "command": "python.setInterpreter",
+        "when": "isMac"
     },
     // sandcastle.vscode-open
     {
