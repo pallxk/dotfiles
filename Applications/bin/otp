@@ -28,8 +28,7 @@ otp=$(jq --null-input --raw-output --exit-status \
 )
 
 # Get type. Supports TOTP (default) and SecurID now.
-type=$(jq -r '.type // "totp"' <<< "$otp")
-type=${type,,}
+type=$(jq -r '.type // "totp" | ascii_downcase' <<< "$otp")
 
 # TOTP
 if [ "$type" = totp ]; then
