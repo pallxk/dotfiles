@@ -1441,4 +1441,13 @@
         "key": "ctrl+k i",
         "command": "python.setInterpreter"
     },
+    // sandcastle.vscode-open
+    {
+        "key": "alt+cmd+o",
+        "command": "-extension.open"
+    },
+    {
+        "key": "ctrl+alt+cmd+o",
+        "command": "extension.open"
+    },
 ]
