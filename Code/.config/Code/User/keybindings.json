@@ -869,7 +869,13 @@
     },
     {
         "key": "alt+`",
-        "command": "openInTerminal"
+        "command": "openInTerminal",
+        "when": "!isMac"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "openInTerminal",
+        "when": "isMac"
     },
     //
     // terminal - macOS
