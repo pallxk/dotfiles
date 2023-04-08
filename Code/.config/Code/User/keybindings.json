@@ -1259,12 +1259,12 @@
     {
         "key": "ctrl+enter",
         "command": "-github.copilot.generate",
-        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+        "when": "!isMac && editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
     },
     {
         "key": "ctrl+k ctrl+enter",
         "command": "github.copilot.generate",
-        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+        "when": "!isMac && editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
     },
     //
     // GitLens
