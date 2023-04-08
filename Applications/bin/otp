@@ -12,10 +12,11 @@ elif [ ! -t 0 ]; then
   prefix=$(cat /dev/stdin)
 fi
 
-# Print all names if no prefix provided
+# Print all names if no prefix provided,
+# and sort them by name ignoring case.
 if [ -z "$prefix" ]; then
   jq --null-input --raw-output --exit-status \
-    "[ inputs[] ] | map( del(.secret, .token, .pin) ) | sort_by(.name)" \
+    "[ inputs[] ] | map( del(.secret, .token, .pin) ) | sort_by(.name|ascii_downcase)" \
     "$OTP_DIR"/*.json
   exit
 fi
