@@ -155,7 +155,12 @@ __prompt_command () {
 	esac
 
 	# Restore 'xtrace' shell option
-	[ "${xtrace}" ] && set -x
+	if [ "${xtrace}" ]; then
+		set -x
+	fi
+
+	# Restore exit code
+	return "$ret"
 }
 
 # $timer is set only when user entered command is going to be executed
