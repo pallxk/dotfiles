@@ -759,7 +759,15 @@
         "command": "-cgroovy.organizeDependences"
     },
     {
+        "key": "shift+cmd+d",
+        "command": "-cgroovy.organizeDependences"
+    },
+    {
         "key": "ctrl+shift+o",
+        "command": "-cgroovy.organizeImports"
+    },
+    {
+        "key": "shift+cmd+o",
         "command": "-cgroovy.organizeImports"
     },
     {
