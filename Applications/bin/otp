@@ -50,7 +50,8 @@ fi
 
 if [ -t 1 ]; then
   # Output and copy OTP if running interactively
-  echo "$otp" | tee >(base64 | xargs printf "\e]52;c;%s\a")
+  # Use \033 for ESC, \e or \x1B don't work with `xargs printf` on mac.
+  echo "$otp" | tee >(base64 | xargs printf "\033]52;c;%s\a")
 else
   # Otherwise output OTP only
   echo "$otp"
