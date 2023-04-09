@@ -48,11 +48,10 @@ else
   echo >&2 "Unsupported type $type"
 fi
 
+# Output OTP
+echo "$otp"
+
+# Copy OTP if running interactively
 if [ -t 1 ]; then
-  # Output and copy OTP if running interactively
-  # Use \033 for ESC, \e or \x1B don't work with `xargs printf` on mac.
-  echo "$otp" | tee >(base64 | xargs printf "\033]52;c;%s\a")
-else
-  # Otherwise output OTP only
-  echo "$otp"
+  printf "\e]52;c;%s\a" "$(echo -n "$otp" | base64)"
 fi
