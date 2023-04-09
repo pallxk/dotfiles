@@ -306,27 +306,52 @@
     {
         "key": "ctrl+'",
         "command": "extension.node-debug.startWithStopOnEntry",
-        "when": "!inDebugMode && debugConfigurationType == 'node'"
+        "when": "!isMac && !inDebugMode && debugConfigurationType == 'node'"
+    },
+    {
+        "key": "cmd+'",
+        "command": "extension.node-debug.startWithStopOnEntry",
+        "when": "isMac && !inDebugMode && debugConfigurationType == 'node'"
     },
     {
         "key": "ctrl+'",
         "command": "workbench.action.debug.stepOver",
-        "when": "debugState == 'stopped'"
+        "when": "!isMac && debugState == 'stopped'"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.debug.stepOver",
+        "when": "isMac && debugState == 'stopped'"
     },
     {
         "key": "ctrl+;",
         "command": "workbench.action.debug.stepInto",
-        "when": "debugState != 'inactive'"
+        "when": "!isMac && debugState != 'inactive'"
+    },
+    {
+        "key": "cmd+;",
+        "command": "workbench.action.debug.stepInto",
+        "when": "isMac && debugState != 'inactive'"
     },
     {
         "key": "ctrl+shift+;",
         "command": "workbench.action.debug.stepOut",
-        "when": "debugState == 'stopped'"
+        "when": "!isMac && debugState == 'stopped'"
+    },
+    {
+        "key": "shift+cmd+;",
+        "command": "workbench.action.debug.stepOut",
+        "when": "isMac && debugState == 'stopped'"
     },
     {
         "key": "ctrl+shift+e",
         "command": "editor.debug.action.selectionToRepl",
-        "when": "inDebugMode && editorHasSelection"
+        "when": "!isMac && inDebugMode && editorHasSelection"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "editor.debug.action.selectionToRepl",
+        "when": "isMac && inDebugMode && editorHasSelection"
     },
     //
     // editor
