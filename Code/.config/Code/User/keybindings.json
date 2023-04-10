@@ -296,12 +296,22 @@
     {
         "key": "ctrl+\\",
         "command": "workbench.action.debug.continue",
-        "when": "inDebugMode"
+        "when": "!isMac && inDebugMode"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "workbench.action.debug.continue",
+        "when": "isMac && inDebugMode"
     },
     {
         "key": "ctrl+\\",
         "command": "workbench.action.debug.pause",
-        "when": "debugState == 'running'"
+        "when": "!isMac && debugState == 'running'"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "workbench.action.debug.pause",
+        "when": "isMac && debugState == 'running'"
     },
     {
         "key": "ctrl+'",
