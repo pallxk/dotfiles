@@ -1499,4 +1499,10 @@
         "key": "ctrl+alt+cmd+o",
         "command": "extension.open"
     },
+    // yzhang.markdown-all-in-one
+    {
+        "key": "cmd+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
 ]
