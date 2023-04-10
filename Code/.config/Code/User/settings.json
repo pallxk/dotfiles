@@ -277,6 +277,7 @@
 
   "scm.defaultViewMode": "tree",
 
+  "security.workspace.trust.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
 
   "search.defaultViewMode": "tree",
