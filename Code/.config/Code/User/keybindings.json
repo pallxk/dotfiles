@@ -122,6 +122,11 @@
         "command": "revealFileInOS",
         "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
     },
+    {
+        "key": "cmd+r",
+        "command": "revealFileInOS",
+        "when": "isMac && explorerViewletFocus"
+    },
     //
     // Join Lines
     //
