@@ -310,6 +310,7 @@
   ],
   "terminal.integrated.confirmOnKill": "never",
   "terminal.integrated.enableBell": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "'M PLUS 1 Code', 'mplus Nerd Font Mono', Consolas, 'Courier New', monospace, FontAwesome",
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.persistentSessionScrollback": 10000,
