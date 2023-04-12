@@ -285,6 +285,8 @@
 
   "task.experimental.reconnection": true,
 
+  "terminal.external.osxExec": "iTerm.app",
+
   // For macOS, it's command+k for chords, and does not conflict with ctrl+k in terminal.
   "terminal.integrated.allowChords": false,
   "terminal.integrated.commandsToSkipShell": [
