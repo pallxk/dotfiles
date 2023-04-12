@@ -1520,4 +1520,17 @@
         "command": "-markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
+    //
+    // history
+    //
+    {
+        "key": "ctrl+p",
+        "command": "history.showPrevious",
+        "when": "isMac && historyNavigationBackwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "history.showNext",
+        "when": "isMac && historyNavigationForwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
+    },
 ]
