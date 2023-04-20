@@ -127,6 +127,11 @@
         "command": "revealFileInOS",
         "when": "isMac && explorerViewletFocus"
     },
+    {
+        "key": "cmd+enter",
+        "command": "revealFileInOS",
+        "when": "isMac && explorerViewletFocus"
+    },
     //
     // Join Lines
     //
