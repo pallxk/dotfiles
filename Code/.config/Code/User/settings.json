@@ -413,7 +413,8 @@
   },
 
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.tabSize": 4,
   },
 
   "[shellscript]": {
