@@ -208,7 +208,7 @@
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "cmd+shift+/",
+        "key": "alt+cmd+/",
         "command": "workbench.action.toggleActivityBarVisibility",
         "when": "isMac"
     },
