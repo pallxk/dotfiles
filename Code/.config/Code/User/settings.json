@@ -408,6 +408,10 @@
 
   "workbench.view.alwaysShowHeaderActions": true,
 
+  "[markdown]": {
+    "editor.tabSize": 4,
+  },
+
   "[powershell]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   },
