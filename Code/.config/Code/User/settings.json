@@ -417,6 +417,8 @@
   },
 
   "[python]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
     "editor.formatOnType": true,
     "editor.rulers": [ 88 ],
     "editor.tabSize": 4,
