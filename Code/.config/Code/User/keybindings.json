@@ -76,12 +76,12 @@
     {
         "key": "alt+cmd+l",
         "command": "gitlens.views.lineHistory.focus",
-        "when": "isMac && focusedView != 'gitlens.views.lineHistory'"
+        "when": "isMac && !findWidgetVisible && focusedView != 'gitlens.views.lineHistory'"
     },
     {
         "key": "alt+cmd+l",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "isMac && focusedView == 'gitlens.views.lineHistory'"
+        "when": "isMac && !findWidgetVisible && focusedView == 'gitlens.views.lineHistory'"
     },
     //
     // Editor Split
