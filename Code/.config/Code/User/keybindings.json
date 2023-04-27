@@ -84,6 +84,29 @@
         "when": "isMac && !findWidgetVisible && focusedView == 'gitlens.views.lineHistory'"
     },
     //
+    // (Un)Pin Editor
+    //
+    {
+        "key": "cmd+k cmd+enter",
+        "command": "workbench.action.pinEditor",
+        "when": "isMac && !activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k cmd+enter",
+        "command": "workbench.action.unpinEditor",
+        "when": "isMac && activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+k ctrl+enter",
+        "command": "workbench.action.pinEditor",
+        "when": "!isMac && !activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+k ctrl+enter",
+        "command": "workbench.action.unpinEditor",
+        "when": "!isMac && activeEditorIsPinned"
+    },
+    //
     // Editor Split
     //
     {
