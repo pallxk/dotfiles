@@ -1363,6 +1363,16 @@
         "key": "alt+m",
         "command": "gitlens.toggleFileHeatmap"
     },
+    {
+        "key": "ctrl+cmd+g",
+        "command": "gitlens.showGraph",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "gitlens.showGraph",
+        "when": "!isMac"
+    },
     //
     // emojisense
     //
