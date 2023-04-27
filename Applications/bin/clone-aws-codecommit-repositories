@@ -7,6 +7,8 @@ set -o pipefail
 : ${AWS_DEFAULT_REGION:=$(aws configure get region || echo ap-northeast-1)}
 export AWS_DEFAULT_REGION
 
+: ${CODECOMMIT_HOST:=git-codecommit.$AWS_DEFAULT_REGION.amazonaws.com}
+
 repos=`aws codecommit list-repositories | jq -r '.repositories | map(.repositoryName) | join("\n")'`
 filter=$1
 
@@ -15,5 +17,5 @@ for repo in $repos; do
   [[ $repo = $filter* ]] || continue
   # _ is the separator in repo name
   dir=${repo//_/\/}
-  [ ! -d "$dir" ] && git clone --recursive git-codecommit.$AWS_DEFAULT_REGION.amazonaws.com:/v1/repos/$repo $dir
+  [ ! -d "$dir" ] && git clone --recursive "$CODECOMMIT_HOST":/v1/repos/$repo $dir
 done
