@@ -1480,12 +1480,12 @@
         "when": "!isMac"
     },
     {
-        "key": "alt+cmd+=",
+        "key": "ctrl+cmd+=",
         "command": "workbench.action.increaseViewSize",
         "when": "isMac"
     },
     {
-        "key": "alt+cmd+-",
+        "key": "ctrl+cmd+-",
         "command": "workbench.action.decreaseViewSize",
         "when": "isMac"
     },
