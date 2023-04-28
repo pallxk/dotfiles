@@ -42,9 +42,11 @@ alias lld='ls -dl */'
 
 
 # Be safe
-alias chmod='chmod --preserve-root'
-alias chown='chown --preserve-root'
-alias chgrp='chgrp --preserve-root'
+if [ "$(uname)" != Darwin ] || [ "$(which chmod)" != /bin/chmod ]; then
+    alias chmod='chmod --preserve-root'
+    alias chown='chown --preserve-root'
+    alias chgrp='chgrp --preserve-root'
+fi
 
 # `-i' option of `cp' cannot be overridden by `-f', thus commented out
 #alias cp='cp -i'
