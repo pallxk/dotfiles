@@ -7,8 +7,13 @@ cd ~/.config/clash
 # https://mikefarah.gitbook.io/yq/usage/tips-and-tricks#merge-combine-all-documents-into-one
 # https://mikefarah.gitbook.io/yq/operators/multiply-merge#merge-flags
 
-docker run --rm -v "$HOME":/mnt -w /mnt/.config/clash \
-    mikefarah/yq \
+if type yq &> /dev/null; then
+    yq=yq
+else
+    yq="docker run --rm -v $HOME:/mnt -w /mnt/.config/clash mikefarah/yq"
+fi
+
+$yq \
     eval-all \
     '. as $item ireduce ({}; . *+ $item)' \
     config.d/*.yaml \
