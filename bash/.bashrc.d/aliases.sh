@@ -43,6 +43,7 @@ alias lld='ls -dl */'
 
 # Be safe
 if [ "$(uname)" != Darwin ] || [ "$(which chmod)" != /bin/chmod ]; then
+    # --preserve-root works with GNU/Linux only
     alias chmod='chmod --preserve-root'
     alias chown='chown --preserve-root'
     alias chgrp='chgrp --preserve-root'
@@ -51,8 +52,11 @@ fi
 # `-i' option of `cp' cannot be overridden by `-f', thus commented out
 #alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -I'
 alias ln='ln -i'
+if [ "$(uname)" != Darwin ]; then
+    # `-I' option of `rm' cannot be overriden by `-f' on macOS
+    alias rm='rm -I'
+fi
 
 
 # More warning messages for compilers
