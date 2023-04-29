@@ -10,12 +10,17 @@ export AWS_DEFAULT_REGION
 : ${CODECOMMIT_HOST:=git-codecommit.$AWS_DEFAULT_REGION.amazonaws.com}
 
 repos=`aws codecommit list-repositories | jq -r '.repositories | map(.repositoryName) | join("\n")'`
-filter=$1
+
+# if the first arg does not look like an option, we treat it as the filter
+if [ "$1" ] && [[ $1 != -* ]]; then
+  filter=$1
+  shift
+fi
 
 for repo in $repos; do
   # Test repo name with filter
   [[ $repo = $filter* ]] || continue
   # _ is the separator in repo name
   dir=${repo//_/\/}
-  [ ! -d "$dir" ] && git clone --recursive "$CODECOMMIT_HOST":/v1/repos/$repo $dir
+  [ ! -d "$dir" ] && git clone "$@" "$CODECOMMIT_HOST":/v1/repos/$repo $dir
 done
