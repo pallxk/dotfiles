@@ -163,6 +163,7 @@
     "**/sway/{config,outputs}": "i3",
     "**/sway/**/*.conf": "i3",
     // ini
+    "*.dconf": "ini",
     "inventory": "ini",
     // JavaScript
     "*.wxs": "javascript",
