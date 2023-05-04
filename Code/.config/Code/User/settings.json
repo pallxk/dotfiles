@@ -89,6 +89,7 @@
   "debug.confirmOnExit": "always",
 
   "diffEditor.codeLens": true,
+  "diffEditor.diffAlgorithm": "advanced",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
