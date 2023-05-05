@@ -20,6 +20,10 @@
   // dhoeric.ansible-vault
   "ansibleVault.keyfile": "~/bin/ansible-vault-password-helper",
 
+  // ms-python.black-formatter
+  "black-formatter.importStrategy": "fromEnvironment",
+  "black-formatter.showNotifications": "always",
+
   // streetsidesoftware.code-spell-checker
   "cSpell.customDictionaries": {
     "personal": {
