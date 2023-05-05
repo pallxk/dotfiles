@@ -214,10 +214,15 @@
 
   // GitLens
   "gitlens.advanced.fileHistoryFollowsRenames": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
   "gitlens.defaultGravatarsStyle": "identicon",
+  "gitlens.graph.dimMergeCommits": true,
   "gitlens.keymap": "alternate",
+  "gitlens.views.commitDetails.files.layout": "auto",
 
   // Go
   "go.toolsManagement.autoUpdate": true,
