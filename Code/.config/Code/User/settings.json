@@ -20,6 +20,16 @@
   // dhoeric.ansible-vault
   "ansibleVault.keyfile": "~/bin/ansible-vault-password-helper",
 
+  // atlassian.atlascode
+  "atlascode.bitbucket.statusbar.showProduct": true,
+  "atlascode.bitbucket.statusbar.showUser": true,
+  "atlascode.bitbucket.statusbar.showLogin": true,
+  "atlascode.bitbucket.statusbar.enabled": false,
+  "atlascode.jira.statusbar.showProduct": true,
+  "atlascode.jira.statusbar.showUser": true,
+  "atlascode.jira.statusbar.showLogin": true,
+  "atlascode.jira.statusbar.enabled": false,
+
   // ms-python.black-formatter
   "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.showNotifications": "always",
