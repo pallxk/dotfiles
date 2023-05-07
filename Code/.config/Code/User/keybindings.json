@@ -1571,4 +1571,12 @@
         "command": "history.showNext",
         "when": "isMac && historyNavigationForwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
     },
+    //
+    // Atlassian (atlassian.atlascode)
+    //
+    {
+        "key": "shift+cmd+a",
+        "command": "atlascode.views.jira.customJql.focus",
+        "when": "isMac && !notificationToastsVisible"
+    }
 ]
