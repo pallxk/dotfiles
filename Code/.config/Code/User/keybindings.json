@@ -24,22 +24,22 @@
         "when": "isMac && focusedView == 'outline'"
     },
     {
-        "key": "ctrl+alt+h",
+        "key": "ctrl+alt+t",
         "command": "timeline.focus",
         "when": "!isMac && focusedView != 'timeline'"
     },
     {
-        "key": "ctrl+alt+h",
+        "key": "ctrl+alt+t",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "!isMac && focusedView == 'timeline'"
     },
     {
-        "key": "alt+cmd+h",
+        "key": "ctrl+cmd+t",
         "command": "timeline.focus",
         "when": "isMac && focusedView != 'timeline'"
     },
     {
-        "key": "alt+cmd+h",
+        "key": "ctrl+cmd+t",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "isMac && focusedView == 'timeline'"
     },
