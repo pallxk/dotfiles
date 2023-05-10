@@ -1,6 +1,29 @@
 // Place your key bindings in this file to override the defaults
 [
     //
+    // Cursor
+    //
+    {
+        "key": "ctrl+shift+p",
+        "command": "cursorUpSelect",
+        "when": "isMac && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "cursorDownSelect",
+        "when": "isMac && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "cursorLeftSelect",
+        "when": "isMac && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "cursorRightSelect",
+        "when": "isMac && textInputFocus"
+    },
+    //
     // View
     //
     {
