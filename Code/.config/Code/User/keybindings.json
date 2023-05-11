@@ -1611,14 +1611,22 @@
         "command": "python.setInterpreter",
         "when": "isMac"
     },
+    //
     // sandcastle.vscode-open
+    //
     {
         "key": "alt+cmd+o",
         "command": "-extension.open"
     },
     {
-        "key": "ctrl+alt+cmd+o",
-        "command": "extension.open"
+        "key": "cmd+k shift+cmd+d",
+        "command": "extension.open",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+d",
+        "command": "extension.open",
+        "when": "!isMac"
     },
     // yzhang.markdown-all-in-one
     {
