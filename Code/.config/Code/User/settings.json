@@ -230,6 +230,8 @@
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
   "gitlens.defaultGravatarsStyle": "identicon",
+  "gitlens.graph.dateFormat": "YYYY-MM-DD HH:mm:ss",
+  "gitlens.graph.dateStyle": "absolute",
   "gitlens.graph.dimMergeCommits": true,
   "gitlens.keymap": "alternate",
   "gitlens.views.commitDetails.files.layout": "auto",
