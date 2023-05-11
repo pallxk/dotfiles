@@ -11,6 +11,9 @@
 # `~/.gitconfig` file, or writes to `$XDG_CONFIG_HOME/git/config` file if it
 # exists and the `~/.gitconfig` file doesn't.
 
+[blame]
+	markIgnoredLines = true
+	markUnblamableLines = true
 [core]
 	# Enable long path (> 260) support for builtin commands in Git for Windows.
 	longpaths = true
