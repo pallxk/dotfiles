@@ -1628,6 +1628,29 @@
         "command": "extension.open",
         "when": "!isMac"
     },
+    //
+    // Reopen Editor
+    //
+    {
+        "key": "cmd+k shift+cmd+e",
+        "command": "workbench.action.reopenWithEditor",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+e",
+        "command": "workbench.action.reopenWithEditor",
+        "when": "!isMac"
+    },
+    {
+        "key": "cmd+k shift+cmd+t",
+        "command": "workbench.action.reopenTextEditor",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+t",
+        "command": "workbench.action.reopenTextEditor",
+        "when": "!isMac"
+    },
     // yzhang.markdown-all-in-one
     {
         "key": "cmd+b",
