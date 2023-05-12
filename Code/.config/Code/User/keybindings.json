@@ -67,26 +67,6 @@
         "when": "isMac && focusedView == 'timeline'"
     },
     {
-        "key": "ctrl+alt+g",
-        "command": "gitlens.views.fileHistory.focus",
-        "when": "!isMac && focusedView != 'gitlens.views.fileHistory' && focusedView != 'terminal'"
-    },
-    {
-        "key": "ctrl+alt+g",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "!isMac && focusedView == 'gitlens.views.fileHistory'"
-    },
-    {
-        "key": "alt+cmd+g",
-        "command": "gitlens.views.fileHistory.focus",
-        "when": "isMac && focusedView != 'gitlens.views.fileHistory'"
-    },
-    {
-        "key": "alt+cmd+g",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "isMac && focusedView == 'gitlens.views.fileHistory'"
-    },
-    {
         "key": "ctrl+alt+l",
         "command": "gitlens.views.lineHistory.focus",
         "when": "!isMac && focusedView != 'gitlens.views.lineHistory'"
@@ -1432,9 +1412,19 @@
         "command": "gitlens.toggleFileHeatmap"
     },
     {
+        "key": "alt+cmd+g",
+        "command": "workbench.view.extension.gitlens",
+        "when": "isMac && config.gitlens.keymap == 'alternate'"
+    },
+    {
         "key": "ctrl+cmd+g",
         "command": "gitlens.showGraph",
         "when": "isMac"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+g",
+        "command": "workbench.view.extension.gitlens",
+        "when": "!isMac && config.gitlens.keymap == 'alternate'"
     },
     {
         "key": "ctrl+alt+g",
