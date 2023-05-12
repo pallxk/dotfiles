@@ -20,6 +20,7 @@ chinacloudapi
 classpath
 cmyk
 CNAME
+commissionable
 containerd
 cooldown
 couchbase
@@ -63,6 +64,7 @@ healthz
 hostvars
 hyperscale
 instanceof
+isort
 ispn
 jakartaee
 javadoc
@@ -131,6 +133,7 @@ Pubkey
 publickey
 pushd
 pwsh
+pyenv
 pypi
 qualys
 querystring
@@ -158,6 +161,7 @@ shopt
 skillset
 skopeo
 snat
+Spyder
 sshrc
 stakater
 strapi
