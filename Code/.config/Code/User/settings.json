@@ -233,8 +233,10 @@
   "gitlens.graph.dateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.graph.dateStyle": "absolute",
   "gitlens.graph.dimMergeCommits": true,
+  "gitlens.graph.experimental.minimap.enabled": true,
+  "gitlens.graph.searchItemLimit": 500,
   "gitlens.keymap": "alternate",
-  "gitlens.views.commitDetails.files.layout": "auto",
+  "gitlens.views.commitDetails.files.layout": "tree",
 
   // Go
   "go.toolsManagement.autoUpdate": true,
