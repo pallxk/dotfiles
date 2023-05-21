@@ -109,9 +109,9 @@
 
   "editor.cursorSurroundingLines": 3,
   "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
-  "editor.lineHeight": 18,
   "editor.mouseWheelZoom": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120, 160 ],
@@ -339,6 +339,7 @@
   "terminal.integrated.enableBell": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "'M PLUS 1 Code', 'mplus Nerd Font Mono', Consolas, 'Courier New', monospace, FontAwesome",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.rightClickBehavior": "paste",
@@ -401,7 +402,6 @@
   "window.commandCenter": true,
   "window.menuBarVisibility": "classic",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
 
   "window.experimental.windowControlsOverlay.enabled": true,
 
