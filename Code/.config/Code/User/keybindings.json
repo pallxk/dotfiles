@@ -291,6 +291,11 @@
         "when": "!isMac"
     },
     {
+        "key": "shift+cmd+a",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
+        "when": "isMac"
+    },
+    {
         "key": "alt+q",
         "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
         "when": "!inQuickOpen"
