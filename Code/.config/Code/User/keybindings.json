@@ -1672,8 +1672,8 @@
     // Atlassian (atlassian.atlascode)
     //
     {
-        "key": "shift+cmd+a",
+        "key": "shift+cmd+j",
         "command": "atlascode.views.jira.customJql.focus",
         "when": "isMac && !notificationToastsVisible"
-    }
+    },
 ]
