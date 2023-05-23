@@ -166,11 +166,11 @@
         "command": "editor.action.joinLines",
         "when": "!isMac && editorTextFocus && !editorReadonly"
     },
-    {
-        "key": "shift+cmd+j",
-        "command": "editor.action.joinLines",
-        "when": "isMac && editorTextFocus && !editorReadonly"
-    },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "editor.action.joinLines",
+    //     "when": "isMac && editorTextFocus && !editorReadonly"
+    // },
     //
     // Comment
     //
