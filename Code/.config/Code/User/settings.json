@@ -456,5 +456,10 @@
   "[sql]": {
     "editor.tabSize": 4,
   },
+
+  "[terraform][terraform-vars]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+  },
 }
 // vim:ft=javascript
