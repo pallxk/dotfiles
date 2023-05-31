@@ -1413,11 +1413,6 @@
         "command": "github.copilot.generate",
         "when": "!isMac && editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
     },
-    {
-        "key": "ctrl+shift+c",
-        "command": "workbench.panel.interactiveSessionSidebar.copilot",
-        "when": "isMac"
-    },
     //
     // GitLens
     //
