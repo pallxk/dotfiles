@@ -34,6 +34,9 @@
   "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.showNotifications": "always",
 
+  // Copilot Chat
+  "chat.experimental.quickQuestion.enable": true,
+
   // streetsidesoftware.code-spell-checker
   "cSpell.customDictionaries": {
     "personal": {
