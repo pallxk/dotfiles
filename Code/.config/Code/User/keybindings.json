@@ -1477,6 +1477,16 @@
         "command": "-overtype.toggle",
         "when": "editorFocus"
     },
+    {
+        "key": "shift+cmd+i",
+        "command": "-overtype.toggle",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+i",
+        "command": "overtype.toggle",
+        "when": "isMac && editorFocus"
+    },
     //
     // ChromeOS - spare ctrl+space for input method switch
     //
