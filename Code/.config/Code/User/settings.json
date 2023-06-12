@@ -237,6 +237,13 @@
   "gitlens.graph.dateStyle": "absolute",
   "gitlens.graph.dimMergeCommits": true,
   "gitlens.graph.experimental.minimap.enabled": true,
+  "gitlens.graph.layout": "editor",
+  "gitlens.graph.minimap.enabled": true,
+  "gitlens.graph.minimap.additionalTypes": [
+    "tags",
+    "stashes",
+    "localBranches"
+  ],
   "gitlens.graph.searchItemLimit": 500,
   "gitlens.keymap": "alternate",
   "gitlens.views.commitDetails.files.layout": "tree",
