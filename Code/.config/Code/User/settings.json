@@ -236,7 +236,6 @@
   "gitlens.graph.dateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.graph.dateStyle": "absolute",
   "gitlens.graph.dimMergeCommits": true,
-  "gitlens.graph.experimental.minimap.enabled": true,
   "gitlens.graph.layout": "editor",
   "gitlens.graph.minimap.enabled": true,
   "gitlens.graph.minimap.additionalTypes": [
