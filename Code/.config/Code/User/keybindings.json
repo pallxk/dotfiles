@@ -1430,7 +1430,7 @@
     },
     {
         "key": "alt+cmd+g",
-        "command": "workbench.view.extension.gitlens",
+        "command": "workbench.view.extension.gitlensInspect",
         "when": "isMac && config.gitlens.keymap == 'alternate'"
     },
     {
