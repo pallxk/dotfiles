@@ -28,7 +28,7 @@ set $menu_run bemenu-run $menu_args
 set $fm thunar
 # Your preferred browser
 set $browser microsoft-edge-stable
-set $electron_args --enable-features=WebRTCPipeWireCapturer
+set $electron_args --ozone-platform-hint=auto --enable-features=WebRTCPipeWireCapturer
 
 ### Behavior config
 #
