@@ -4,7 +4,7 @@ for x in ~/.config/browser-selector/*.sh; do
   [ -f "$x" ] && . "$x"
 done
 
-BROWSERS="$BROWSER microsoft-edge-stable google-chrome-stable firefox"
+BROWSERS="$BROWSER firefox"
 for browser in $BROWSERS; do
   if command -v "$browser" > /dev/null; then
     exec "$browser" "$@"
