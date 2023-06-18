@@ -7,7 +7,8 @@ cd ~/.config/clash
 # https://mikefarah.gitbook.io/yq/usage/tips-and-tricks#merge-combine-all-documents-into-one
 # https://mikefarah.gitbook.io/yq/operators/multiply-merge#merge-flags
 
-if type yq &> /dev/null; then
+# `yq eval-all` requires yq v4
+if yq --version 2> /dev/null | grep -q 'yq 4'; then
     yq=yq
 else
     yq="docker run --rm -v $HOME:/mnt -w /mnt/.config/clash mikefarah/yq"
