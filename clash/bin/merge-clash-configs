@@ -14,8 +14,10 @@ else
     yq="docker run --rm -v $HOME:/mnt -w /mnt/.config/clash mikefarah/yq"
 fi
 
+config=$(
 $yq \
     eval-all \
     '. as $item ireduce ({}; . *+ $item)' \
-    config.d/*.yaml \
-  | tee config.yaml
+    config.d/*.yaml
+)
+tee config.yaml <<< "$config"
