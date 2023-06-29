@@ -179,6 +179,8 @@
     // i3/sway
     "**/sway/{config,outputs}": "i3",
     "**/sway/**/*.conf": "i3",
+    // ignore
+    ".git-blame-ignore-revs": "ignore",
     // ini
     "*.dconf": "ini",
     "inventory": "ini",
@@ -191,6 +193,8 @@
     "*.cjson": "jsonc",
     // julia
     "*.dae": "julia",   // The syntax highlighting for Julia works for *.dae
+    // ruby
+    "Pluginfile": "ruby", // Used by fastlane
     // ssh_config
     "ssh_config": "ssh_config",
     "**/.ssh/*.conf": "ssh_config",
