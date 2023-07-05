@@ -1695,4 +1695,19 @@
         "command": "atlascode.views.jira.customJql.focus",
         "when": "isMac && !notificationToastsVisible"
     },
+    //
+    // type tab
+    //
+    {
+        "key": "ctrl+k tab",
+        "command": "type",
+        "args": { "text": "\t" },
+        "when": "!isMac && editorTextFocus"
+    },
+    {
+        "key": "cmd+k tab",
+        "command": "type",
+        "args": { "text": "\t" },
+        "when": "isMac && editorTextFocus"
+    },
 ]
