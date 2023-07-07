@@ -110,6 +110,10 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
+  "diffEditor.experimental.collapseUnchangedRegions": true,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.experimental.useVersion2": true,
+
   "editor.cursorSurroundingLines": 3,
   "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
   "editor.fontSize": 14,
@@ -221,6 +225,14 @@
   "git.mergeEditor": true,
   "git.repositoryScanMaxDepth": 2,
   "git.untrackedChanges": "separate",
+
+  "github.copilot.advanced": {
+    "slashCommands": {
+      "createWorkspace": true,
+      "createNotebook": true,
+      "search": true
+    }
+  },
 
   "github.copilot.enable": {
     "*": true,
