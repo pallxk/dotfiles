@@ -34,9 +34,6 @@
   "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.showNotifications": "always",
 
-  // Copilot Chat
-  "chat.experimental.quickQuestion.enable": true,
-
   // streetsidesoftware.code-spell-checker
   "cSpell.customDictionaries": {
     "personal": {
@@ -335,8 +332,6 @@
   "search.defaultViewMode": "tree",
   "search.followSymlinks": false,
 
-  "task.experimental.reconnection": true,
-
   "terminal.external.osxExec": "iTerm.app",
 
   // For macOS, it's command+k for chords, and does not conflict with ctrl+k in terminal.
@@ -428,8 +423,6 @@
   "window.menuBarVisibility": "classic",
   "window.titleBarStyle": "custom",
 
-  "window.experimental.windowControlsOverlay.enabled": true,
-
   "workbench.colorTheme": "Default Light Modern",
   "workbench.iconTheme": "material-icon-theme",
 
@@ -448,8 +441,6 @@
     "*.md": "default",
     "*.xlsx": "gc-excelviewer-excel-editor"
   },
-
-  "workbench.experimental.settingsProfiles.enabled": true,
 
   "workbench.layoutControl.enabled": true,
   "workbench.layoutControl.type": "both",
