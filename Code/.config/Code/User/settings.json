@@ -246,6 +246,7 @@
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
   "gitlens.defaultGravatarsStyle": "identicon",
+  "gitlens.graph.commitOrdering": "author-date",
   "gitlens.graph.dateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.graph.dateStyle": "absolute",
   "gitlens.graph.dimMergeCommits": true,
