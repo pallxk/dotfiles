@@ -441,6 +441,7 @@
 
   "workbench.editorAssociations": {
     "*.md": "default",
+    "*.pdf": "pdf.preview",
     "*.xlsx": "gc-excelviewer-excel-editor"
   },
 
