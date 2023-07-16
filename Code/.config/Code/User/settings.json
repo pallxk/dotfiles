@@ -366,6 +366,7 @@
   "terminal.integrated.scrollback": 10000,
 
   "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash",
