@@ -403,6 +403,26 @@
         "when": "isMac && debugState == 'stopped'"
     },
     {
+        "key": "ctrl+shift+,",
+        "command": "workbench.action.debug.callStackTop",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.debug.callStackUp",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.debug.callStackDown",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "workbench.action.debug.callStackBottom",
+        "when": "inDebugMode"
+    },
+    {
         "key": "ctrl+shift+e",
         "command": "editor.debug.action.selectionToRepl",
         "when": "!isMac && inDebugMode && editorHasSelection"
