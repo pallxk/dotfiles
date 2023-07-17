@@ -383,6 +383,21 @@
         "when": "isMac && debugState == 'stopped'"
     },
     {
+        "key": "ctrl+f10",
+        "command": "editor.debug.action.runToCursor",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+shift+'",
+        "command": "editor.debug.action.runToCursor",
+        "when": "isMac && inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "editor.debug.action.runToCursor",
+        "when": "!isMac && inDebugMode"
+    },
+    {
         "key": "ctrl+;",
         "command": "workbench.action.debug.stepInto",
         "when": "!isMac && debugState != 'inactive'"
