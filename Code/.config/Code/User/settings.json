@@ -239,13 +239,14 @@
   },
 
   // GitLens
+  "gitlens.defaultGravatarsStyle": "monsterid",
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": true
   },
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.currentLine.enabled": false,
-  "gitlens.defaultGravatarsStyle": "identicon",
+  "gitlens.graph.avatars": false,
   "gitlens.graph.commitOrdering": "author-date",
   "gitlens.graph.dateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.graph.dateStyle": "absolute",
