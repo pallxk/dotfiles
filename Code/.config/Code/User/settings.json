@@ -452,6 +452,10 @@
 
   "workbench.view.alwaysShowHeaderActions": true,
 
+  "[javascript]": {
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+  },
+
   "[markdown]": {
     "editor.tabSize": 4,
   },
