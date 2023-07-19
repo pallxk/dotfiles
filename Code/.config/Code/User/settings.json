@@ -259,6 +259,7 @@
     "localBranches"
   ],
   "gitlens.graph.searchItemLimit": 500,
+  "gitlens.graph.showDetailsView": "open",
   "gitlens.keymap": "alternate",
   "gitlens.views.commitDetails.files.layout": "tree",
 

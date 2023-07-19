@@ -1483,6 +1483,21 @@
         "command": "gitlens.showGraph",
         "when": "!isMac"
     },
+    {
+        "key": "cmd+enter",
+        "command": "gitlens.graph.openChangedFileDiffs",
+        "when": "isMac && gitlens:webview:graph:focus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "gitlens.graph.openChangedFileDiffs",
+        "when": "!isMac && gitlens:webview:graph:focus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "gitlens.graph.openChangedFileDiffsWithWorking",
+        "when": "gitlens:webview:graph:focus"
+    },
     //
     // emojisense
     //
