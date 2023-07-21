@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Description: output all teleport hosts so that they can be used for ssh auto completion.
+
+# Usage: output-tsh-hosts > ~/.ssh/known_hosts2
+
+hosts=()
+
+clusters=$(tsh clusters -f json | jq -r '.[].cluster_name')
+for cluster in $clusters; do
+  tsh login "$cluster" >&2
+  names=$(tsh ls -f names)
+  for name in $names; do
+    hosts+=("$name.$cluster")
+  done
+done
+
+echo "${hosts[@]}" | tr ' ' '\n'
