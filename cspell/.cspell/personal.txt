@@ -5,6 +5,7 @@ aliyuncs
 ansible
 appcenter
 archlinux
+ASUS
 auths
 autoscale
 Autoscaler
@@ -13,13 +14,16 @@ azurecr
 azurefile
 azurerm
 backoff
+bitcode
 browserslist
 btmp
+canonicalized
 chdir
 chinacloudapi
 classpath
 cmyk
 CNAME
+cocoapods
 commissionable
 containerd
 cooldown
@@ -35,6 +39,7 @@ dockerhub
 dockerignore
 dotglob
 dropbear
+dsyms
 echarts
 eclipselink
 elif
@@ -44,6 +49,7 @@ entrypoint
 epel
 esac
 failover
+Fastfile
 fileglob
 firewalld
 formatlist
@@ -51,6 +57,7 @@ forwarding
 fqcn
 fullchain
 fullname
+geetest
 geoip
 github
 gradle
@@ -78,6 +85,7 @@ jndi
 jwks
 keda
 keepalive
+keychain
 keycloak
 kube
 kubeconfig
@@ -163,6 +171,7 @@ skopeo
 snat
 Spyder
 sshrc
+SSID
 stakater
 strapi
 strftime
@@ -173,6 +182,7 @@ symlinks
 TENCENT
 terragrunt
 testcab
+testflight
 tfenv
 tfstate
 tfvars
@@ -192,8 +202,11 @@ virtualenv
 vmss
 vnet
 wechat
+weixin
 wildfly
 workdir
 WXML
 WXSS
+xcargs
+xcodes
 yamldecode
