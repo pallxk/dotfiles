@@ -1764,6 +1764,14 @@
         "when": "isMac && !notificationToastsVisible"
     },
     //
+    // mssql
+    //
+    {
+        "key": "shift+cmd+e",
+        "command": "-mssql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    //
     // type tab
     //
     {
