@@ -144,7 +144,7 @@
     // Reveal in OS
     //
     {
-        "key": "shift+alt+r",
+        "key": "cmd+k alt+cmd+r",
         "command": "revealFileInOS",
         "when": "resourceScheme == 'file' || resourceScheme == 'vscode-userdata'"
     },
