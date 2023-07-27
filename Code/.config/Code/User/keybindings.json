@@ -234,6 +234,14 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     //
+    // References View
+    //
+    {
+        "key": "shift+alt+r",
+        "command": "references-view.findReferences",
+        "when": "editorHasReferenceProvider"
+    },
+    //
     // workbench navigation
     //
     {
