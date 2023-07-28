@@ -373,12 +373,12 @@
     {
         "key": "ctrl+'",
         "command": "extension.node-debug.startWithStopOnEntry",
-        "when": "!isMac && !inDebugMode && debugConfigurationType == 'node'"
+        "when": "!isMac && !inDebugMode"
     },
     {
         "key": "cmd+'",
         "command": "extension.node-debug.startWithStopOnEntry",
-        "when": "isMac && !inDebugMode && debugConfigurationType == 'node'"
+        "when": "isMac && !inDebugMode"
     },
     {
         "key": "ctrl+'",
