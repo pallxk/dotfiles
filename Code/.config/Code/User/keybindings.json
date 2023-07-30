@@ -470,9 +470,24 @@
         "when": "isMac"
     },
     {
-        "key": "cmd+y",     // As used in Xcode
+        "key": "cmd+k cmd+y",
         "command": "workbench.debug.viewlet.action.toggleBreakpointsActivatedAction",
         "when": "isMac"
+    },
+    {
+        "key": "cmd+y",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "isMac && debuggersAvailable && editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+y",
+        "command": "editor.debug.action.conditionalBreakpoint",
+        "when": "isMac && debuggersAvailable && editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+y",
+        "command": "editor.debug.action.toggleInlineBreakpoint",
+        "when": "editorTextFocus"
     },
     //
     // editor
