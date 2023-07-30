@@ -350,6 +350,7 @@
     //
     // Debug
     //
+    // Debug - Continue/Pause
     {
         "key": "ctrl+\\",
         "command": "workbench.action.debug.continue",
@@ -370,6 +371,7 @@
         "command": "workbench.action.debug.pause",
         "when": "isMac && debugState == 'running'"
     },
+    // Debug - Stop on Entry
     {
         "key": "ctrl+'",
         "command": "extension.node-debug.startWithStopOnEntry",
@@ -380,6 +382,7 @@
         "command": "extension.node-debug.startWithStopOnEntry",
         "when": "isMac && !inDebugMode"
     },
+    // Debug - Step Over
     {
         "key": "ctrl+'",
         "command": "workbench.action.debug.stepOver",
@@ -390,6 +393,7 @@
         "command": "workbench.action.debug.stepOver",
         "when": "isMac && debugState == 'stopped'"
     },
+    // Debug - Run to Cursor
     {
         "key": "ctrl+f10",
         "command": "editor.debug.action.runToCursor",
@@ -405,6 +409,7 @@
         "command": "editor.debug.action.runToCursor",
         "when": "!isMac && inDebugMode"
     },
+    // Debug - Step into
     {
         "key": "ctrl+;",
         "command": "workbench.action.debug.stepInto",
@@ -415,6 +420,7 @@
         "command": "workbench.action.debug.stepInto",
         "when": "isMac && debugState != 'inactive'"
     },
+    // Debug - Step out
     {
         "key": "ctrl+shift+;",
         "command": "workbench.action.debug.stepOut",
@@ -425,6 +431,7 @@
         "command": "workbench.action.debug.stepOut",
         "when": "isMac && debugState == 'stopped'"
     },
+    // Debug - Call Stack
     {
         "key": "ctrl+shift+,",
         "command": "workbench.action.debug.callStackTop",
@@ -445,6 +452,7 @@
         "command": "workbench.action.debug.callStackBottom",
         "when": "inDebugMode"
     },
+    // Debug - Selection to REPL
     {
         "key": "ctrl+shift+e",
         "command": "editor.debug.action.selectionToRepl",
