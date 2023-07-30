@@ -463,6 +463,17 @@
         "command": "editor.debug.action.selectionToRepl",
         "when": "isMac && inDebugMode && editorHasSelection"
     },
+    // Debug - Toggle Breakpoints Activation
+    {
+        "key": "cmd+f8",    // As used in Chrome
+        "command": "workbench.debug.viewlet.action.toggleBreakpointsActivatedAction",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+y",     // As used in Xcode
+        "command": "workbench.debug.viewlet.action.toggleBreakpointsActivatedAction",
+        "when": "isMac"
+    },
     //
     // editor
     //
