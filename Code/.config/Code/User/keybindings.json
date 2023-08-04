@@ -1603,6 +1603,23 @@
         "when": "suggestWidgetVisible && textInputFocus && !isLinux && !isMac && !isWindows"
     },
     //
+    // Minimize/Maximize
+    //
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.minimizeOtherEditors"
+    },
+    {
+        "key": "ctrl+cmd+m",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+alt+m",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!isMac"
+    },
+    //
     // Panel
     //
     {
@@ -1616,45 +1633,12 @@
         "when": "panelVisible && panelAlignment != 'center'"
     },
     //
-    // Panel - Windows/Linux/ChromeOS
+    // Panel - Alignment
     //
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!isMac && panelMaximized"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!isMac && !panelMaximized"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.togglePanel",
-        "when": "!isMac && panelMaximized"
-    },
     {
         "key": "ctrl+alt+j",
         "command": "workbench.action.alignPanelCenter",
         "when": "!isMac && panelAlignment != 'center'"
-    },
-    //
-    // Panel - macOS
-    //
-    {
-        "key": "cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "isMac && panelMaximized"
-    },
-    {
-        "key": "cmd+alt+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "isMac && !panelMaximized"
-    },
-    {
-        "key": "cmd+alt+j",
-        "command": "workbench.action.togglePanel",
-        "when": "isMac && panelMaximized"
     },
     {
         "key": "cmd+alt+j",
