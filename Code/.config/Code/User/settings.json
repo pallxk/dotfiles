@@ -327,6 +327,9 @@
   "remote.SSH.connectTimeout": 30,
   "remote.SSH.useLocalServer": true,
 
+  // Ruff
+  "ruff.organizeImports": false,
+
   "scm.defaultViewMode": "tree",
 
   "security.workspace.trust.enabled": false,
