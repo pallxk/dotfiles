@@ -1620,7 +1620,7 @@
         "when": "!isMac"
     },
     //
-    // Panel
+    // Panel - Alignment
     //
     {
         "key": "alt+shift+j",
@@ -1631,19 +1631,6 @@
         "key": "alt+shift+j",
         "command": "workbench.action.alignPanelCenter",
         "when": "panelVisible && panelAlignment != 'center'"
-    },
-    //
-    // Panel - Alignment
-    //
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.alignPanelCenter",
-        "when": "!isMac && panelAlignment != 'center'"
-    },
-    {
-        "key": "cmd+alt+j",
-        "command": "workbench.action.alignPanelCenter",
-        "when": "isMac && panelAlignment != 'center'"
     },
     //
     // Toggle Output Panel
