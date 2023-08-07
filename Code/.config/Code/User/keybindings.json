@@ -1696,12 +1696,16 @@
         "command": "-extension.open"
     },
     {
-        "key": "cmd+k shift+cmd+d",
+        "key": "cmd+k alt+cmd+o",
         "command": "extension.open",
         "when": "isMac"
     },
     {
-        "key": "ctrl+k ctrl+shift+d",
+        "key": "ctrl+alt+o",
+        "command": "-extension.open"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+o",
         "command": "extension.open",
         "when": "!isMac"
     },
