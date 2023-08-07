@@ -1512,7 +1512,7 @@
     // emojisense
     //
     {
-        "key": "ctrl+alt+i",
+        "key": "ctrl+alt+e",
         "command": "emojisense.quickEmoji",
         "when": "editorTextFocus"
     },
@@ -1522,7 +1522,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+alt+i",
+        "key": "ctrl+shift+alt+e",
         "command": "emojisense.quickEmojitext",
         "when": "editorTextFocus"
     },
