@@ -211,6 +211,29 @@
         "when": "inlineSuggestionVisible"
     },
     //
+    // selection
+    //
+    {
+        "key": "ctrl+alt+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "!isMac && editorFocus"
+    },
+    {
+        "key": "ctrl+cmd+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "isMac && editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+d",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "!isMac && editorFocus"
+    },
+    {
+        "key": "cmd+k ctrl+cmd+d",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "isMac && editorFocus"
+    },
+    //
     // indent & outdent
     //
     {
