@@ -234,6 +234,29 @@
         "when": "isMac && editorFocus"
     },
     //
+    // smart select
+    //
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.smartSelect.expand",
+        "when": "!isMac && editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+l",
+        "command": "editor.action.smartSelect.expand",
+        "when": "isMac && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "!isMac && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+l",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "isMac && editorTextFocus"
+    },
+    //
     // indent & outdent
     //
     {
