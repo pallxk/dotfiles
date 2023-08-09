@@ -4,6 +4,11 @@
     // Cursor
     //
     {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "isMac && textInputFocus"
+    },
+    {
         "key": "ctrl+shift+p",
         "command": "cursorUpSelect",
         "when": "isMac && textInputFocus"
