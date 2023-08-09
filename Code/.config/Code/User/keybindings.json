@@ -1656,12 +1656,12 @@
         "command": "workbench.action.minimizeOtherEditors"
     },
     {
-        "key": "ctrl+cmd+m",
+        "key": "ctrl+cmd+j",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "isMac"
     },
     {
-        "key": "ctrl+alt+m",
+        "key": "ctrl+alt+j",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "!isMac"
     },
