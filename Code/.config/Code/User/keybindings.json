@@ -211,6 +211,52 @@
         "when": "inlineSuggestionVisible"
     },
     //
+    // selection
+    //
+    {
+        "key": "ctrl+alt+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "!isMac && editorFocus"
+    },
+    {
+        "key": "ctrl+cmd+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "isMac && editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+d",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "!isMac && editorFocus"
+    },
+    {
+        "key": "cmd+k ctrl+cmd+d",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "isMac && editorFocus"
+    },
+    //
+    // smart select
+    //
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.smartSelect.expand",
+        "when": "!isMac && editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+l",
+        "command": "editor.action.smartSelect.expand",
+        "when": "isMac && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "!isMac && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+l",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "isMac && editorTextFocus"
+    },
+    //
     // indent & outdent
     //
     {
@@ -1554,7 +1600,7 @@
     // emojisense
     //
     {
-        "key": "ctrl+alt+i",
+        "key": "ctrl+alt+e",
         "command": "emojisense.quickEmoji",
         "when": "editorTextFocus"
     },
@@ -1564,7 +1610,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+alt+i",
+        "key": "ctrl+shift+alt+e",
         "command": "emojisense.quickEmojitext",
         "when": "editorTextFocus"
     },
@@ -1709,12 +1755,16 @@
         "command": "-extension.open"
     },
     {
-        "key": "cmd+k shift+cmd+d",
+        "key": "cmd+k alt+cmd+o",
         "command": "extension.open",
         "when": "isMac"
     },
     {
-        "key": "ctrl+k ctrl+shift+d",
+        "key": "ctrl+alt+o",
+        "command": "-extension.open"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+o",
         "command": "extension.open",
         "when": "!isMac"
     },

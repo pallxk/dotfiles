@@ -350,6 +350,7 @@
     "-workbench.action.terminal.focusFind",     // ctrl+f
     "-workbench.action.terminal.killEditor",    // ctrl+w
     "-workbench.action.terminal.paste",         // ctrl+v
+    "gitlens.showGraph",                              // ctrl+alt+g
     "search.action.collapseSearchResults",            // alt+backspace
     "workbench.action.togglePanel",                   // ctrl+j
     "workbench.action.alignPanelCenter",              // alt+shift+j
@@ -366,6 +367,7 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "'M PLUS 1 Code', 'mplus Nerd Font Mono', Consolas, 'Courier New', monospace, FontAwesome",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.gpuAcceleration": "canvas",
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.rightClickBehavior": "paste",
