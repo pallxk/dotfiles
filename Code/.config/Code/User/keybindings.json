@@ -328,16 +328,16 @@
     //
     // editor navigation
     //
-    {
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditor",
-        "when": "!inQuickOpen"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor",
-        "when": "!inQuickOpen"
-    },
+    // {
+    //     "key": "ctrl+tab",
+    //     "command": "workbench.action.nextEditor",
+    //     "when": "!inQuickOpen"
+    // },
+    // {
+    //     "key": "ctrl+shift+tab",
+    //     "command": "workbench.action.previousEditor",
+    //     "when": "!inQuickOpen"
+    // },
     // for use in integrated terminal on chromeOS
     {
         "key": "cmd+p",
