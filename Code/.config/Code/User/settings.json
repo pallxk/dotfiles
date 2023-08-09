@@ -428,6 +428,7 @@
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
   "vscode-neovim.useWSL": false,
 
+  "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
   "window.menuBarVisibility": "classic",
   "window.titleBarStyle": "custom",
