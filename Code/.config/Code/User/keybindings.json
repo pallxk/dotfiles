@@ -1559,11 +1559,11 @@
         "command": "gitlens.toggleFileBlame"
     },
     {
-        "key": "alt+d",
+        "key": "alt+h",
         "command": "gitlens.toggleFileChanges"
     },
     {
-        "key": "alt+m",
+        "key": "alt+shift+h",
         "command": "gitlens.toggleFileHeatmap"
     },
     {
