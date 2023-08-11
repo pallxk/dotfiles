@@ -4,6 +4,16 @@
     // Cursor
     //
     {
+        "key": "alt+cmd+u",
+        "command": "cursorRedo",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "cursorRedo",
+        "when": "!isMac"
+    },
+    {
         "key": "ctrl+a",
         "command": "cursorHome",
         "when": "isMac && textInputFocus"
@@ -851,16 +861,16 @@
         "command": "explorer.download",
         "when": "isMac"
     },
-    {
-        "key": "ctrl+alt+u",
-        "command": "explorer.upload",
-        "when": "!isMac && explorerResourceIsFolder"
-    },
-    {
-        "key": "cmd+alt+u",
-        "command": "explorer.upload",
-        "when": "isMac && explorerResourceIsFolder"
-    },
+    // {
+    //     "key": "ctrl+alt+u",
+    //     "command": "explorer.upload",
+    //     "when": "!isMac && explorerResourceIsFolder"
+    // },
+    // {
+    //     "key": "cmd+alt+u",
+    //     "command": "explorer.upload",
+    //     "when": "isMac && explorerResourceIsFolder"
+    // },
     {
         "key": "ctrl+e",
         "command": "explorer.newFolder",
