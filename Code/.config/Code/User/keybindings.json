@@ -306,12 +306,12 @@
     // workbench navigation
     //
     {
-        "key": "ctrl+shift+/",
+        "key": "ctrl+k ctrl+shift+.",
         "command": "workbench.action.toggleActivityBarVisibility",
         "when": "!isMac && !terminalFocus"
     },
     {
-        "key": "alt+cmd+/",
+        "key": "cmd+k shift+cmd+.",
         "command": "workbench.action.toggleActivityBarVisibility",
         "when": "isMac"
     },
