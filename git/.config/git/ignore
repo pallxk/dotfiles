@@ -40,10 +40,6 @@
 ehthumbs.db
 Thumbs.db
 
-# JetBrains IDEA #
-##################
-.idea/
-
 # Backup files #
 ################
 *.bak
