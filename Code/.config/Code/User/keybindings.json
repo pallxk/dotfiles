@@ -194,6 +194,16 @@
         "command": "editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "alt+cmd+/",
+        "command": "editor.action.blockComment",
+        "when": "isMac && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+/",
+        "command": "editor.action.blockComment",
+        "when": "!isMac && editorTextFocus && !editorReadonly"
+    },
     //
     // Format
     //
