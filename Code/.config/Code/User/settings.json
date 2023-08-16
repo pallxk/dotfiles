@@ -258,7 +258,9 @@
     "stashes",
     "localBranches"
   ],
-  "gitlens.graph.searchItemLimit": 500,
+  "gitlens.graph.defaultItemLimit": 1000,
+  "gitlens.graph.pageItemLimit": 1000,
+  "gitlens.graph.searchItemLimit": 1000,
   "gitlens.graph.showDetailsView": "open",
   "gitlens.keymap": "alternate",
   "gitlens.views.commitDetails.files.layout": "tree",
