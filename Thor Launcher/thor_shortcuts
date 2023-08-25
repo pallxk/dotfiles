@@ -1,132 +1,172 @@
 [
   {
-    "appDisplayName" : "Finder",
-    "shortcut" : "shift+alt+m",
-    "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Finder.app\/"
-  },
-  {
+    "shortcut" : "ctrl+alt+cmd+`",
     "appDisplayName" : "iTerm",
-    "shortcut" : "alt+`",
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/NeteaseMusic.app\/",
-    "appDisplayName" : "NetEaseMusic",
-    "shortcut" : "shift+alt+`"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
-    "appDisplayName" : "Visual Studio Code",
-    "shortcut" : "alt+1"
-  },
-  {
-    "appDisplayName" : "Visual Studio Code - Insiders",
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
-    "shortcut" : "shift+alt+1"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/",
-    "shortcut" : "alt+2",
-    "appDisplayName" : "Xcode-beta"
-  },
-  {
-    "appDisplayName" : "Simulator",
-    "shortcut" : "shift+alt+2",
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/Contents\/Developer\/Applications\/Simulator.app\/"
-  },
-  {
-    "shortcut" : "alt+3",
-    "appDisplayName" : "Safari",
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
-    "appDisplayName" : "Firefox",
-    "shortcut" : "shift+alt+3"
-  },
-  {
-    "appDisplayName" : "Microsoft Edge",
-    "shortcut" : "alt+4",
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/"
-  },
-  {
+    "shortcut" : "ctrl+alt+cmd+c",
     "appDisplayName" : "Google Chrome",
-    "shortcut" : "shift+alt+4",
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/"
   },
   {
-    "appDisplayName" : "Lens",
-    "shortcut" : "alt+5",
-    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/"
+    "appDisplayName" : "DataGrip",
+    "shortcut" : "ctrl+alt+cmd+d",
+    "appBundleURL" : "file:\/\/\/Applications\/DataGrip.app\/"
   },
   {
-    "shortcut" : "alt+6",
     "appDisplayName" : "DBeaver",
-    "appBundleURL" : "file:\/\/\/Applications\/DBeaver.app\/"
+    "appBundleURL" : "file:\/\/\/Applications\/DBeaver.app\/",
+    "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
-    "appDisplayName" : "Slack",
-    "shortcut" : "alt+7"
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
+    "appDisplayName" : "Microsoft Edge",
+    "shortcut" : "ctrl+alt+cmd+e"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
-    "shortcut" : "alt+8",
-    "appDisplayName" : "Microsoft Teams"
+    "shortcut" : "ctrl+alt+cmd+f",
+    "appDisplayName" : "Firefox",
+    "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/"
   },
   {
-    "shortcut" : "alt+9",
-    "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
-    "appDisplayName" : "Outlook"
+    "appDisplayName" : "Messages",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
+    "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "appDisplayName" : "Notes",
-    "shortcut" : "shift+alt+9",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/"
+    "shortcut" : "shift+ctrl+alt+cmd+i",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
+    "appDisplayName" : "Contacts"
   },
   {
-    "shortcut" : "alt+0",
+    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
+    "shortcut" : "ctrl+alt+cmd+k",
+    "appDisplayName" : "Lens"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
     "appDisplayName" : "Calendar",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/"
+    "shortcut" : "ctrl+alt+cmd+l"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
     "appDisplayName" : "Maps",
-    "shortcut" : "shift+alt+0"
+    "shortcut" : "ctrl+alt+cmd+m"
   },
   {
-    "appDisplayName" : "Surge",
-    "shortcut" : "shift+alt+-",
-    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/"
+    "appDisplayName" : "Find My",
+    "shortcut" : "shift+ctrl+alt+cmd+m",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/FindMy.app\/"
   },
   {
+    "shortcut" : "shift+alt+m",
+    "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Finder.app\/",
+    "appDisplayName" : "Finder"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
+    "shortcut" : "ctrl+alt+cmd+o",
+    "appDisplayName" : "Outlook"
+  },
+  {
+    "appDisplayName" : "Photos",
+    "shortcut" : "ctrl+alt+cmd+p",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Photos.app\/"
+  },
+  {
+    "shortcut" : "shift+ctrl+alt+cmd+p",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20PowerPoint.app\/",
+    "appDisplayName" : "Microsoft PowerPoint"
+  },
+  {
+    "appDisplayName" : "Notes",
+    "shortcut" : "ctrl+alt+cmd+q",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+r",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
+    "appDisplayName" : "Reminders"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+s",
+    "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
+    "appDisplayName" : "Slack"
+  },
+  {
+    "appDisplayName" : "Simulator",
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/Contents\/Developer\/Applications\/Simulator.app\/",
+    "shortcut" : "shift+ctrl+alt+cmd+s"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
+    "shortcut" : "ctrl+alt+cmd+t",
+    "appDisplayName" : "Microsoft Teams"
+  },
+  {
+    "appDisplayName" : "Visual Studio Code",
+    "shortcut" : "ctrl+alt+cmd+v",
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/"
+  },
+  {
+    "shortcut" : "shift+ctrl+alt+cmd+v",
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
+    "appDisplayName" : "Visual Studio Code - Insiders"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+w",
+    "appDisplayName" : "Safari",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/"
+  },
+  {
+    "appDisplayName" : "Microsoft Word",
+    "shortcut" : "shift+ctrl+alt+cmd+w",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/WeChat.app\/",
+    "appDisplayName" : "WeChat",
+    "shortcut" : "ctrl+cmd+w"
+  },
+  {
+    "appDisplayName" : "Xcode-beta",
+    "shortcut" : "ctrl+alt+cmd+x",
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/"
+  },
+  {
+    "shortcut" : "shift+ctrl+alt+cmd+x",
+    "appDisplayName" : "Microsoft Excel",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Excel.app\/"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+-",
+    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
+    "appDisplayName" : "Surge"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+=",
     "appDisplayName" : "Surge Dashboard",
-    "shortcut" : "shift+alt+=",
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/"
   },
   {
-    "shortcut" : "shift+alt+delete",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/",
-    "appDisplayName" : "Activity Monitor"
+    "appDisplayName" : "Activity Monitor",
+    "shortcut" : "ctrl+alt+cmd+delete",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Screen%20Sharing.app\/",
-    "shortcut" : "shift+alt+[",
-    "appDisplayName" : "Screen Sharing"
+    "appDisplayName" : "Screen Sharing",
+    "shortcut" : "ctrl+alt+cmd+[",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Screen%20Sharing.app\/"
   },
   {
+    "shortcut" : "ctrl+alt+cmd+]",
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Remote%20Desktop.app\/",
-    "appDisplayName" : "Microsoft Remote Desktop",
-    "shortcut" : "shift+alt+]"
+    "appDisplayName" : "Microsoft Remote Desktop"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Parallels%20Desktop.app\/",
     "appDisplayName" : "Parallels Desktop",
-    "shortcut" : "shift+alt+\\",
-    "appBundleURL" : "file:\/\/\/Applications\/Parallels%20Desktop.app\/"
-  },
-  {
-    "appDisplayName" : "WeChat",
-    "appBundleURL" : "file:\/\/\/Applications\/WeChat.app\/",
-    "shortcut" : "ctrl+cmd+w"
+    "shortcut" : "ctrl+alt+cmd+\\"
   }
 ]
