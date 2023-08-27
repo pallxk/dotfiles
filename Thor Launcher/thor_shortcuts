@@ -5,8 +5,18 @@
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/"
   },
   {
+    "shortcut" : "ctrl+alt+cmd+8",
+    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
+    "appDisplayName" : "Lens"
+  },
+  {
     "shortcut" : "ctrl+alt+cmd+c",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
+    "appDisplayName" : "Calendar"
+  },
+  {
     "appDisplayName" : "Google Chrome",
+    "shortcut" : "shift+ctrl+alt+cmd+c",
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/"
   },
   {
@@ -38,16 +48,6 @@
     "shortcut" : "shift+ctrl+alt+cmd+i",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
     "appDisplayName" : "Contacts"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
-    "shortcut" : "ctrl+alt+cmd+k",
-    "appDisplayName" : "Lens"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
-    "appDisplayName" : "Calendar",
-    "shortcut" : "ctrl+alt+cmd+l"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
