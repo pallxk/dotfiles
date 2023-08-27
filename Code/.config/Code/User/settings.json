@@ -462,6 +462,10 @@
 
   "workbench.view.alwaysShowHeaderActions": true,
 
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+
   "[javascript]": {
     "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
   },
