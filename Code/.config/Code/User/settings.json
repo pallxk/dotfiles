@@ -315,6 +315,8 @@
   "minapp-vscode.disableAutoConfig": true,
   "problems.showCurrentInStatus": true,
 
+  "python.analysis.typeCheckingMode": "basic",
+
   "redhat.telemetry.enabled": false,
 
   "remote.autoForwardPortsSource": "process",
