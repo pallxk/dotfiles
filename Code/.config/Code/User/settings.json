@@ -34,6 +34,9 @@
   "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.showNotifications": "always",
 
+  // formulahendry.code-runner
+  "code-runner.runInTerminal": true,
+
   // streetsidesoftware.code-spell-checker
   "cSpell.customDictionaries": {
     "personal": {
