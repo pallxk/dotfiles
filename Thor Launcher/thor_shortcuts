@@ -1,13 +1,13 @@
 [
   {
-    "shortcut" : "ctrl+alt+cmd+`",
-    "appDisplayName" : "iTerm",
-    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/"
+    "shortcut" : "ctrl+alt+cmd+8",
+    "appDisplayName" : "Lens",
+    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+8",
-    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
-    "appDisplayName" : "Lens"
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
+    "shortcut" : "ctrl+alt+cmd+b"
   },
   {
     "shortcut" : "ctrl+alt+cmd+c",
@@ -15,9 +15,9 @@
     "appDisplayName" : "Calendar"
   },
   {
-    "appDisplayName" : "Google Chrome",
     "shortcut" : "shift+ctrl+alt+cmd+c",
-    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/"
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Calculator.app\/",
+    "appDisplayName" : "Calculator"
   },
   {
     "appDisplayName" : "DataGrip",
@@ -168,5 +168,10 @@
     "appBundleURL" : "file:\/\/\/Applications\/Parallels%20Desktop.app\/",
     "appDisplayName" : "Parallels Desktop",
     "shortcut" : "ctrl+alt+cmd+\\"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+;",
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
+    "appDisplayName" : "iTerm"
   }
 ]
