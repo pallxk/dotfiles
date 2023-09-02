@@ -5,9 +5,14 @@
     "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
+    "shortcut" : "ctrl+alt+cmd+b",
+    "appDisplayName" : "Microsoft Edge"
+  },
+  {
     "appDisplayName" : "Google Chrome",
-    "shortcut" : "ctrl+alt+cmd+b"
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
     "shortcut" : "ctrl+alt+cmd+c",
@@ -30,9 +35,14 @@
     "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "appDisplayName" : "Microsoft Edge",
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
+    "appDisplayName" : "Visual Studio Code",
     "shortcut" : "ctrl+alt+cmd+e"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
+    "appDisplayName" : "Visual Studio Code - Insiders",
+    "shortcut" : "shift+ctrl+alt+cmd+e"
   },
   {
     "shortcut" : "ctrl+alt+cmd+f",
@@ -103,16 +113,6 @@
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
     "shortcut" : "ctrl+alt+cmd+t",
     "appDisplayName" : "Microsoft Teams"
-  },
-  {
-    "appDisplayName" : "Visual Studio Code",
-    "shortcut" : "ctrl+alt+cmd+v",
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/"
-  },
-  {
-    "shortcut" : "shift+ctrl+alt+cmd+v",
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
-    "appDisplayName" : "Visual Studio Code - Insiders"
   },
   {
     "shortcut" : "ctrl+alt+cmd+w",
