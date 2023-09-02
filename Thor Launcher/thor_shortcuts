@@ -1,37 +1,37 @@
 [
   {
-    "shortcut" : "ctrl+alt+cmd+8",
+    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
     "appDisplayName" : "Lens",
-    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/"
+    "shortcut" : "ctrl+alt+cmd+8"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "shortcut" : "ctrl+alt+cmd+b",
-    "appDisplayName" : "Microsoft Edge"
+    "appDisplayName" : "Microsoft Edge",
+    "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appDisplayName" : "Google Chrome",
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
     "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+c",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
-    "appDisplayName" : "Calendar"
+    "appDisplayName" : "Calendar",
+    "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "shortcut" : "shift+ctrl+alt+cmd+c",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calculator.app\/",
-    "appDisplayName" : "Calculator"
+    "appDisplayName" : "Calculator",
+    "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/DataGrip.app\/",
     "appDisplayName" : "DataGrip",
-    "shortcut" : "ctrl+alt+cmd+d",
-    "appBundleURL" : "file:\/\/\/Applications\/DataGrip.app\/"
+    "shortcut" : "ctrl+alt+cmd+d"
   },
   {
-    "appDisplayName" : "DBeaver",
     "appBundleURL" : "file:\/\/\/Applications\/DBeaver.app\/",
+    "appDisplayName" : "DBeaver",
     "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
@@ -45,19 +45,19 @@
     "shortcut" : "shift+ctrl+alt+cmd+e"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+f",
+    "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
     "appDisplayName" : "Firefox",
-    "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/"
+    "shortcut" : "ctrl+alt+cmd+f"
   },
   {
-    "appDisplayName" : "Messages",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
+    "appDisplayName" : "Messages",
     "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "shortcut" : "shift+ctrl+alt+cmd+i",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
-    "appDisplayName" : "Contacts"
+    "appDisplayName" : "Contacts",
+    "shortcut" : "shift+ctrl+alt+cmd+i"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
@@ -65,64 +65,64 @@
     "shortcut" : "ctrl+alt+cmd+m"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/FindMy.app\/",
     "appDisplayName" : "Find My",
-    "shortcut" : "shift+ctrl+alt+cmd+m",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/FindMy.app\/"
+    "shortcut" : "shift+ctrl+alt+cmd+m"
   },
   {
-    "shortcut" : "shift+alt+m",
     "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Finder.app\/",
-    "appDisplayName" : "Finder"
+    "appDisplayName" : "Finder",
+    "shortcut" : "shift+alt+m"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
-    "shortcut" : "ctrl+alt+cmd+o",
-    "appDisplayName" : "Outlook"
+    "appDisplayName" : "Outlook",
+    "shortcut" : "ctrl+alt+cmd+o"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Photos.app\/",
     "appDisplayName" : "Photos",
-    "shortcut" : "ctrl+alt+cmd+p",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Photos.app\/"
+    "shortcut" : "ctrl+alt+cmd+p"
   },
   {
-    "shortcut" : "shift+ctrl+alt+cmd+p",
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20PowerPoint.app\/",
-    "appDisplayName" : "Microsoft PowerPoint"
+    "appDisplayName" : "Microsoft PowerPoint",
+    "shortcut" : "shift+ctrl+alt+cmd+p"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/",
     "appDisplayName" : "Notes",
-    "shortcut" : "ctrl+alt+cmd+q",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/"
+    "shortcut" : "ctrl+alt+cmd+q"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+r",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
-    "appDisplayName" : "Reminders"
+    "appDisplayName" : "Reminders",
+    "shortcut" : "ctrl+alt+cmd+r"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+s",
     "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
-    "appDisplayName" : "Slack"
+    "appDisplayName" : "Slack",
+    "shortcut" : "ctrl+alt+cmd+s"
   },
   {
-    "appDisplayName" : "Simulator",
     "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/Contents\/Developer\/Applications\/Simulator.app\/",
+    "appDisplayName" : "Simulator",
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
-    "shortcut" : "ctrl+alt+cmd+t",
-    "appDisplayName" : "Microsoft Teams"
+    "appDisplayName" : "Microsoft Teams",
+    "shortcut" : "ctrl+alt+cmd+t"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+w",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
     "appDisplayName" : "Safari",
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/"
+    "shortcut" : "ctrl+alt+cmd+w"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/",
     "appDisplayName" : "Microsoft Word",
-    "shortcut" : "shift+ctrl+alt+cmd+w",
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/"
+    "shortcut" : "shift+ctrl+alt+cmd+w"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/WeChat.app\/",
@@ -130,39 +130,39 @@
     "shortcut" : "ctrl+cmd+w"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/",
     "appDisplayName" : "Xcode-beta",
-    "shortcut" : "ctrl+alt+cmd+x",
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/"
+    "shortcut" : "ctrl+alt+cmd+x"
   },
   {
-    "shortcut" : "shift+ctrl+alt+cmd+x",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Excel.app\/",
     "appDisplayName" : "Microsoft Excel",
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Excel.app\/"
+    "shortcut" : "shift+ctrl+alt+cmd+x"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+-",
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
-    "appDisplayName" : "Surge"
+    "appDisplayName" : "Surge",
+    "shortcut" : "ctrl+alt+cmd+-"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+=",
+    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
     "appDisplayName" : "Surge Dashboard",
-    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/"
+    "shortcut" : "ctrl+alt+cmd+="
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/",
     "appDisplayName" : "Activity Monitor",
-    "shortcut" : "ctrl+alt+cmd+delete",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/"
+    "shortcut" : "ctrl+alt+cmd+delete"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Screen%20Sharing.app\/",
     "appDisplayName" : "Screen Sharing",
-    "shortcut" : "ctrl+alt+cmd+[",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Screen%20Sharing.app\/"
+    "shortcut" : "ctrl+alt+cmd+["
   },
   {
-    "shortcut" : "ctrl+alt+cmd+]",
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Remote%20Desktop.app\/",
-    "appDisplayName" : "Microsoft Remote Desktop"
+    "appDisplayName" : "Microsoft Remote Desktop",
+    "shortcut" : "ctrl+alt+cmd+]"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Parallels%20Desktop.app\/",
@@ -170,8 +170,8 @@
     "shortcut" : "ctrl+alt+cmd+\\"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+;",
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
-    "appDisplayName" : "iTerm"
+    "appDisplayName" : "iTerm",
+    "shortcut" : "ctrl+alt+cmd+;"
   }
 ]
