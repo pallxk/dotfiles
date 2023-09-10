@@ -1776,6 +1776,11 @@
     // sandcastle.vscode-open
     //
     {
+        "key": "ctrl+cmd+o",
+        "command": "extension.open",
+        "when": "isMac"
+    },
+    {
         "key": "alt+cmd+o",
         "command": "-extension.open"
     },
