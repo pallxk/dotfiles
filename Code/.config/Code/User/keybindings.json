@@ -38,6 +38,11 @@
         "command": "cursorRightSelect",
         "when": "isMac && textInputFocus"
     },
+    {
+        "key": "ctrl+u",
+        "command": "deleteAllLeft",
+        "when": "isMac && textInputFocus && !editorReadonly"
+    },
     //
     // View
     //
