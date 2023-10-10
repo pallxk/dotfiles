@@ -119,7 +119,7 @@
       "float" : 0
     },
     "gestures" : {
-
+      "string" : "[35,{\"trail\":0,\"flags\":0}]"
     },
     "helperRelaunch" : {
       "int" : 3
