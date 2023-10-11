@@ -119,7 +119,7 @@
       "float" : 0
     },
     "gestures" : {
-      "string" : "[35,{\"trail\":0,\"flags\":0}]"
+      "string" : "[32,{\"trail\":0,\"flags\":9437184},35,{\"flags\":0,\"trail\":0},33,{\"trail\":0,\"flags\":8912896}]"
     },
     "helperRelaunch" : {
       "int" : 3
