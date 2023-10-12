@@ -182,6 +182,6 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
     "appDisplayName" : "iTerm",
-    "shortcut" : "ctrl+alt+cmd+;"
+    "shortcut" : "ctrl+alt+cmd+return"
   }
 ]
