@@ -110,8 +110,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
-    "appDisplayName" : "Microsoft Teams",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams%20(work%20preview).app\/",
+    "appDisplayName" : "Microsoft Teams (work preview)",
     "shortcut" : "ctrl+alt+cmd+t"
   },
   {
@@ -130,8 +130,8 @@
     "shortcut" : "ctrl+cmd+w"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/",
-    "appDisplayName" : "Xcode-beta",
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/",
+    "appDisplayName" : "Xcode",
     "shortcut" : "ctrl+alt+cmd+x"
   },
   {
