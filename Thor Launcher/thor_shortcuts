@@ -170,6 +170,16 @@
     "shortcut" : "ctrl+alt+cmd+\\"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
+    "appDisplayName" : "Music",
+    "shortcut" : "ctrl+alt+cmd+,"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/NeteaseMusic.app\/",
+    "appDisplayName" : "NetEaseMusic",
+    "shortcut" : "ctrl+alt+cmd+."
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
     "appDisplayName" : "iTerm",
     "shortcut" : "ctrl+alt+cmd+;"
