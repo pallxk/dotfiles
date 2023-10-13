@@ -1,8 +1,13 @@
 [
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Aptakube.app\/",
+    "appDisplayName" : "Aptakube",
+    "shortcut" : "ctrl+alt+cmd+8"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
     "appDisplayName" : "Lens",
-    "shortcut" : "ctrl+alt+cmd+8"
+    "shortcut" : "shift+ctrl+alt+cmd+8"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
