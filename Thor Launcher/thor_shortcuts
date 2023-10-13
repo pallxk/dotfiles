@@ -80,6 +80,11 @@
     "shortcut" : "ctrl+alt+cmd+o"
   },
   {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications%20(Parallels)\/%7B18bce927-e519-4196-9ef9-3059a7930a6d%7D%20Applications.localized\/Outlook%20(new).app\/",
+    "appDisplayName" : "Outlook (new)",
+    "shortcut" : "shift+ctrl+alt+cmd+o"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Photos.app\/",
     "appDisplayName" : "Photos",
     "shortcut" : "ctrl+alt+cmd+p"
