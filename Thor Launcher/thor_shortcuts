@@ -1,5 +1,15 @@
 [
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Wireshark.app\/",
+    "appDisplayName" : "Wireshark",
+    "shortcut" : "ctrl+alt+cmd+4"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Charles.app\/",
+    "appDisplayName" : "Charles",
+    "shortcut" : "ctrl+alt+cmd+7"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Aptakube.app\/",
     "appDisplayName" : "Aptakube",
     "shortcut" : "ctrl+alt+cmd+8"
@@ -8,6 +18,11 @@
     "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
     "appDisplayName" : "Lens",
     "shortcut" : "shift+ctrl+alt+cmd+8"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Podman%20Desktop.app\/",
+    "appDisplayName" : "Podman Desktop",
+    "shortcut" : "ctrl+alt+cmd+9"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
@@ -53,6 +68,16 @@
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
     "appDisplayName" : "Firefox",
     "shortcut" : "ctrl+alt+cmd+f"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Hoppscotch.app\/",
+    "appDisplayName" : "Hoppscotch",
+    "shortcut" : "ctrl+alt+cmd+h"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Postman.app\/",
+    "appDisplayName" : "Postman",
+    "shortcut" : "shift+ctrl+alt+cmd+h"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
