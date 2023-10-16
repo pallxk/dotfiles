@@ -115,7 +115,7 @@
     "shortcut" : "ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode-beta.app\/Contents\/Developer\/Applications\/Simulator.app\/",
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/Contents\/Developer\/Applications\/Simulator.app\/",
     "appDisplayName" : "Simulator",
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
@@ -152,12 +152,12 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
     "appDisplayName" : "Surge",
-    "shortcut" : "ctrl+alt+cmd+-"
+    "shortcut" : "shift+ctrl+alt+cmd+-"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
     "appDisplayName" : "Surge Dashboard",
-    "shortcut" : "ctrl+alt+cmd+="
+    "shortcut" : "shift+ctrl+alt+cmd+="
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/",
