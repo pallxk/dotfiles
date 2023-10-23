@@ -1,4 +1,11 @@
 #!/bin/sh
 
 cd "$(dirname "$0")/../Applications/cpyvpn"
-exec python -m cpyvpn.client "$@"
+
+if which python 2> /dev/null; then
+	python=python
+else
+	python=python3
+fi
+
+exec $python -m cpyvpn.client "$@"
