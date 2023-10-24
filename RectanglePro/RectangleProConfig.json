@@ -449,6 +449,10 @@
       "keyCode" : 3,
       "modifierFlags" : 786432
     },
+    "centerTwoThirds" : {
+      "keyCode" : 15,
+      "modifierFlags" : 786432
+    },
     "firstThird" : {
       "keyCode" : 2,
       "modifierFlags" : 786432
