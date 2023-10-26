@@ -25,6 +25,11 @@
     "shortcut" : "ctrl+alt+cmd+9"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/OrbStack.app\/",
+    "appDisplayName" : "OrbStack",
+    "shortcut" : "shift+ctrl+alt+cmd+9"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
     "appDisplayName" : "Google Chrome",
     "shortcut" : "ctrl+alt+cmd+b"
