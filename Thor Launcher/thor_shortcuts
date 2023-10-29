@@ -1,5 +1,10 @@
 [
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/",
+    "appDisplayName" : "Activity Monitor",
+    "shortcut" : "ctrl+alt+cmd+escape"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Wireshark.app\/",
     "appDisplayName" : "Wireshark",
     "shortcut" : "ctrl+alt+cmd+4"
@@ -188,11 +193,6 @@
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
     "appDisplayName" : "Surge Dashboard",
     "shortcut" : "shift+ctrl+alt+cmd+="
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Activity%20Monitor.app\/",
-    "appDisplayName" : "Activity Monitor",
-    "shortcut" : "ctrl+alt+cmd+delete"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Screen%20Sharing.app\/",
