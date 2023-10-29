@@ -35,6 +35,16 @@
     "shortcut" : "shift+ctrl+alt+cmd+9"
   },
   {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/SandboxGPT.app\/",
+    "appDisplayName" : "SandboxGPT",
+    "shortcut" : "ctrl+alt+cmd+a"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Poe.app\/",
+    "appDisplayName" : "Poe",
+    "shortcut" : "shift+ctrl+alt+cmd+a"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
     "appDisplayName" : "Google Chrome",
     "shortcut" : "ctrl+alt+cmd+b"
