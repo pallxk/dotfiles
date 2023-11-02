@@ -121,6 +121,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.mouseWheelZoom": true,
+  "editor.multiDocumentOccurrencesHighlight": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120, 160 ],
   "editor.suggestSelection": "first",
