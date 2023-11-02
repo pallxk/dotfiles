@@ -115,6 +115,7 @@
 
   "diffEditor.hideUnchangedRegions.enabled": true,
 
+  "editor.accessibilitySupport": "off",
   "editor.cursorSurroundingLines": 3,
   "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
   "editor.fontSize": 14,
