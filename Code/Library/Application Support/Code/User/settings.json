@@ -111,9 +111,9 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
-  "diffEditor.experimental.collapseUnchangedRegions": true,
   "diffEditor.experimental.showMoves": true,
-  "diffEditor.experimental.useVersion2": true,
+
+  "diffEditor.hideUnchangedRegions.enabled": true,
 
   "editor.cursorSurroundingLines": 3,
   "editor.fontFamily": "'M PLUS 1 Code', Consolas, 'Droid Sans Mono', monospace, FontAwesome",
@@ -130,7 +130,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
-  "editor.codeActionWidget.includeNearbyQuickfixes": true,
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
 
   "editor.find.autoFindInSelection": "multiline",
 
@@ -451,13 +451,13 @@
 
   "workbench.activityBar.location": "top",
 
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.preferHistoryBasedLanguageDetection": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.scrollToSwitchTabs": true,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.wrapTabs": true,
 
   "workbench.editorAssociations": {
