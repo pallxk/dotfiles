@@ -5,6 +5,11 @@
     "shortcut" : "ctrl+alt+cmd+escape"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/FileZilla.app\/",
+    "appDisplayName" : "FileZilla",
+    "shortcut" : "ctrl+alt+cmd+2"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Wireshark.app\/",
     "appDisplayName" : "Wireshark",
     "shortcut" : "ctrl+alt+cmd+4"
