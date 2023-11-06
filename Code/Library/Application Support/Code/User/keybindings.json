@@ -1876,4 +1876,17 @@
         "args": { "text": "\t" },
         "when": "isMac && editorTextFocus"
     },
+    //
+    // edit with shell
+    //
+    {
+        "key": "cmd+k cmd+e",
+        "command": "editWithShell.runCommand",
+        "when": "!inKeybindings"
+    },
+    {
+        "key": "ctrl+k ctrl+e",
+        "command": "editWithShell.runCommand",
+        "when": "!isMac && !inKeybindings"
+    },
 ]
