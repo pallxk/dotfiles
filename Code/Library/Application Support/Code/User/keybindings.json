@@ -1889,4 +1889,12 @@
         "command": "editWithShell.runCommand",
         "when": "!isMac && !inKeybindings"
     },
+    //
+    // GitOps
+    //
+    {
+        "key": "ctrl+shift+o",
+        "command": "gitops.views.workloads.focus",
+        "when": "isMac"
+    },
 ]
