@@ -210,6 +210,11 @@
     "shortcut" : "shift+ctrl+alt+cmd+x"
   },
   {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Online%20YAML%20Tools.app\/",
+    "appDisplayName" : "Online YAML Tools",
+    "shortcut" : "ctrl+alt+cmd+y"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
     "appDisplayName" : "Surge",
     "shortcut" : "shift+ctrl+alt+cmd+-"
