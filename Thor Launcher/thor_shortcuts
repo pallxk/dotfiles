@@ -125,6 +125,16 @@
     "shortcut" : "ctrl+alt+cmd+j"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Keychain%20Access.app\/",
+    "appDisplayName" : "Keychain Access",
+    "shortcut" : "ctrl+alt+cmd+k"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
+    "appDisplayName" : "Bitwarden",
+    "shortcut" : "shift+ctrl+alt+cmd+k"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
     "appDisplayName" : "Maps",
     "shortcut" : "ctrl+alt+cmd+m"
