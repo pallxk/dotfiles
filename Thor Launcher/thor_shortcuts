@@ -245,9 +245,14 @@
     "shortcut" : "ctrl+alt+cmd+]"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/VMware%20Fusion.app\/",
+    "appDisplayName" : "VMware Fusion",
+    "shortcut" : "ctrl+alt+cmd+\\"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Parallels%20Desktop.app\/",
     "appDisplayName" : "Parallels Desktop",
-    "shortcut" : "ctrl+alt+cmd+\\"
+    "shortcut" : "shift+ctrl+alt+cmd+\\"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
