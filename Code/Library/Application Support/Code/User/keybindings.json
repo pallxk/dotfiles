@@ -1897,4 +1897,9 @@
         "command": "gitops.views.workloads.focus",
         "when": "isMac"
     },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.view.extension.kubernetesView",
+        "when": "isMac"
+    },
 ]
