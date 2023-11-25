@@ -20,6 +20,16 @@
     "shortcut" : "ctrl+alt+cmd+4"
   },
   {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Hoppscotch.app\/",
+    "appDisplayName" : "Hoppscotch",
+    "shortcut" : "ctrl+alt+cmd+6"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Postman.app\/",
+    "appDisplayName" : "Postman",
+    "shortcut" : "shift+ctrl+alt+cmd+6"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Charles.app\/",
     "appDisplayName" : "Charles",
     "shortcut" : "ctrl+alt+cmd+7"
@@ -98,16 +108,6 @@
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
     "appDisplayName" : "Firefox",
     "shortcut" : "ctrl+alt+cmd+f"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Hoppscotch.app\/",
-    "appDisplayName" : "Hoppscotch",
-    "shortcut" : "ctrl+alt+cmd+h"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Postman.app\/",
-    "appDisplayName" : "Postman",
-    "shortcut" : "shift+ctrl+alt+cmd+h"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
