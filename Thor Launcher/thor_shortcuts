@@ -65,8 +65,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
-    "appDisplayName" : "Google Chrome",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
+    "appDisplayName" : "Safari",
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
@@ -108,6 +108,11 @@
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
     "appDisplayName" : "Firefox",
     "shortcut" : "ctrl+alt+cmd+f"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
+    "shortcut" : "ctrl+alt+cmd+g"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Mi%20Home%20Beta.app\/",
@@ -203,11 +208,6 @@
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams%20(work%20preview).app\/",
     "appDisplayName" : "Microsoft Teams (work preview)",
     "shortcut" : "ctrl+alt+cmd+t"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
-    "appDisplayName" : "Safari",
-    "shortcut" : "ctrl+alt+cmd+w"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/",
