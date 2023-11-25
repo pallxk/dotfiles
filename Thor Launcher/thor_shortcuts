@@ -210,6 +210,11 @@
     "shortcut" : "ctrl+alt+cmd+t"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/wechatwebdevtools.app\/",
+    "appDisplayName" : "Wechat Devtools",
+    "shortcut" : "ctrl+alt+cmd+w"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/",
     "appDisplayName" : "Microsoft Word",
     "shortcut" : "shift+ctrl+alt+cmd+w"
