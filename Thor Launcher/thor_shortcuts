@@ -110,6 +110,16 @@
     "shortcut" : "ctrl+alt+cmd+f"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Mi%20Home%20Beta.app\/",
+    "appDisplayName" : "Mi Home Beta",
+    "shortcut" : "ctrl+alt+cmd+h"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Home.app\/",
+    "appDisplayName" : "Home",
+    "shortcut" : "shift+ctrl+alt+cmd+h"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
     "appDisplayName" : "Messages",
     "shortcut" : "ctrl+alt+cmd+i"
