@@ -283,5 +283,10 @@
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
     "appDisplayName" : "iTerm",
     "shortcut" : "ctrl+alt+cmd+return"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Terminal.app\/",
+    "appDisplayName" : "Terminal",
+    "shortcut" : "shift+ctrl+alt+cmd+return"
   }
 ]
