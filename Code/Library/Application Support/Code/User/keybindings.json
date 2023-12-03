@@ -693,10 +693,16 @@
     // editor - windows
     //
     {
-        "key": "ctrl+alt+t",
-        "command": "workbench.action.closeOtherEditors",
-        "when": "!isMac"
-        // It's alt+cmd+t on mac defined by vscode system
+        "key": "shift+alt+w",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.closeEditorsToTheLeft"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "workbench.action.closeEditorsToTheRight"
     },
     {
         "key": "alt+1",
