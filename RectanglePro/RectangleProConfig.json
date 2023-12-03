@@ -212,7 +212,7 @@
       "float" : 10
     },
     "quickActions" : {
-      "int" : 1
+      "int" : 2
     },
     "quickActionTimeout" : {
       "double" : 1
