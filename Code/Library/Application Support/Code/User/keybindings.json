@@ -313,9 +313,14 @@
     // References View
     //
     {
-        "key": "shift+alt+r",
+        "key": "shift+alt+cmd+r",
         "command": "references-view.findReferences",
-        "when": "editorHasReferenceProvider"
+        "when": "isMac && editorHasReferenceProvider"
+    },
+    {
+        "key": "shift+ctrl+alt+r",
+        "command": "references-view.findReferences",
+        "when": "!isMac && editorHasReferenceProvider"
     },
     //
     // workbench navigation
