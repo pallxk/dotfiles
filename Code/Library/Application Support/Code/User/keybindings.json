@@ -146,9 +146,19 @@
     // Copy path
     //
     {
+        "key": "cmd+k alt+cmd+c",
+        "command": "copyFilePath",
+        "when": "isMac && editorFocus || isMac && terminalFocus"
+    },
+    {
         "key": "ctrl+alt+c",
         "command": "copyFilePath",
         "when": "!isMac && !fileMatchOrFolderMatchWithResourceFocus"
+    },
+    {
+        "key": "cmd+k shift+alt+cmd+c",
+        "command": "copyRelativeFilePath",
+        "when": "isMac && editorFocus || isMac && terminalFocus"
     },
     {
         "key": "ctrl+alt+c",
