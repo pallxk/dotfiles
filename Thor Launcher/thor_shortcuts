@@ -95,11 +95,6 @@
     "shortcut" : "ctrl+alt+cmd+e"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
-    "appDisplayName" : "Visual Studio Code - Insiders",
-    "shortcut" : "shift+ctrl+alt+cmd+e"
-  },
-  {
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
     "appDisplayName" : "Firefox",
     "shortcut" : "ctrl+alt+cmd+f"
@@ -208,6 +203,11 @@
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams%20(work%20preview).app\/",
     "appDisplayName" : "Microsoft Teams (work preview)",
     "shortcut" : "ctrl+alt+cmd+t"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
+    "appDisplayName" : "Visual Studio Code - Insiders",
+    "shortcut" : "ctrl+alt+cmd+v"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/wechatwebdevtools.app\/",
