@@ -65,14 +65,9 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
-    "appDisplayName" : "Safari",
-    "shortcut" : "ctrl+alt+cmd+b"
-  },
-  {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
     "appDisplayName" : "Microsoft Edge",
-    "shortcut" : "shift+ctrl+alt+cmd+b"
+    "shortcut" : "ctrl+alt+cmd+b"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
@@ -138,6 +133,11 @@
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/JSON%20Web%20Tokens%20-%20jwt.io.app\/",
     "appDisplayName" : "JSON Web Tokens - jwt.io",
     "shortcut" : "ctrl+alt+cmd+j"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
+    "appDisplayName" : "Safari",
+    "shortcut" : "ctrl+alt+cmd+l"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Keychain%20Access.app\/",
