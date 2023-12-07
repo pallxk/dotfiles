@@ -190,6 +190,11 @@
     "shortcut" : "ctrl+alt+cmd+r"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20To%20Do.app\/",
+    "appDisplayName" : "Microsoft To Do",
+    "shortcut" : "shift+ctrl+alt+cmd+r"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
     "appDisplayName" : "Slack",
     "shortcut" : "ctrl+alt+cmd+s"
