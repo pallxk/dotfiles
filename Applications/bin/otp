@@ -43,7 +43,7 @@ elif [ "$type" = securid ]; then
   pin=$(jq -r .pin <<< "$otp")
 
   # Calc OTP
-  otp=$(echo "$pin" | stoken --token="$token" --stdin)
+  otp=$(echo "$pin" | stoken --token="$token" --stdin "$@")
 else
   echo >&2 "Unsupported type $type"
 fi
