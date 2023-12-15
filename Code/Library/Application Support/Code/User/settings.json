@@ -352,6 +352,8 @@
   "search.defaultViewMode": "tree",
   "search.followSymlinks": false,
 
+  "sqltools.disableChordKeybindings": true,
+
   "telemetry.telemetryLevel": "error",
 
   "terminal.external.osxExec": "iTerm.app",
