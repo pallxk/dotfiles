@@ -1,2 +1,6 @@
-hash tccli 2> /dev/null || return
-complete -C 'tccli_completer' tccli
+# Enable tab completion for tccli
+
+# Check tccli package is installed
+command -v tccli_completer > /dev/null || return;
+
+complete -C tccli_completer tccli
