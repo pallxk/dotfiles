@@ -4,3 +4,6 @@
 command -v tccli_completer > /dev/null || return;
 
 complete -C tccli_completer tccli
+
+alias tc=tccli
+complete -C tccli_completer tc
