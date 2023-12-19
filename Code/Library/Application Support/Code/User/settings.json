@@ -478,6 +478,10 @@
 
   "workbench.view.alwaysShowHeaderActions": true,
 
+  "yaml.schemas": {
+    "https://json.schemastore.org/bamboo-spec.json": "**/bamboo-specs/**/*.{yml,yaml}"
+  },
+
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
