@@ -64,6 +64,12 @@ alias gcc='gcc -Wall -Wextra -Wpedantic'
 alias g++='g++ -Wall -Wextra -Wpedantic'
 
 
+# Single letter alias
+alias c=curl
+alias h=http
+alias s=https
+
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
