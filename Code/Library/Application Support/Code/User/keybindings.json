@@ -1633,6 +1633,20 @@
         "command": "gitlens.toggleFileHeatmap"
     },
     {
+        "key": "alt+r",
+        "command": "gitlens.openRevisionFile",
+        "when": "gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "alt+r",
+        "command": "gitlens.openFileRevision",
+        "when": "!(gitlens:activeFileStatus =~ /revision/)"
+    },
+    {
+        "key": "alt+shift+r",
+        "command": "gitlens.openFileRevision"
+    },
+    {
         "key": "alt+cmd+g",
         "command": "workbench.view.extension.gitlensInspect",
         "when": "isMac && config.gitlens.keymap == 'alternate'"
