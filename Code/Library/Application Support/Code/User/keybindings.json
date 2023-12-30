@@ -64,6 +64,19 @@
         "when": "isMac && textInputFocus && !editorReadonly"
     },
     //
+    // Compare
+    //
+    {
+        "key": "alt+cmd+k",
+        "command": "compareSelected",
+        "when": "isMac && !inKeybindings"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "compareSelected",
+        "when": "!isMac"
+    },
+    //
     // View
     //
     {
