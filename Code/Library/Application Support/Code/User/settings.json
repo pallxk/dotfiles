@@ -172,6 +172,8 @@
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock",
     ".env": ".env.*",
+    ".vault-password": ".vault-password.*",
+    ".vault_password": ".vault_password_*",
     "*": "${basename}.*.${extname}"
   },
 
