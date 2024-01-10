@@ -213,6 +213,7 @@
     // Terraform
     "*.hcl": "terraform",
     // yaml
+    "*.yaml.example": "yaml",
     "kubeconfig": "yaml",
     "*.kubeconfig": "yaml",
   },
