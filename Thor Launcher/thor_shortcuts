@@ -147,11 +147,6 @@
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
     "appDisplayName" : "Maps",
-    "shortcut" : "ctrl+alt+cmd+m"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/FindMy.app\/",
-    "appDisplayName" : "Find My",
     "shortcut" : "shift+ctrl+alt+cmd+m"
   },
   {
