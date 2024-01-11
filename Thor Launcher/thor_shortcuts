@@ -65,8 +65,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "appDisplayName" : "Microsoft Edge",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
+    "appDisplayName" : "Safari",
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
@@ -130,11 +130,6 @@
     "shortcut" : "ctrl+alt+cmd+j"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
-    "appDisplayName" : "Safari",
-    "shortcut" : "ctrl+alt+cmd+l"
-  },
-  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Keychain%20Access.app\/",
     "appDisplayName" : "Keychain Access",
     "shortcut" : "ctrl+alt+cmd+k"
@@ -143,6 +138,11 @@
     "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
     "appDisplayName" : "Bitwarden",
     "shortcut" : "shift+ctrl+alt+cmd+k"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
+    "appDisplayName" : "Microsoft Edge",
+    "shortcut" : "ctrl+alt+cmd+l"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
