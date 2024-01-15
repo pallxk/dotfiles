@@ -163,6 +163,14 @@
         "when": "!isMac && activeEditorIsPinned"
     },
     //
+    // Move Editor
+    //
+    {
+        "key": "ctrl+cmd+n",
+        "command": "workbench.action.moveEditorToNewWindow",
+        "when": "isMac"
+    },
+    //
     // Editor Split
     //
     {
@@ -1011,6 +1019,42 @@
         "key": "alt+v",
         "command": "search.action.viewAsList",
         "when": "focusedView == 'workbench.view.search' && inTreeView"
+    },
+    //
+    // Terminal Move
+    //
+    {
+        "key": "ctrl+cmd+`",
+        "command": "workbench.action.terminal.moveToEditor",
+        "when": "isMac && focusedView == 'terminal'"
+    },
+    {
+        "key": "ctrl+cmd+`",
+        "command": "workbench.action.terminal.moveToTerminalPanel",
+        "when": "isMac && focusedView != 'terminal'"
+    },
+    //
+    // Terminal Resize
+    //
+    {
+        "key": "ctrl+cmd+left",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus && !terminalEditorActive && terminalHasBeenCreated || terminalFocus && !terminalEditorActive && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus && !terminalEditorActive && terminalHasBeenCreated || terminalFocus && !terminalEditorActive && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     //
     // Terminal Search
