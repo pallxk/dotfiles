@@ -978,6 +978,16 @@
         "when": "inFilesPicker && inQuickOpen"
     },
     {
+        "key": "alt+enter",
+        "command": "search.focus.previousInputBox",
+        "when": "searchViewletVisible && !inputBoxFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "search.focus.nextInputBox",
+        "when": "searchViewletVisible && inputBoxFocus"
+    },
+    {
         "key": "alt+;",
         "command": "search.action.expandSearchResults",
         "when": "activeViewlet == 'workbench.view.search'"
