@@ -453,6 +453,14 @@
       "keyCode" : 15,
       "modifierFlags" : 786432
     },
+    "fillLeft" : {
+      "keyCode" : 4,
+      "modifierFlags" : 786432
+    },
+    "fillRight" : {
+      "keyCode" : 37,
+      "modifierFlags" : 786432
+    },
     "firstThird" : {
       "keyCode" : 2,
       "modifierFlags" : 786432
