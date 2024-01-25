@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "~/Library/Application Support/Surge",
+			"path": "../../../Library/Application Support/Surge"
+		},
+		{
+			"name": "~/Library/Logs/Surge",
+			"path": "../../../Library/Logs/Surge"
+		},
+		{
+			"name": "/tmp",
+			"path": "/tmp"
+		}
+	],
+	"settings": {}
+}
