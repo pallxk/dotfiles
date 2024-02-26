@@ -412,12 +412,12 @@
     {
         "key": "alt+j",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "panelFocus && editorAreaVisible"
+        "when": "panelFocus && mainEditorAreaVisible"
     },
     {
         "key": "alt+j",
         "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelFocus && !editorAreaVisible"
+        "when": "panelFocus && !mainEditorAreaVisible"
     },
     //
     // editor navigation
