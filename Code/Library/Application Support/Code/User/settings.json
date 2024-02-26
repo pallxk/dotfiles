@@ -121,6 +121,7 @@
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
+  "editor.letterSpacing": -0.5,
   "editor.mouseWheelZoom": true,
   "editor.multiDocumentOccurrencesHighlight": true,
   "editor.renderWhitespace": "boundary",
