@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -eu
+
+/opt/homebrew/bin/ncat -c "ncat 127.0.0.1 6153" -l 16153 -k
