@@ -466,7 +466,7 @@
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.showTabs": "single",
-  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.wrapTabs": true,
 
   "workbench.editorAssociations": {
