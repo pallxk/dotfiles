@@ -2046,4 +2046,27 @@
         "command": "workbench.view.extension.kubernetesView",
         "when": "isMac"
     },
+    //
+    // redhat.ansible
+    //
+    {
+        "key": "tab",
+        "command": "-ansible.lightspeed.inlineSuggest.accept",
+        "when": "inlineSuggestionVisible && editorLangId == 'ansible'"
+    },
+    {
+        "key": "tab",
+        "command": "ansible.lightspeed.inlineSuggest.accept",
+        "when": "config.ansible.lightspeed.enabled && config.ansible.lightspeed.suggestions.enabled && inlineSuggestionVisible && editorLangId == 'ansible'"
+    },
+    {
+        "key": "escape",
+        "command": "-ansible.lightspeed.inlineSuggest.hide",
+        "when": "inlineSuggestionVisible && editorLangId == 'ansible'"
+    },
+    {
+        "key": "escape",
+        "command": "ansible.lightspeed.inlineSuggest.hide",
+        "when": "config.ansible.lightspeed.enabled && config.ansible.lightspeed.suggestions.enabled && inlineSuggestionVisible && editorLangId == 'ansible'"
+    },
 ]
