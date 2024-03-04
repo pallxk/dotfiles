@@ -1,6 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
     //
+    // Settings
+    //
+    {
+        "key": "cmd+k shift+cmd+,",
+        "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "cmd+k shift+cmd+s",
+        "command": "workbench.action.openGlobalKeybindingsFile"
+    },
+    //
     // Cursor
     //
     {
