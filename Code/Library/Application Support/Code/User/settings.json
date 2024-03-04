@@ -348,8 +348,6 @@
 
   "scm.defaultViewMode": "tree",
 
-  "scm.experimental.showSyncView": true,
-
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
 
@@ -452,8 +450,6 @@
 
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
-  "window.menuBarVisibility": "classic",
-  "window.titleBarStyle": "custom",
 
   "workbench.colorTheme": "Default Light Modern",
   "workbench.iconTheme": "material-icon-theme",
