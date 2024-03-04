@@ -123,7 +123,7 @@
   "editor.formatOnSaveMode": "modifications",
   "editor.letterSpacing": -0.5,
   "editor.mouseWheelZoom": true,
-  "editor.multiDocumentOccurrencesHighlight": true,
+  "editor.occurrencesHighlight": "multiFile",
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120, 160 ],
   "editor.suggestSelection": "first",
