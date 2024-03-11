@@ -105,16 +105,6 @@
     "shortcut" : "ctrl+alt+cmd+g"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Mi%20Home.app\/",
-    "appDisplayName" : "Mi Home",
-    "shortcut" : "ctrl+alt+cmd+h"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Home.app\/",
-    "appDisplayName" : "Home",
-    "shortcut" : "shift+ctrl+alt+cmd+h"
-  },
-  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
     "appDisplayName" : "Messages",
     "shortcut" : "ctrl+alt+cmd+i"
@@ -242,11 +232,21 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
     "appDisplayName" : "Surge",
-    "shortcut" : "shift+ctrl+alt+cmd+-"
+    "shortcut" : "ctrl+alt+cmd+-"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
     "appDisplayName" : "Surge Dashboard",
+    "shortcut" : "shift+ctrl+alt+cmd+-"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Mi%20Home.app\/",
+    "appDisplayName" : "Mi Home",
+    "shortcut" : "ctrl+alt+cmd+="
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Home.app\/",
+    "appDisplayName" : "Home",
     "shortcut" : "shift+ctrl+alt+cmd+="
   },
   {
