@@ -60,6 +60,16 @@
     "shortcut" : "ctrl+alt+cmd+a"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Keychain%20Access.app\/",
+    "appDisplayName" : "Keychain Access",
+    "shortcut" : "ctrl+alt+cmd+0"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
+    "appDisplayName" : "Bitwarden",
+    "shortcut" : "shift+ctrl+alt+cmd+0"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Poe.app\/",
     "appDisplayName" : "Poe",
     "shortcut" : "shift+ctrl+alt+cmd+a"
@@ -118,16 +128,6 @@
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/JSON%20Web%20Tokens%20-%20jwt.io.app\/",
     "appDisplayName" : "JSON Web Tokens - jwt.io",
     "shortcut" : "ctrl+alt+cmd+j"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Keychain%20Access.app\/",
-    "appDisplayName" : "Keychain Access",
-    "shortcut" : "ctrl+alt+cmd+k"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
-    "appDisplayName" : "Bitwarden",
-    "shortcut" : "shift+ctrl+alt+cmd+k"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
