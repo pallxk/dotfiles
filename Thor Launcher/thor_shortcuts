@@ -230,13 +230,13 @@
     "shortcut" : "ctrl+alt+cmd+y"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
-    "appDisplayName" : "Surge",
+    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
+    "appDisplayName" : "Surge Dashboard",
     "shortcut" : "ctrl+alt+cmd+-"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
-    "appDisplayName" : "Surge Dashboard",
+    "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/",
+    "appDisplayName" : "Surge",
     "shortcut" : "shift+ctrl+alt+cmd+-"
   },
   {
