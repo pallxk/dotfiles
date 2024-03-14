@@ -18,7 +18,13 @@
     //
     {
         "key": "cmd+k shift+cmd+,",
-        "command": "workbench.action.openSettingsJson"
+        "command": "workbench.action.openSettingsJson",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+k shift+ctrl+,",
+        "command": "workbench.action.openSettingsJson",
+        "when": "!isMac"
     },
     {
         "key": "cmd+k shift+cmd+d",
@@ -26,7 +32,13 @@
     },
     {
         "key": "cmd+k shift+cmd+s",
-        "command": "workbench.action.openGlobalKeybindingsFile"
+        "command": "workbench.action.openGlobalKeybindingsFile",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+k shift+ctrl+s",
+        "command": "workbench.action.openGlobalKeybindingsFile",
+        "when": "!isMac"
     },
     //
     // Cursor
