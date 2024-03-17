@@ -39,11 +39,12 @@ if [ "$type" = totp ]; then
   # Calc OTP
   otp=$(echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -)
 elif [ "$type" = securid ]; then
+  time=$(jq -r '.time // "+0"' <<< "$otp")
   token=$(jq -r .token <<< "$otp")
   pin=$(jq -r .pin <<< "$otp")
 
   # Calc OTP
-  otp=$(echo "$pin" | stoken --token="$token" --stdin "$@")
+  otp=$(echo "$pin" | stoken --token="$token" --stdin "$@" --use-time="$time")
 else
   echo >&2 "Unsupported type $type"
 fi
