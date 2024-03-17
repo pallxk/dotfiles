@@ -8,5 +8,10 @@ export KUBECONFIG=~/.kube/config.new:~/.kube/config
 . <(kubectl completion bash)
 
 # Alias
-alias k=kubectl
+if hash kubecolor 2> /dev/null; then
+	alias k=kubecolor
+else
+	alias k=kubectl
+fi
+
 complete -F __start_kubectl k
