@@ -1734,7 +1734,12 @@
     {
         "key": "alt+cmd+g",
         "command": "workbench.view.extension.gitlensInspect",
-        "when": "isMac && config.gitlens.keymap == 'alternate'"
+        "when": "isMac && config.gitlens.keymap == 'alternate' && activeViewlet != 'workbench.view.extension.gitlensInspect'"
+    },
+    {
+        "key": "alt+cmd+g",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "isMac && config.gitlens.keymap == 'alternate' && activeViewlet == 'workbench.view.extension.gitlensInspect'"
     },
     {
         "key": "ctrl+cmd+g",
