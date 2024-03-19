@@ -1710,10 +1710,6 @@
     // GitLens
     //
     {
-        "key": "alt+b",
-        "command": "gitlens.toggleFileBlame"
-    },
-    {
         "key": "alt+h",
         "command": "gitlens.toggleFileChanges"
     },
