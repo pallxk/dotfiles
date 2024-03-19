@@ -44,7 +44,8 @@ shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-shopt -s globstar
+# Added in bash 4.0, macOS has bash 3.2.
+shopt -s globstar 2> /dev/null
 
 
 # Set up default editor
