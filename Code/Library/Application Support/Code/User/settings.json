@@ -298,6 +298,9 @@
 
   "json.maxItemsComputed": 10000,
 
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+
   "material-icon-theme.files.associations": {
     // Ansible
     "requirements.yml": "credits",
