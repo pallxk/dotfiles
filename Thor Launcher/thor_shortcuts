@@ -280,13 +280,13 @@
     "shortcut" : "ctrl+alt+cmd+."
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
-    "appDisplayName" : "iTerm",
+    "appBundleURL" : "file:\/\/\/Applications\/Warp.app\/",
+    "appDisplayName" : "Warp",
     "shortcut" : "ctrl+alt+cmd+return"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Terminal.app\/",
-    "appDisplayName" : "Terminal",
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
+    "appDisplayName" : "iTerm",
     "shortcut" : "shift+ctrl+alt+cmd+return"
   }
 ]
