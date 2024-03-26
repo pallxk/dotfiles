@@ -1,3 +1,6 @@
+# Don't set PS1 for Warp Terminal
+[ "$TERM_PROGRAM" = WarpTerminal ] && return
+
 # Possible locations of git-prompt.sh
 GIT_PROMPT_SH_PATH=(
 	/usr/share/git/git-prompt.sh

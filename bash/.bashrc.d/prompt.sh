@@ -1,3 +1,6 @@
+# Don't set PS1 for Warp Terminal
+[ "$TERM_PROGRAM" = WarpTerminal ] && return
+
 # Set prompt string
 if [ -z "$PROMPT_COMMAND" ]; then
 	PROMPT_COMMAND=__prompt_command
