@@ -1,3 +1,6 @@
+# Don't set PS1 for Warp Terminal
+[ "$TERM_PROGRAM" = WarpTerminal ] && return
+
 # https://github.com/magicmonty/bash-git-prompt
 
 if [ -f "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh" ]; then
