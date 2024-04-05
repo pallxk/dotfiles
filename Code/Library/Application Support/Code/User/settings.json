@@ -194,6 +194,7 @@
     // ignore
     ".git-blame-ignore-revs": "ignore",
     // ini
+    "**/ansible/hosts": "ini",
     "*.dconf": "ini",
     "inventory": "ini",
     // JavaScript
