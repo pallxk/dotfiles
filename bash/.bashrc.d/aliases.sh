@@ -27,7 +27,7 @@ fi
 
 # some more ls aliases
 # List entries by column with indicator appended
-alias l='ls -CF'
+#alias l='ls -CF'
 # List in a long format
 alias ll='ls -l'
 # List only hidden entries
