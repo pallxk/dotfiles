@@ -194,10 +194,12 @@
     "**/sway/**/*.conf": "i3",
     // ignore
     ".git-blame-ignore-revs": "ignore",
-    // ini
+    // ini (Ansible)
     "**/ansible/hosts": "ini",
-    "*.dconf": "ini",
     "inventory": "ini",
+    // ini (Surge)
+    "*.dconf": "ini",
+    "**/rule-set/*.txt": "ini",
     // JavaScript
     "*.wxs": "javascript",
     // Json
