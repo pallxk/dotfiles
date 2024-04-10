@@ -1728,10 +1728,6 @@
         "when": "!(gitlens:activeFileStatus =~ /revision/)"
     },
     {
-        "key": "alt+shift+r",
-        "command": "gitlens.openFileRevision"
-    },
-    {
         "key": "alt+cmd+g",
         "command": "workbench.view.extension.gitlensInspect",
         "when": "isMac && config.gitlens.keymap == 'alternate' && activeViewlet != 'workbench.view.extension.gitlensInspect'"
