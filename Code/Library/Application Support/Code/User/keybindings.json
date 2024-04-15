@@ -314,22 +314,22 @@
     // selection
     //
     {
-        "key": "ctrl+alt+d",
+        "key": "ctrl+shift+d",
         "command": "editor.action.addSelectionToPreviousFindMatch",
-        "when": "!isMac && editorFocus"
+        "when": "!isMac && editorFocus && editorHasSelection"
     },
     {
-        "key": "ctrl+cmd+d",
+        "key": "shift+cmd+d",
         "command": "editor.action.addSelectionToPreviousFindMatch",
-        "when": "isMac && editorFocus"
+        "when": "isMac && editorFocus && editorHasSelection"
     },
     {
-        "key": "ctrl+k ctrl+alt+d",
+        "key": "ctrl+k ctrl+shift+d",
         "command": "editor.action.moveSelectionToPreviousFindMatch",
         "when": "!isMac && editorFocus"
     },
     {
-        "key": "cmd+k ctrl+cmd+d",
+        "key": "cmd+k shift+cmd+d",
         "command": "editor.action.moveSelectionToPreviousFindMatch",
         "when": "isMac && editorFocus"
     },
