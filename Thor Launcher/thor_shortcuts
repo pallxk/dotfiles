@@ -195,6 +195,11 @@
     "shortcut" : "ctrl+alt+cmd+t"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/DingTalk.app\/",
+    "appDisplayName" : "DingTalk",
+    "shortcut" : "shift+ctrl+alt+cmd+t"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
     "appDisplayName" : "Visual Studio Code - Insiders",
     "shortcut" : "ctrl+alt+cmd+v"
