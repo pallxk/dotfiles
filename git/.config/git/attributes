@@ -1,1 +1,2 @@
-*vault* diff=ansible-vault merge=binary
+# Ansible Vault
+*vault*.{yml,yaml} diff=ansible-vault merge=binary
