@@ -1,5 +1,6 @@
 [ -f ~/bin/ansible-vault-password-helper ] || return
 export ANSIBLE_VAULT_PASSWORD_FILE=~/bin/ansible-vault-password-helper
+export ANSIBLE_VAULT_IDENTITY_LIST=prod@~/bin/ansible-vault-password-helper-prod
 
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#callbacks-enabled
 export ANSIBLE_CALLBACKS_ENABLED=profile_tasks
