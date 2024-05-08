@@ -184,6 +184,7 @@
 
   "files.associations": {
     // Ansible
+    "*.playbook": "ansible",
     "**/ansible/**/*.{yml,yaml}": "ansible",
     "**/{group_vars,host_vars}/**": "ansible",
     "**/{handlers,tasks}/**/*.{yml,yaml}": "ansible",
