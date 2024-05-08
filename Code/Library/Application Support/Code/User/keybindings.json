@@ -1710,6 +1710,11 @@
     // GitLens
     //
     {
+        "key": "shift+alt+cmd+l",
+        "command": "gitlens.copyRemoteFileUrlToClipboard",
+        "when": "isMac"
+    },
+    {
         "key": "alt+h",
         "command": "gitlens.toggleFileChanges"
     },
