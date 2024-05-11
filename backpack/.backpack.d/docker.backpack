@@ -9,3 +9,16 @@ dsh() {
 dbash() {
     docker exec -it "$@" bash
 }
+
+dgrep() {
+    docker ps | grep "$@"
+}
+
+dagrep() {
+    docker ps -a | grep "$@"
+}
+
+dkill() {
+    id=$(docker ps -a | grep "$@" | cut -d\  -f1)
+    docker kill $id
+}
