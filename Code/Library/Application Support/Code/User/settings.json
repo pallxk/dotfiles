@@ -458,6 +458,7 @@
 
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
+  "window.zoomLevel": 0.5,
 
   "workbench.colorTheme": "Default Light Modern",
   "workbench.iconTheme": "material-icon-theme",
