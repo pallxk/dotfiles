@@ -256,6 +256,17 @@
         "command": "editor.action.joinLines",
         "when": "!isMac && editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "ctrl+shift+j",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.joinLines",
+                "deleteRight"
+            ]
+        },
+        "when": "isMac && editorTextFocus && !editorReadonly"
+    },
     // {
     //     "key": "ctrl+j",
     //     "command": "editor.action.joinLines",
