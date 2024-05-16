@@ -11,4 +11,4 @@ if [ "$header" != "$ANSIBLE_VAULT_HEADER" ]; then
   exit
 fi
 
-ansible-vault view "$1" --vault-password-file "$(which ansible-vault-password-helper)"
+LC_ALL=en_US.UTF-8 ansible-vault view "$1"

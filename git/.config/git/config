@@ -73,7 +73,7 @@
 	tool = vimdiff
 	wsErrorHighlight = all
 [diff "ansible-vault"]
-	textconv = ansible-vault-textconv
+	textconv = ~/bin/ansible-vault-textconv
 	cachetextconv = false
 [difftool]
 	prompt = false
