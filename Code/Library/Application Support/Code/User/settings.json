@@ -200,6 +200,7 @@
     "inventory": "ini",
     // ini (Surge)
     "*.dconf": "ini",
+    "**/proxy/*.txt": "pip-requirements",
     "**/rule-set/*.txt": "pip-requirements",
     // JavaScript
     "*.wxs": "javascript",
