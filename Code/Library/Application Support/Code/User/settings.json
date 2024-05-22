@@ -227,9 +227,6 @@
   },
   "files.autoSave": "off",
   "files.defaultLanguage": "${activeEditorLanguage}",
-  "files.exclude": {
-    "**/*~": true
-  },
 
   "git.autoRepositoryDetection": "subFolders",
   "git.autofetch": true,
@@ -358,6 +355,9 @@
   "security.workspace.trust.untrustedFiles": "open",
 
   "search.defaultViewMode": "tree",
+  "search.exclude": {
+    "**/*~": true
+  },
   "search.followSymlinks": false,
 
   "sqltools.disableChordKeybindings": true,
