@@ -1002,6 +1002,11 @@
     // Search
     //
     {
+        "key": "shift+alt+cmd+f",
+        "command": "search.action.openEditor",
+        "when": "isMac"
+    },
+    {
         "key": "ctrl+e",
         "command": "actions.findWithSelection",
         "when": "!isMac && editorFocus"
