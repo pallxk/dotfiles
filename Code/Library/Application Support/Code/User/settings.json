@@ -228,10 +228,6 @@
   "files.autoSave": "off",
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
     "**/*~": true
   },
 
