@@ -197,6 +197,7 @@
     ".git-blame-ignore-revs": "ignore",
     // ini (Ansible)
     "**/ansible/hosts": "ini",
+    "**/ansible/inventory.*": "ini",
     "inventory": "ini",
     // ini (Surge)
     "*.dconf": "ini",
