@@ -1,6 +1,19 @@
 // Place your key bindings in this file to override the defaults
 [
     //
+    // Developer
+    //
+    {
+        "key": "shift+alt+cmd+1",
+        "command": "workbench.action.openLogsFolder",
+        "when": "isMac"
+    },
+    {
+        "key": "shift+alt+cmd+2",
+        "command": "workbench.action.openExtensionLogsFolder",
+        "when": "isMac"
+    },
+    //
     // Settings
     //
     {
