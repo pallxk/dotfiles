@@ -1,2 +1,3 @@
-neofetch 2> /dev/null \
-  || pfetch 2> /dev/null
+macchina 2> /dev/null \
+  || pfetch 2> /dev/null \
+  || neofetch 2> /dev/null
