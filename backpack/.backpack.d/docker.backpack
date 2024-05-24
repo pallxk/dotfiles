@@ -1,3 +1,4 @@
+alias d=docker
 alias dr='docker run --rm -it -v "$PWD":/mnt:ro'
 alias drsh='docker run --rm -it -v "$PWD":/mnt:ro --entrypoint sh'
 alias drbash='docker run --rm -it -v "$PWD":/mnt:ro --entrypoint bash'
