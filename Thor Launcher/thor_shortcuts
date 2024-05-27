@@ -285,13 +285,13 @@
     "shortcut" : "ctrl+alt+cmd+."
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Warp.app\/",
-    "appDisplayName" : "Warp",
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
+    "appDisplayName" : "iTerm",
     "shortcut" : "ctrl+alt+cmd+return"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
-    "appDisplayName" : "iTerm",
+    "appBundleURL" : "file:\/\/\/Applications\/Warp.app\/",
+    "appDisplayName" : "Warp",
     "shortcut" : "shift+ctrl+alt+cmd+return"
   }
 ]
