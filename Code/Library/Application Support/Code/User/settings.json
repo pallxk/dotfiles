@@ -214,6 +214,8 @@
     "*.dae": "julia",   // The syntax highlighting for Julia works for *.dae
     // ruby
     "Pluginfile": "ruby", // Used by fastlane
+    // shellscript
+    "**/*.backpack": "shellscript",
     // ssh_config
     "ssh_config": "ssh_config",
     "**/.ssh/*.conf": "ssh_config",
