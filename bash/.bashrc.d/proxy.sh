@@ -9,7 +9,11 @@ function proxy_on() {
 		elif [[ $https_proxy ]]; then
 			all_proxy=$https_proxy
 		else
-			all_proxy=http://127.0.0.1:8080/
+			if nc -z 127.0.0.1 6152 2> /dev/null; then
+				all_proxy=http://127.0.0.1:6152/
+			else
+				all_proxy=http://127.0.0.1:8080/
+			fi
 			# Cygwin
 			[[ `uname -s` == CYGWIN* ]] && all_proxy=http://127.0.0.1:1080/
 		fi
