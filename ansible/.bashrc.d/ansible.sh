@@ -8,6 +8,9 @@ export ANSIBLE_CALLBACKS_ENABLED=profile_tasks
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-pipelining
 export ANSIBLE_PIPELINING=True
 
+# https://docs.ansible.com/ansible/latest/reference_appendices/config.html#retry-files-enabled
+export ANSIBLE_RETRY_FILES_ENABLED=True
+
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#default-stdout-callback
 export ANSIBLE_STDOUT_CALLBACK=yaml
 

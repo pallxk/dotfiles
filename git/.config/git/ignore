@@ -4,6 +4,10 @@
 # or run the following command to set it up:
 #   git config --global core.excludesfile /path/to/.gitignore_global
 
+# Ansible #
+###########
+*.retry
+
 # Compiled source #
 ###################
 *.class
