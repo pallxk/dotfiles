@@ -152,6 +152,9 @@
 
   "editor.stickyScroll.enabled": true,
 
+  // ryu1kn.edit-with-shell
+  "editWithShell.processEntireTextIfNoneSelected": true,
+
   "emmet.includeLanguages": {
     "wxml": "html"
   },
