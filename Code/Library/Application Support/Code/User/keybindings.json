@@ -2066,12 +2066,24 @@
     //
     {
         "key": "cmd+k cmd+e",
-        "command": "editWithShell.runCommand",
-        "when": "!inKeybindings"
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editWithShell.runCommand",
+                "editWithShell.runCommand"
+            ]
+        },
+        "when": "isMac && !inKeybindings"
     },
     {
         "key": "ctrl+k ctrl+e",
-        "command": "editWithShell.runCommand",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editWithShell.runCommand",
+                "editWithShell.runCommand"
+            ]
+        },
         "when": "!isMac && !inKeybindings"
     },
     //
