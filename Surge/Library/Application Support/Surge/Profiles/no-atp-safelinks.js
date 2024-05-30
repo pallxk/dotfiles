@@ -1,9 +1,20 @@
 // https://www.o365atp.com/
 // https://manual.nssurge.com/scripting/common.html
-// https://manual.nssurge.com/scripting/http-response.html
+// https://manual.nssurge.com/scripting/http-request.html
 
 const paramUrl = new URL($request.url).searchParams.get('url')
-const targetUrl = decodeURIComponent(paramUrl)
-const headers = $response.headers
-headers['Location'] = targetUrl
-$done({status: 302, headers})
+if (paramUrl) {
+  // Redirect to the target URL directly without going through ATP safelinks.
+  const targetUrl = decodeURIComponent(paramUrl)
+  $done({
+    response: {
+      status: 302,
+      headers: {
+        'Location': targetUrl,
+      },
+    },
+  })
+} else {
+  // No url parameter found, keep the request untouched.
+  $done({})
+}
