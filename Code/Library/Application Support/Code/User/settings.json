@@ -364,7 +364,6 @@
   "search.exclude": {
     "**/*~": true
   },
-  "search.followSymlinks": false,
 
   "search.searchEditor.defaultNumberOfContextLines": 3,
   "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
