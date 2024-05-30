@@ -5,6 +5,10 @@
 			"path": "../../../Library/Application Support/Surge"
 		},
 		{
+			"name": "~/Library/Application Support/com.nssurge.surge-mac",
+			"path": "../../../Library/Application Support/com.nssurge.surge-mac"
+		},
+		{
 			"name": "~/Library/Logs/Surge",
 			"path": "../../../Library/Logs/Surge"
 		},
