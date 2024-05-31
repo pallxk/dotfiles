@@ -958,8 +958,13 @@
     },
     {
         "key": "alt+shift+;",
-        "command": "workbench.files.action.collapseExplorerFolders",
-        "when": "activeViewlet == 'workbench.view.explorer'"
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.view.explorer",
+                "workbench.files.action.collapseExplorerFolders"
+            ]
+        }
     },
     {
         "key": "shift+alt+f",
@@ -1044,14 +1049,24 @@
         "when": "searchViewletVisible && inputBoxFocus"
     },
     {
-        "key": "alt+;",
-        "command": "search.action.expandSearchResults",
-        "when": "activeViewlet == 'workbench.view.search'"
+        "key": "alt+'",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.view.search",
+                "search.action.expandSearchResults"
+            ]
+        }
     },
     {
-        "key": "alt+shift+;",
-        "command": "search.action.collapseSearchResults",
-        "when": "activeViewlet == 'workbench.view.search'"
+        "key": "alt+shift+'",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.view.search",
+                "search.action.collapseSearchResults"
+            ]
+        }
     },
     {
         "key": "alt+v",
