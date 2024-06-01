@@ -225,6 +225,7 @@
     "ssh_config": "ssh_config",
     "**/.ssh/*.conf": "ssh_config",
     "**/ssh_config.d/*": "ssh_config",
+    "**/openconnect/*.config": "ssh_config",
     // Terraform
     "*.hcl": "terraform",
     // yaml
