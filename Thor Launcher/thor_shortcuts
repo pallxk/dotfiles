@@ -280,9 +280,19 @@
     "shortcut" : "ctrl+alt+cmd+,"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Spotify.app\/",
+    "appDisplayName" : "Spotify",
+    "shortcut" : "shift+ctrl+alt+cmd+,"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/NeteaseMusic.app\/",
     "appDisplayName" : "NetEaseMusic",
     "shortcut" : "ctrl+alt+cmd+."
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90.app\/",
+    "appDisplayName" : "汽水音乐",
+    "shortcut" : "shift+ctrl+alt+cmd+."
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
