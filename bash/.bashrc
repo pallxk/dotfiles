@@ -29,7 +29,12 @@ fi
 
 # Load rc files from ".bashrc.d" and ".bashrc.d/after"
 for rcfile in ~/.bashrc.d/{,after}/*.{sh,bash}; do
-	test -r "$rcfile" && . "$rcfile"
+	if [ -r "$rcfile" ]; then
+	  a=$SECONDS
+	  . "$rcfile"
+	  b=$SECONDS
+	  [ $((b-a)) -ge 2 ] && echo >/dev/stderr "SLOW LOADING: $rcfile"
+	fi
 done
 unset rcfile
 disown -ar
