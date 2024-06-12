@@ -1,6 +1,3 @@
-# One letter shortcut to git
-alias g=git
-
 # Load Git completion script
 if [ -f /usr/share/git/completion/git-completion.bash ]; then
     . /usr/share/git/completion/git-completion.bash

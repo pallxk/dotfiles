@@ -66,6 +66,7 @@ alias g++='g++ -Wall -Wextra -Wpedantic'
 
 # Single letter alias
 alias c=curl
+alias g=git
 alias h=http
 alias s=https
 
