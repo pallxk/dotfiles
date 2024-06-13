@@ -190,8 +190,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams%20(work%20preview).app\/",
-    "appDisplayName" : "Microsoft Teams (work preview)",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
+    "appDisplayName" : "Microsoft Teams",
     "shortcut" : "ctrl+alt+cmd+t"
   },
   {
