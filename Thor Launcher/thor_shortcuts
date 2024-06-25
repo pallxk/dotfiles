@@ -55,11 +55,6 @@
     "shortcut" : "shift+ctrl+alt+cmd+9"
   },
   {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/SandboxGPT.app\/",
-    "appDisplayName" : "SandboxGPT",
-    "shortcut" : "ctrl+alt+cmd+a"
-  },
-  {
     "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Applications\/Keychain%20Access.app\/",
     "appDisplayName" : "Keychain Access",
     "shortcut" : "ctrl+alt+cmd+0"
@@ -72,6 +67,11 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Poe.app\/",
     "appDisplayName" : "Poe",
+    "shortcut" : "ctrl+alt+cmd+a"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Android%20Studio.app\/",
+    "appDisplayName" : "Android Studio",
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
