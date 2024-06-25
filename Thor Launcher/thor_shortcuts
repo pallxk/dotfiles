@@ -235,6 +235,11 @@
     "shortcut" : "ctrl+alt+cmd+y"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
+    "appDisplayName" : "Contacts",
+    "shortcut" : "shift+ctrl+alt+cmd+y"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
     "appDisplayName" : "Surge Dashboard",
     "shortcut" : "ctrl+alt+cmd+-"
