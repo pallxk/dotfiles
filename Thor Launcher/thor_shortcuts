@@ -115,13 +115,13 @@
     "shortcut" : "ctrl+alt+cmd+g"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
-    "appDisplayName" : "Messages",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
+    "appDisplayName" : "iPhone Mirroring",
     "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
-    "appDisplayName" : "Contacts",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
+    "appDisplayName" : "Messages",
     "shortcut" : "shift+ctrl+alt+cmd+i"
   },
   {
