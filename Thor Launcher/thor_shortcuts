@@ -60,7 +60,7 @@
     "shortcut" : "ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Keychain%20Access.app\/",
+    "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Applications\/Keychain%20Access.app\/",
     "appDisplayName" : "Keychain Access",
     "shortcut" : "ctrl+alt+cmd+0"
   },
