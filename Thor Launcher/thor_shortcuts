@@ -130,8 +130,8 @@
     "shortcut" : "ctrl+alt+cmd+j"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "appDisplayName" : "Microsoft Edge",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge%20Beta.app\/",
+    "appDisplayName" : "Microsoft Edge Beta",
     "shortcut" : "ctrl+alt+cmd+m"
   },
   {
