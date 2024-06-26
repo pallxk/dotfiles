@@ -75,6 +75,11 @@ alias s=https
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# Helper function to test with exit code
+e () {
+    return "$1"
+}
+
 # Show top 10 history command on screen
 history-top () {
     # Reset the history formatting locally, so that history parsing can work
