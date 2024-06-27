@@ -100,6 +100,21 @@
         "command": "compareSelected",
         "when": "!isMac"
     },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.compareEditor.swapSides",
+        "when": "isMac && activeEditor == 'workbench.editors.textDiffEditor'"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.moveActiveEditorGroupRight",
+        "when": "isMac && activeEditor != 'workbench.editors.textDiffEditor' && !activeEditorGroupLast"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.moveActiveEditorGroupLeft",
+        "when": "isMac && activeEditor != 'workbench.editors.textDiffEditor' && activeEditorGroupLast"
+    },
     //
     // List
     //
