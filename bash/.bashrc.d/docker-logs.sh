@@ -20,5 +20,6 @@ sdlogs() {
     command ssh "$host" docker logs "$@" &
   done
 
-  wait
+  # Be quiet on job exit
+  wait 2> /dev/null
 }
