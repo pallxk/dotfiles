@@ -17,6 +17,7 @@ xssh() {
   fi
 
   for host in "${hosts[@]}"; do
+    echo >&2 -n "$host: "
     command ssh "$host" "$@" | ts "$host:" &
   done
 
