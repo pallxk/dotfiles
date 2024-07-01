@@ -75,11 +75,6 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
-    "appDisplayName" : "Safari",
-    "shortcut" : "ctrl+alt+cmd+b"
-  },
-  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
     "appDisplayName" : "Calendar",
     "shortcut" : "ctrl+alt+cmd+c"
@@ -120,8 +115,8 @@
     "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
-    "appDisplayName" : "Messages",
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/Contents\/Developer\/Applications\/Simulator.app\/",
+    "appDisplayName" : "Simulator",
     "shortcut" : "shift+ctrl+alt+cmd+i"
   },
   {
@@ -180,13 +175,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+r"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
-    "appDisplayName" : "Slack",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
+    "appDisplayName" : "Safari",
     "shortcut" : "ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/Contents\/Developer\/Applications\/Simulator.app\/",
-    "appDisplayName" : "Simulator",
+    "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
+    "appDisplayName" : "Slack",
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
@@ -240,9 +235,14 @@
     "shortcut" : "ctrl+alt+cmd+y"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
+    "appDisplayName" : "Messages",
+    "shortcut" : "ctrl+alt+cmd+z"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
     "appDisplayName" : "Contacts",
-    "shortcut" : "shift+ctrl+alt+cmd+y"
+    "shortcut" : "shift+ctrl+alt+cmd+z"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
