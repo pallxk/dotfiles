@@ -11,28 +11,6 @@
 # `~/.gitconfig` file, or writes to `$XDG_CONFIG_HOME/git/config` file if it
 # exists and the `~/.gitconfig` file doesn't.
 
-[blame]
-	markIgnoredLines = true
-	markUnblamableLines = true
-[core]
-	# Enable long path (> 260) support for builtin commands in Git for Windows.
-	longpaths = true
-	# Always wrap long lines
-	pager = less -+S
-[color]
-	# Support git <1.8.4
-	# color.ui = auto by default since git 1.8.4
-	ui = auto
-[init]
-	defaultBranch = main
-[pull]
-	ff = only
-[rebase]
-	autoStash = true
-[push]
-	default = simple
-[merge]
-	defaultToUpstream = true
 [alias]
 	# Alias to list aliases
 	alias = config --get-regexp ^alias\\.
@@ -67,6 +45,18 @@
 	# List files marked as "assume unchanged" (see git-update-index(1))
 	ls-assumed = !git ls-files -v | grep ^[[:lower:]]
 	ls-assumed-unchanged = !git ls-files -v | grep ^[[:lower:]]
+[blame]
+	markIgnoredLines = true
+	markUnblamableLines = true
+[color]
+	# Support git <1.8.4
+	# color.ui = auto by default since git 1.8.4
+	ui = auto
+[core]
+	# Enable long path (> 260) support for builtin commands in Git for Windows.
+	longpaths = true
+	# Always wrap long lines
+	pager = less -+S
 [credential]
 	helper = cache --timeout=3600
 [diff]
@@ -83,3 +73,13 @@
 	cmd = diff -i $LOCAL $REMOTE
 [git-p4]
 	skipSubmitEdit = true
+[init]
+	defaultBranch = main
+[merge]
+	defaultToUpstream = true
+[pull]
+	ff = only
+[push]
+	default = simple
+[rebase]
+	autoStash = true
