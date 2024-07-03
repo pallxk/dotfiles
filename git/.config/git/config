@@ -83,3 +83,5 @@
 	default = simple
 [rebase]
 	autoStash = true
+[stash]
+	showIncludeUntracked = true
