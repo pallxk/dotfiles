@@ -77,6 +77,8 @@
 	cachetextconv = false
 [difftool]
 	prompt = false
+[difftool "bc"]
+	cmd = "/Applications/Beyond Compare.app/Contents/MacOS/bcomp"
 [difftool "idiff"]
 	cmd = diff -i $LOCAL $REMOTE
 [git-p4]
