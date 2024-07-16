@@ -18,7 +18,7 @@ xssh() {
 
   for host in "${hosts[@]}"; do
     echo >&2 -n "$host: "
-    command ssh "$host" "$@" | ts "$host:" &
+    { command ssh "$host" "$@" | ts "$host:" ; echo ; } &
   done
 
   # Be quiet on job exit
