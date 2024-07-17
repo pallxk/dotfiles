@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# https://stackoverflow.com/questions/58742765/convert-videos-from-264-to-265-hevc-with-ffmpeg
+
+set -eu
+
+: ${1:?Please specify input file as the first argument}
+
+basename=${1%.*}
+ext=${1##*.}
+
+ffmpeg \
+  -i "$1" \
+  -c:v libx265 \
+  -vtag hvc1 \
+  -c:a copy \
+  "${2:-$basename.h265.$ext}"
