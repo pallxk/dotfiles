@@ -55,13 +55,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+9"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Applications\/Keychain%20Access.app\/",
-    "appDisplayName" : "Keychain Access",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Passwords.app\/",
+    "appDisplayName" : "Passwords",
     "shortcut" : "ctrl+alt+cmd+0"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
-    "appDisplayName" : "Bitwarden",
+    "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Applications\/Keychain%20Access.app\/",
+    "appDisplayName" : "Keychain Access",
     "shortcut" : "shift+ctrl+alt+cmd+0"
   },
   {
@@ -73,6 +73,11 @@
     "appBundleURL" : "file:\/\/\/Applications\/Android%20Studio.app\/",
     "appDisplayName" : "Android Studio",
     "shortcut" : "shift+ctrl+alt+cmd+a"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
+    "appDisplayName" : "Bitwarden",
+    "shortcut" : "ctrl+alt+cmd+b"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
