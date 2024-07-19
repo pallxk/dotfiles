@@ -1,3 +1,5 @@
+# https://github.com/rime/home/wiki/CustomizationGuide
+
 patch:
   app_options/5ZSL2CJU2T.com.dingtalk.mac:
     ascii_mode: false
