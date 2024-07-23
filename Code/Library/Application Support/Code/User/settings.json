@@ -473,6 +473,11 @@
 
   "workbench.activityBar.location": "top",
 
+  "workbench.editor.customLabels.patterns": {
+    "**/Dockerfile": "${dirname}/${filename}",
+    "**/*Dockerfile*": "${dirname}/${filename}.${extname}",
+  },
+
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.preferHistoryBasedLanguageDetection": true,
   "workbench.editor.highlightModifiedTabs": true,
