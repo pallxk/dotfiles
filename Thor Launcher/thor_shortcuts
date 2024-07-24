@@ -195,6 +195,11 @@
     "shortcut" : "shift+ctrl+alt+cmd+t"
   },
   {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/jqplay.app\/",
+    "appDisplayName" : "jqplay",
+    "shortcut" : "ctrl+alt+cmd+u"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/JSON%20Web%20Tokens%20-%20jwt.io.app\/",
     "appDisplayName" : "JSON Web Tokens - jwt.io",
     "shortcut" : "shift+ctrl+alt+cmd+u"
