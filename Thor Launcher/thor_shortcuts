@@ -20,13 +20,13 @@
     "shortcut" : "ctrl+alt+cmd+4"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Postman.app\/",
-    "appDisplayName" : "Postman",
+    "appBundleURL" : "file:\/\/\/Applications\/Insomnia.app\/",
+    "appDisplayName" : "Insomnia",
     "shortcut" : "ctrl+alt+cmd+6"
   },
   {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Hoppscotch.app\/",
-    "appDisplayName" : "Hoppscotch",
+    "appBundleURL" : "file:\/\/\/Applications\/Postman.app\/",
+    "appDisplayName" : "Postman",
     "shortcut" : "shift+ctrl+alt+cmd+6"
   },
   {
