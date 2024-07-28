@@ -100,9 +100,14 @@
     "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/elasticvue.app\/",
+    "appDisplayName" : "elasticvue",
+    "shortcut" : "ctrl+alt+cmd+e"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge%20Beta.app\/",
     "appDisplayName" : "Microsoft Edge Beta",
-    "shortcut" : "ctrl+alt+cmd+e"
+    "shortcut" : "shift+ctrl+alt+cmd+e"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
