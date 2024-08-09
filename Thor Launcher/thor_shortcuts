@@ -35,6 +35,11 @@
     "shortcut" : "ctrl+alt+cmd+7"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Proxyman.app\/",
+    "appDisplayName" : "Proxyman",
+    "shortcut" : "shift+ctrl+alt+cmd+7"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Aptakube.app\/",
     "appDisplayName" : "Aptakube",
     "shortcut" : "ctrl+alt+cmd+8"
