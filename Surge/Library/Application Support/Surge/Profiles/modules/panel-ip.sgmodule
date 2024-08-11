@@ -1,0 +1,8 @@
+#!name=Panel IP
+#!desc=Show current IP address in panel
+
+[Panel]
+ip = style=info, title="IP", content="Loading...", script-name=panel-ip.js, update-interval=60
+
+[Script]
+panel-ip.js = type=generic, script-path=modules/panel-ip.js
