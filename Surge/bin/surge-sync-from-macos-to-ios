@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cp -r \
+rsync -aLv \
   ~/Library/Application\ Support/Surge/Profiles/. \
   ~/Library/Mobile\ Documents/iCloud~com~nssurge~inc/Documents/
