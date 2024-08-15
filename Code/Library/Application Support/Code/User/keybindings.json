@@ -963,6 +963,11 @@
     // Explorer
     //
     {
+        "key": "cmd+o",
+        "command": "explorer.openAndPassFocus",
+        "when": "isMac && filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
         "key": "alt+;",
         "command": "revealInExplorer"
     },
