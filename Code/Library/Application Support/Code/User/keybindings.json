@@ -259,6 +259,33 @@
         "when": "!isMac && !fileMatchOrFolderMatchWithResourceFocus"
     },
     //
+    // Paste path
+    //
+    {
+        "key": "cmd+k cmd+v",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "copyFilePath",
+                "workbench.action.terminal.paste",
+                "workbench.action.terminal.focus"
+            ]
+        },
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+k ctrl+v",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "copyFilePath",
+                "workbench.action.terminal.paste",
+                "workbench.action.terminal.focus"
+            ]
+        },
+        "when": "!isMac"
+    },
+    //
     // Reveal in OS
     //
     {
