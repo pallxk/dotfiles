@@ -234,7 +234,6 @@
     "*.kubeconfig": "yaml",
   },
   "files.autoSave": "off",
-  "files.defaultLanguage": "${activeEditorLanguage}",
 
   "git.autoRepositoryDetection": "subFolders",
   "git.autofetch": true,
