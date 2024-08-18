@@ -283,6 +283,7 @@
   "gitlens.graph.searchItemLimit": 1000,
   "gitlens.graph.showDetailsView": "open",
   "gitlens.keymap": "alternate",
+  "gitlens.telemetry.enabled": false,
   "gitlens.views.commitDetails.files.layout": "tree",
 
   // Go
