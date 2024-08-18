@@ -46,7 +46,6 @@
 	ls-assumed = !git ls-files -v | grep ^[[:lower:]]
 	ls-assumed-unchanged = !git ls-files -v | grep ^[[:lower:]]
 [blame]
-	ignoreRevsFile = .git-blame-ignore-revs
 	markIgnoredLines = true
 	markUnblamableLines = true
 [color]
