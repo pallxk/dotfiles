@@ -6,4 +6,4 @@
 hostname = %APPEND% ack, cs, acr, cr, cts, dbs, dts, dtsnew, dysms, ebs, eci, ecs, kafka, kafkanext, kms, kvstore, mpaas, oss, polardb, rds, rdsnext, slb, vpc, vpc2vpc, vpn, waf, yaochi
 
 [Script]
-aliyun-shortcuts.js = type=http-request,pattern=^https?://[0-9a-zA-Z-]+/,script-path=modules/aliyun-shortcuts.js
+aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|cs|acr|cr|cts|dbs|dts|dtsnew|dysms|ebs|eci|ecs|kafka|kafkanext|kms|kvstore|mpaas|oss|polardb|rds|rdsnext|slb|vpc|vpc2vpc|vpn|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js
