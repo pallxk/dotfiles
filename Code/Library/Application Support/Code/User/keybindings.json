@@ -142,6 +142,11 @@
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "!isMac && !taskCommandsRegistered || !isMac && terminalFocus"
     },
+    {
+        "key": "alt+cmd+j",
+        "command": "workbench.action.toggleStatusbarVisibility",
+        "when": "isMac"
+    },
     //
     // List
     //
