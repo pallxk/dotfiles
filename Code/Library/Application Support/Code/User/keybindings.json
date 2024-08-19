@@ -1875,16 +1875,6 @@
         "command": "github.copilot.generate",
         "when": "!isMac && editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
     },
-    {
-        "key": "cmd+k ctrl+cmd+i",
-        "command": "workbench.action.openChat.copilot",
-        "when": "isMac"
-    },
-    {
-        "key": "ctrl+k ctrl+alt+i",
-        "command": "workbench.action.openChat.copilot",
-        "when": "!isMac"
-    },
     //
     // GitLens
     //
