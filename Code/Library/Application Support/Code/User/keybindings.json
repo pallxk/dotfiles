@@ -1899,11 +1899,11 @@
         "when": "editorTextFocus && config.gitlens.keymap == 'alternate'"
     },
     {
-        "key": "alt+h",
+        "key": "alt+d",
         "command": "gitlens.toggleFileChanges"
     },
     {
-        "key": "alt+shift+h",
+        "key": "alt+m",
         "command": "gitlens.toggleFileHeatmap"
     },
     {
