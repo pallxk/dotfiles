@@ -116,6 +116,33 @@
         "when": "isMac && activeEditor != 'workbench.editors.textDiffEditor' && activeEditorGroupLast"
     },
     //
+    // Layout Visibility
+    //
+    {
+        "key": "ctrl+k ctrl+shift+.",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "cmd+k shift+cmd+.",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!isMac && !terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!isMac && !taskCommandsRegistered || !isMac && terminalFocus"
+    },
+    //
     // List
     //
     {
@@ -461,16 +488,6 @@
     //
     // workbench navigation
     //
-    {
-        "key": "ctrl+k ctrl+shift+.",
-        "command": "workbench.action.toggleActivityBarVisibility",
-        "when": "!isMac && !terminalFocus"
-    },
-    {
-        "key": "cmd+k shift+cmd+.",
-        "command": "workbench.action.toggleActivityBarVisibility",
-        "when": "isMac"
-    },
     {
         "key": "ctrl+alt+0",
         "command": "workbench.action.focusAuxiliaryBar",
@@ -1620,20 +1637,6 @@
         "key": "ctrl+s",
         "command": "workbench.action.terminal.findNext",
         "when": "!isMac && terminalFindFocused"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!isMac && !terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!isMac && !taskCommandsRegistered || !isMac && terminalFocus"
     },
     {
         "key": "ctrl+alt+1",
