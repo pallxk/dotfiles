@@ -24,6 +24,8 @@ const map = {
   eci: 'https://eci.console.aliyun.com/',
   // 云服务器
   ecs: 'https://ecs.console.aliyun.com/home',
+  // 云备份 Cloud Backup
+  hbr: 'https://hbr.console.aliyun.com/',
   // 消息队列Kafka版
   kafka: 'https://kafka.console.aliyun.com/',
   kafkanext: 'https://kafkanext.console.aliyun.com/overview',
@@ -37,6 +39,8 @@ const map = {
   oss: 'https://oss.console.aliyun.com/overview',
   // 云数据库PolarDB
   polardb: 'https://polardb.console.aliyun.com/overview',
+  // 配额中心
+  quotas: 'https://quotas.console.aliyun.com/products',
   // 云数据库RDS
   rds: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
   rdsnext: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
@@ -48,6 +52,7 @@ const map = {
   vpc2vpc: 'https://expressconnect.console.aliyun.com/peerconnection/cn-shanghai/vpc2vpc',
   // 网络互联 - VPN - VPN网关
   vpn: 'https://vpc.console.aliyun.com/vpn/cn-shanghai/vpns',
+  vpngw: 'https://vpc.console.aliyun.com/vpn/cn-shanghai/vpns',
   // Web应用防火墙3.0
   waf: 'https://yundun.console.aliyun.com/?p=wafnew',
   // 瑶池数据库

@@ -3,7 +3,7 @@
 #!category=Aliyun
 
 [MITM]
-hostname = %APPEND% ack, cs, acr, cr, cts, dbs, dts, dtsnew, dysms, ebs, eci, ecs, kafka, kafkanext, kms, kvstore, mpaas, oss, polardb, rds, rdsnext, slb, vpc, vpc2vpc, vpn, waf, yaochi
+hostname = %APPEND% ack, cs, acr, cr, cts, dbs, dts, dtsnew, dysms, ebs, eci, ecs, hbr, kafka, kafkanext, kms, kvstore, mpaas, oss, polardb, quotas, rds, rdsnext, slb, vpc, vpc2vpc, vpn, vpngw, waf, yaochi
 
 [Script]
-aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|cs|acr|cr|cts|dbs|dts|dtsnew|dysms|ebs|eci|ecs|kafka|kafkanext|kms|kvstore|mpaas|oss|polardb|rds|rdsnext|slb|vpc|vpc2vpc|vpn|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js
+aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|cs|acr|cr|cts|dbs|dts|dtsnew|dysms|ebs|eci|ecs|hbr|kafka|kafkanext|kms|kvstore|mpaas|oss|polardb|quotas|rds|rdsnext|slb|vpc|vpc2vpc|vpn|vpngw|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js
