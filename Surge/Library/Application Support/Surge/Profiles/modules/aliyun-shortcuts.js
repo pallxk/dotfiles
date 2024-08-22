@@ -3,6 +3,10 @@
 
 
 const map = {
+  // 应用型负载均衡 ALB
+  alb: 'https://slb.console.aliyun.com/alb/cn-shanghai/albs',
+  // 传统型负载均衡 CLB
+  clb: 'https://slb.console.aliyun.com/slb/cn-shanghai/slbs',
   // 容器服务 ACK
   ack: 'https://cs.console.aliyun.com/',
   cs: 'https://cs.console.aliyun.com/',
@@ -35,6 +39,8 @@ const map = {
   kvstore: 'https://kvstore.console.aliyun.com/Redis/dashboard/cn-shanghai',
   // 移动开发平台 mPaaS
   mpaas: 'https://mpaas.console.aliyun.com/',
+  // 网络型负载均衡 NLB
+  nlb: 'https://slb.console.aliyun.com/nlb/cn-shanghai/nlbs',
   // 对象存储 OSS
   oss: 'https://oss.console.aliyun.com/overview',
   // 云数据库PolarDB
