@@ -413,6 +413,11 @@
     //
     {
         "key": "ctrl+shift+d",
+        "command": "editor.action.duplicateSelection",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+shift+d",
         "command": "editor.action.addSelectionToPreviousFindMatch",
         "when": "!isMac && editorFocus && editorHasSelection"
     },
