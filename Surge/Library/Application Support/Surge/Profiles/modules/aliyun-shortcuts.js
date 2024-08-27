@@ -17,6 +17,8 @@ const map = {
   cts: 'https://yundun.console.aliyun.com/?p=cts',
   // 数据库备份DBS
   dbs: 'https://dbs.console.aliyun.com/',
+  // 数据管理DMS（Data Management Service）
+  dms: 'https://dms.aliyun.com/',
   // 数据传输服务
   dts: 'https://dtsnew.console.aliyun.com/sync/cn-shanghai',
   dtsnew: 'https://dtsnew.console.aliyun.com/sync/cn-shanghai',
@@ -50,6 +52,8 @@ const map = {
   // 云数据库RDS
   rds: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
   rdsnext: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
+  // 安全组
+  sg: 'https://ecs.console.aliyun.com/securityGroup/region/cn-shanghai',
   // 负载均衡 SLB
   slb: 'https://slb.console.aliyun.com/',
   // 专有网络

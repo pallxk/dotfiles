@@ -3,7 +3,7 @@
 #!category=Aliyun
 
 [MITM]
-hostname = %APPEND% ack, alb, clb, cs, acr, cr, cts, dbs, dts, dtsnew, dysms, ebs, eci, ecs, hbr, kafka, kafkanext, kms, kvstore, mpaas, nlb, oss, polardb, quotas, rds, rdsnext, slb, vpc, vpc2vpc, vpn, vpngw, waf, yaochi
+hostname = %APPEND% ack, alb, clb, cs, acr, cr, cts, dbs, dms, dts, dtsnew, dysms, ebs, eci, ecs, hbr, kafka, kafkanext, kms, kvstore, mpaas, nlb, oss, polardb, quotas, rds, rdsnext, sg, slb, vpc, vpc2vpc, vpn, vpngw, waf, yaochi
 
 [Script]
-aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|alb|clb|cs|acr|cr|cts|dbs|dts|dtsnew|dysms|ebs|eci|ecs|hbr|kafka|kafkanext|kms|kvstore|mpaas|nlb|oss|polardb|quotas|rds|rdsnext|slb|vpc|vpc2vpc|vpn|vpngw|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js
+aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|alb|clb|cs|acr|cr|cts|dbs|dms|dts|dtsnew|dysms|ebs|eci|ecs|hbr|kafka|kafkanext|kms|kvstore|mpaas|nlb|oss|polardb|quotas|rds|rdsnext|sg|slb|vpc|vpc2vpc|vpn|vpngw|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js
