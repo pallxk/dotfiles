@@ -3,6 +3,8 @@
 
 
 const map = {
+  // 传统型负载均衡 CLB - 访问控制
+  acl: 'https://slb.console.aliyun.com/slb/cn-shanghai/acls',
   // 应用型负载均衡 ALB
   alb: 'https://slb.console.aliyun.com/alb/cn-shanghai/albs',
   // 传统型负载均衡 CLB
