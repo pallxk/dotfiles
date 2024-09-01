@@ -194,6 +194,8 @@
     "**/{handlers,tasks}/**/*.{yml,yaml}": "ansible",
     // CSS
     "*.wxss": "css",
+    // Dockerfile
+    "Dockerfile_*": "dockerfile",
     // i3/sway
     "**/sway/{config,outputs}": "i3",
     "**/sway/**/*.conf": "i3",
