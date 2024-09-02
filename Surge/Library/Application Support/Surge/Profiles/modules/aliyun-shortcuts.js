@@ -65,6 +65,8 @@ const map = {
   // 网络互联 - VPN - VPN网关
   vpn: 'https://vpc.console.aliyun.com/vpn/cn-shanghai/vpns',
   vpngw: 'https://vpc.console.aliyun.com/vpn/cn-shanghai/vpns',
+  // 专有网络 - 路由表
+  vtb: 'https://vpc.console.aliyun.com/vpc/cn-shanghai/route-tables',
   // Web应用防火墙3.0
   waf: 'https://yundun.console.aliyun.com/?p=wafnew',
   // 瑶池数据库
