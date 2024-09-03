@@ -2297,4 +2297,22 @@
         "command": "workbench.view.extension.azure",
         "when": "isMac && !notificationFocus && !notificationToastsVisible"
     },
+    //
+    // Couchbase
+    //
+    {
+        "key": "shift+cmd+e",
+        "command": "-vscode-couchbase.runQuery",
+        "when": "vscode-couchbase.runButtonEnabled && !isKVCluster && editorLangId == 'n1ql' || vscode-couchbase.runButtonEnabled && !isKVCluster && editorLangId == 'sqlpp' || vscode-couchbase.runButtonEnabled && !isKVCluster && resourceFilename =~ /.n1ql$/ || vscode-couchbase.runButtonEnabled && !isKVCluster && resourceFilename =~ /.sqlpp$/"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-vscode-couchbase.runSearch",
+        "when": "isSearchEnabled && vscode-couchbase.runSearchButtonEnabled && !isKVCluster && editorLangId == 'json' && resourceFilename =~ /\\.cbs\\.json$/"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "couchbase.focus",
+        "when": "isMac"
+    },
 ]
