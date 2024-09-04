@@ -348,8 +348,8 @@
         "command": "runCommands",
         "args": {
             "commands": [
+                "cursorUp",
                 "editor.action.joinLines",
-                "deleteRight"
             ]
         },
         "when": "!isMac && editorTextFocus && !editorReadonly"
@@ -359,8 +359,8 @@
         "command": "runCommands",
         "args": {
             "commands": [
+                "cursorUp",
                 "editor.action.joinLines",
-                "deleteRight"
             ]
         },
         "when": "isMac && editorTextFocus && !editorReadonly"
