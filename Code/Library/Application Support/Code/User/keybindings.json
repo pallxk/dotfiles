@@ -339,8 +339,19 @@
     // Join Lines
     //
     {
-        "key": "ctrl+shift+j",
+        "key": "ctrl+alt+j",
         "command": "editor.action.joinLines",
+        "when": "!isMac && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.joinLines",
+                "deleteRight"
+            ]
+        },
         "when": "!isMac && editorTextFocus && !editorReadonly"
     },
     {
