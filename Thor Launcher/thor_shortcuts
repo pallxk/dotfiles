@@ -50,13 +50,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+8"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Podman%20Desktop.app\/",
-    "appDisplayName" : "Podman Desktop",
+    "appBundleURL" : "file:\/\/\/Applications\/OrbStack.app\/",
+    "appDisplayName" : "OrbStack",
     "shortcut" : "ctrl+alt+cmd+9"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/OrbStack.app\/",
-    "appDisplayName" : "OrbStack",
+    "appBundleURL" : "file:\/\/\/Applications\/Podman%20Desktop.app\/",
+    "appDisplayName" : "Podman Desktop",
     "shortcut" : "shift+ctrl+alt+cmd+9"
   },
   {
