@@ -1441,48 +1441,13 @@
     },
     {
         "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex1",
-        "when": "isMac && terminalGroupCount == 1"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex2",
-        "when": "isMac && terminalGroupCount == 2"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex3",
-        "when": "isMac && terminalGroupCount == 3"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex4",
-        "when": "isMac && terminalGroupCount == 4"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex5",
-        "when": "isMac && terminalGroupCount == 5"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex6",
-        "when": "isMac && terminalGroupCount == 6"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex7",
-        "when": "isMac && terminalGroupCount == 7"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex8",
-        "when": "isMac && terminalGroupCount == 8"
-    },
-    {
-        "key": "cmd+alt+9",
-        "command": "workbench.action.terminal.focusAtIndex9",
-        "when": "isMac && terminalGroupCount >= 9"
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.terminal.focusAtIndex1",
+                "workbench.action.terminal.focusPrevious",
+            ]
+        },
     },
     {
         "key": "cmd+shift+`",
