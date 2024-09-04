@@ -10,6 +10,7 @@ set wrap-lines = yes
 # Save horizontal screen estate for portrait display
 set main-view-date-display = relative-compact
 set main-view-author-maxwidth = 11
+set main-view-id-display = yes
 
 # File history view
 bind blame H >sh -c "tig \"$(git rev-parse --show-toplevel)/%(file)\""
