@@ -2304,6 +2304,16 @@
         "when": "composerIsEnabled"
     },
     {
+        "key": "cmd+k cmd+k",
+        "command": "aipopup.action.modal.generate",
+        "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
+    },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
         "key": "shift+cmd+k",
         "command": "-aipopup.action.modal.generate",
         "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
