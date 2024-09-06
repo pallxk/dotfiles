@@ -2299,6 +2299,11 @@
     // Cursor
     //
     {
+        "key": "shift+cmd+k",
+        "command": "-aipopup.action.modal.generate",
+        "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
+    },
+    {
         "key": "cmd+k",
         "command": "workbench.action.keychord.leader",
         "when": "false"
@@ -2308,6 +2313,9 @@
         "command": "-workbench.action.keychord.leader",
         "when": "false"
     },
+    //
+    // Cursor generated
+    //
     {
         "key": "cmd+k cmd+c",
         "command": "editor.action.addCommentLine",
