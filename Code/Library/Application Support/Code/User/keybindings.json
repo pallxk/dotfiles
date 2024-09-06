@@ -2178,12 +2178,16 @@
         "when": "isMac && !notificationToastsVisible"
     },
     //
-    // mssql
+    // SQL Server (mssql)
     //
     {
         "key": "shift+cmd+e",
         "command": "-mssql.runQuery",
         "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "alt+cmd+d",
+        "command": "-workbench.view.extension.objectExplorer"
     },
     //
     // type tab
