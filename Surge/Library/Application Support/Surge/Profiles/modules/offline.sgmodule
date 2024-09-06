@@ -1,0 +1,8 @@
+#!name=Offline
+#!desc=REJECT all requests except for explicitly specified.
+
+[Rule]
+# Allow only explicitly specified
+
+# Deny All
+DOMAIN-WILDCARD,*,REJECT
