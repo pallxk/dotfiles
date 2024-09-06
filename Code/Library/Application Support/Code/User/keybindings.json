@@ -2299,6 +2299,11 @@
     // Cursor
     //
     {
+        "key": "ctrl+cmd+i",
+        "command": "aichat.newchataction",
+        "when": "composerIsEnabled"
+    },
+    {
         "key": "shift+cmd+k",
         "command": "-aipopup.action.modal.generate",
         "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
