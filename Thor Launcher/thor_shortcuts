@@ -85,13 +85,13 @@
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
-    "appDisplayName" : "Calendar",
+    "appBundleURL" : "file:\/\/\/Applications\/Cursor.app\/",
+    "appDisplayName" : "Cursor",
     "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calculator.app\/",
-    "appDisplayName" : "Calculator",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
+    "appDisplayName" : "Calendar",
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
