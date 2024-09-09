@@ -15,6 +15,8 @@ const map = {
   // 容器镜像服务
   acr: 'https://cr.console.aliyun.com/cn-shanghai/instances',
   cr: 'https://cr.console.aliyun.com/cn-shanghai/instances',
+  // CDN
+  cdn: 'https://cdn.console.aliyun.com/overview',
   // 内容安全
   cts: 'https://yundun.console.aliyun.com/?p=cts',
   // 数据库备份DBS
