@@ -507,10 +507,10 @@
   "workbench.view.alwaysShowHeaderActions": true,
 
   "yaml.schemas": {
-    "https://json.schemastore.org/bamboo-spec.json": "**/bamboo-specs/[A-Z]*/*.{yml,yaml}",
-    "https://json.schemastore.org/bamboo-spec.json#/definitions/job": "**/bamboo-specs/**/jobs/*.{yml,yaml}",
-    "https://json.schemastore.org/bamboo-spec.json#/definitions/keyValue": "**/bamboo-specs/**/variables/*.{yml,yaml}",
-    "https://json.schemastore.org/bamboo-spec.json#/definitions/permission": "**/bamboo-specs/**/permissions/*.{yml,yaml}",
+    "https://json.schemastore.org/bamboo-spec.json": "**/bamboo-specs/{[A-Z]*/*,plan-*}.{yml,yaml}",
+    "https://json.schemastore.org/bamboo-spec.json#/definitions/job": "**/bamboo-specs/**/job**.{yml,yaml}",
+    "https://json.schemastore.org/bamboo-spec.json#/definitions/keyValue": "**/bamboo-specs/**/variables**.{yml,yaml}",
+    "https://json.schemastore.org/bamboo-spec.json#/definitions/permission": "**/bamboo-specs/**permissions**.{yml,yaml}",
   },
 
   "[dockerfile]": {
