@@ -2180,14 +2180,6 @@
         "when": "isMac && historyNavigationForwardsEnabled && historyNavigationWidgetFocus && !suggestWidgetVisible"
     },
     //
-    // Atlassian (atlassian.atlascode)
-    //
-    {
-        "key": "shift+cmd+j",
-        "command": "atlascode.views.jira.customJql.focus",
-        "when": "isMac && !notificationToastsVisible"
-    },
-    //
     // SQL Server (mssql)
     //
     {
@@ -2308,6 +2300,11 @@
     //
     // Cursor
     //
+    {
+        "key": "shift+cmd+j",
+        "command": "-aiSettings.action.open",
+        "when": "!isSettingsPaneOpen"
+    },
     {
         "key": "ctrl+cmd+i",
         "command": "aichat.newchataction",
