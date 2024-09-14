@@ -21,6 +21,10 @@
         "command": "workbench.action.openSettingsJson"
     },
     {
+        "key": "cmd+k shift+cmd+d",
+        "command": "workbench.action.debug.configure"
+    },
+    {
         "key": "cmd+k shift+cmd+s",
         "command": "workbench.action.openGlobalKeybindingsFile"
     },
