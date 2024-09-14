@@ -600,6 +600,11 @@
     //
     // Debug
     //
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.debug.action.toggleRepl",
+        "when": "isMac && workbench.panel.repl.view.active && !inSearchEditor && !searchViewletFocus"
+    },
     // Debug - Continue/Pause
     {
         "key": "ctrl+\\",
