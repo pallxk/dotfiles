@@ -1,1 +1,10 @@
-alias elasticdump="elasticdump --limit 1000"
+elasticdump() {
+  default_args="--limit=1000"
+  for arg in "$@"; do
+    if [[ $arg == --limit* ]]; then
+      default_args=""
+      break
+    fi
+  done
+  command elasticdump $default_args "$@"
+}
