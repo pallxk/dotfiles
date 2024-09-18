@@ -1876,6 +1876,19 @@
         "when": "!isMac && editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
     },
     //
+    // Git Graph
+    //
+    {
+        "key": "ctrl+cmd+g",
+        "command": "git-graph.view",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "git-graph.view",
+        "when": "!isMac"
+    },
+    //
     // GitLens
     //
     {
@@ -1917,19 +1930,9 @@
         "when": "isMac && config.gitlens.keymap == 'alternate' && activeViewlet == 'workbench.view.extension.gitlensInspect'"
     },
     {
-        "key": "ctrl+cmd+g",
-        "command": "gitlens.showGraph",
-        "when": "isMac"
-    },
-    {
         "key": "ctrl+k ctrl+shift+g",
         "command": "workbench.view.extension.gitlens",
         "when": "!isMac && config.gitlens.keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+alt+g",
-        "command": "gitlens.showGraph",
-        "when": "!isMac"
     },
     {
         "key": "cmd+enter",
