@@ -245,6 +245,8 @@
   "git.repositoryScanMaxDepth": 2,
   "git.untrackedChanges": "separate",
 
+  "git-graph.maxDepthOfRepoSearch": 2,
+
   "github.copilot.advanced": {
     "slashCommands": {
       "createWorkspace": true,
