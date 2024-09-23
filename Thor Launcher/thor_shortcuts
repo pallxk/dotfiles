@@ -290,8 +290,8 @@
     "shortcut" : "ctrl+alt+cmd+["
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Remote%20Desktop.app\/",
-    "appDisplayName" : "Microsoft Remote Desktop",
+    "appBundleURL" : "file:\/\/\/Applications\/Windows%20App.app\/",
+    "appDisplayName" : "Windows App",
     "shortcut" : "ctrl+alt+cmd+]"
   },
   {
