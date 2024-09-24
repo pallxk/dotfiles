@@ -5,6 +5,9 @@ export ANSIBLE_VAULT_IDENTITY_LIST=prod@~/bin/ansible-vault-password-helper-prod
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#callbacks-enabled
 export ANSIBLE_CALLBACKS_ENABLED=profile_tasks
 
+# https://docs.ansible.com/ansible/latest/plugins/callback.html#setting-a-callback-plugin-for-ad-hoc-commands
+export ANSIBLE_LOAD_CALLBACK_PLUGINS=1
+
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-pipelining
 export ANSIBLE_PIPELINING=True
 
