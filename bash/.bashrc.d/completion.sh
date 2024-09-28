@@ -1,3 +1,3 @@
-if [ -f "$HOMEBREW_PREFIX"/etc/bash_completion ]; then
-  . "$HOMEBREW_PREFIX"/etc/bash_completion
+if [ -f "$HOMEBREW_PREFIX"/etc/profile.d/bash_completion.sh ]; then
+  . "$HOMEBREW_PREFIX"/etc/profile.d/bash_completion.sh
 fi
