@@ -1,6 +1,8 @@
 # Load Git completion script
 if [ -f /usr/share/git/completion/git-completion.bash ]; then
     . /usr/share/git/completion/git-completion.bash
+elif [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]; then
+    . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 fi
 
 # Git alias 'g' completion
