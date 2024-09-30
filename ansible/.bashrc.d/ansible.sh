@@ -14,6 +14,9 @@ export ANSIBLE_PIPELINING=True
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#retry-files-enabled
 export ANSIBLE_RETRY_FILES_ENABLED=True
 
+# https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ssh_connection.html#parameter-reconnection_retries
+export ANSIBLE_SSH_RETRIES=2
+
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#default-stdout-callback
 export ANSIBLE_STDOUT_CALLBACK=yaml
 
