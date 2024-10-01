@@ -1128,6 +1128,11 @@
         "when": "inFilesPicker && inQuickOpen"
     },
     {
+        "key": "alt+shift+enter",
+        "command": "search.focus.previousInputBox",
+        "when": "searchViewletVisible"
+    },
+    {
         "key": "alt+enter",
         "command": "search.focus.previousInputBox",
         "when": "searchViewletVisible && !inputBoxFocus"
