@@ -95,13 +95,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/DataGrip.app\/",
-    "appDisplayName" : "DataGrip",
+    "appBundleURL" : "file:\/\/\/Applications\/DBeaver.app\/",
+    "appDisplayName" : "DBeaver",
     "shortcut" : "ctrl+alt+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/DBeaver.app\/",
-    "appDisplayName" : "DBeaver",
+    "appBundleURL" : "file:\/\/\/Applications\/DataGrip.app\/",
+    "appDisplayName" : "DataGrip",
     "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
