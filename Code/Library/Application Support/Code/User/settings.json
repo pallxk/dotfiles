@@ -377,6 +377,8 @@
   "search.searchEditor.defaultNumberOfContextLines": 3,
   "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
 
+  "search.useIgnoreFiles": false,
+
   "sqltools.disableChordKeybindings": true,
 
   "telemetry.telemetryLevel": "error",
