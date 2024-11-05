@@ -53,6 +53,8 @@ const map = {
   polardb: 'https://polardb.console.aliyun.com/overview',
   // 配额中心
   quotas: 'https://quotas.console.aliyun.com/products',
+  // RAM 访问控制
+  ram: 'https://ram.console.aliyun.com/overview',
   // 云数据库RDS
   rds: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
   rdsnext: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
