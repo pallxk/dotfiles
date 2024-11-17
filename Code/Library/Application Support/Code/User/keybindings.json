@@ -1431,42 +1431,42 @@
     {
         "key": "cmd+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
-        "when": "isMac && terminalGroupCount >= 1"
+        "when": "isMac && terminalCount > 1"
     },
     {
         "key": "cmd+alt+2",
         "command": "workbench.action.terminal.focusAtIndex2",
-        "when": "isMac && terminalGroupCount >= 2"
+        "when": "isMac && terminalCount > 2"
     },
     {
         "key": "cmd+alt+3",
         "command": "workbench.action.terminal.focusAtIndex3",
-        "when": "isMac && terminalGroupCount >= 3"
+        "when": "isMac && terminalCount > 3"
     },
     {
         "key": "cmd+alt+4",
         "command": "workbench.action.terminal.focusAtIndex4",
-        "when": "isMac && terminalGroupCount >= 4"
+        "when": "isMac && terminalCount > 4"
     },
     {
         "key": "cmd+alt+5",
         "command": "workbench.action.terminal.focusAtIndex5",
-        "when": "isMac && terminalGroupCount >= 5"
+        "when": "isMac && terminalCount > 5"
     },
     {
         "key": "cmd+alt+6",
         "command": "workbench.action.terminal.focusAtIndex6",
-        "when": "isMac && terminalGroupCount >= 6"
+        "when": "isMac && terminalCount > 6"
     },
     {
         "key": "cmd+alt+7",
         "command": "workbench.action.terminal.focusAtIndex7",
-        "when": "isMac && terminalGroupCount >= 7"
+        "when": "isMac && terminalCount > 7"
     },
     {
         "key": "cmd+alt+8",
         "command": "workbench.action.terminal.focusAtIndex8",
-        "when": "isMac && terminalGroupCount >= 8"
+        "when": "isMac && terminalCount > 8"
     },
     {
         "key": "cmd+alt+9",
@@ -1497,47 +1497,47 @@
     {
         "key": "cmd+alt+1",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 0"
+        "when": "isMac && !workspaceFolder && terminalCount < 1"
     },
     {
         "key": "cmd+alt+2",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 1"
+        "when": "isMac && !workspaceFolder && terminalCount < 2"
     },
     {
         "key": "cmd+alt+3",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 2"
+        "when": "isMac && !workspaceFolder && terminalCount < 3"
     },
     {
         "key": "cmd+alt+4",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 3"
+        "when": "isMac && !workspaceFolder && terminalCount < 4"
     },
     {
         "key": "cmd+alt+5",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 4"
+        "when": "isMac && !workspaceFolder && terminalCount < 5"
     },
     {
         "key": "cmd+alt+6",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 5"
+        "when": "isMac && !workspaceFolder && terminalCount < 6"
     },
     {
         "key": "cmd+alt+7",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 6"
+        "when": "isMac && !workspaceFolder && terminalCount < 7"
     },
     {
         "key": "cmd+alt+8",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 7"
+        "when": "isMac && !workspaceFolder && terminalCount < 8"
     },
     {
         "key": "cmd+alt+9",
         "command": "workbench.action.terminal.new",
-        "when": "isMac && !workspaceFolder && terminalGroupCount == 8"
+        "when": "isMac && !workspaceFolder && terminalCount < 9"
     },
     {
         "key": "cmd+alt+1",
@@ -1545,7 +1545,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 0"
+        "when": "isMac && workspaceFolder && terminalCount < 1"
     },
     {
         "key": "cmd+alt+2",
@@ -1553,7 +1553,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 1"
+        "when": "isMac && workspaceFolder && terminalCount < 2"
     },
     {
         "key": "cmd+alt+3",
@@ -1561,7 +1561,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 2"
+        "when": "isMac && workspaceFolder && terminalCount < 3"
     },
     {
         "key": "cmd+alt+4",
@@ -1569,7 +1569,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 3"
+        "when": "isMac && workspaceFolder && terminalCount < 4"
     },
     {
         "key": "cmd+alt+5",
@@ -1577,7 +1577,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 4"
+        "when": "isMac && workspaceFolder && terminalCount < 5"
     },
     {
         "key": "cmd+alt+6",
@@ -1585,7 +1585,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 5"
+        "when": "isMac && workspaceFolder && terminalCount < 6"
     },
     {
         "key": "cmd+alt+7",
@@ -1593,7 +1593,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 6"
+        "when": "isMac && workspaceFolder && terminalCount < 7"
     },
     {
         "key": "cmd+alt+8",
@@ -1601,7 +1601,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 7"
+        "when": "isMac && workspaceFolder && terminalCount < 8"
     },
     {
         "key": "cmd+alt+9",
@@ -1609,7 +1609,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "isMac && workspaceFolder && terminalGroupCount == 8"
+        "when": "isMac && workspaceFolder && terminalCount < 9"
     },
     //
     // terminal - windows
@@ -1656,87 +1656,87 @@
     {
         "key": "ctrl+alt+1",
         "command": "workbench.action.terminal.focusAtIndex1",
-        "when": "!isMac && terminalGroupCount >= 1"
+        "when": "!isMac && terminalCount > 1"
     },
     {
         "key": "ctrl+alt+2",
         "command": "workbench.action.terminal.focusAtIndex2",
-        "when": "!isMac && terminalGroupCount >= 2"
+        "when": "!isMac && terminalCount > 2"
     },
     {
         "key": "ctrl+alt+3",
         "command": "workbench.action.terminal.focusAtIndex3",
-        "when": "!isMac && terminalGroupCount >= 3"
+        "when": "!isMac && terminalCount > 3"
     },
     {
         "key": "ctrl+alt+4",
         "command": "workbench.action.terminal.focusAtIndex4",
-        "when": "!isMac && terminalGroupCount >= 4"
+        "when": "!isMac && terminalCount > 4"
     },
     {
         "key": "ctrl+alt+5",
         "command": "workbench.action.terminal.focusAtIndex5",
-        "when": "!isMac && terminalGroupCount >= 5"
+        "when": "!isMac && terminalCount > 5"
     },
     {
         "key": "ctrl+alt+6",
         "command": "workbench.action.terminal.focusAtIndex6",
-        "when": "!isMac && terminalGroupCount >= 6"
+        "when": "!isMac && terminalCount > 6"
     },
     {
         "key": "ctrl+alt+7",
         "command": "workbench.action.terminal.focusAtIndex7",
-        "when": "!isMac && terminalGroupCount >= 7"
+        "when": "!isMac && terminalCount > 7"
     },
     {
         "key": "ctrl+alt+8",
         "command": "workbench.action.terminal.focusAtIndex8",
-        "when": "!isMac && terminalGroupCount >= 8"
+        "when": "!isMac && terminalCount > 8"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex1",
-        "when": "!isMac && terminalGroupCount == 1"
+        "when": "!isMac && terminalCount < 1"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex2",
-        "when": "!isMac && terminalGroupCount == 2"
+        "when": "!isMac && terminalCount < 2"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex3",
-        "when": "!isMac && terminalGroupCount == 3"
+        "when": "!isMac && terminalCount < 3"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex4",
-        "when": "!isMac && terminalGroupCount == 4"
+        "when": "!isMac && terminalCount < 4"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex5",
-        "when": "!isMac && terminalGroupCount == 5"
+        "when": "!isMac && terminalCount < 5"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex6",
-        "when": "!isMac && terminalGroupCount == 6"
+        "when": "!isMac && terminalCount < 6"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex7",
-        "when": "!isMac && terminalGroupCount == 7"
+        "when": "!isMac && terminalCount < 7"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex8",
-        "when": "!isMac && terminalGroupCount >= 8"
+        "when": "!isMac && terminalCount > 8"
     },
     {
         "key": "ctrl+alt+9",
         "command": "workbench.action.terminal.focusAtIndex9",
-        "when": "!isMac && terminalGroupCount >= 9"
+        "when": "!isMac && terminalCount > 9"
     },
     {
         "key": "ctrl+shift+`",
@@ -1760,7 +1760,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 0"
+        "when": "!isMac && terminalCount < 0"
     },
     {
         "key": "ctrl+alt+2",
@@ -1768,7 +1768,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 1"
+        "when": "!isMac && terminalCount < 1"
     },
     {
         "key": "ctrl+alt+3",
@@ -1776,7 +1776,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 2"
+        "when": "!isMac && terminalCount < 2"
     },
     {
         "key": "ctrl+alt+4",
@@ -1784,7 +1784,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 3"
+        "when": "!isMac && terminalCount < 3"
     },
     {
         "key": "ctrl+alt+5",
@@ -1792,7 +1792,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 4"
+        "when": "!isMac && terminalCount < 4"
     },
     {
         "key": "ctrl+alt+6",
@@ -1800,7 +1800,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 5"
+        "when": "!isMac && terminalCount < 5"
     },
     {
         "key": "ctrl+alt+7",
@@ -1808,7 +1808,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 6"
+        "when": "!isMac && terminalCount < 6"
     },
     {
         "key": "ctrl+alt+8",
@@ -1816,7 +1816,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 7"
+        "when": "!isMac && terminalCount < 7"
     },
     {
         "key": "ctrl+alt+9",
@@ -1824,7 +1824,7 @@
         "args": {
             "cwd": "${workspaceFolder}"
         },
-        "when": "!isMac && terminalGroupCount == 8"
+        "when": "!isMac && terminalCount < 8"
     },
     {
         "key": "ctrl+,",
