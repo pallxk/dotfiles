@@ -33,6 +33,16 @@ drwsh() {
     fi
 }
 
+dl() {
+    less_arg=
+    for arg in "$@"; do
+        if [ "$arg" = "-f" ] || [ "$arg" = "--follow" ]; then
+            less_arg=+F
+        fi
+    done
+    docker logs "$@" |& less -R $less_arg
+}
+
 dgrep() {
     docker ps | grep "$@"
 }
