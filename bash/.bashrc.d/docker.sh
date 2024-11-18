@@ -55,3 +55,14 @@ dkill() {
     id=$(docker ps -a | grep "$@" | cut -d\  -f1)
     docker kill $id
 }
+
+sdcp() {
+    target=${!#}
+    host=${target%%:*}
+    container_path=${target#*:}
+
+    for f in "${@:1:$#-1}"; do
+        echo "$f -> $host:$container_path"
+        command ssh "$host" "docker cp - $container_path" <"$f"
+    done
+}
