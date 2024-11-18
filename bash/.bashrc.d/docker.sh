@@ -83,12 +83,12 @@ sdagrep() {
 }
 
 dkill() {
-    id=$(docker ps -a | grep "$@" | cut -d\  -f1)
+    id=$(docker ps -a | grep "$@" | tee /dev/stderr | cut -d\  -f1)
     docker kill $id
 }
 
 sdkill() {
-    id=$(command ssh "$1" docker ps -a | grep "${@:2}" | cut -d\  -f1)
+    id=$(command ssh "$1" docker ps -a | grep "${@:2}" | tee /dev/stderr | cut -d\  -f1)
     command ssh "$1" docker kill $id
 }
 
