@@ -1,0 +1,5 @@
+if ! which ipinfo &> /dev/null; then
+  ipinfo() {
+    curl -s "https://ipinfo.io/$1"
+  }
+fi
