@@ -94,11 +94,23 @@ sdkill() {
 
 sdcp() {
     target=${!#}
-    host=${target%%:*}
-    container_path=${target#*:}
-
     for f in "${@:1:$#-1}"; do
-        echo "$f -> $host:$container_path"
-        command ssh "$host" "docker cp - $container_path" <"$f"
+        if [[ $f == *:* ]]; then
+            host=${f%%:*}
+            container_path=${f#*:}
+            if [ -d "$target" ]; then
+                dest=${container_path#*:}
+                dest=${target%/}/${dest##*/}
+            else
+                dest=$target
+            fi
+            echo "$host:$container_path -> $dest"
+            command ssh "$host" "docker cp $container_path -" >"$dest"
+        else
+            host=${target%%:*}
+            container_path=${target#*:}
+            echo "$f -> $host:$container_path"
+            command ssh "$host" "docker cp - $container_path" <"$f"
+        fi
     done
 }
