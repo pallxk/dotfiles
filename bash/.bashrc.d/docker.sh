@@ -20,10 +20,20 @@ dsh() {
 }
 
 sdsh() {
+    if [[ $1 == *:* ]]; then
+        host=${1%%:*}
+        container=${1#*:}
+        shift
+    else
+        host=$1
+        container=$2
+        shift 2
+    fi
+
     local now=$SECONDS
-    if ! command ssh -t "$1" docker exec -it "${@:2}" bash; then
+    if ! command ssh -t "$host" docker exec -it "$@" "$container" bash; then
         if [ $((SECONDS - now)) -le 2 ]; then
-            command ssh -t "$1" docker exec -it "${@:2}" sh
+            command ssh -t "$host" docker exec -it "$@" "$container" sh
         fi
     fi
 }
