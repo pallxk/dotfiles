@@ -110,7 +110,7 @@ sdcp() {
             host=${target%%:*}
             container_path=${target#*:}
             echo "$f -> $host:$container_path"
-            command ssh "$host" "docker cp - $container_path" <"$f"
+            tar -cf - "$f" | command ssh "$host" "docker cp - $container_path"
         fi
     done
 }
