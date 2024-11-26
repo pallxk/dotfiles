@@ -58,6 +58,8 @@ const map = {
   // 云数据库RDS
   rds: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
   rdsnext: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
+  // 资源组
+  rg: 'https://resourcemanager.console.aliyun.com/resource-groups',
   // 安全组
   sg: 'https://ecs.console.aliyun.com/securityGroup/region/cn-shanghai',
   // 负载均衡 SLB
