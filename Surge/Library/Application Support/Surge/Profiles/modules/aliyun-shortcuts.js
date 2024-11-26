@@ -45,6 +45,8 @@ const map = {
   kvstore: 'https://kvstore.console.aliyun.com/Redis/dashboard/cn-shanghai',
   // 移动开发平台 mPaaS
   mpaas: 'https://mpaas.console.aliyun.com/',
+  // 公网NAT网关
+  nat: 'https://vpc.console.aliyun.com/nat/',
   // 网络型负载均衡 NLB
   nlb: 'https://slb.console.aliyun.com/nlb/cn-shanghai/nlbs',
   // 对象存储 OSS
@@ -66,6 +68,8 @@ const map = {
   slb: 'https://slb.console.aliyun.com/',
   // 专有网络
   vpc: 'https://vpc.console.aliyun.com/',
+  // VPC NAT网关
+  vpcnat: 'https://vpc.console.aliyun.com/vpc-nat/',
   // 高速通道 - 专有网络对等连接 - VPC互联
   vpc2vpc: 'https://expressconnect.console.aliyun.com/peerconnection/cn-shanghai/vpc2vpc',
   // 网络互联 - VPN - VPN网关
