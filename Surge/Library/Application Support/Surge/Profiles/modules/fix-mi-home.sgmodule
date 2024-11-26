@@ -1,0 +1,7 @@
+#!name=Fix Mi Home
+#!desc=Fix Mi Home Excessive Requests via Surge
+#!category=Quirks
+
+[General]
+# Fix Mi Home excessive requests to the following IPs
+tun-excluded-routes = %APPEND% 114.247.154.2/32, 114.247.154.4/32, 114.247.154.5/32
