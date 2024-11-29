@@ -30,13 +30,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+6"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Charles.app\/",
-    "appDisplayName" : "Charles",
+    "appBundleURL" : "file:\/\/\/Applications\/Proxyman.app\/",
+    "appDisplayName" : "Proxyman",
     "shortcut" : "ctrl+alt+cmd+7"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Proxyman.app\/",
-    "appDisplayName" : "Proxyman",
+    "appBundleURL" : "file:\/\/\/Applications\/Charles.app\/",
+    "appDisplayName" : "Charles",
     "shortcut" : "shift+ctrl+alt+cmd+7"
   },
   {
