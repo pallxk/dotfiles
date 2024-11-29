@@ -120,6 +120,16 @@
     "shortcut" : "ctrl+alt+cmd+f"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Genymotion.app\/Contents\/MacOS\/player.app\/",
+    "appDisplayName" : "player",
+    "shortcut" : "ctrl+alt+cmd+g"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Genymotion.app\/",
+    "appDisplayName" : "Genymotion",
+    "shortcut" : "shift+ctrl+alt+cmd+g"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
     "appDisplayName" : "iPhone Mirroring",
     "shortcut" : "ctrl+alt+cmd+i"
