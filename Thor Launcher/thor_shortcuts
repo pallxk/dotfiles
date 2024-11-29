@@ -90,8 +90,8 @@
     "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
-    "appDisplayName" : "Calendar",
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
@@ -120,11 +120,6 @@
     "shortcut" : "ctrl+alt+cmd+f"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
-    "appDisplayName" : "Google Chrome",
-    "shortcut" : "ctrl+alt+cmd+g"
-  },
-  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
     "appDisplayName" : "iPhone Mirroring",
     "shortcut" : "ctrl+alt+cmd+i"
@@ -148,6 +143,11 @@
     "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Finder.app\/",
     "appDisplayName" : "Finder",
     "shortcut" : "shift+alt+m"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
+    "appDisplayName" : "Calendar",
+    "shortcut" : "ctrl+alt+cmd+n"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
