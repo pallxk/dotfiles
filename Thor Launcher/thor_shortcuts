@@ -285,8 +285,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+-"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Mi%20Home.app\/",
-    "appDisplayName" : "Mi Home",
+    "appBundleURL" : "file:\/\/\/Applications\/Mi%20Home%20Beta.app\/",
+    "appDisplayName" : "Mi Home Beta",
     "shortcut" : "ctrl+alt+cmd+="
   },
   {
