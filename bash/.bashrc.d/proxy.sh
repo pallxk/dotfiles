@@ -3,7 +3,9 @@
 # otherwise, using the default value: 'http://127.0.0.1:8080/'.
 function proxy_on() {
 	# all
-	if [[ -z $all_proxy ]]; then
+	if [ "$1" ]; then
+		all_proxy=$1
+	elif [[ -z $all_proxy ]]; then
 		if [[ $http_proxy ]]; then
 			all_proxy=$http_proxy
 		elif [[ $https_proxy ]]; then
