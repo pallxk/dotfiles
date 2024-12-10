@@ -34,6 +34,8 @@ const map = {
   eci: 'https://eci.console.aliyun.com/',
   // 云服务器
   ecs: 'https://ecs.console.aliyun.com/home',
+  // 弹性网卡
+  eni: 'https://ecs.console.aliyun.com/networkInterfaces',
   // 云备份 Cloud Backup
   hbr: 'https://hbr.console.aliyun.com/',
   // 消息队列Kafka版
@@ -66,6 +68,8 @@ const map = {
   sg: 'https://ecs.console.aliyun.com/securityGroup/region/cn-shanghai',
   // 负载均衡 SLB
   slb: 'https://slb.console.aliyun.com/',
+  // 日志服务 SLS
+  sls: 'https://sls.console.aliyun.com/',
   // 专有网络
   vpc: 'https://vpc.console.aliyun.com/',
   // VPC NAT网关
