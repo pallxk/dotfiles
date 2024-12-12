@@ -260,9 +260,14 @@
     "shortcut" : "shift+ctrl+alt+cmd+x"
   },
   {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Online%20YAML%20Tools.app\/",
-    "appDisplayName" : "Online YAML Tools",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Transform%20YAML%20into%20JSON%20-%20Online%20YAML%20Tools.app\/",
+    "appDisplayName" : "Transform YAML into JSON - Online YAML Tools",
     "shortcut" : "ctrl+alt+cmd+y"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Transform%20JSON%20into%20YAML%20-%20Online%20YAML%20Tools.app\/",
+    "appDisplayName" : "Transform JSON into YAML - Online YAML Tools",
+    "shortcut" : "shift+ctrl+alt+cmd+y"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
