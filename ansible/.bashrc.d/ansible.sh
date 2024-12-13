@@ -24,3 +24,5 @@ export ANSIBLE_STDOUT_CALLBACK=yaml
 # Setting strategy to free will cause error for pause module:
 # ERROR! The 'ansible.builtin.pause' module bypasses the host loop, which is currently not supported in the free strategy and would instead execute for every host in the inventory list.
 #export ANSIBLE_STRATEGY=free
+
+alias ap=ansible-playbook
