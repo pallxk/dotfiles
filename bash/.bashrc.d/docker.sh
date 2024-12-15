@@ -2,6 +2,14 @@ alias d=docker
 alias dr='docker run --rm --init -it -v "$PWD":/mnt:ro'
 alias drw='docker run --rm --init -it -v "$PWD":/mnt'
 
+denv() {
+    docker inspect "$@" | jq -r '.[].Config.Env[]'
+}
+
+sdenv() {
+    command ssh -t "$1" docker inspect "${@:2}" | jq -r '.[].Config.Env[]'
+}
+
 dx() {
     docker exec -it "$@"
 }
