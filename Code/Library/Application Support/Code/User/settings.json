@@ -419,9 +419,9 @@
   "terminal.integrated.persistentSessionScrollback": 10000,
   "terminal.integrated.rightClickBehavior": "paste",
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.tabs.enabled": false,
 
   "terminal.integrated.defaultProfile.linux": "bash",
-  "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash",
@@ -443,7 +443,8 @@
       "icon": "terminal-powershell"
     }
   },
-  "terminal.integrated.tabs.enabled": false,
+
+  "terminal.integrated.defaultProfile.osx": "bash",
 
   "terraform.experimentalFeatures.prefillRequiredFields": true,
 
