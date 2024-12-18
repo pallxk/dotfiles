@@ -127,6 +127,7 @@
   "editor.occurrencesHighlight": "multiFile",
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120, 160 ],
+  "editor.scrollbar.scrollByPage": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
 
@@ -517,6 +518,8 @@
   "workbench.layoutControl.type": "both",
 
   "workbench.sideBar.location": "right",
+
+  "workbench.list.scrollByPage": true,
 
   "workbench.view.alwaysShowHeaderActions": true,
 
