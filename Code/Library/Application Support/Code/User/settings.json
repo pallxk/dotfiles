@@ -247,6 +247,7 @@
   "git.untrackedChanges": "separate",
 
   "git-graph.maxDepthOfRepoSearch": 2,
+  "git-graph.openToTheRepoOfTheActiveTextEditorDocument": true,
 
   "github.copilot.advanced": {
     "slashCommands": {
