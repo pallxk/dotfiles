@@ -123,7 +123,7 @@ sdcp() {
                 dest=$target
             fi
             echo "$host:$container_path -> $dest"
-            command ssh "$host" "docker cp $container_path -" >"$dest"
+            command ssh "$host" "docker cp $container_path -" >|"$dest"
         else
             host=${target%%:*}
             container_path=${target#*:}
