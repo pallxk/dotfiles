@@ -46,6 +46,14 @@ sdsh() {
     fi
 }
 
+sdr() {
+    command ssh -t "$1" docker run --rm -it -v /:/mnt:ro "${@:2}"
+}
+
+sdrw() {
+    command ssh -t "$1" docker run --rm -it -v /:/mnt "${@:2}"
+}
+
 drsh() {
     local now=$SECONDS
     if ! docker run --rm -it -v "$PWD":/mnt:ro --entrypoint bash "$@"; then
