@@ -3,8 +3,9 @@
 #!category=Shortcuts
 
 [MITM]
-hostname = %APPEND% jdo, tbo
+hostname = %APPEND% jdo, tbo, ypo
 
 [URL Rewrite]
 ^https?://jdo/ https://order.jd.com/center/list.action 302
 ^https?://tbo/ https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm 302
+^https?://ypo/ https://www.xiaomiyoupin.com/personal-center/orders#all 302
