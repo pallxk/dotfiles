@@ -1,0 +1,10 @@
+#!name=电商我的订单快速跳转
+#!desc=电商我的订单快速跳转
+#!category=Shortcuts
+
+[MITM]
+hostname = %APPEND% jdo, tbo
+
+[URL Rewrite]
+^https?://jdo/ https://order.jd.com/center/list.action 302
+^https?://tbo/ https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm 302
