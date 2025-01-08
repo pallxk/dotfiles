@@ -85,8 +85,8 @@
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
-    "appDisplayName" : "Bitwarden",
+    "appBundleURL" : "file:\/\/\/Applications\/Bartender%205.app\/",
+    "appDisplayName" : "Bartender 5",
     "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
