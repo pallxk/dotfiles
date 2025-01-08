@@ -80,9 +80,14 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
+    "appDisplayName" : "Microsoft Edge",
+    "shortcut" : "ctrl+alt+cmd+b"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Bitwarden.app\/",
     "appDisplayName" : "Bitwarden",
-    "shortcut" : "ctrl+alt+cmd+b"
+    "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Cursor.app\/",
@@ -105,13 +110,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/elasticvue.app\/",
-    "appDisplayName" : "elasticvue",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Mail.app\/",
+    "appDisplayName" : "Mail",
     "shortcut" : "ctrl+alt+cmd+e"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "appDisplayName" : "Microsoft Edge",
+    "appBundleURL" : "file:\/\/\/Applications\/elasticvue.app\/",
+    "appDisplayName" : "elasticvue",
     "shortcut" : "shift+ctrl+alt+cmd+e"
   },
   {
@@ -130,24 +135,14 @@
     "shortcut" : "shift+ctrl+alt+cmd+g"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
-    "appDisplayName" : "iPhone Mirroring",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
+    "appDisplayName" : "Calendar",
     "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/Contents\/Developer\/Applications\/Simulator.app\/",
-    "appDisplayName" : "Simulator",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
+    "appDisplayName" : "iPhone Mirroring",
     "shortcut" : "shift+ctrl+alt+cmd+i"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Mail.app\/",
-    "appDisplayName" : "Mail",
-    "shortcut" : "ctrl+alt+cmd+m"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
-    "appDisplayName" : "Maps",
-    "shortcut" : "shift+ctrl+alt+cmd+m"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Finder.app\/",
@@ -155,9 +150,14 @@
     "shortcut" : "shift+alt+m"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
-    "appDisplayName" : "Calendar",
-    "shortcut" : "ctrl+alt+cmd+n"
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
+    "appDisplayName" : "Maps",
+    "shortcut" : "ctrl+alt+cmd+m"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/TencentMeeting.app\/",
+    "appDisplayName" : "TencentMeeting",
+    "shortcut" : "shift+ctrl+alt+cmd+m"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
@@ -200,8 +200,8 @@
     "shortcut" : "ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
-    "appDisplayName" : "Slack",
+    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/Contents\/Developer\/Applications\/Simulator.app\/",
+    "appDisplayName" : "Simulator",
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
