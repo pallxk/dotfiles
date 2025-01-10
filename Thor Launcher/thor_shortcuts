@@ -300,6 +300,11 @@
     "shortcut" : "shift+ctrl+alt+cmd+="
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/AlDente.app\/",
+    "appDisplayName" : "AlDente",
+    "shortcut" : "ctrl+alt+cmd+delete"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Utilities\/Screen%20Sharing.app\/",
     "appDisplayName" : "Screen Sharing",
     "shortcut" : "ctrl+alt+cmd+["
