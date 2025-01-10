@@ -85,8 +85,8 @@
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Bartender%205.app\/",
-    "appDisplayName" : "Bartender 5",
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
     "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
@@ -95,8 +95,8 @@
     "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
-    "appDisplayName" : "Google Chrome",
+    "appBundleURL" : "file:\/\/\/Applications\/Windsurf.app\/",
+    "appDisplayName" : "Windsurf",
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
