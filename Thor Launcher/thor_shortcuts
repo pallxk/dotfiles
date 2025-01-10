@@ -95,8 +95,8 @@
     "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Windsurf.app\/",
-    "appDisplayName" : "Windsurf",
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
+    "appDisplayName" : "Visual Studio Code",
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
@@ -225,8 +225,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+u"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
-    "appDisplayName" : "Visual Studio Code",
+    "appBundleURL" : "file:\/\/\/Applications\/Windsurf.app\/",
+    "appDisplayName" : "Windsurf",
     "shortcut" : "ctrl+alt+cmd+v"
   },
   {
