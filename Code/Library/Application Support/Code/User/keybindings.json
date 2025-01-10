@@ -1905,6 +1905,10 @@
     // Git Graph
     //
     {
+        "key": "ctrl+shift+g",
+        "command": "workbench.scm.history.focus"
+    },
+    {
         "key": "ctrl+cmd+g",
         "command": "git-graph.view",
         "when": "isMac"
