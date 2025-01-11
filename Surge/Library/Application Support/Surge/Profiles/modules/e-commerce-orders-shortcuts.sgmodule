@@ -3,9 +3,11 @@
 #!category=Shortcuts
 
 [MITM]
-hostname = %APPEND% jdo, tbo, ypo
+hostname = %APPEND% acn, aso, jdo, tbo, ypo
 
 [URL Rewrite]
+^https?://acn/ https://www.apple.com.cn/shop/order/list 302
+^https?://aso/ https://store.apple.com/shop/order/list 302
 ^https?://jdo/ https://order.jd.com/center/list.action 302
 ^https?://tbo/ https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm 302
 ^https?://ypo/ https://www.xiaomiyoupin.com/personal-center/orders#all 302
