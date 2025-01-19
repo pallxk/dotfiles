@@ -6,4 +6,4 @@
 hostname = %APPEND% ack, acl, alb, clb, cdn, cs, acr, cr, cts, dbs, dms, dts, dtsnew, dysms, ebs, eci, ecs, eni, hbr, kafka, kafkanext, kms, kvstore, mpaas, nat, nlb, oss, polardb, quotas, ram, rds, rdsnext, rg, sg, slb, sls, vpc, vpc2vpc, vpcnat, vpn, vpngw, vtb, waf, yaochi
 
 [Script]
-aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|acl|alb|clb|cdn|cs|acr|cr|cts|dbs|dms|dts|dtsnew|dysms|ebs|eci|ecs|eni|hbr|kafka|kafkanext|kms|kvstore|mpaas|nat|nlb|oss|polardb|quotas|ram|rds|rdsnext|rg|sg|slb|sls|vpc|vpc2vpc|vpcnat|vpn|vpngw|vtb|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js
+aliyun-shortcuts.js = type=http-request,pattern=^https?://(ack|acl|alb|clb|cdn|cs|acr|cr|cts|dbs|dms|dts|dtsnew|dysms|ebs|eci|ecs|eni|hbr|kafka|kafkanext|kms|kvstore|mpaas|nat|nlb|oss|polardb|quotas|ram|rds|rdsnext|rg|sg|slb|sls|vpc|vpc2vpc|vpcnat|vpn|vpngw|vtb|waf|yaochi)/,script-path=modules/aliyun-shortcuts.js,argument=cn-shanghai

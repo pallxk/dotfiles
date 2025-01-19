@@ -2,89 +2,91 @@
 // https://manual.nssurge.com/scripting/http-request.html
 
 
+const region = $argument || 'cn-hangzhou'
+
 const map = {
   // 传统型负载均衡 CLB - 访问控制
-  acl: 'https://slb.console.aliyun.com/slb/cn-shanghai/acls',
+  acl: `https://slb.console.aliyun.com/slb/${region}/acls`,
   // 应用型负载均衡 ALB
-  alb: 'https://slb.console.aliyun.com/alb/cn-shanghai/albs',
+  alb: `https://slb.console.aliyun.com/alb/${region}/albs`,
   // 传统型负载均衡 CLB
-  clb: 'https://slb.console.aliyun.com/slb/cn-shanghai/slbs',
+  clb: `https://slb.console.aliyun.com/slb/${region}/slbs`,
   // 容器服务 ACK
-  ack: 'https://cs.console.aliyun.com/',
-  cs: 'https://cs.console.aliyun.com/',
+  ack: `https://cs.console.aliyun.com/`,
+  cs: `https://cs.console.aliyun.com/`,
   // 容器镜像服务
-  acr: 'https://cr.console.aliyun.com/cn-shanghai/instances',
-  cr: 'https://cr.console.aliyun.com/cn-shanghai/instances',
+  acr: `https://cr.console.aliyun.com/${region}/instances`,
+  cr: `https://cr.console.aliyun.com/${region}/instances`,
   // CDN
-  cdn: 'https://cdn.console.aliyun.com/overview',
+  cdn: `https://cdn.console.aliyun.com/overview`,
   // 内容安全
-  cts: 'https://yundun.console.aliyun.com/?p=cts',
+  cts: `https://yundun.console.aliyun.com/?p=cts`,
   // 数据库备份DBS
-  dbs: 'https://dbs.console.aliyun.com/',
+  dbs: `https://dbs.console.aliyun.com/`,
   // 数据管理DMS（Data Management Service）
-  dms: 'https://dms.aliyun.com/',
+  dms: `https://dms.aliyun.com/`,
   // 数据传输服务
-  dts: 'https://dtsnew.console.aliyun.com/sync/cn-shanghai',
-  dtsnew: 'https://dtsnew.console.aliyun.com/sync/cn-shanghai',
+  dts: `https://dtsnew.console.aliyun.com/sync/${region}`,
+  dtsnew: `https://dtsnew.console.aliyun.com/sync/${region}`,
   // 短信服务
-  dysms: 'https://dysms.console.aliyun.com/overview',
+  dysms: `https://dysms.console.aliyun.com/overview`,
   // 块存储 EBS
-  ebs: 'https://ebs.console.aliyun.com/overview',
+  ebs: `https://ebs.console.aliyun.com/overview`,
   // 弹性容器实例
-  eci: 'https://eci.console.aliyun.com/',
+  eci: `https://eci.console.aliyun.com/`,
   // 云服务器
-  ecs: 'https://ecs.console.aliyun.com/home',
+  ecs: `https://ecs.console.aliyun.com/home`,
   // 弹性网卡
-  eni: 'https://ecs.console.aliyun.com/networkInterfaces',
+  eni: `https://ecs.console.aliyun.com/networkInterfaces`,
   // 云备份 Cloud Backup
-  hbr: 'https://hbr.console.aliyun.com/',
+  hbr: `https://hbr.console.aliyun.com/`,
   // 消息队列Kafka版
-  kafka: 'https://kafka.console.aliyun.com/',
-  kafkanext: 'https://kafkanext.console.aliyun.com/overview',
+  kafka: `https://kafka.console.aliyun.com/`,
+  kafkanext: `https://kafkanext.console.aliyun.com/overview`,
   // 密钥管理服务3.0
-  kms: 'https://yundun.console.aliyun.com/?p=kms',
+  kms: `https://yundun.console.aliyun.com/?p=kms`,
   // 瑶池数据库
-  kvstore: 'https://kvstore.console.aliyun.com/Redis/dashboard/cn-shanghai',
+  kvstore: `https://kvstore.console.aliyun.com/Redis/dashboard/${region}`,
   // 移动开发平台 mPaaS
-  mpaas: 'https://mpaas.console.aliyun.com/',
+  mpaas: `https://mpaas.console.aliyun.com/`,
   // 公网NAT网关
-  nat: 'https://vpc.console.aliyun.com/nat/',
+  nat: `https://vpc.console.aliyun.com/nat/`,
   // 网络型负载均衡 NLB
-  nlb: 'https://slb.console.aliyun.com/nlb/cn-shanghai/nlbs',
+  nlb: `https://slb.console.aliyun.com/nlb/${region}/nlbs`,
   // 对象存储 OSS
-  oss: 'https://oss.console.aliyun.com/overview',
+  oss: `https://oss.console.aliyun.com/overview`,
   // 云数据库PolarDB
-  polardb: 'https://polardb.console.aliyun.com/overview',
+  polardb: `https://polardb.console.aliyun.com/overview`,
   // 配额中心
-  quotas: 'https://quotas.console.aliyun.com/products',
+  quotas: `https://quotas.console.aliyun.com/products`,
   // RAM 访问控制
-  ram: 'https://ram.console.aliyun.com/overview',
+  ram: `https://ram.console.aliyun.com/overview`,
   // 云数据库RDS
-  rds: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
-  rdsnext: 'https://rdsnext.console.aliyun.com/dashboard/cn-shanghai',
+  rds: `https://rdsnext.console.aliyun.com/dashboard/${region}`,
+  rdsnext: `https://rdsnext.console.aliyun.com/dashboard/${region}`,
   // 资源组
-  rg: 'https://resourcemanager.console.aliyun.com/resource-groups',
+  rg: `https://resourcemanager.console.aliyun.com/resource-groups`,
   // 安全组
-  sg: 'https://ecs.console.aliyun.com/securityGroup/region/cn-shanghai',
+  sg: `https://ecs.console.aliyun.com/securityGroup/region/${region}`,
   // 负载均衡 SLB
-  slb: 'https://slb.console.aliyun.com/',
+  slb: `https://slb.console.aliyun.com/`,
   // 日志服务 SLS
-  sls: 'https://sls.console.aliyun.com/',
+  sls: `https://sls.console.aliyun.com/`,
   // 专有网络
-  vpc: 'https://vpc.console.aliyun.com/',
+  vpc: `https://vpc.console.aliyun.com/`,
   // VPC NAT网关
-  vpcnat: 'https://vpc.console.aliyun.com/vpc-nat/',
+  vpcnat: `https://vpc.console.aliyun.com/vpc-nat/`,
   // 高速通道 - 专有网络对等连接 - VPC互联
-  vpc2vpc: 'https://expressconnect.console.aliyun.com/peerconnection/cn-shanghai/vpc2vpc',
+  vpc2vpc: `https://expressconnect.console.aliyun.com/peerconnection/${region}/vpc2vpc`,
   // 网络互联 - VPN - VPN网关
-  vpn: 'https://vpc.console.aliyun.com/vpn/cn-shanghai/vpns',
-  vpngw: 'https://vpc.console.aliyun.com/vpn/cn-shanghai/vpns',
+  vpn: `https://vpc.console.aliyun.com/vpn/${region}/vpns`,
+  vpngw: `https://vpc.console.aliyun.com/vpn/${region}/vpns`,
   // 专有网络 - 路由表
-  vtb: 'https://vpc.console.aliyun.com/vpc/cn-shanghai/route-tables',
+  vtb: `https://vpc.console.aliyun.com/vpc/${region}/route-tables`,
   // Web应用防火墙3.0
-  waf: 'https://yundun.console.aliyun.com/?p=wafnew',
+  waf: `https://yundun.console.aliyun.com/?p=wafnew`,
   // 瑶池数据库
-  yaochi: 'https://yaochi.console.aliyun.com/overview',
+  yaochi: `https://yaochi.console.aliyun.com/overview`,
 }
 
 const url = new URL($request.url)
