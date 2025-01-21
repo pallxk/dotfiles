@@ -490,6 +490,8 @@
   "window.commandCenter": true,
   "window.title": "${rootName}${separator}${activeEditorShort}${separator}${profileName}",
 
+  "windsurf.cascadeOpenOnReload": false,
+
   "workbench.colorTheme": "Default Light Modern",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "Default Dark Modern",
