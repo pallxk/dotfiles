@@ -2,6 +2,24 @@ alias d=docker
 alias dr='docker run --rm --init -it -v "$PWD":/mnt:ro'
 alias drw='docker run --rm --init -it -v "$PWD":/mnt'
 
+ddir() {
+    if [ $# -eq 0 ]; then
+        mapfile -t objs < <(docker ps -aq)
+    else
+        objs=("$@")
+    fi
+    docker inspect -f $'{{.GraphDriver.Data.MergedDir}}\t{{.Name}}' "${objs[@]}"
+}
+
+sddir() {
+    if [ $# -eq 1 ]; then
+        mapfile -t objs < <(command ssh "$1" docker ps -aq)
+    else
+        objs=("${@:2}")
+    fi
+    command ssh "$1" docker inspect -f $'"{{.GraphDriver.Data.MergedDir}}\t{{.Name}}"' "${objs[@]}"
+}
+
 denv() {
     docker inspect "$@" | jq -r '.[].Config.Env[]'
 }
