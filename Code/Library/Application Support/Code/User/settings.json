@@ -260,7 +260,7 @@
 
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
+    "scminput": true,
     "plaintext": true,
     "markdown": true
   },
