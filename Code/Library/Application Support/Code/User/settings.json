@@ -491,6 +491,8 @@
   "window.title": "${rootName}${separator}${activeEditorShort}${separator}${profileName}",
 
   "windsurf.cascadeOpenOnReload": false,
+  "windsurf.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+  "windsurf.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
 
   "workbench.colorTheme": "Default Light Modern",
   "workbench.iconTheme": "material-icon-theme",
