@@ -1,6 +1,14 @@
 // Place your key bindings in this file to override the defaults
 [
     //
+    // Windsurf
+    //
+    {
+        "key": "cmd+l",
+        "command": "-windsurf.prioritized.chat.open",
+        "when": "!terminalFocus"
+    },
+    //
     // Developer
     //
     {
