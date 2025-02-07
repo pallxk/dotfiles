@@ -249,6 +249,7 @@
 
   "git-graph.maxDepthOfRepoSearch": 2,
   "git-graph.openToTheRepoOfTheActiveTextEditorDocument": true,
+  "git-graph.repository.useMailmap": true,
 
   "github.copilot.advanced": {
     "slashCommands": {
