@@ -2,6 +2,9 @@
 #!desc=Redirect short URLs to websites
 #!category=Aliyun
 
+[General]
+always-real-ip = %INSERT% -ack, -acl, -acr, -alb, -cdn, -cdt, -cen, -cgw, -clb, -cr, -cs, -cts, -dbs, -dms, -dts, -dysms, -ebs, -eci, -ecs, -eni, -fc, -hbr, -kafka, -kms, -kvstore, -mpaas, -nat, -nlb, -oss, -polardb, -quotas, -ram, -rds, -rg, -sg, -slb, -sls, -vbr, -vco, -vpc, -vpc2vpc, -vpcnat, -vpn, -vpngw, -vtb, -waf, -yaochi
+
 [MITM]
 hostname = %APPEND% ack, acl, acr, alb, cdn, cdt, cen, cgw, clb, cr, cs, cts, dbs, dms, dts, dysms, ebs, eci, ecs, eni, fc, hbr, kafka, kms, kvstore, mpaas, nat, nlb, oss, polardb, quotas, ram, rds, rg, sg, slb, sls, vbr, vco, vpc, vpc2vpc, vpcnat, vpn, vpngw, vtb, waf, yaochi
 
