@@ -4,6 +4,13 @@ set -euo pipefail
 
 o='[]'
 
+aliyun() {
+  if [ "$VERBOSE" ]; then
+    >&2 echo + aliyun "$@"
+  fi
+  command aliyun "$@"
+}
+
 mapfile -t lbs < <(
   aliyun slb DescribeLoadBalancers --PageSize 100 \
     | jq -c '.LoadBalancers.LoadBalancer[]'
