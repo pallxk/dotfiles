@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+o='[]'
+
+mapfile -t lbs < <(
+  aliyun slb DescribeLoadBalancers --PageSize 100 \
+    | jq -c '.LoadBalancers.LoadBalancer[]'
+)
+
+for lb in "${lbs[@]}"; do
+  lb_id=$(jq -r '.LoadBalancerId' <<<"$lb")
+  mapfile -t vsgs < <(
+    aliyun slb DescribeVServerGroups --LoadBalancerId "$lb_id" \
+      | jq -c '.VServerGroups.VServerGroup[]'
+  )
+
+  for vsg in "${vsgs[@]}"; do
+    vsg_id=$(jq -r '.VServerGroupId' <<<"$vsg")
+    bes=$(
+      aliyun slb DescribeVServerGroupAttribute --VServerGroupId "$vsg_id" \
+        | jq '.BackendServers.BackendServer'
+    )
+
+    o=$(
+      jq \
+        --argjson lb "$lb" \
+        --argjson vsg "$vsg" \
+        --argjson bes "$bes" \
+        '. + [{
+          LoadBalancerId: $lb.LoadBalancerId,
+          LoadBalancerName: $lb.LoadBalancerName,
+          VServerGroupId: $vsg.VServerGroupId,
+          VServerGroupName: $vsg.VServerGroupName,
+          BackendServers: $bes
+          }]' \
+        <<<"$o"
+    )
+  done
+done
+
+jq <<<"$o"
