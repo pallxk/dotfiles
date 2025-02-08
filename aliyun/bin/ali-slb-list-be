@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+o='[]'
+
+mapfile -t lbs < <(
+  aliyun slb DescribeLoadBalancers --PageSize 100 \
+    | jq -c '.LoadBalancers.LoadBalancer[]'
+)
+
+for lb in "${lbs[@]}"; do
+  lb_id=$(jq -r '.LoadBalancerId' <<<"$lb")
+  mapfile -t ports < <(
+    aliyun slb DescribeLoadBalancerAttribute --LoadBalancerId "$lb_id" \
+      | jq '.ListenerPorts.ListenerPort[]'
+  )
+
+  for port in "${ports[@]}"; do
+    mapfile -t rules < <(
+      aliyun slb DescribeRules --LoadBalancerId "$lb_id" --ListenerPort "$port" \
+        | jq -c '.Rules.Rule[]'
+    )
+
+    for rule in "${rules[@]}"; do
+      vsg_id=$(jq -r '.VServerGroupId' <<<"$rule")
+      bes=$(
+        aliyun slb DescribeVServerGroupAttribute --VServerGroupId "$vsg_id" \
+          | jq '.BackendServers.BackendServer'
+      )
+
+      o=$(
+        jq \
+          --argjson lb "$lb" \
+          --argjson port "$port" \
+          --argjson rule "$rule" \
+          --argjson bes "$bes" \
+          '. + [{
+            LoadBalancerId: $lb.LoadBalancerId,
+            LoadBalancerName: $lb.LoadBalancerName,
+            ListenerPort: $port,
+            RuleDomain: $rule.Domain,
+            BackendServers: $bes
+            }]' \
+          <<<"$o"
+      )
+    done
+  done
+done
+
+jq <<<"$o"
