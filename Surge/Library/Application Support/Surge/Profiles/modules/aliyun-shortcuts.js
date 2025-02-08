@@ -5,26 +5,28 @@
 const region = $argument || 'cn-hangzhou'
 
 const map = {
+  // 容器服务 ACK
+  ack: `https://csnew.console.aliyun.com/`,
   // 传统型负载均衡 CLB - 访问控制
   acl: `https://slb.console.aliyun.com/slb/${region}/acls`,
-  // 应用型负载均衡 ALB
-  alb: `https://slb.console.aliyun.com/alb/${region}/albs`,
-  // 传统型负载均衡 CLB
-  clb: `https://slb.console.aliyun.com/slb/${region}/slbs`,
-  // 容器服务 ACK
-  ack: `https://cs.console.aliyun.com/`,
-  cs: `https://cs.console.aliyun.com/`,
   // 容器镜像服务
   acr: `https://cr.console.aliyun.com/${region}/instances`,
-  cr: `https://cr.console.aliyun.com/${region}/instances`,
-  // 云数据传输
-  cdt: `https://cdt.console.aliyun.com/overview`,
-  // 云企业网实例
-  cen: `https://cen.console.aliyun.com`,
+  // 应用型负载均衡 ALB
+  alb: `https://slb.console.aliyun.com/alb/${region}/albs`,
   // CDN
   cdn: `https://cdn.console.aliyun.com/overview`,
+  // 云数据传输
+  cdt: `https://cdt.console.aliyun.com/overview`,
+  // 云企业网
+  cen: `https://cen.console.aliyun.com`,
   // 网间互联 - VPN - 用户网关
   cgw: `https://vpc.console.aliyun.com/vpn/${region}/vpn-clients`,
+  // 传统型负载均衡 CLB
+  clb: `https://slb.console.aliyun.com/slb/${region}/slbs`,
+  // 容器镜像服务
+  cr: `https://cr.console.aliyun.com/${region}/instances`,
+  // 容器服务 ACK
+  cs: `https://csnew.console.aliyun.com/`,
   // 内容安全
   cts: `https://yundun.console.aliyun.com/?p=cts`,
   // 数据库备份DBS
@@ -33,7 +35,6 @@ const map = {
   dms: `https://dms.aliyun.com/`,
   // 数据传输服务
   dts: `https://dtsnew.console.aliyun.com/sync/${region}`,
-  dtsnew: `https://dtsnew.console.aliyun.com/sync/${region}`,
   // 短信服务
   dysms: `https://dysms.console.aliyun.com/overview`,
   // 块存储 EBS
@@ -49,8 +50,7 @@ const map = {
   // 云备份 Cloud Backup
   hbr: `https://hbr.console.aliyun.com/`,
   // 消息队列Kafka版
-  kafka: `https://kafka.console.aliyun.com/`,
-  kafkanext: `https://kafkanext.console.aliyun.com/overview`,
+  kafka: `https://kafkanext.console.aliyun.com/overview`,
   // 密钥管理服务3.0
   kms: `https://yundun.console.aliyun.com/?p=kms`,
   // 瑶池数据库
@@ -71,7 +71,6 @@ const map = {
   ram: `https://ram.console.aliyun.com/overview`,
   // 云数据库RDS
   rds: `https://rdsnext.console.aliyun.com/dashboard/${region}`,
-  rdsnext: `https://rdsnext.console.aliyun.com/dashboard/${region}`,
   // 资源组
   rg: `https://resourcemanager.console.aliyun.com/resource-groups`,
   // 安全组
