@@ -17,8 +17,14 @@ const map = {
   // 容器镜像服务
   acr: `https://cr.console.aliyun.com/${region}/instances`,
   cr: `https://cr.console.aliyun.com/${region}/instances`,
+  // 云数据传输
+  cdt: `https://cdt.console.aliyun.com/overview`,
+  // 云企业网实例
+  cen: `https://cen.console.aliyun.com`,
   // CDN
   cdn: `https://cdn.console.aliyun.com/overview`,
+  // 网间互联 - VPN - 用户网关
+  cgw: `https://vpc.console.aliyun.com/vpn/${region}/vpn-clients`,
   // 内容安全
   cts: `https://yundun.console.aliyun.com/?p=cts`,
   // 数据库备份DBS
@@ -38,6 +44,8 @@ const map = {
   ecs: `https://ecs.console.aliyun.com/home`,
   // 弹性网卡
   eni: `https://ecs.console.aliyun.com/networkInterfaces`,
+  // 函数计算
+  fc: `https://fcnext.console.aliyun.com`,
   // 云备份 Cloud Backup
   hbr: `https://hbr.console.aliyun.com/`,
   // 消息队列Kafka版
@@ -72,6 +80,10 @@ const map = {
   slb: `https://slb.console.aliyun.com/`,
   // 日志服务 SLS
   sls: `https://sls.console.aliyun.com/`,
+  // 边界路由器（VBR）
+  vbr: `https://expressconnect.console.aliyun.com/vbr`,
+  // 网间互联 - VPN - IPsec连接
+  vco: `https://vpc.console.aliyun.com/vpn/${region}/vpn-connections/`,
   // 专有网络
   vpc: `https://vpc.console.aliyun.com/`,
   // VPC NAT网关
