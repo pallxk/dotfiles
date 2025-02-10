@@ -233,6 +233,8 @@
     "**/openconnect/*.config": "ssh_config",
     // Terraform
     "*.hcl": "terraform",
+    // TypeScript
+    "*.osts": "typescript",
     // yaml
     "*.yaml.example": "yaml",
     "kubeconfig": "yaml",
