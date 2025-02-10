@@ -345,6 +345,8 @@
     "devops": "project",
     // Helm
     "charts": "kubernetes",
+    // Terraform
+    "tf": "terraform",
   },
   "material-icon-theme.languages.associations": {
   },
