@@ -389,6 +389,8 @@
 
   "search.useIgnoreFiles": false,
 
+  "shellformat.flag": "--binary-next-line",
+
   "sqltools.disableChordKeybindings": true,
 
   "telemetry.telemetryLevel": "error",
