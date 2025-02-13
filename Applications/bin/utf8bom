@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+for file in "$@"; do
+  mark=$(head -c3 "$file")
+  if [ "$mark" = $'\xEF\xBB\xBF' ]; then
+    echo "$file: already has BOM"
+    continue
+  fi
+
+  printf '\xEF\xBB\xBF' | cat - "$file" | sponge "$file"
+  echo "$file: added BOM"
+done
