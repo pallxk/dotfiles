@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+# Description:
+#   Enable all plans under the specified project(s) in Atalassian Bamboo.
+
+# Usage:
+#   export BAMBOO_BASEURL=https://www.example.com/bamboo
+#   export BAMBOO_TOKEN=<secret_token>
+#   bamboo-enable-plans <project_key> [<project_key> ...]
+
+# Examples:
+#   bamboo-enable-plans PROJ
+#   bamboo-enable-plans proj1 proj2
+
+set -euo pipefail
+
+if [ $# -eq 0 ]; then
+  echo >&2 "Please specify project key(s) to enable their plans."
+fi
+
+for project in "$@"; do
+  # project key has to be uppercase
+  project=${project^^}
+
+  # specify a proper max-results value to avoid pagination
+  plans=$(
+    curl -fsS --connect-timeout 5 \
+      -H "Authorization: Bearer $BAMBOO_TOKEN" \
+      -H "Accept: application/json" \
+      --get \
+      "$BAMBOO_BASEURL/rest/api/latest/project/$project" \
+      -d expand=plans \
+      -d max-results=100 \
+      | jq -er '.plans.plan[].key'
+  )
+
+  echo "Project $project has plans: ${plans//$'\n'/ }"
+
+  for plan in $plans; do
+    echo "Enabling $plan"
+    curl -fsS --connect-timeout 5 \
+      -H "Authorization: Bearer $BAMBOO_TOKEN" \
+      -X POST \
+      "$BAMBOO_BASEURL/rest/api/latest/plan/$plan/enable"
+  done
+done
