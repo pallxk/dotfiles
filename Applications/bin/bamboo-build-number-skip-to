@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+# Description:
+#   Make the next build number of a plan in Atalassian Bamboo to the specified one.
+
+# Usage:
+#   export BAMBOO_BASEURL=https://www.example.com/bamboo
+#   export BAMBOO_TOKEN=<secret_token>
+#   bamboo-build-number-skip-to <project_key> <plan_key> <target_build_number>
+
+# Examples:
+#   bamboo-build-number-skip-to PROJ PLAN 123
+#   bamboo-build-number-skip-to PROJ-PLAN 123
+#   bamboo-build-number-skip-to PROJ-PLAN-123
+#   bamboo-build-number-skip-to https://example.com/bamboo/browse/PROJ PLAN 123
+#   bamboo-build-number-skip-to https://example.com/bamboo/browse/PROJ-PLAN 123
+#   bamboo-build-number-skip-to https://example.com/bamboo/browse/PROJ-PLAN-123
+
+set -euo pipefail
+
+# Get base_url
+if [[ $1 =~ (.+)/browse/([^/]+) ]]; then
+  base_url=${BASH_REMATCH[1]}
+  id=${BASH_REMATCH[2]}
+else
+  base_url=$BAMBOO_BASEURL
+  id=$1
+fi
+shift
+
+# Get project key, plan key and build number
+if [[ $id =~ (.*)-(.*)-(.*) ]]; then
+  project_key=${BASH_REMATCH[1]}
+  plan_key=${BASH_REMATCH[2]}
+  target_build_number=${BASH_REMATCH[3]}
+elif [[ $id =~ (.*)-(.*) ]]; then
+  project_key=${BASH_REMATCH[1]}
+  plan_key=${BASH_REMATCH[2]}
+  target_build_number=$1
+else
+  project_key=$id
+  plan_key=$1
+  target_build_number=$2
+fi
+
+echo >&2 "Base URL: $base_url"
+echo >&2 "Project key: $project_key"
+echo >&2 "Plan key: $plan_key"
+echo >&2 "Target build number: $target_build_number"
+
+current_build_number=0
+while [ $((target_build_number - current_build_number)) -gt 1 ]; do
+  # Trigger build
+  resp=$(
+    # https://developer.atlassian.com/server/bamboo/rest/api-group-api/#api-api-latest-queue-projectkey-buildkey-post
+    # Specify a invalid customRevision to avoid actually build anything.
+    curl -fsS --connect-timeout 5 \
+      -H "Authorization: Bearer $BAMBOO_TOKEN" \
+      -H "Accept: application/json" \
+      -X POST \
+      --url-query "customRevision=skip" \
+      "$base_url/rest/api/latest/queue/$project_key-$plan_key"
+  )
+  jq -c <<<"$resp"
+  current_build_number=$(jq -e '.buildNumber' <<<"$resp")
+done
