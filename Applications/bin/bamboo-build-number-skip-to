@@ -6,7 +6,6 @@
 # Usage:
 #   export BAMBOO_BASEURL=https://www.example.com/bamboo
 #   export BAMBOO_TOKEN=<secret_token>
-#   export BAMBOO_XSRF_TOKEN=<xsrf_token> # optional, if set, the triggered builds will be removed.
 #   export BAMBOO_SERAPH_COOKIE=<seraph_cookie> # optional, if set, the triggered builds will be removed.
 #   bamboo-build-number-skip-to <project_key> <plan_key> <target_build_number>
 
@@ -67,14 +66,14 @@ while [ $((target_build_number - current_build_number)) -gt 1 ]; do
   current_build_number=$(jq -e '.buildNumber' <<<"$resp")
 
   # Remove the triggered build
-  if [ "${BAMBOO_XSRF_TOKEN-}" ] && [ "${BAMBOO_SERAPH_COOKIE-}" ]; then
+  if [ "${BAMBOO_SERAPH_COOKIE-}" ]; then
     # Avoid error: "Can't delete result in active state"
     sleep 1
 
     curl -fsS --connect-timeout 5 \
-      -H "Cookie: atl.xsrf.token=$BAMBOO_XSRF_TOKEN; seraph.bamboo=$BAMBOO_SERAPH_COOKIE" \
+      -H "Cookie: seraph.bamboo=$BAMBOO_SERAPH_COOKIE" \
+      -H "X-Atlassian-Token: no-check" \
       -X POST \
-      -d "atl_token=$BAMBOO_XSRF_TOKEN" \
       --url-query "buildKey=$project_key-$plan_key" \
       --url-query "buildNumber=$current_build_number" \
       "$base_url/build/admin/deletePlanResults.action"
