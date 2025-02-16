@@ -244,6 +244,7 @@
 
   "git.autoRepositoryDetection": "subFolders",
   "git.autofetch": true,
+  "git.detectSubmodules": false,
   "git.ignoreLimitWarning": true,
   "git.mergeEditor": true,
   "git.repositoryScanMaxDepth": 2,
