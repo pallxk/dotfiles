@@ -24,6 +24,7 @@ for project in "$@"; do
 
   # specify a proper max-results value to avoid pagination
   plans=$(
+    # https://developer.atlassian.com/server/bamboo/rest/api-group-api/#api-api-latest-project-get
     curl -fsS --connect-timeout 5 \
       -H "Authorization: Bearer $BAMBOO_TOKEN" \
       -H "Accept: application/json" \
@@ -38,6 +39,7 @@ for project in "$@"; do
 
   for plan in $plans; do
     echo >&2 "Enabling $plan"
+    # https://developer.atlassian.com/server/bamboo/rest/api-group-api/#api-api-latest-plan-projectkey-buildkey-enable-post
     curl -fsS --connect-timeout 5 \
       -H "Authorization: Bearer $BAMBOO_TOKEN" \
       -X POST \
