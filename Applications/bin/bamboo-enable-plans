@@ -34,13 +34,14 @@ for project in "$@"; do
       | jq -er '.plans.plan[].key'
   )
 
-  echo "Project $project has plans: ${plans//$'\n'/ }"
+  echo >&2 "Project $project has plans: ${plans//$'\n'/ }"
 
   for plan in $plans; do
-    echo "Enabling $plan"
+    echo >&2 "Enabling $plan"
     curl -fsS --connect-timeout 5 \
       -H "Authorization: Bearer $BAMBOO_TOKEN" \
       -X POST \
       "$BAMBOO_BASEURL/rest/api/latest/plan/$plan/enable"
+    echo "<$BAMBOO_BASEURL/browse/$plan>"
   done
 done
