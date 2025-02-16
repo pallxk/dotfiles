@@ -2,13 +2,29 @@
 
 set -euo pipefail
 
-for file in "$@"; do
-  mark=$(head -c3 "$file")
+if [ $# -eq 0 ]; then
+  temp_file=$(mktemp)
+  trap 'rm -f "$temp_file"' EXIT
+  cat >"$temp_file"
+
+  mark=$(head -c3 "$temp_file")
   if [ "$mark" = $'\xEF\xBB\xBF' ]; then
-    echo "$file: already has BOM"
-    continue
+    cat "$temp_file"
+    echo >&2 "/dev/stdin: already has BOM"
+    exit
   fi
 
-  printf '\xEF\xBB\xBF' | cat - "$file" | sponge "$file"
-  echo "$file: added BOM"
-done
+  printf '\xEF\xBB\xBF' | cat - "$temp_file"
+  echo >&2 "/dev/stdin: added BOM"
+else
+  for file in "$@"; do
+    mark=$(head -c3 "$file")
+    if [ "$mark" = $'\xEF\xBB\xBF' ]; then
+      echo >&2 "$file: already has BOM"
+      continue
+    fi
+
+    printf '\xEF\xBB\xBF' | cat - "$file" | sponge "$file"
+    echo >&2 "$file: added BOM"
+  done
+fi
