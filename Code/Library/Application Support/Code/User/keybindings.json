@@ -1,12 +1,72 @@
 // Place your key bindings in this file to override the defaults
 [
     //
-    // Windsurf
+    // Copilot
     //
     {
         "key": "cmd+l",
-        "command": "-windsurf.prioritized.chat.open",
-        "when": "!terminalFocus"
+        "command": "workbench.action.openChat",
+        "when": "!composerIsEnabled"
+    },
+    //
+    // Cursor
+    //
+    {
+        "key": "cmd+i",
+        "command": "aipopup.action.modal.generate",
+        "when": "composerIsEnabled && editorFocus && !composerBarIsVisible"
+    },
+    {
+        "key": "cmd+i",
+        "command": "cursorai.action.generateInTerminal",
+        "when": "composerIsEnabled && terminalFocus && terminalHasBeenCreated || composerIsEnabled && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-composer.startComposerPrompt",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "workbench.panel.aichat",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "composer.startComposerPrompt",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "cmd+l",
+        "command": "composer.openChatAsEditor",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-aichat.newchataction"
+    },
+    //
+    // Windsurf
+    //
+    {
+        "key": "ctrl+cmd+i",
+        "command": "windsurf.prioritized.chat.open",
+        "when": "windsurf.isLoggedIn && !terminalFocus && activePanel != 'workbench.panel.markers'"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "windsurf.prioritized.chat.openFromTerminal",
+        "when": "windsurf.isLoggedIn && terminalFocus"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "windsurf.prioritized.chat.openFromProblemsPanel",
+        "when": "windsurf.isLoggedIn && activePanel == 'workbench.panel.markers'"
+    },
+    {
+        "key": "cmd+l",
+        "command": "windsurf.executeCascadeAction",
+        "when": "windsurf.isLoggedIn"
     },
     //
     // Developer
@@ -2400,28 +2460,9 @@
         "when": "!isSettingsPaneOpen"
     },
     {
-        "key": "ctrl+cmd+i",
-        "command": "aichat.newchataction",
-        "when": "composerIsEnabled"
-    },
-    {
-        "key": "cmd+k cmd+k",
-        "command": "aipopup.action.modal.generate",
-        "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
-    },
-    {
-        "key": "cmd+k cmd+k",
-        "command": "cursorai.action.generateInTerminal",
-        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
         "key": "shift+cmd+k",
         "command": "-aipopup.action.modal.generate",
         "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
-    },
-    {
-        "key": "cmd+l",
-        "command": "-aichat.newchataction"
     },
     {
         "key": "cmd+k",
@@ -2821,11 +2862,6 @@
         "key": "cmd+r cmd+k",
         "command": "-editor.action.defineKeybinding",
         "when": "resource == 'vscode-userdata:/Users/lxk/Library/Application%20Support/Cursor/User/keybindings.json'"
-    },
-    {
-        "key": "cmd+k i",
-        "command": "inlineChat.start",
-        "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
     },
     {
         "key": "cmd+r i",
