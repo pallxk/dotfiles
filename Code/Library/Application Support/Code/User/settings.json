@@ -30,6 +30,10 @@
   "atlascode.jira.statusbar.showLogin": true,
   "atlascode.jira.statusbar.enabled": false,
 
+  // mads-hartmann.bash-ide-vscode
+  "bashIde.shfmt.binaryNextLine": true,
+  "bashIde.shfmt.simplifyCode": true,
+
   // ms-python.black-formatter
   "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.showNotifications": "always",
