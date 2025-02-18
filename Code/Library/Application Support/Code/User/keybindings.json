@@ -476,25 +476,45 @@
         "when": "isMac && editorFocus"
     },
     //
-    // smart select
+    // Selection
     //
     {
         "key": "ctrl+alt+l",
+        "command": "expandLineSelection",
+        "when": "!isMac && textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+cmd+l",
+        "command": "expandLineSelection",
+        "when": "isMac && textInputFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+j",
         "command": "editor.action.smartSelect.expand",
         "when": "!isMac && editorTextFocus"
     },
     {
-        "key": "ctrl+cmd+l",
+        "key": "ctrl+cmd+j",
         "command": "editor.action.smartSelect.expand",
         "when": "isMac && editorTextFocus"
     },
     {
-        "key": "ctrl+shift+alt+l",
+        "key": "ctrl+alt+k",
         "command": "editor.action.smartSelect.shrink",
         "when": "!isMac && editorTextFocus"
     },
     {
-        "key": "ctrl+shift+cmd+l",
+        "key": "ctrl+cmd+k",
         "command": "editor.action.smartSelect.shrink",
         "when": "isMac && editorTextFocus"
     },
@@ -2398,11 +2418,6 @@
         "key": "shift+cmd+k",
         "command": "-aipopup.action.modal.generate",
         "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
-    },
-    {
-        "key": "cmd+l",
-        "command": "expandLineSelection",
-        "when": "textInputFocus"
     },
     {
         "key": "cmd+l",
