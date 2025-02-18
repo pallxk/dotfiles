@@ -167,7 +167,7 @@
         "when": "!isMac && !taskCommandsRegistered || !isMac && terminalFocus"
     },
     {
-        "key": "alt+cmd+j",
+        "key": "shift+alt+cmd+j",
         "command": "workbench.action.toggleStatusbarVisibility",
         "when": "isMac"
     },
@@ -2077,14 +2077,8 @@
         "command": "workbench.action.minimizeOtherEditors"
     },
     {
-        "key": "ctrl+cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "isMac"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!isMac"
+        "key": "alt+cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel"
     },
     //
     // Panel - Alignment
