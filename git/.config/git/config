@@ -73,6 +73,8 @@
 	cmd = diff -i $LOCAL $REMOTE
 [git-p4]
 	skipSubmitEdit = true
+[gpg]
+	format = ssh
 [init]
 	defaultBranch = main
 [merge]
