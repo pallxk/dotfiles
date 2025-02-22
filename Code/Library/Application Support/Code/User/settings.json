@@ -256,6 +256,7 @@
 
   "git-graph.maxDepthOfRepoSearch": 2,
   "git-graph.openToTheRepoOfTheActiveTextEditorDocument": true,
+  "git-graph.repository.commits.showSignatureStatus": true,
   "git-graph.repository.useMailmap": true,
 
   "github.copilot.chat.editor.temporalContext.enabled": true,
