@@ -71,6 +71,8 @@
 	cmd = "/Applications/Beyond Compare.app/Contents/MacOS/bcomp"
 [difftool "idiff"]
 	cmd = diff -i $LOCAL $REMOTE
+[format]
+	pretty = raw
 [git-p4]
 	skipSubmitEdit = true
 [gpg]
