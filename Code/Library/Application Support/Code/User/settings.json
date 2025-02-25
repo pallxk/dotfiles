@@ -243,6 +243,7 @@
     "*.yaml.example": "yaml",
     "kubeconfig": "yaml",
     "*.kubeconfig": "yaml",
+    "**/.kube/*.config": "yaml",
   },
   "files.autoSave": "off",
 
