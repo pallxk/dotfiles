@@ -101,7 +101,10 @@ const map = {
 }
 
 const url = new URL($request.url)
-const target = map[url.hostname]
+
+// vpc => https://vpc.console.aliyun.com/
+// vpc.ali => https://vpc.console.aliyun.com/
+const target = map[url.hostname.split('.')[0]]
 
 if (target) {
   $done({
