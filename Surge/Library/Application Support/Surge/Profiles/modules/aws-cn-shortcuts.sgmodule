@@ -1,0 +1,12 @@
+#!name=AWS CN Shortcuts
+#!desc=Redirect short URLs to websites
+#!category=AWS
+
+[General]
+always-real-ip = %INSERT% -*.aws, -ec2, -ec2l, -igw, -lb, -nat, -natgw, -pl, -s3, -sg, -vpc
+
+[MITM]
+hostname = %APPEND% *.aws, ec2, ec2l, igw, lb, nat, natgw, pl, s3, sg, vpc
+
+[Script]
+aws-cn-shortcuts.js = type=http-request,pattern=^https?://(ec2|ec2l|igw|lb|nat|natgw|pl|s3|sg|vpc)(\.aws)?/,script-path=modules/aws-cn-shortcuts.js,argument=cn-north-1
