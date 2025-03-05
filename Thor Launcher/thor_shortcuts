@@ -335,13 +335,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+."
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
-    "appDisplayName" : "iTerm",
+    "appBundleURL" : "file:\/\/\/Applications\/Termius.app\/",
+    "appDisplayName" : "Termius",
     "shortcut" : "ctrl+alt+cmd+return"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Warp.app\/",
-    "appDisplayName" : "Warp",
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
+    "appDisplayName" : "iTerm",
     "shortcut" : "shift+ctrl+alt+cmd+return"
   }
 ]
