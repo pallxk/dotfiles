@@ -2022,7 +2022,7 @@
     {
         "key": "alt+b",
         "command": "gitlens.toggleFileBlame",
-        "when": "editorTextFocus && config.gitlens.keymap == 'alternate'"
+        "when": "editorFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
     },
     {
         "key": "alt+d",
