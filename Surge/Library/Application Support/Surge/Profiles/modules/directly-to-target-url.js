@@ -1,6 +1,7 @@
-// https://www.o365atp.com/
 // https://manual.nssurge.com/scripting/common.html
 // https://manual.nssurge.com/scripting/http-request.html
+
+// https://www.o365atp.com/
 
 const paramUrl = new URL($request.url).searchParams.get('url')
 if (paramUrl) {

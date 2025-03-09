@@ -1,9 +1,0 @@
-#!name=NO ATP Safelinks
-#!desc=Decode Office 365 ATP Safe Links as done by https://www.o365atp.com/
-
-[MITM]
-hostname = %APPEND% *.safelinks.protection.outlook.com, statics.teams.cdn.office.net
-
-[Script]
-no-atp-safelinks.js = type=http-request,pattern=^https://.+.safelinks.protection.outlook.com,script-path=modules/no-atp-safelinks.js
-no-atp-safelinks.js = type=http-request,pattern=^https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html,script-path=modules/no-atp-safelinks.js
