@@ -2,9 +2,10 @@
 #!desc=Locally redirect to the target URL directly without going through redirect link.
 
 [MITM]
-hostname = %APPEND% www.google.com, *.safelinks.protection.outlook.com, statics.teams.cdn.office.net
+hostname = %APPEND% www.google.com, *.safelinks.protection.outlook.com, statics.teams.cdn.office.net, t.me
 
 [Script]
 directly-to-target-url.js = type=http-request,pattern=^https://www.google.com/url\?,script-path=modules/directly-to-target-url.js
 directly-to-target-url.js = type=http-request,pattern=^https://.+.safelinks.protection.outlook.com,script-path=modules/directly-to-target-url.js
 directly-to-target-url.js = type=http-request,pattern=^https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html,script-path=modules/directly-to-target-url.js
+directly-to-target-url.js = type=http-request,pattern=^https://t.me/iv\?,script-path=modules/directly-to-target-url.js
