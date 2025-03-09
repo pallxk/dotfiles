@@ -1,0 +1,8 @@
+#!name=Fix image hotlink
+#!desc=Fix image hotlink by removing referer header.
+
+[MITM]
+hostname = %APPEND% mmbiz.qpic.cn
+
+[Header Rewrite]
+http-request ^https://mmbiz.qpic.cn/ header-del Referer
