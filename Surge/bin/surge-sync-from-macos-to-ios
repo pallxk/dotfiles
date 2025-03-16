@@ -1,5 +1,8 @@
 #!/bin/sh
 
-rsync -aLv \
+rsync \
+  -aLv \
+  --delete \
+  --ignore-errors \
   ~/Library/Application\ Support/Surge/Profiles/. \
   ~/Library/Mobile\ Documents/iCloud~com~nssurge~inc/Documents/
