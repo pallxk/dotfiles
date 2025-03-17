@@ -315,6 +315,9 @@
   // Groovy
   "groovyLint.insight.enable": false,
 
+  // Draw.io Integration
+  "hediet.vscode-drawio.appearance": "automatic",
+
   // Java
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.implementationsCodeLens.enabled": true,
