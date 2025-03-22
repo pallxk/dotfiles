@@ -225,6 +225,8 @@
     "*.cjson": "jsonc",
     // julia
     "*.dae": "julia",   // The syntax highlighting for Julia works for *.dae
+    // Makefile
+    "**/ghostty/config": "makefile",
     // ruby
     "Pluginfile": "ruby", // Used by fastlane
     // shellscript
