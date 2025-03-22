@@ -1,1 +1,22 @@
-# https://ghostty.org/docs/config
+# https://ghostty.org/docs/config/reference
+
+command = /opt/homebrew/bin/bash
+
+copy-on-select = clipboard
+
+font-size = 14
+
+macos-option-as-alt = true
+macos-titlebar-style = tabs
+
+shell-integration-features = no-cursor
+
+# https://iterm2colorschemes.com
+theme = dark:catppuccin-mocha,light:catppuccin-latte
+
+
+# For default and custom key bindings: `ghostty +list-keybinds`
+
+keybind = global:alt+grave_accent=toggle_quick_terminal
+
+keybind = cmd+f=write_screen_file:open
