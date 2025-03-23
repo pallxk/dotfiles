@@ -9,6 +9,8 @@ font-size = 14
 macos-option-as-alt = true
 macos-titlebar-style = tabs
 
+quick-terminal-animation-duration = 0
+
 shell-integration-features = no-cursor
 
 # https://iterm2colorschemes.com
