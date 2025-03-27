@@ -5,6 +5,8 @@
 bind 'Space: magic-space'
 # Append to the history file, instead of overwriting it
 shopt -s histappend
+# Save multi-line commands as multi-line
+shopt -s lithist
 # Ignore lines matching the previous entry (ignoredups)
 # Ignore lines which begin with a space character (ignorespace)
 HISTCONTROL=ignoreboth
