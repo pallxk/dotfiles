@@ -215,8 +215,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+t"
   },
   {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/jqplay.app\/",
-    "appDisplayName" : "jqplay",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/jq%20playground.app\/",
+    "appDisplayName" : "jq playground",
     "shortcut" : "ctrl+alt+cmd+u"
   },
   {
