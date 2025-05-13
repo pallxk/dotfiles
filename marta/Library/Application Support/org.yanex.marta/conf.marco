@@ -30,6 +30,9 @@ keyBindings {
     "Opt+D" "core.move.page.down"
     "Shift+Opt+D" "core.select.move.page.down"
 
+    "Enter" "core.rename"
+    "Cmd+O" "core.open"
+
     "Cmd+Up" "core.go.up"
 
     "Opt+Cmd+C" "core.path"
