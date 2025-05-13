@@ -1,5 +1,8 @@
 # https://ghostty.org/docs/config/reference
 
+# https://ghostty.org/docs/config/reference#auto-update
+auto-update = download
+
 command = /opt/homebrew/bin/bash
 
 copy-on-select = clipboard
