@@ -71,6 +71,16 @@ keyBindings {
         src "~/Documents"
     }
 
+    "Shift+Cmd+P" {
+        id "core.open.folder"
+        src "~/p"
+    }
+
+    "Shift+Cmd+W" {
+        id "core.open.folder"
+        src "~/w"
+    }
+
     "Shift+Cmd+U" {
         id "core.open.folder"
         src "/System/Applications/Utilities"
