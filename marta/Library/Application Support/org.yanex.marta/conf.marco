@@ -6,8 +6,6 @@ behavior {
     }
 
     quickSelect {
-        activateOnAnyCharacter false
-        defaultMode "substring"
         filterMatchedItems true
     }
 }
@@ -18,19 +16,19 @@ etty {
 }
 
 keyBindings {
-    "H" "core.move.left"
-    "Shift+H" "core.select.move.left"
-    "J" "core.move.down"
-    "Shift+J" "core.select.move.down"
-    "K" "core.move.up"
-    "Shift+K" "core.select.move.up"
-    "L" "core.move.right"
-    "Shift+L" "core.select.move.right"
+    "Opt+H" "core.move.left"
+    "Shift+Opt+H" "core.select.move.left"
+    "Opt+J" "core.move.down"
+    "Shift+Opt+J" "core.select.move.down"
+    "Opt+K" "core.move.up"
+    "Shift+Opt+K" "core.select.move.up"
+    "Opt+L" "core.move.right"
+    "Shift+Opt+L" "core.select.move.right"
 
-    "U" "core.move.page.up"
-    "Shift+U" "core.select.move.page.up"
-    "D" "core.move.page.down"
-    "Shift+D" "core.select.move.page.down"
+    "Opt+U" "core.move.page.up"
+    "Shift+Opt+U" "core.select.move.page.up"
+    "Opt+D" "core.move.page.down"
+    "Shift+Opt+D" "core.select.move.page.down"
 
     "Cmd+Up" "core.go.up"
 
