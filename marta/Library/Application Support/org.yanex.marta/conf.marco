@@ -1,0 +1,68 @@
+behavior {
+    theme "Classic"
+
+    actions {
+        core.trash.confirm false
+    }
+
+    quickSelect {
+        activateOnAnyCharacter false
+        defaultMode "substring"
+        filterMatchedItems true
+    }
+}
+
+etty {
+    shell "/opt/homebrew/bin/bash"
+    theme "light"
+}
+
+keyBindings {
+    "H" "core.move.left"
+    "Shift+H" "core.select.move.left"
+    "J" "core.move.down"
+    "Shift+J" "core.select.move.down"
+    "K" "core.move.up"
+    "Shift+K" "core.select.move.up"
+    "L" "core.move.right"
+    "Shift+L" "core.select.move.right"
+
+    "U" "core.move.page.up"
+    "Shift+U" "core.select.move.page.up"
+    "D" "core.move.page.down"
+    "Shift+D" "core.select.move.page.down"
+
+    "Cmd+Up" "core.go.up"
+
+    "Opt+Cmd+C" "core.path"
+
+    "Shift+Cmd+A" {
+        id "core.open.folder"
+        src "/Applications"
+    }
+
+    "Shift+Cmd+D" {
+        id "core.open.folder"
+        src "~/Desktop"
+    }
+
+    "Shift+Cmd+H" {
+        id "core.open.folder"
+        src "~"
+    }
+
+    "Opt+Cmd+L" {
+        id "core.open.folder"
+        src "~/Downloads"
+    }
+
+    "Shift+Cmd+O" {
+        id "core.open.folder"
+        src "~/Documents"
+    }
+
+    "Shift+Cmd+U" {
+        id "core.open.folder"
+        src "/System/Applications/Utilities"
+    }
+}
