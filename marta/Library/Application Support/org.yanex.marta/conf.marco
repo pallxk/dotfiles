@@ -36,9 +36,19 @@ keyBindings {
 
     "Opt+Cmd+C" "core.path"
 
+    "Shift+Cmd+1" {
+        id "core.open.folder"
+        src "~/Library/CloudStorage/OneDrive-Personal"
+    }
+
     "Shift+Cmd+A" {
         id "core.open.folder"
         src "/Applications"
+    }
+
+    "Shift+Cmd+C" {
+        id "core.open.folder"
+        src "~/Library/CloudStorage"
     }
 
     "Shift+Cmd+D" {
