@@ -1128,12 +1128,26 @@
         "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
     },
     {
+        "key": "cmd+k shift+cmd+r",
+        "command": "workbench.action.remote.showMenu",
+        "when": "isMac"
+    },
+    {
         "key": "ctrl+k ctrl+shift+r",
+        "command": "workbench.action.remote.showMenu",
+        "when": "!isMac"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "-workbench.action.remote.showMenu"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+p",
         "command": "~remote.forwardedPortsContainer",
         "when": "!isMac"
     },
     {
-        "key": "cmd+k shift+cmd+r",
+        "key": "cmd+k shift+cmd+p",
         "command": "~remote.forwardedPortsContainer",
         "when": "isMac"
     },
