@@ -2274,27 +2274,13 @@
     // sandcastle.vscode-open
     //
     {
-        "key": "ctrl+cmd+o",
-        "command": "extension.open",
-        "when": "isMac"
-    },
-    {
         "key": "alt+cmd+o",
-        "command": "-extension.open"
+        "command": "-workbench.action.files.openFileWithDefaultApplication"
     },
     {
-        "key": "cmd+k alt+cmd+o",
-        "command": "extension.open",
+        "key": "ctrl+cmd+o",
+        "command": "workbench.action.files.openFileWithDefaultApplication",
         "when": "isMac"
-    },
-    {
-        "key": "ctrl+alt+o",
-        "command": "-extension.open"
-    },
-    {
-        "key": "ctrl+k ctrl+alt+o",
-        "command": "extension.open",
-        "when": "!isMac"
     },
     //
     // Reopen Editor
