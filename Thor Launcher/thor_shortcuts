@@ -5,6 +5,11 @@
     "shortcut" : "ctrl+alt+cmd+escape"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/OneDrive.app\/",
+    "appDisplayName" : "OneDrive",
+    "shortcut" : "ctrl+alt+cmd+1"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/FileZilla.app\/",
     "appDisplayName" : "FileZilla",
     "shortcut" : "ctrl+alt+cmd+2"
