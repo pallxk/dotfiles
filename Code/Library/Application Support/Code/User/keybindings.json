@@ -2039,25 +2039,25 @@
         "when": "isMac"
     },
     {
-        "key": "alt+b",
+        "key": "ctrl+alt+b",
         "command": "gitlens.toggleFileBlame",
         "when": "editorFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
     },
     {
-        "key": "alt+d",
+        "key": "ctrl+alt+d",
         "command": "gitlens.toggleFileChanges"
     },
     {
-        "key": "alt+m",
+        "key": "ctrl+alt+m",
         "command": "gitlens.toggleFileHeatmap"
     },
     {
-        "key": "alt+r",
+        "key": "ctrl+alt+r",
         "command": "gitlens.openRevisionFile",
         "when": "gitlens:activeFileStatus =~ /revision/"
     },
     {
-        "key": "alt+r",
+        "key": "ctrl+alt+r",
         "command": "gitlens.openFileRevision",
         "when": "!(gitlens:activeFileStatus =~ /revision/)"
     },
