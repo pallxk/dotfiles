@@ -147,6 +147,11 @@
         "when": "isMac && textInputFocus"
     },
     {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "isMac && textInputFocus"
+    },
+    {
         "key": "ctrl+shift+p",
         "command": "cursorUpSelect",
         "when": "isMac && textInputFocus"
