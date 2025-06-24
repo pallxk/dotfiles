@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rsync \
+  -aLv \
+  --ignore-errors \
+  ~/Library/Application\ Support/Stash/Documents/local/. \
+  ~/Library/Mobile\ Documents/iCloud~ws~stash~icloud/Documents/
