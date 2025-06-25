@@ -170,8 +170,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+o"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Photos.app\/",
-    "appDisplayName" : "Photos",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Photos.app\/",
+    "appDisplayName" : "Google Photos",
     "shortcut" : "ctrl+alt+cmd+p"
   },
   {
