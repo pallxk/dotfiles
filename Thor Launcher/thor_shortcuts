@@ -130,14 +130,9 @@
     "shortcut" : "ctrl+alt+cmd+f"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Genymotion.app\/Contents\/MacOS\/player.app\/",
-    "appDisplayName" : "player",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Gmail.app\/",
+    "appDisplayName" : "Gmail",
     "shortcut" : "ctrl+alt+cmd+g"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Genymotion.app\/",
-    "appDisplayName" : "Genymotion",
-    "shortcut" : "shift+ctrl+alt+cmd+g"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
