@@ -135,8 +135,8 @@
     "shortcut" : "ctrl+alt+cmd+g"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
-    "appDisplayName" : "Calendar",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Calendar.app\/",
+    "appDisplayName" : "Google Calendar",
     "shortcut" : "ctrl+alt+cmd+i"
   },
   {
