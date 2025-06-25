@@ -150,8 +150,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+i"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Marta.app\/",
-    "appDisplayName" : "Marta",
+    "appBundleURL" : "file:\/\/\/System\/Library\/CoreServices\/Finder.app\/",
+    "appDisplayName" : "Finder",
     "shortcut" : "shift+alt+m"
   },
   {
