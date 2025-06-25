@@ -85,13 +85,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "appDisplayName" : "Microsoft Edge",
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
-    "appDisplayName" : "Google Chrome",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
+    "appDisplayName" : "Microsoft Edge",
     "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
