@@ -180,8 +180,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+p"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/",
-    "appDisplayName" : "Notes",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Keep.app\/",
+    "appDisplayName" : "Google Keep",
     "shortcut" : "ctrl+alt+cmd+q"
   },
   {
