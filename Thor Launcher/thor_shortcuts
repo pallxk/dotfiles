@@ -160,6 +160,11 @@
     "shortcut" : "ctrl+alt+cmd+m"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/wechatwebdevtools.app\/",
+    "appDisplayName" : "Wechat Devtools",
+    "shortcut" : "shift+ctrl+alt+cmd+m"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/TencentMeeting.app\/",
     "appDisplayName" : "TencentMeeting",
     "shortcut" : "ctrl+cmd+m"
@@ -233,11 +238,6 @@
     "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
     "appDisplayName" : "Visual Studio Code - Insiders",
     "shortcut" : "shift+ctrl+alt+cmd+v"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/wechatwebdevtools.app\/",
-    "appDisplayName" : "Wechat Devtools",
-    "shortcut" : "ctrl+alt+cmd+w"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/",
