@@ -270,22 +270,12 @@
     {
         "key": "ctrl+alt+t",
         "command": "timeline.focus",
-        "when": "!isMac && focusedView != 'timeline'"
+        "when": "focusedView != 'timeline'"
     },
     {
         "key": "ctrl+alt+t",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "!isMac && focusedView == 'timeline'"
-    },
-    {
-        "key": "ctrl+cmd+t",
-        "command": "timeline.focus",
-        "when": "isMac && focusedView != 'timeline'"
-    },
-    {
-        "key": "ctrl+cmd+t",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "isMac && focusedView == 'timeline'"
+        "when": "focusedView == 'timeline'"
     },
     {
         "key": "ctrl+alt+l",
