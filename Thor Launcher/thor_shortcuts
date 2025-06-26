@@ -200,13 +200,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+r"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
-    "appDisplayName" : "Safari",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
+    "appDisplayName" : "Messages",
     "shortcut" : "ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Xcode.app\/Contents\/Developer\/Applications\/Simulator.app\/",
-    "appDisplayName" : "Simulator",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Messages.app\/",
+    "appDisplayName" : "Messages",
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
