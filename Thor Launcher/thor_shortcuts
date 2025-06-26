@@ -120,13 +120,13 @@
     "shortcut" : "ctrl+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Mail.app\/",
-    "appDisplayName" : "Mail",
+    "appBundleURL" : "file:\/\/\/Applications\/Cursor.app\/",
+    "appDisplayName" : "Cursor",
     "shortcut" : "ctrl+alt+cmd+e"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/elasticvue.app\/",
-    "appDisplayName" : "elasticvue",
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
+    "appDisplayName" : "Visual Studio Code",
     "shortcut" : "shift+ctrl+alt+cmd+e"
   },
   {
