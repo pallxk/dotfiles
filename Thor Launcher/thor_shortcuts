@@ -162,7 +162,7 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/TencentMeeting.app\/",
     "appDisplayName" : "TencentMeeting",
-    "shortcut" : "shift+ctrl+alt+cmd+m"
+    "shortcut" : "ctrl+cmd+m"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
