@@ -90,8 +90,8 @@
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
-    "appDisplayName" : "Microsoft Edge",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
+    "appDisplayName" : "Safari",
     "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
