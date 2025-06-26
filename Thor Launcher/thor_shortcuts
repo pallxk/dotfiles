@@ -115,6 +115,11 @@
     "shortcut" : "shift+ctrl+alt+cmd+d"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/DingTalk.app\/",
+    "appDisplayName" : "DingTalk",
+    "shortcut" : "ctrl+cmd+d"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Mail.app\/",
     "appDisplayName" : "Mail",
     "shortcut" : "ctrl+alt+cmd+e"
@@ -208,11 +213,6 @@
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
     "appDisplayName" : "Microsoft Teams",
     "shortcut" : "ctrl+alt+cmd+t"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/DingTalk.app\/",
-    "appDisplayName" : "DingTalk",
-    "shortcut" : "shift+ctrl+alt+cmd+t"
   },
   {
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/jq%20playground.app\/",
