@@ -212,7 +212,7 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Teams.app\/",
     "appDisplayName" : "Microsoft Teams",
-    "shortcut" : "ctrl+alt+cmd+t"
+    "shortcut" : "ctrl+cmd+t"
   },
   {
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/jq%20playground.app\/",
