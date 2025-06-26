@@ -232,12 +232,7 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Windsurf.app\/",
     "appDisplayName" : "Windsurf",
-    "shortcut" : "ctrl+alt+cmd+v"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code%20-%20Insiders.app\/",
-    "appDisplayName" : "Visual Studio Code - Insiders",
-    "shortcut" : "shift+ctrl+alt+cmd+v"
+    "shortcut" : "ctrl+alt+cmd+w"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Word.app\/",
