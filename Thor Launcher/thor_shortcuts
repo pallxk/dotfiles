@@ -95,13 +95,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Cursor.app\/",
-    "appDisplayName" : "Cursor",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Contacts.app\/",
+    "appDisplayName" : "Google Contacts",
     "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
-    "appDisplayName" : "Visual Studio Code",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
+    "appDisplayName" : "Contacts",
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
@@ -273,11 +273,6 @@
     "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
     "appDisplayName" : "Messages",
     "shortcut" : "ctrl+alt+cmd+z"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
-    "appDisplayName" : "Contacts",
-    "shortcut" : "shift+ctrl+alt+cmd+z"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Surge.app\/Contents\/Applications\/Surge%20Dashboard.app\/",
