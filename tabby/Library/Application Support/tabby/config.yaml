@@ -1,11 +1,19 @@
 version: 7
-profiles: []
+profiles:
+  - type: local
+    name: bash
+    options:
+      command: /opt/homebrew/bin/bash
+      env: {}
+      args:
+        - '-l'
+    icon: fas fa-terminal
+    id: local:custom:bash:b8eea9fc-626b-4eee-9afa-0b37a9dcd13d
 groups: []
 configSync:
   parts: {}
 hotkeys:
-  toggle-window:
-    - Ctrl-Space
+  toggle-window: []
   copy-current-path: []
   ctrl-c:
     - Ctrl-C
@@ -196,11 +204,43 @@ terminal:
       - '#ddaaff'
       - '#b7fff9'
       - '#ffffff'
+  customColorSchemes: []
+  lightColorScheme:
+    name: Tabby Default Light
+    foreground: '#4d4d4c'
+    background: '#ffffff'
+    cursor: '#4d4d4c'
+    colors:
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+  altIsMeta: true
+  profile: local:custom:bash:b8eea9fc-626b-4eee-9afa-0b37a9dcd13d
 ssh: {}
 clickableLinks: {}
 accessibility: {}
-appearance: {}
+appearance:
+  colorSchemeMode: auto
 hacks: {}
 providerBlacklist: []
 commandBlacklist: []
 enableWelcomeTab: false
+pluginBlacklist: []
+enableAnalytics: false
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+profileBlacklist: []
