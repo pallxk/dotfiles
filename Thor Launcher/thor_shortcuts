@@ -10,6 +10,11 @@
     "shortcut" : "ctrl+alt+cmd+1"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Drive.app\/",
+    "appDisplayName" : "Google Drive",
+    "shortcut" : "shift+ctrl+alt+cmd+1"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/FileZilla.app\/",
     "appDisplayName" : "FileZilla",
     "shortcut" : "ctrl+alt+cmd+2"
@@ -22,7 +27,22 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Wireshark.app\/",
     "appDisplayName" : "Wireshark",
+    "shortcut" : "ctrl+alt+cmd+3"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Proxyman.app\/",
+    "appDisplayName" : "Proxyman",
     "shortcut" : "ctrl+alt+cmd+4"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Reqable.app\/",
+    "appDisplayName" : "Reqable",
+    "shortcut" : "shift+ctrl+alt+cmd+4"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Charles.app\/",
+    "appDisplayName" : "Charles",
+    "shortcut" : "ctrl+alt+cmd+5"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Insomnia.app\/",
@@ -32,16 +52,11 @@
   {
     "appBundleURL" : "file:\/\/\/Applications\/Postman.app\/",
     "appDisplayName" : "Postman",
-    "shortcut" : "shift+ctrl+alt+cmd+6"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Proxyman.app\/",
-    "appDisplayName" : "Proxyman",
     "shortcut" : "ctrl+alt+cmd+7"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Charles.app\/",
-    "appDisplayName" : "Charles",
+    "appBundleURL" : "file:\/\/\/Applications\/HTTPie.app\/",
+    "appDisplayName" : "HTTPie",
     "shortcut" : "shift+ctrl+alt+cmd+7"
   },
   {
@@ -50,18 +65,13 @@
     "shortcut" : "ctrl+alt+cmd+8"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Lens.app\/",
-    "appDisplayName" : "Lens",
-    "shortcut" : "shift+ctrl+alt+cmd+8"
+    "appBundleURL" : "file:\/\/\/Applications\/Docker.app\/",
+    "appDisplayName" : "Docker",
+    "shortcut" : "ctrl+alt+cmd+9"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/OrbStack.app\/",
     "appDisplayName" : "OrbStack",
-    "shortcut" : "ctrl+alt+cmd+9"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Podman%20Desktop.app\/",
-    "appDisplayName" : "Podman Desktop",
     "shortcut" : "shift+ctrl+alt+cmd+9"
   },
   {
@@ -90,18 +100,13 @@
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
-    "appDisplayName" : "Safari",
-    "shortcut" : "shift+ctrl+alt+cmd+b"
+    "appBundleURL" : "file:\/\/\/Applications\/Cursor.app\/",
+    "appDisplayName" : "Cursor",
+    "shortcut" : "ctrl+alt+cmd+c"
   },
   {
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Contacts.app\/",
     "appDisplayName" : "Google Contacts",
-    "shortcut" : "ctrl+alt+cmd+c"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Contacts.app\/",
-    "appDisplayName" : "Contacts",
     "shortcut" : "shift+ctrl+alt+cmd+c"
   },
   {
@@ -120,14 +125,9 @@
     "shortcut" : "ctrl+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Cursor.app\/",
-    "appDisplayName" : "Cursor",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Edge.app\/",
+    "appDisplayName" : "Microsoft Edge",
     "shortcut" : "ctrl+alt+cmd+e"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
-    "appDisplayName" : "Visual Studio Code",
-    "shortcut" : "shift+ctrl+alt+cmd+e"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
@@ -140,13 +140,13 @@
     "shortcut" : "ctrl+alt+cmd+g"
   },
   {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Calendar.app\/",
-    "appDisplayName" : "Google Calendar",
+    "appBundleURL" : "file:\/\/\/Applications\/Island.app\/",
+    "appDisplayName" : "Island",
     "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
-    "appDisplayName" : "iPhone Mirroring",
+    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Calendar.app\/",
+    "appDisplayName" : "Google Calendar",
     "shortcut" : "shift+ctrl+alt+cmd+i"
   },
   {
@@ -170,14 +170,9 @@
     "shortcut" : "ctrl+cmd+m"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Outlook.app\/",
-    "appDisplayName" : "Outlook",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20Outlook.app\/",
+    "appDisplayName" : "Microsoft Outlook",
     "shortcut" : "ctrl+alt+cmd+o"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications%20(Parallels)\/%7B18bce927-e519-4196-9ef9-3059a7930a6d%7D%20Applications.localized\/Outlook%20(new).app\/",
-    "appDisplayName" : "Outlook (new)",
-    "shortcut" : "shift+ctrl+alt+cmd+o"
   },
   {
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Photos.app\/",
@@ -195,22 +190,22 @@
     "shortcut" : "ctrl+alt+cmd+q"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
-    "appDisplayName" : "Reminders",
+    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20To%20Do.app\/",
+    "appDisplayName" : "Microsoft To Do",
     "shortcut" : "ctrl+alt+cmd+r"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20To%20Do.app\/",
-    "appDisplayName" : "Microsoft To Do",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
+    "appDisplayName" : "Reminders",
     "shortcut" : "shift+ctrl+alt+cmd+r"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
-    "appDisplayName" : "Messages",
+    "appBundleURL" : "file:\/\/\/System\/Volumes\/Preboot\/Cryptexes\/App\/System\/Applications\/Safari.app\/",
+    "appDisplayName" : "Safari",
     "shortcut" : "ctrl+alt+cmd+s"
   },
   {
-    "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Messages.app\/",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
     "appDisplayName" : "Messages",
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
@@ -228,6 +223,11 @@
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calculator.app\/",
     "appDisplayName" : "Calculator",
     "shortcut" : "ctrl+alt+cmd+u"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
+    "appDisplayName" : "Visual Studio Code",
+    "shortcut" : "ctrl+alt+cmd+v"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Windsurf.app\/",
@@ -265,8 +265,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+y"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
-    "appDisplayName" : "Messages",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/iPhone%20Mirroring.app\/",
+    "appDisplayName" : "iPhone Mirroring",
     "shortcut" : "ctrl+alt+cmd+z"
   },
   {
@@ -300,6 +300,11 @@
     "shortcut" : "ctrl+alt+cmd+["
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Remote%20Desktop.app\/",
+    "appDisplayName" : "Remote Desktop",
+    "shortcut" : "shift+ctrl+alt+cmd+["
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Windows%20App.app\/",
     "appDisplayName" : "Windows App",
     "shortcut" : "ctrl+alt+cmd+]"
@@ -315,6 +320,16 @@
     "shortcut" : "shift+ctrl+alt+cmd+\\"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Tabby.app\/",
+    "appDisplayName" : "Tabby",
+    "shortcut" : "ctrl+alt+cmd+return"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Termius.app\/",
+    "appDisplayName" : "Termius",
+    "shortcut" : "shift+ctrl+alt+cmd+return"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
     "appDisplayName" : "Music",
     "shortcut" : "shift+ctrl+alt+cmd+,"
@@ -323,15 +338,5 @@
     "appBundleURL" : "file:\/\/\/Applications\/NeteaseMusic.app\/",
     "appDisplayName" : "NetEaseMusic",
     "shortcut" : "shift+ctrl+alt+cmd+."
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Ghostty.app\/",
-    "appDisplayName" : "Ghostty",
-    "shortcut" : "ctrl+alt+cmd+return"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Termius.app\/",
-    "appDisplayName" : "Termius",
-    "shortcut" : "shift+ctrl+alt+cmd+return"
   }
 ]
