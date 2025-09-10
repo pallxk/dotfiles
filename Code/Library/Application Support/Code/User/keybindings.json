@@ -237,6 +237,17 @@
         "when": "isMac"
     },
     //
+    // Window
+    //
+    {
+        "key": "alt+w",
+        "command": "workbench.action.switchWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+    //
     // List
     //
     {
