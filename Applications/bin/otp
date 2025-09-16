@@ -35,9 +35,11 @@ if [ "$type" = totp ]; then
   secret=$(jq -r .secret <<< "$otp")
   digits=$(jq -r ".digits // 6" <<< "$otp")
   period=$(jq -r ".period // 30" <<< "$otp")
+  encoding=$(jq -r 'if .encoding == "hex" then "" else "--base32" end' <<< "$otp")
+  mode=$(jq -r '.mode // "SHA1"' <<< "$otp")
 
   # Calc OTP
-  otp=$(echo "$secret" | oathtool --totp --base32 --digits="$digits" --time-step-size="$period"s "$@" -)
+  otp=$(echo "$secret" | oathtool --totp="$mode" $encoding --digits="$digits" --time-step-size="$period"s "$@" -)
 elif [ "$type" = securid ]; then
   time=$(jq -r '.time // "+0"' <<< "$otp")
   token=$(jq -r .token <<< "$otp")
