@@ -210,6 +210,11 @@
     "shortcut" : "shift+ctrl+alt+cmd+s"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Slack.app\/",
+    "appDisplayName" : "Slack",
+    "shortcut" : "ctrl+cmd+s"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Users\/lxk\/Applications\/Chrome%20Apps.localized\/Google%20Tasks.app\/",
     "appDisplayName" : "Google Tasks",
     "shortcut" : "ctrl+alt+cmd+t"
