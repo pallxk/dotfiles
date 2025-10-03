@@ -325,8 +325,8 @@
     "shortcut" : "shift+ctrl+alt+cmd+\\"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Tabby.app\/",
-    "appDisplayName" : "Tabby",
+    "appBundleURL" : "file:\/\/\/Applications\/rio.app\/",
+    "appDisplayName" : "Rio",
     "shortcut" : "ctrl+alt+cmd+return"
   },
   {
