@@ -22,6 +22,10 @@
 # Example:
 # theme = "dracula"
 
+[adaptive-theme]
+light = "alucard"
+dark = "dracula"
+
 # Padding-x
 #
 # define x axis padding (default is 0)
