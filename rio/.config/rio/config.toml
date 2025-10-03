@@ -43,7 +43,7 @@
 # Possible choices: 'both', 'left' and 'right'.
 #
 # Example:
-# option-as-alt = 'left'
+option-as-alt = 'both'
 
 # Line height
 #
@@ -292,7 +292,11 @@
 #   - (macOS) user login shell
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#
+
+[shell]
+program = "/opt/homebrew/bin/bash"
+args = ["--login"]
+
 # Example 1 using fish shell from bin path:
 #
 # [shell]
