@@ -22,10 +22,6 @@
 # Example:
 # theme = "dracula"
 
-[adaptive-theme]
-light = "alucard"
-dark = "dracula"
-
 # Padding-x
 #
 # define x axis padding (default is 0)
@@ -84,7 +80,11 @@ option-as-alt = 'both'
 # Confirm before exiting Rio
 # Default is `true`
 #
-# confirm-before-quit = false
+confirm-before-quit = false
+
+[adaptive-theme]
+light = "alucard"
+dark = "dracula"
 
 # Cursor
 #
