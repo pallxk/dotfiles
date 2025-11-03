@@ -245,12 +245,22 @@
     // Window
     //
     {
-        "key": "alt+w",
-        "command": "workbench.action.switchWindow"
-    },
-    {
         "key": "ctrl+w",
         "command": "-workbench.action.switchWindow"
+    },
+    {
+        "key": "alt+tab",
+        "command": "workbench.action.quickSwitchWindow"
+    },
+    {
+        "key": "alt+tab",
+        "command": "quickInput.next",
+        "when": "inQuickOpen && inWindowsPicker"
+    },
+    {
+        "key": "alt+shift+tab",
+        "command": "quickInput.previous",
+        "when": "inQuickOpen && inWindowsPicker"
     },
     //
     // List
