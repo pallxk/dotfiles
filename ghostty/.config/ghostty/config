@@ -20,7 +20,7 @@ quick-terminal-autohide = false
 shell-integration-features = no-cursor
 
 # https://iterm2colorschemes.com
-theme = dark:catppuccin-mocha,light:catppuccin-latte
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 
 
 # For default and custom key bindings: `ghostty +list-keybinds`
