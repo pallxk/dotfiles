@@ -384,6 +384,7 @@
     "workbench.action.terminal.newWithCwd",           // ctrl+alt+1-9, required on Linux
     "workbench.action.decreaseViewSize",              // ctrl+alt+-
     "workbench.action.increaseViewSize",              // ctrl+alt+=
+    "workbench.action.quickSwitchWindow",             // opt+tab
     "workbench.files.action.collapseExplorerFolders", // alt+backspace
   ],
   "terminal.integrated.confirmOnKill": "never",
