@@ -315,8 +315,8 @@
     "shortcut" : "ctrl+alt+cmd+]"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/VMware%20Fusion.app\/",
-    "appDisplayName" : "VMware Fusion",
+    "appBundleURL" : "file:\/\/\/Applications\/Parallels%20Desktop.app\/Contents\/MacOS\/Parallels%20Mac%20VM.app\/",
+    "appDisplayName" : "Parallels Mac VM",
     "shortcut" : "ctrl+alt+cmd+\\"
   },
   {
