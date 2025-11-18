@@ -2297,9 +2297,8 @@
         "command": "-workbench.action.files.openFileWithDefaultApplication"
     },
     {
-        "key": "ctrl+cmd+o",
-        "command": "workbench.action.files.openFileWithDefaultApplication",
-        "when": "isMac"
+        "key": "ctrl+alt+o",
+        "command": "workbench.action.files.openFileWithDefaultApplication"
     },
     //
     // Reopen Editor
