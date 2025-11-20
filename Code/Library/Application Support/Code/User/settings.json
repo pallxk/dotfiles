@@ -203,6 +203,7 @@
   "git.detectSubmodules": false,
   "git.ignoreLimitWarning": true,
   "git.mergeEditor": true,
+  "git.openRepositoryInParentFolders": "always",
   "git.repositoryScanMaxDepth": 2,
   "git.untrackedChanges": "separate",
 
