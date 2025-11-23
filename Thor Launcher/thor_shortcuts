@@ -160,11 +160,6 @@
     "shortcut" : "ctrl+alt+cmd+m"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/wechatwebdevtools.app\/",
-    "appDisplayName" : "Wechat Devtools",
-    "shortcut" : "shift+ctrl+alt+cmd+m"
-  },
-  {
     "appBundleURL" : "file:\/\/\/Applications\/TencentMeeting.app\/",
     "appDisplayName" : "TencentMeeting",
     "shortcut" : "ctrl+cmd+m"
@@ -235,8 +230,8 @@
     "shortcut" : "ctrl+alt+cmd+v"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Windsurf.app\/",
-    "appDisplayName" : "Windsurf",
+    "appBundleURL" : "file:\/\/\/Applications\/wechatwebdevtools.app\/",
+    "appDisplayName" : "Wechat Devtools",
     "shortcut" : "ctrl+alt+cmd+w"
   },
   {
