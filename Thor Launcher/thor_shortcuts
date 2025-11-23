@@ -155,9 +155,14 @@
     "shortcut" : "shift+alt+m"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Mail.app\/",
+    "appDisplayName" : "Mail",
+    "shortcut" : "ctrl+alt+cmd+m"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Maps.app\/",
     "appDisplayName" : "Maps",
-    "shortcut" : "ctrl+alt+cmd+m"
+    "shortcut" : "shift+ctrl+alt+cmd+m"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/TencentMeeting.app\/",
