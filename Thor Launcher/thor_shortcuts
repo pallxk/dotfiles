@@ -330,8 +330,8 @@
     "shortcut" : "ctrl+alt+cmd+return"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Termius.app\/",
-    "appDisplayName" : "Termius",
+    "appBundleURL" : "file:\/\/\/Applications\/Ghostty.app\/",
+    "appDisplayName" : "Ghostty",
     "shortcut" : "shift+ctrl+alt+cmd+return"
   },
   {
