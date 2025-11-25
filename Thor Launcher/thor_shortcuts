@@ -190,6 +190,11 @@
     "shortcut" : "ctrl+alt+cmd+q"
   },
   {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Stickies.app\/",
+    "appDisplayName" : "Stickies",
+    "shortcut" : "shift+ctrl+alt+cmd+q"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20To%20Do.app\/",
     "appDisplayName" : "Microsoft To Do",
     "shortcut" : "ctrl+alt+cmd+r"
