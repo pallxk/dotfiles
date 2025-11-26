@@ -17,5 +17,13 @@
 			"path": "/tmp"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"window.title": "📶 ${rootName}${separator}${activeEditorShort}${separator}${profileName}",
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#4f46e5",
+			"titleBar.activeForeground": "#FFFFFF",
+			"titleBar.inactiveBackground": "#4f46e5",
+			"titleBar.inactiveForeground": "#FFFFFF",
+		},
+	}
 }
