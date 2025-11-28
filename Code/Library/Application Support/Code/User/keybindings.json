@@ -152,6 +152,16 @@
         "when": "isMac && textInputFocus"
     },
     {
+        "key": "alt+b",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
         "key": "ctrl+shift+p",
         "command": "cursorUpSelect",
         "when": "isMac && textInputFocus"
