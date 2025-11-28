@@ -455,6 +455,19 @@
         "when": "isMac && explorerViewletFocus"
     },
     //
+    // Casing
+    //
+    {
+        "key": "alt+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    },
+    //
     // Join Lines
     //
     {
