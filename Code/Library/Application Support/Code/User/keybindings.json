@@ -683,7 +683,13 @@
     },
     {
         "key": "alt+j",
-        "command": "workbench.action.toggleMaximizedPanel",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.focusActiveEditorGroup"
+            ]
+        },
         "when": "panelFocus && !mainEditorAreaVisible"
     },
     //
@@ -2205,7 +2211,18 @@
     },
     {
         "key": "alt+cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel"
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "mainEditorAreaVisible"
+    },
+    {
+        "key": "alt+cmd+j",
+        "command": "workbench.action.togglePanel",
+        "when": "!mainEditorAreaVisible"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!mainEditorAreaVisible"
     },
     //
     // Panel - Alignment
