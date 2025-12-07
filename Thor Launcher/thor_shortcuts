@@ -140,6 +140,11 @@
     "shortcut" : "ctrl+alt+cmd+g"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Discord.app\/",
+    "appDisplayName" : "Discord",
+    "shortcut" : "ctrl+cmd+g"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Calendar.app\/",
     "appDisplayName" : "Calendar",
     "shortcut" : "ctrl+alt+cmd+i"
