@@ -200,13 +200,13 @@
     "shortcut" : "shift+ctrl+alt+cmd+q"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Microsoft%20To%20Do.app\/",
-    "appDisplayName" : "Microsoft To Do",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
+    "appDisplayName" : "Reminders",
     "shortcut" : "ctrl+alt+cmd+r"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
-    "appDisplayName" : "Reminders",
+    "appBundleURL" : "file:\/\/\/Applications\/Redis%20Insight.app\/",
+    "appDisplayName" : "Redis Insight",
     "shortcut" : "shift+ctrl+alt+cmd+r"
   },
   {
