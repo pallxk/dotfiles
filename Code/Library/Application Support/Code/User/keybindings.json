@@ -12,6 +12,16 @@
     // Cursor
     //
     {
+        "key": "cmd+e",
+        "command": "-cursor.toggleAgentWindowIDEUnification",
+        "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
+    },
+    {
+        "key": "cmd+e",
+        "command": "cursor.toggleAgentWindowIDEUnification",
+        "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty' && !findWidgetVisible"
+    },
+    {
         "key": "cmd+i",
         "command": "aipopup.action.modal.generate",
         "when": "composerIsEnabled && editorFocus && !composerBarIsVisible"
