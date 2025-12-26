@@ -95,6 +95,11 @@
     "shortcut" : "shift+ctrl+alt+cmd+a"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/WhatsApp.app\/",
+    "appDisplayName" : "WhatsApp",
+    "shortcut" : "ctrl+cmd+a"
+  },
+  {
     "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
     "appDisplayName" : "Google Chrome",
     "shortcut" : "ctrl+alt+cmd+b"
