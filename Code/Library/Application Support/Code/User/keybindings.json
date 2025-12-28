@@ -2146,29 +2146,9 @@
         "when": "!isInDiffEditor && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:tracked'"
     },
     {
-        "key": "alt+,",
-        "command": "gitlens.diffWithPreviousInDiffLeft",
-        "when": "isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:tracked'"
-    },
-    {
-        "key": "alt+,",
-        "command": "gitlens.diffWithPreviousInDiffRight",
-        "when": "isInDiffRightEditor && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:tracked'"
-    },
-    {
         "key": "alt+.",
         "command": "gitlens.diffWithNext",
         "when": "gitlens:enabled && !isInDiffEditor && config.gitlens.keymap == 'alternate' && resourceScheme =~ /^(gitlens|git|pr)$/"
-    },
-    {
-        "key": "alt+.",
-        "command": "gitlens.diffWithNextInDiffLeft",
-        "when": "gitlens:enabled && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && resourceScheme =~ /^(gitlens|git|pr)$/"
-    },
-    {
-        "key": "alt+.",
-        "command": "gitlens.diffWithNextInDiffRight",
-        "when": "gitlens:enabled && isInDiffRightEditor && config.gitlens.keymap == 'alternate' && resourceScheme =~ /^(gitlens|git|pr)$/"
     },
     //
     // emojisense
