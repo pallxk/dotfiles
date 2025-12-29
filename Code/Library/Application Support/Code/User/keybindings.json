@@ -269,6 +269,10 @@
         "command": "-workbench.action.switchWindow"
     },
     {
+        "key": "alt+w",
+        "command": "workbench.action.switchWindow"
+    },
+    {
         "key": "alt+tab",
         "command": "workbench.action.quickSwitchWindow"
     },
