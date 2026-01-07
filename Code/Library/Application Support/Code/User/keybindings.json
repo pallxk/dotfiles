@@ -2195,7 +2195,7 @@
     //
     {
         "key": "ctrl+m",
-        "command": "workbench.action.minimizeOtherEditors"
+        "command": "workbench.action.minimizeOtherEditorsHideSidebar"
     },
     {
         "key": "cmd+j",
