@@ -1,5 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+
   // wwm.better-align
   "alignment.surroundSpace": {
     "arrow": [
@@ -392,9 +396,9 @@
     "workbench.files.action.collapseExplorerFolders", // alt+backspace
   ],
   "terminal.integrated.confirmOnKill": "never",
-  "terminal.integrated.enableBell": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableVisualBell": true,
   "terminal.integrated.fontFamily": "'M PLUS 1 Code', 'mplus Nerd Font Mono', Consolas, 'Courier New', monospace, FontAwesome",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.gpuAcceleration": "canvas",
