@@ -514,6 +514,11 @@
     "https://json.schemastore.org/bamboo-spec.json#/definitions/job": "**/bamboo-specs/**/job**.{yml,yaml}",
     "https://json.schemastore.org/bamboo-spec.json#/definitions/keyValue": "**/bamboo-specs/**/variables**.{yml,yaml}",
     "https://json.schemastore.org/bamboo-spec.json#/definitions/permission": "**/bamboo-specs/**permissions**.{yml,yaml}",
+    "https://raw.githubusercontent.com/harness/harness-schema/main/v1/infra.json": "**/.harness/**/envs/{pre_production,production}/*/infras/*.yaml",
+    "https://raw.githubusercontent.com/harness/harness-schema/main/v1/inputSet.json": "**/.harness/**/pipelines/*/input_sets/*.yaml",
+    "https://raw.githubusercontent.com/harness/harness-schema/main/v1/pipeline.json": "**/.harness/**/pipelines/*.yaml",
+    "https://raw.githubusercontent.com/harness/harness-schema/main/v1/service.json": "**/.harness/**/services/*.yaml",
+    "https://raw.githubusercontent.com/harness/harness-schema/main/v1/template.json": "**/.harness/**/teamplates/*/*.yaml",
   },
 
   "[dockerfile]": {
