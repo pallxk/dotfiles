@@ -2041,11 +2041,6 @@
         "command": "workbench.action.files.openFileFolder",
         "when": "isMacNative && openFolderWorkspaceSupport"
     },
-    {
-        "key": "cmd+k cmd+p",
-        "command": "workbench.action.showAllEditors",
-        "when": "isMac"
-    },
     //
     // DevTools
     //
@@ -3250,6 +3245,14 @@
     {
         "key": "cmd+r cmd+t",
         "command": "-workbench.action.selectTheme"
+    },
+    {
+        "key": "cmd+k cmd+p",
+        "command": "workbench.action.showAllEditors"
+    },
+    {
+        "key": "cmd+r cmd+p",
+        "command": "-workbench.action.showAllEditors"
     },
     {
         "key": "cmd+k cmd+\\",
