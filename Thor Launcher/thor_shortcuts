@@ -65,8 +65,8 @@
     "shortcut" : "ctrl+alt+cmd+8"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Docker.app\/",
-    "appDisplayName" : "Docker",
+    "appBundleURL" : "file:\/\/\/Applications\/Docker.app\/Contents\/MacOS\/Docker Desktop.app\/",
+    "appDisplayName" : "Docker Desktop",
     "shortcut" : "ctrl+alt+cmd+9"
   },
   {
