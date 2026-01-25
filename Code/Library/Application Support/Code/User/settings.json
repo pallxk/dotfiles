@@ -57,6 +57,9 @@
     "*": true
   },
 
+  // Cursor
+  "cursor.cpp.enablePartialAccepts": true,
+
   "debug.confirmOnExit": "always",
   "debug.toolBarLocation": "commandCenter",
 
