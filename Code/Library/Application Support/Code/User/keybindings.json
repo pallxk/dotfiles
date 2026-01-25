@@ -1224,8 +1224,8 @@
         "when": "isMac && filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
-        "key": "alt+;",
-        "command": "revealInExplorer"
+        "key": "shift+alt+cmd+e",
+        "command": "workbench.files.action.showActiveFileInExplorer"
     },
     {
         "key": "alt+shift+;",
