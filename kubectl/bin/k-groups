@@ -1,0 +1,3 @@
+#!/bin/sh
+
+kubectl "$@" auth whoami -o json | jq -r .status.userInfo.groups.[]
