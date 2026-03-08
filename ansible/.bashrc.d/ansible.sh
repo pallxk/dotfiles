@@ -2,6 +2,9 @@
 export ANSIBLE_VAULT_PASSWORD_FILE=~/bin/ansible-vault-password-helper
 export ANSIBLE_VAULT_IDENTITY_LIST=prod@~/bin/ansible-vault-password-helper-prod
 
+# https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/default_callback.html#parameter-result_format
+export ANSIBLE_CALLBACK_RESULT_FORMAT=yaml
+
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#callbacks-enabled
 export ANSIBLE_CALLBACKS_ENABLED=profile_tasks
 
@@ -16,9 +19,6 @@ export ANSIBLE_RETRY_FILES_ENABLED=True
 
 # https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ssh_connection.html#parameter-reconnection_retries
 export ANSIBLE_SSH_RETRIES=2
-
-# https://docs.ansible.com/ansible/latest/reference_appendices/config.html#default-stdout-callback
-export ANSIBLE_STDOUT_CALLBACK=yaml
 
 # https://docs.ansible.com/ansible/latest/reference_appendices/config.html#default-strategy
 # Setting strategy to free will cause error for pause module:
