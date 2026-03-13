@@ -26,5 +26,3 @@ theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 # For default and custom key bindings: `ghostty +list-keybinds`
 
 keybind = global:alt+grave_accent=toggle_quick_terminal
-
-keybind = cmd+f=write_screen_file:open
