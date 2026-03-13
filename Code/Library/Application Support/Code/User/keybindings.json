@@ -14,12 +14,7 @@
     {
         "key": "cmd+e",
         "command": "-cursor.toggleAgentWindowIDEUnification",
-        "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
-    },
-    {
-        "key": "cmd+e",
-        "command": "cursor.toggleAgentWindowIDEUnification",
-        "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty' && !findWidgetVisible"
+        "when": "cursor.agentIdeUnification.featureGate && !isGlass && workbenchState != 'empty'"
     },
     {
         "key": "cmd+i",
@@ -1366,6 +1361,18 @@
         "key": "cmd+d",
         "command": "workbench.action.terminal.split",
         "when": "isMac && terminalFocus && terminalProcessSupported || isMac && terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "cmd+e",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.terminal.copySelection",
+                "workbench.action.terminal.focusFind",
+                "paste",
+            ]
+        },
+        "when": "isMac && terminalFocus"
     },
     {
         "key": "cmd+[",
