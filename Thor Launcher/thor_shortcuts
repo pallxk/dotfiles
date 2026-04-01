@@ -340,14 +340,9 @@
     "shortcut" : "shift+ctrl+alt+cmd+\\"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/rio.app\/",
-    "appDisplayName" : "Rio",
-    "shortcut" : "ctrl+alt+cmd+return"
-  },
-  {
     "appBundleURL" : "file:\/\/\/Applications\/Ghostty.app\/",
     "appDisplayName" : "Ghostty",
-    "shortcut" : "shift+ctrl+alt+cmd+return"
+    "shortcut" : "ctrl+alt+cmd+return"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
