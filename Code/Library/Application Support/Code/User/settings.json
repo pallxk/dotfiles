@@ -482,8 +482,6 @@
   "windsurf.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
 
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.preferredDarkColorTheme": "Default Dark Modern",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
 
   "workbench.activityBar.location": "top",
 
