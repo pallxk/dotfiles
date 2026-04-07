@@ -6,7 +6,7 @@
     {
         "key": "cmd+l",
         "command": "workbench.action.openChat",
-        "when": "!composerIsEnabled"
+        "when": "chatHasCanDelegateProviders"
     },
     //
     // Cursor
