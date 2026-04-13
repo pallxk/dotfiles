@@ -371,7 +371,8 @@
 
   "sqltools.disableChordKeybindings": true,
 
-  "telemetry.telemetryLevel": "error",
+  "telemetry.editStats.enabled": false,
+  "telemetry.telemetryLevel": "off",
 
   "terminal.external.osxExec": "iTerm.app",
 
