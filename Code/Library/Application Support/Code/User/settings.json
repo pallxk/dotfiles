@@ -506,9 +506,6 @@
     "*.xlsx": "gc-excelviewer-excel-editor"
   },
 
-  "workbench.layoutControl.enabled": true,
-  "workbench.layoutControl.type": "both",
-
   "workbench.sideBar.location": "right",
 
   "workbench.list.scrollByPage": true,
