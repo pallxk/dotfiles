@@ -5,8 +5,10 @@ patch:
     ascii_mode: false
   app_options/com.apple.finder:
     ascii_mode: true
-  app_options/com.microsoft.VSCodeInsiders:
-    ascii_mode: true
+  app_options/com.apple.Spotlight:
+    ascii_mode: false
+  app_options/com.microsoft.VSCode:
+    ascii_mode: false
   app_options/com.tencent.xinWeChat:
     ascii_mode: false
   app_options/dev.warp.Warp-Stable:
