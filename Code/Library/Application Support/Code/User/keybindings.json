@@ -1353,6 +1353,11 @@
     // Terminal
     //
     {
+        "key": "alt+escape",
+        "command": "workbench.action.terminal.triggerSuggest",
+        "when": "config.terminal.integrated.suggest.enabled && terminalFocus && terminalProcessSupported && !terminalSuggestWidgetVisible"
+    },
+    {
         "key": "cmd+w",
         "command": "workbench.action.terminal.kill",
         "when": "isMac && focusedView == 'terminal'"
