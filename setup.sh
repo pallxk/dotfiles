@@ -12,6 +12,12 @@ if ! hash stow 2> /dev/null; then
 	fi
 fi
 
+# Clean up pre-installed files
+rm -f \
+	~/.bashrc \
+	~/.vscode-server/data/Machine/settings.json
+
+
 dirname="$(dirname $0)"
 
 
