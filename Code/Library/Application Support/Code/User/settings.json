@@ -224,6 +224,7 @@
   "git.mergeEditor": true,
   "git.openRepositoryInParentFolders": "always",
   "git.repositoryScanMaxDepth": 2,
+  "git.terminalGitEditor": true,
   "git.untrackedChanges": "separate",
 
   "git-graph.maxDepthOfRepoSearch": 2,
