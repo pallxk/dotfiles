@@ -2095,8 +2095,14 @@
         "command": "workbench.scm.history.focus"
     },
     {
+        "key": "ctrl+cmd+g",
+        "command": "git-graph.view",
+        "when": "isMac"
+    },
+    {
         "key": "ctrl+alt+g",
-        "command": "git-graph.view"
+        "command": "git-graph.view",
+        "when": "!isMac"
     },
     //
     // GitLens
