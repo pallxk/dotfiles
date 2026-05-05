@@ -2080,6 +2080,14 @@
         "when": "!isMac && editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
     },
     //
+    // Git
+    //
+    {
+        "key": "cmd+s",
+        "command": "git.commitMessageAccept",
+        "when": "isMac && config.git.enabled && !git.missing && editorLangId == 'git-commit' && gitOpenRepositoryCount != '0'"
+    },
+    //
     // Git Graph
     //
     {
