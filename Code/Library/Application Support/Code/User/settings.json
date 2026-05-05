@@ -72,6 +72,8 @@
 
   "diffEditor.hideUnchangedRegions.enabled": true,
 
+  "dotfiles.repository": "pallxk/dotfiles",
+
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.cursorSurroundingLines": 3,
