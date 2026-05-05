@@ -3,8 +3,13 @@
 
 # Exit if 'stow' not installed
 if ! hash stow 2> /dev/null; then
-	>&2 echo 'stow' not installed. Exiting.
-	exit 1
+	if hash apt-get 2> /dev/null; then
+		apt-get update
+		apt-get install stow
+	else
+		>&2 echo 'stow' not installed. Exiting.
+		exit 1
+	fi
 fi
 
 dirname="$(dirname $0)"
