@@ -63,6 +63,13 @@
   "debug.confirmOnExit": "always",
   "debug.toolBarLocation": "commandCenter",
 
+  "dev.containers.defaultExtensions": [
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries"
+  ],
+
   "diffEditor.codeLens": true,
   "diffEditor.diffAlgorithm": "advanced",
   "diffEditor.ignoreTrimWhitespace": false,
