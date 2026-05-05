@@ -227,7 +227,9 @@
   "git.terminalGitEditor": true,
   "git.untrackedChanges": "separate",
 
+  "git-graph.dialog.rebase.launchInteractiveRebase": true,
   "git-graph.maxDepthOfRepoSearch": 2,
+  "git-graph.openNewTabEditorGroup": "Two",
   "git-graph.openToTheRepoOfTheActiveTextEditorDocument": true,
   "git-graph.repository.commits.showSignatureStatus": true,
   "git-graph.repository.useMailmap": true,
