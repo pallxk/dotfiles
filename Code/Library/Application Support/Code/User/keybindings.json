@@ -2030,6 +2030,18 @@
         "command": "workbench.action.openRemoteSettings",
         "when": "remote.sshContext && !isMac"
     },
+    //
+    // Settings
+    //
+    {
+        "key": "cmd+,",
+        "command": "-aiSettings.action.open",
+        "when": "cursor.cmdCommaOpensCursorSettings"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openWindsurfSettings"
+    },
     {
         "key": "cmd+,",
         "command": "workbench.action.openRemoteSettings",
