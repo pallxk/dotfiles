@@ -117,18 +117,8 @@
     // Cursor
     //
     {
-        "key": "ctrl+home",
-        "command": "cursorTop",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+home",
         "command": "cursorTopSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+end",
-        "command": "cursorBottom",
         "when": "textInputFocus"
     },
     {
@@ -914,6 +904,16 @@
     //
     // editor
     //
+    {
+        "key": "ctrl+pageup",
+        "command": "-scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-scrollLineDown",
+        "when": "textInputFocus"
+    },
     {
         "key": "ctrl+alt+pageup",
         "command": "scrollLineUp",
