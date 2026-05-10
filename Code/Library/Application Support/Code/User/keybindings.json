@@ -137,16 +137,6 @@
         "when": "!isMac"
     },
     {
-        "key": "ctrl+a",
-        "command": "cursorHome",
-        "when": "isMac && textInputFocus"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "cursorEnd",
-        "when": "isMac && textInputFocus"
-    },
-    {
         "key": "alt+b",
         "command": "cursorWordLeft",
         "when": "textInputFocus"
