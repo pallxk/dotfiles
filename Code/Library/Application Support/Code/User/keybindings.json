@@ -2086,7 +2086,13 @@
     //
     {
         "key": "cmd+s",
-        "command": "git.commitMessageAccept",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.files.save",
+                "git.commitMessageAccept"
+            ]
+        },
         "when": "isMac && config.git.enabled && !git.missing && editorLangId == 'git-commit' && gitOpenRepositoryCount != '0'"
     },
     //
