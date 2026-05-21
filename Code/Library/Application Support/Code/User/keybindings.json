@@ -2095,6 +2095,17 @@
         },
         "when": "isMac && config.git.enabled && !git.missing && editorLangId == 'git-commit' && gitOpenRepositoryCount != '0'"
     },
+    {
+        "key": "cmd+s",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.files.save",
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        "when": "isMac && config.git.enabled && !git.missing && editorLangId == 'diff' && gitOpenRepositoryCount != '0'"
+    },
     //
     // Git Graph
     //
