@@ -1,27 +1,29 @@
 {
-  "activateAllWindows": true,
-  "allowWindowSwitcher": false,
+  "activateAllWindows": false,
+  "allowWindowSwitcher": true,
   "alwaysHideOthers": false,
   "appKeyAssignments": [],
-  "appSort": "name",
+  "appSort": "key",
   "appSortReverse": false,
   "appSwitcherFeatures": 38,
-  "appSwitcherUseNumbersForWindows": false,
+  "appSwitcherUseNumbersForWindows": true,
   "enableAssignHotkey": true,
   "enableCycleHotkey": true,
-  "enableHideOnFocusHotkey": false,
+  "enableHideOnFocusHotkey": true,
   "enableStaticCycle": false,
   "fnWindowSwitching": false,
   "focusOnKeyUp": false,
   "hideOnlyFocusedAppOnMinus": false,
   "hideStaticSettings": false,
   "ignoredApps": [],
-  "ignoredKeys": [],
-  "keyTapThreshold": 0.14,
+  "ignoredKeys": [
+    "k"
+  ],
+  "keyTapThreshold": 0.01,
   "minimizeKey": "minus",
   "minimizeOnlyFocusedWindowOnMinus": true,
   "notificationsPermissionsGranted": false,
-  "showAppSwitcher": false,
+  "showAppSwitcher": true,
   "showWindowSwitcher": true,
   "specialKey": "equal",
   "switcherScreenPlacement": 1,
@@ -77,12 +79,12 @@
     }
   ],
   "windowOnlySwitchOSDDelay": 0,
-  "windowSwitchOSDDelay": 350,
-  "windowSwitcherAppearance": "comfortable",
+  "windowSwitchOSDDelay": 0,
+  "windowSwitcherAppearance": "clean",
   "windowSwitcherDimFocused": false,
   "windowSwitcherFeatures": 57,
   "windowTriggerKeys": [
     5
   ],
-  "zeroAsLastFocusedWindow": false
+  "zeroAsLastFocusedWindow": true
 }
