@@ -1,0 +1,69 @@
+# rcmd configuration file
+# Edit this file to customise rcmd's behaviour. Changes are picked up within a few seconds.
+# Full settings reference: run `rcmd config help`
+appKeyAssignments: {}
+appSwitcher:
+  showAppSwitcher: true
+  appSwitcherOSDDelay: 0
+  appSwitcherFeatures: [runningApps, launchableApps, bottomActions]
+  switcherScreenPlacement: {position: bottomRight, offsetX: 0, offsetY: 0}
+  osdSize: {width: 400, height: 600}
+  actionKeys: {hideKey: minus, actionKey: equal, exposeKey: section, enableHideAndActionKeys: true}
+  hideOnlyFocusedAppOnMinus: false
+  appSort: key
+  appSortReverse: false
+appsWhereRcmdIsPaused: []
+general: {whenAlreadyFocusedAction: Hide, focusBehaviour: mainWindow, focusOnKeyUp: false, fuzzySearch: true, showMenubarAppsInSearch: true, hidePerAppSettings: false}
+ignoredApps: []
+ignoredKeys: [k]
+spaces: {spaceMode: multi, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
+stageSwitcher:
+  stageTriggerKeys: [capsLock]
+  actionKeys: {stageAssignKey: equal, stageCloseKey: minus, stageRepositionKey: section, stageCloseAction: close}
+  stageReopenClosedItems: true
+  stageSwitcherOSDDelay: 80
+  showStageSwitcher: true
+  stageSwitcherPlacement: {mirrorAppSwitcher: true}
+stages: []
+tabCycle:
+  enableTabCycle: true
+  tabCycleScope: auto
+  tabCycleSearchScope: allWindows
+  tabCycleInclude: [hidden]
+  tabCycleFocusOnKeyUp: false
+  hijackCommandTab: false
+  windowCycleKey: grave
+  enableWindowCycleKey: true
+  hijackWindowCycleHotkey: true
+triggers:
+  triggerKeys: [rcmd]
+  windowTriggerKeys: [ralt]
+  assignKeyTriggerKeys: [rcmd, ralt]
+  hideOnFocusTriggerKeys: [rcmd, lshift]
+  enableAssignHotkey: true
+  enableHideOthersHotkey: true
+  alwaysHideOthers: false
+windowKeyAssignments: {}
+windowKeyPatterns:
+  - {id: com.sublimetext.4, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.sublimetext.3, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.sublimetext.2, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.sublimetext., pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.visualstudio.code.oss, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.visualstudio.code, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.microsoft.VSCodiumInsiders, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.microsoft.VSCode, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.microsoft.VSCodeInsiders, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.microsoft.VSCod, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.qoder.ide, pattern: ".* — [^\\w\\d]*(.)"}
+  - {id: com.todesktop., pattern: ".* — [^\\w\\d]*(.)"}
+windowSwitcher:
+  showWindowSwitcher: true
+  windowSwitcherOSDDelay: 0
+  windowSwitcherAppearance: clean
+  windowSwitcherFeatures: [lastWindow, windows, windowActions, bottomActions]
+  windowSwitcherDimFocused: false
+  windowSwitcherPlacement: {mirrorAppSwitcher: true}
+  osdSize: {width: 480, height: 420}
+  actionKeys: {windowMinimizeKey: minus, windowAssignKey: equal, enableWindowMinimizeAndAssignKeys: true}
+  minimizeOnlyFocusedWindowOnMinus: true
