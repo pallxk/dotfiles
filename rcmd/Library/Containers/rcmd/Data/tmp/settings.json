@@ -74,6 +74,10 @@
       "pattern": ".* — [^\\w\\d]*(.)"
     },
     {
+      "id": "com.qoder.ide",
+      "pattern": ".* — [^\\w\\d]*(.)"
+    },
+    {
       "id": "com.todesktop.",
       "pattern": ".* — [^\\w\\d]*(.)"
     }
