@@ -14,7 +14,7 @@
     {
         "key": "cmd+e",
         "command": "-cursor.toggleAgentWindowIDEUnification",
-        "when": "cursor.agentIdeUnification.featureGate && !isGlass && workbenchState != 'empty'"
+        "when": "!isGlass && workbenchState != 'empty'"
     },
     {
         "key": "cmd+i",
