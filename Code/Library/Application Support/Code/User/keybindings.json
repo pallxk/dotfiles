@@ -2139,16 +2139,16 @@
         "when": "isMac"
     },
     {
-        "key": "ctrl+alt+b",
+        "key": "ctrl+cmd+b",
         "command": "gitlens.toggleFileBlame",
         "when": "editorFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
     },
     {
-        "key": "ctrl+alt+d",
+        "key": "ctrl+cmd+c",
         "command": "gitlens.toggleFileChanges"
     },
     {
-        "key": "ctrl+alt+m",
+        "key": "ctrl+cmd+h",
         "command": "gitlens.toggleFileHeatmap"
     },
     {
