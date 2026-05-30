@@ -1184,17 +1184,21 @@
         "when": "isMac && !inSearchEditor && !vscodeKubernetesDescribeContext"
     },
     {
-        "key": "cmd+k shift+cmd+r",
+        "key": "cmd+k alt+cmd+o",
         "command": "workbench.action.remote.showMenu",
         "when": "isMac"
     },
     {
-        "key": "ctrl+k ctrl+shift+r",
+        "key": "alt+cmd+o",
+        "command": "-workbench.action.remote.showMenu"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+o",
         "command": "workbench.action.remote.showMenu",
         "when": "!isMac"
     },
     {
-        "key": "alt+cmd+o",
+        "key": "ctrl+alt+o",
         "command": "-workbench.action.remote.showMenu"
     },
     {
