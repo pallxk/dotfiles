@@ -2375,7 +2375,7 @@
         "command": "-workbench.action.files.openFileWithDefaultApplication"
     },
     {
-        "key": "ctrl+alt+o",
+        "key": "ctrl+cmd+o",
         "command": "workbench.action.files.openFileWithDefaultApplication"
     },
     //
