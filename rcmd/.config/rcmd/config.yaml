@@ -7,7 +7,7 @@ appSwitcher:
   appSwitcherOSDDelay: 0
   appSwitcherFeatures: [runningApps, launchableApps, bottomActions]
   switcherScreenPlacement: {position: bottomRight, offsetX: 0, offsetY: 0}
-  osdSize: {width: 400, height: 600}
+  osdSize: {width: 360, height: 680}
   actionKeys: {hideKey: minus, actionKey: equal, exposeKey: section, enableHideAndActionKeys: true}
   hideOnlyFocusedAppOnMinus: false
   appSort: key
@@ -15,7 +15,7 @@ appSwitcher:
 appsWhereRcmdIsPaused: []
 general: {whenAlreadyFocusedAction: Hide, focusBehaviour: mainWindow, focusOnKeyUp: false, fuzzySearch: true, showMenubarAppsInSearch: true, hidePerAppSettings: false}
 ignoredApps: []
-ignoredKeys: [k]
+ignoredKeys: []
 spaces: {spaceMode: multi, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
 stageSwitcher:
   stageTriggerKeys: [capsLock]
@@ -34,7 +34,7 @@ tabCycle:
   hijackCommandTab: false
   windowCycleKey: grave
   enableWindowCycleKey: true
-  hijackWindowCycleHotkey: true
+  hijackWindowCycleHotkey: false
 triggers:
   triggerKeys: [rcmd]
   windowTriggerKeys: [ralt]
@@ -61,9 +61,24 @@ windowSwitcher:
   showWindowSwitcher: true
   windowSwitcherOSDDelay: 0
   windowSwitcherAppearance: clean
+  osdLook:
+    density: comfortable
+    backgroundStyle:
+      glass: {opacity: 0e+0}
+    accentColor: system
+    foregroundColor: adaptive
+    keycapColor: adaptive
+    keycapStyle: badge
+    searchBarStyle: glassy
+    cornerRadius: 1.4e+1
+    appIconSize: 3e+1
+    iconStyle: native
+    fontStyle: rounded
+    focusStyle: bar
+  activeThemeID: companion
   windowSwitcherFeatures: [lastWindow, windows, windowActions, bottomActions]
   windowSwitcherDimFocused: false
   windowSwitcherPlacement: {mirrorAppSwitcher: true}
-  osdSize: {width: 480, height: 420}
+  osdSize: {width: 360, height: 680}
   actionKeys: {windowMinimizeKey: minus, windowAssignKey: equal, enableWindowMinimizeAndAssignKeys: true}
   minimizeOnlyFocusedWindowOnMinus: true
