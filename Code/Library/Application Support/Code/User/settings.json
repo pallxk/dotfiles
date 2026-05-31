@@ -293,6 +293,9 @@
   // Draw.io Integration
   "hediet.vscode-drawio.appearance": "automatic",
 
+  // HTTP
+  "http.useLocalProxyConfiguration": false,
+
   // Java
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.implementationsCodeLens.enabled": true,
