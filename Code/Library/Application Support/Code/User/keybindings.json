@@ -599,22 +599,22 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+j",
+        "key": "ctrl+alt+l",
         "command": "editor.action.smartSelect.expand",
         "when": "!isMac && editorTextFocus"
     },
     {
-        "key": "ctrl+cmd+j",
+        "key": "ctrl+shift+l",
         "command": "editor.action.smartSelect.expand",
         "when": "isMac && editorTextFocus"
     },
     {
-        "key": "ctrl+alt+k",
+        "key": "ctrl+alt+h",
         "command": "editor.action.smartSelect.shrink",
         "when": "!isMac && editorTextFocus"
     },
     {
-        "key": "ctrl+cmd+k",
+        "key": "ctrl+shift+h",
         "command": "editor.action.smartSelect.shrink",
         "when": "isMac && editorTextFocus"
     },
