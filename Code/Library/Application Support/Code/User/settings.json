@@ -64,6 +64,7 @@
   "debug.toolBarLocation": "commandCenter",
 
   "dev.containers.defaultExtensions": [
+    "docker.docker",
     "eamodio.gitlens",
     "mhutchie.git-graph",
     "streetsidesoftware.code-spell-checker",
@@ -390,6 +391,15 @@
 
   // For macOS, it's command+k for chords, and does not conflict with ctrl+k in terminal.
   "terminal.integrated.allowChords": false,
+  "terminal.integrated.allowedLinkSchemes": [
+    "docker-desktop",
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders"
+  ],
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.files.newUntitledFile",  // ctrl+n
     "-workbench.action.quickOpen",              // ctrl+p
