@@ -47,6 +47,9 @@ pathmunge () {
 #	test -d "$dir" && pathmunge "$dir"
 #done
 
+# Add cargo bin
+[[ -d ~/.cargo/bin ]] && pathmunge ~/.cargo/bin
+
 # Add dotnet tools
 [[ -d ~/.dotnet/tools ]] && pathmunge ~/.dotnet/tools
 
