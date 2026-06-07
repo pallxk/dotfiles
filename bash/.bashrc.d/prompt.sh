@@ -1,6 +1,13 @@
 # Don't set PS1 for Warp Terminal
 [ "$TERM_PROGRAM" = WarpTerminal ] && return
 
+# Source kube-ps1
+if [ -f /opt/homebrew/Cellar/kube-ps1/*/share/kube-ps1.sh ]; then
+	. /opt/homebrew/Cellar/kube-ps1/*/share/kube-ps1.sh
+else
+	kube_ps1() { :; }
+fi
+
 # Set prompt string
 if [ -z "$PROMPT_COMMAND" ]; then
 	PROMPT_COMMAND=__prompt_command
@@ -113,7 +120,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="${prompt_marker}\n${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
+		PS1="${prompt_marker}\n$(kube_ps1) ${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}${time}${code}\n${sign} ${cmd}"
 	else
 		username='\u'
 		     pwd='\w'
@@ -145,7 +152,7 @@ __prompt_command () {
 			code=
 		fi
 
-		PS1="${prompt_marker}\n[${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
+		PS1="${prompt_marker}\n$(kube_ps1) [${debian_chroot:+($debian_chroot)}${username}${hostname-} ${pwd}]${time}${code}\n${sign} "
 	fi
 
 	# If this is an xterm set the title to user@host:dir
