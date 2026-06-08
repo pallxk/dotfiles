@@ -167,7 +167,7 @@
     // CSS
     "*.wxss": "css",
     // Dockerfile
-    "Dockerfile_*": "dockerfile",
+    "*Dockerfile*": "dockerfile",
     // i3/sway
     "**/sway/{config,outputs}": "i3",
     "**/sway/**/*.conf": "i3",
@@ -513,8 +513,8 @@
   "workbench.activityBar.location": "top",
 
   "workbench.editor.customLabels.patterns": {
-    "**/Dockerfile": "${dirname}/${filename}",
-    "**/*Dockerfile*": "${dirname}/${filename}.${extname}",
+    "**/*Dockerfile*.*": "${dirname}/${filename}.${extname}",
+    "**/*Dockerfile*": "${dirname}/${filename}",
   },
 
   "workbench.editor.empty.hint": "hidden",
