@@ -183,6 +183,11 @@
         "command": "deleteWordLeft",
         "when": "textInputFocus && !editorReadonly"
     },
+    {
+        "key": "alt+d",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
     //
     // Compare
     //
