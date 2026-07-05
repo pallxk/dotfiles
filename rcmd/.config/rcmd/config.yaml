@@ -4,24 +4,55 @@
 appKeyAssignments: {}
 appSwitcher:
   showAppSwitcher: true
-  appSwitcherOSDDelay: 0
+  appSwitcherOSDDelay: 350
   appSwitcherFeatures: [runningApps, launchableApps, bottomActions]
-  switcherScreenPlacement: {position: bottomRight, offsetX: 0, offsetY: 0}
-  osdSize: {width: 360, height: 680}
+  switcherScreenPlacement: {position: center, offsetX: 0, offsetY: 150}
+  osdSize: {width: 600, height: 550}
   actionKeys: {hideKey: minus, actionKey: equal, exposeKey: section, enableHideAndActionKeys: true}
   hideOnlyFocusedAppOnMinus: false
   appSort: key
   appSortReverse: false
 appsWhereRcmdIsPaused: []
-general: {whenAlreadyFocusedAction: Hide, focusBehaviour: mainWindow, focusOnKeyUp: false, fuzzySearch: true, showMenubarAppsInSearch: true, hidePerAppSettings: false}
+general:
+  whenAlreadyFocusedAction: DoNothing
+  focusBehaviour: mainWindow
+  focusBehaviourSingle: mainWindow
+  focusBehaviourMulti: mainWindow
+  focusOnKeyUp: false
+  activationMode: onPress
+  fuzzySearch: false
+  searchMatchMode: contains
+  searchOptionalPrefixes:
+    - google
+    - microsoft
+    - adobe
+    - apple
+    - amazon
+    - affinity
+    - jetbrains
+    - nvidia
+    - parallels
+    - elgato
+    - logitech
+    - synology
+    - wondershare
+    - the
+    - 4k
+    - 8k
+    - 3d
+  showMenubarAppsInSearch: false
+  enableStickySpaceSearch: true
+  hidePerAppSettings: false
 ignoredApps: []
 ignoredKeys: []
+overrideUserDefaults: false
+searchPins: {}
 spaces: {spaceMode: multi, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
 stageSwitcher:
-  stageTriggerKeys: [capsLock]
-  actionKeys: {stageAssignKey: equal, stageCloseKey: minus, stageRepositionKey: section, stageCloseAction: close}
+  stageTriggerKeys: [fn]
+  actionKeys: {stageAssignKey: equal, stageCloseKey: minus, stageRepositionKey: section, stageCloseAction: moveOffScreen}
   stageReopenClosedItems: true
-  stageSwitcherOSDDelay: 80
+  stageSwitcherOSDDelay: 350
   showStageSwitcher: true
   stageSwitcherPlacement: {mirrorAppSwitcher: true}
 stages: []
@@ -32,6 +63,8 @@ tabCycle:
   tabCycleInclude: [hidden]
   tabCycleFocusOnKeyUp: false
   hijackCommandTab: false
+  stickyAppSwitcher: false
+  stickyAppSwitcherScope: rcmdOnly
   windowCycleKey: grave
   enableWindowCycleKey: true
   hijackWindowCycleHotkey: false
@@ -45,22 +78,33 @@ triggers:
   alwaysHideOthers: false
 windowKeyAssignments: {}
 windowKeyPatterns:
-  - {id: com.sublimetext.4, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.sublimetext.3, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.sublimetext.2, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.sublimetext., pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.visualstudio.code.oss, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.visualstudio.code, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.microsoft.VSCodiumInsiders, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.microsoft.VSCode, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.microsoft.VSCodeInsiders, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.microsoft.VSCod, pattern: ".* — [^\\w\\d]*(.)"}
   - {id: com.qoder.ide, pattern: ".* — [^\\w\\d]*(.)"}
-  - {id: com.todesktop., pattern: ".* — [^\\w\\d]*(.)"}
+windowPatternGroups:
+  - id: code-editors
+    name: Code editor project
+    bundleIDs:
+      - com.microsoft.VSCode
+      - com.microsoft.VSCodeInsiders
+      - com.microsoft.VSCodiumInsiders
+      - com.microsoft.VSCod
+      - com.visualstudio.code
+      - com.visualstudio.code.oss
+      - com.sublimetext.4
+      - com.sublimetext.3
+      - com.sublimetext.2
+      - com.sublimetext.
+      - com.todesktop.
+    keyPattern: ".* — [^\\w\\d]*(.)"
+    titlePattern: ".* — (.+)$"
+  - {id: jetbrains, name: JetBrains IDEs, bundleIDs: [com.jetbrains.], keyPattern: '', titlePattern: "^(.+?)(?: \\[.+\\])? [–—] "}
+  - {id: safari, name: Safari, bundleIDs: [com.apple.Safari], keyPattern: "^.+? — [^\\w\\d]*(.)", titlePattern: "^.+? — (.+)$"}
+  - {id: xcode, name: Xcode, bundleIDs: [com.apple.dt.Xcode], keyPattern: '', titlePattern: "^(.+?) — "}
+  - {id: custom-1, name: Custom patterns 1, bundleIDs: [com.qoder.ide], keyPattern: ".* — [^\\w\\d]*(.)", titlePattern: ''}
 windowSwitcher:
   showWindowSwitcher: true
   windowSwitcherOSDDelay: 0
   windowSwitcherAppearance: clean
+  windowKeyMode: mixed
   osdLook:
     density: comfortable
     backgroundStyle:
@@ -75,10 +119,11 @@ windowSwitcher:
     iconStyle: native
     fontStyle: rounded
     focusStyle: bar
+    rowSeparationStyle: filled
   activeThemeID: companion
   windowSwitcherFeatures: [lastWindow, windows, windowActions, bottomActions]
   windowSwitcherDimFocused: false
   windowSwitcherPlacement: {mirrorAppSwitcher: true}
-  osdSize: {width: 360, height: 680}
+  osdSize: {width: 600, height: 550}
   actionKeys: {windowMinimizeKey: minus, windowAssignKey: equal, enableWindowMinimizeAndAssignKeys: true}
   minimizeOnlyFocusedWindowOnMinus: true
