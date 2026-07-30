@@ -228,10 +228,12 @@
   "git.terminalGitEditor": true,
   "git.untrackedChanges": "separate",
 
+  "git-graph.commitDetailsView.location": "Docked to Bottom",
   "git-graph.dialog.rebase.launchInteractiveRebase": true,
   "git-graph.maxDepthOfRepoSearch": 2,
-  "git-graph.openNewTabEditorGroup": "Two",
+  "git-graph.openNewTabEditorGroup": "Beside",
   "git-graph.openToTheRepoOfTheActiveTextEditorDocument": true,
+  "git-graph.repository.commits.fetchAvatars": true,
   "git-graph.repository.commits.showSignatureStatus": true,
   "git-graph.repository.useMailmap": true,
 
