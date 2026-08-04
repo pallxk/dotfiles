@@ -586,5 +586,9 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
   },
+
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
 }
 // vim:ft=javascript
