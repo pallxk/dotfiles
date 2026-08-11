@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
+# Examples:
+#   gp-socks
+#   gp-socks 1080
+#   gp-socks 1080 10.1.2.3
+#   gp-socks 1080 10.1.2.3 1080
+
 set -euo pipefail
 
 local_port=${1-1080}
 remote_host=${2-}
+remote_port=${3-}
 
 gp() {
 	if [ "$remote_host" ]; then
@@ -15,7 +22,11 @@ gp() {
 
 gp connect
 if [ "$remote_host" ]; then
-	ssh -D "$local_port" -N -v "$remote_host" &
+	if [ "$remote_port" ]; then
+		ncat -lk 127.0.0.1 "$local_port" -c "ncat $remote_host $remote_port" &
+	else
+		ssh -D "$local_port" -N -v "$remote_host" &
+	fi
 else
 	brook socks5 -l 127.0.0.1:"$local_port" &
 fi
