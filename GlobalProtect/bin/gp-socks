@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+local_port=${1-1080}
+remote_host=${2-}
+
+gp() {
+	if [ "$remote_host" ]; then
+		ssh "$remote_host" sh -l -c \" gp "$@" \"
+	else
+		command gp "$@"
+	fi
+}
+
+gp connect
+if [ "$remote_host" ]; then
+	ssh -D "$local_port" -N -v "$remote_host" &
+else
+	brook socks5 -l 127.0.0.1:"$local_port" &
+fi
+trap 'kill -9 %1' SIGINT SIGTERM EXIT
+
+while sleep 60; do
+	status=$(gp status)
+	if [ "$status" = "VPN is not connected." ]; then
+		exit 1
+	fi
+done
