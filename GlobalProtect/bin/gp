@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+connect() {
+	osascript <<EOF
+	tell application "System Events" to tell process "GlobalProtect"
+		click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		set frontmost to true -- keep window 1 active
+		tell window 1
+		-- Find the status
+		tell (first UI element whose title is "Connect") to if exists then set message to "VPN is connecting now..."
+		tell (first UI element whose title is "Disconnect") to if exists then set message to "VPN is connected."
+		-- Click connect button
+		tell (first UI element whose title is "Connect") to if exists then click
+		end tell
+		click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+		return message
+	end tell
+EOF
+}
+
+disconnect() {
+	osascript <<EOF
+	tell application "System Events" to tell process "GlobalProtect"
+		click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		set frontmost to true -- keep window 1 active
+		tell window 1
+		-- Find the status
+		tell (first UI element whose title is "Connect") to if exists then set message to "VPN is not connected."
+		tell (first UI element whose title is "Disconnect") to if exists then set message to "VPN is disconnected now..."
+		-- Click connect button
+		tell (first UI element whose title is "Disconnect") to if exists then click
+		end tell
+		click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+		return message
+	end tell
+EOF
+}
+
+status() {
+	osascript <<EOF
+	tell application "System Events" to tell process "GlobalProtect"
+		click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		set frontmost to true -- keep window 1 active
+		tell window 1
+		-- Find the status
+		tell (first UI element whose title is "Connect") to if exists then set message to "VPN is not connected."
+		tell (first UI element whose title is "Disconnect") to if exists then set message to "VPN is connected."
+		end tell
+		click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+		return message
+	end tell
+EOF
+}
+
+case "${1:-}" in
+	connect) connect ;;
+	disconnect) disconnect ;;
+	status) status ;;
+	*)
+		echo "Usage: gp {connect|disconnect|status}"
+		;;
+esac
