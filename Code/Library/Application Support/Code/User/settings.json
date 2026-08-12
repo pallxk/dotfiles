@@ -545,6 +545,9 @@
     "https://json.schemastore.org/bamboo-spec.json#/definitions/job": "**/bamboo-specs/**/job**.{yml,yaml}",
     "https://json.schemastore.org/bamboo-spec.json#/definitions/keyValue": "**/bamboo-specs/**/variables**.{yml,yaml}",
     "https://json.schemastore.org/bamboo-spec.json#/definitions/permission": "**/bamboo-specs/**permissions**.{yml,yaml}",
+    "https://raw.githubusercontent.com/hairyhenderson/gomplate/main/schema/gomplate-config.json": [
+      ".gomplate.yaml", ".gomplate.yml", "gomplate.yaml", "gomplate.yml"
+    ],
     "https://raw.githubusercontent.com/harness/harness-schema/main/v0/pipeline.json": "**/.harness/**/pipelines/*.yaml",
     "https://raw.githubusercontent.com/harness/harness-schema/main/v0/template.json": "**/.harness/**/templates/*/*.yaml",
     "https://raw.githubusercontent.com/harness/harness-schema/main/v0/trigger.json": "**/.harness/**/pipelines/*/triggers/*.yaml",
