@@ -5,7 +5,7 @@ set -euo pipefail
 connect() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
-		click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
 		set frontmost to true -- keep window 1 active
 		tell window 1
 		-- Find the status
@@ -14,7 +14,7 @@ connect() {
 		-- Click connect button
 		tell (first UI element whose title is "Connect") to if exists then click
 		end tell
-		click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+		if (exists window 1) then click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
 		return message
 	end tell
 EOF
@@ -23,7 +23,7 @@ EOF
 disconnect() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
-		click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
 		set frontmost to true -- keep window 1 active
 		tell window 1
 		-- Find the status
@@ -32,7 +32,7 @@ disconnect() {
 		-- Click connect button
 		tell (first UI element whose title is "Disconnect") to if exists then click
 		end tell
-		click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+		if (exists window 1) then click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
 		return message
 	end tell
 EOF
@@ -41,14 +41,14 @@ EOF
 status() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
-		click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
 		set frontmost to true -- keep window 1 active
 		tell window 1
 		-- Find the status
 		tell (first UI element whose title is "Connect") to if exists then set message to "VPN is not connected."
 		tell (first UI element whose title is "Disconnect") to if exists then set message to "VPN is connected."
 		end tell
-		click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+		if (exists window 1) then click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
 		return message
 	end tell
 EOF
