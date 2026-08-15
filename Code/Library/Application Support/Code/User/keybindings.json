@@ -1225,18 +1225,13 @@
         "when": "isMac && filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
-        "key": "shift+alt+cmd+e",
+        "key": "alt+cmd+;",
         "command": "workbench.files.action.showActiveFileInExplorer"
     },
     {
-        "key": "alt+shift+;",
-        "command": "runCommands",
-        "args": {
-            "commands": [
-                "workbench.view.explorer",
-                "workbench.files.action.collapseExplorerFolders"
-            ]
-        }
+        "key": "alt+cmd+[",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "focusedView == 'workbench.explorer.fileView'"
     },
     {
         "key": "shift+alt+f",
