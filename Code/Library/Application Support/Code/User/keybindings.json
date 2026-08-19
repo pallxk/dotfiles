@@ -2245,22 +2245,9 @@
     // Minimize/Maximize
     //
     {
-        "key": "ctrl+m",
-        "command": "workbench.action.minimizeOtherEditorsHideSidebar"
-    },
-    {
-        "key": "cmd+j",
-        "command": "workbench.action.togglePanel",
-        "when": "panelVisible"
-    },
-    {
-        "key": "cmd+j",
+        "key": "cmd+k cmd+m",
         "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!panelVisible"
-    },
-    {
-        "key": "alt+cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel"
+        "when": "panelFocus"
     },
     //
     // Panel - Alignment
