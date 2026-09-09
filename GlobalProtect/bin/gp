@@ -46,6 +46,30 @@ disconnect() {
 EOF
 }
 
+cancel() {
+	osascript <<EOF
+	tell application "System Events" to tell process "GlobalProtect"
+		if (exists window "GlobalProtect")
+			-- Close the alert popup
+			click (first button of window "GlobalProtect" whose subrole is "AXCloseButton")
+		end if
+		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
+		set frontmost to true -- keep window 1 active
+		if exists (first UI element of window 1 whose name is "Connecting...") then
+			tell window 1
+				click first button whose name is "Global Protect Options Menu"
+				click menu item "Cancel" of menu 1 of button 1
+			end tell
+			delay 1
+			tell window 2
+				click first button whose name is "OK"
+			end tell
+		end if
+		if (exists window 1) then click menu bar item 1 of menu bar 2 -- This will close the GlobalProtect "window" after clicking Connect/Disconnect. This is optional.
+	end tell
+EOF
+}
+
 status() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
@@ -69,8 +93,9 @@ EOF
 case "${1:-}" in
 	connect) connect ;;
 	disconnect) disconnect ;;
+	cancel) cancel ;;
 	status) status ;;
 	*)
-		echo "Usage: gp {connect|disconnect|status}"
+		echo "Usage: gp {connect|disconnect|cancel|status}"
 		;;
 esac
