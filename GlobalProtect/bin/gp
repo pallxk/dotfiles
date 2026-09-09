@@ -5,7 +5,10 @@ set -euo pipefail
 connect() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
-		if (exists window "GlobalProtect") then close window "GlobalProtect" -- Close the alert popup
+		if (exists window "GlobalProtect")
+			-- Close the alert popup
+			click (first button of window "GlobalProtect" whose subrole is "AXCloseButton")
+		end if
 		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
 		set frontmost to true -- keep window 1 active
 		tell window 1
@@ -24,7 +27,10 @@ EOF
 disconnect() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
-		if (exists window "GlobalProtect") then close window "GlobalProtect" -- Close the alert popup
+		if (exists window "GlobalProtect")
+			-- Close the alert popup
+			click (first button of window "GlobalProtect" whose subrole is "AXCloseButton")
+		end if
 		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
 		set frontmost to true -- keep window 1 active
 		tell window 1
@@ -43,7 +49,10 @@ EOF
 status() {
 	osascript <<EOF
 	tell application "System Events" to tell process "GlobalProtect"
-		if (exists window "GlobalProtect") then close window "GlobalProtect" -- Close the alert popup
+		if (exists window "GlobalProtect")
+			-- Close the alert popup
+			click (first button of window "GlobalProtect" whose subrole is "AXCloseButton")
+		end if
 		if not (exists window 1) then click menu bar item 1 of menu bar 2 -- Activates the GlobalProtect "window" in the menubar
 		set frontmost to true -- keep window 1 active
 		tell window 1
