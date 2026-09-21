@@ -137,6 +137,7 @@ windowPatternGroups:
   - com.microsoft.VSCodeInsiders
   - com.microsoft.VSCodiumInsiders
   - com.microsoft.VSCod
+  - com.qoder.ide
   - com.visualstudio.code
   - com.visualstudio.code.oss
   - com.sublimetext.4
@@ -149,13 +150,13 @@ windowPatternGroups:
 - {id: jetbrains, name: JetBrains IDEs, bundleIDs: [com.jetbrains.], keyPattern: '', titlePattern: "^(.+?)(?: \\[.+\\])? [\u2013\u2014] "}
 - {id: safari, name: Safari, bundleIDs: [com.apple.Safari], keyPattern: "^.+? \u2014 [^\\w\\d]*(.)", titlePattern: "^.+? \u2014 (.+)$"}
 - {id: xcode, name: Xcode, bundleIDs: [com.apple.dt.Xcode], keyPattern: '', titlePattern: "^(.+?) \u2014 "}
-- {id: custom-1, name: Custom patterns 1, bundleIDs: [com.qoder.ide], keyPattern: ".* \u2014 [^\\w\\d]*(.)", titlePattern: ''}
 
 windowKeyPatterns:
 - {id: com.microsoft.VSCode, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.microsoft.VSCodeInsiders, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.microsoft.VSCodiumInsiders, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.microsoft.VSCod, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.qoder.ide, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.visualstudio.code, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.visualstudio.code.oss, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.sublimetext.4, pattern: ".* \u2014 [^\\w\\d]*(.)"}
@@ -164,13 +165,13 @@ windowKeyPatterns:
 - {id: com.sublimetext., pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.todesktop., pattern: ".* \u2014 [^\\w\\d]*(.)"}
 - {id: com.apple.Safari, pattern: "^.+? \u2014 [^\\w\\d]*(.)"}
-- {id: com.qoder.ide, pattern: ".* \u2014 [^\\w\\d]*(.)"}
 
 windowTitlePatterns:
 - {id: com.microsoft.VSCode, pattern: ".* \u2014 (.+)$"}
 - {id: com.microsoft.VSCodeInsiders, pattern: ".* \u2014 (.+)$"}
 - {id: com.microsoft.VSCodiumInsiders, pattern: ".* \u2014 (.+)$"}
 - {id: com.microsoft.VSCod, pattern: ".* \u2014 (.+)$"}
+- {id: com.qoder.ide, pattern: ".* \u2014 (.+)$"}
 - {id: com.visualstudio.code, pattern: ".* \u2014 (.+)$"}
 - {id: com.visualstudio.code.oss, pattern: ".* \u2014 (.+)$"}
 - {id: com.sublimetext.4, pattern: ".* \u2014 (.+)$"}
