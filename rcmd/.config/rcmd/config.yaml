@@ -1,121 +1,60 @@
 # rcmd configuration file
 # Edit this file to customise rcmd's behaviour. Changes are picked up within a few seconds.
 # Full settings reference: run `rcmd config help`
+
+# true: settings this file leaves out reset to defaults on every read
+overrideUserDefaults: false
+
+triggers:
+  triggerKeys: [rcmd]
+  windowTriggerKeys: []
+  stageTriggerKeys: [fn]
+  secondTriggerGestures: [doubleTap]
+  enableAssignHotkey: true
+  enableHideOthersHotkey: true
+  assignKeyTriggerKeys: [rcmd, ralt]
+  hideOnFocusTriggerKeys: [rcmd, lshift]
+  alwaysHideOthers: false
+  doubleTapGapMs: 250
+  doubleTapMaxPressMs: 250
+
+# trigger + key → app
 appKeyAssignments: {}
+
+# app → letter → saved window
+windowKeyAssignments: {}
+
+stages: []
+
+# typed query → the app it always opens
+searchPins: {}
+
 appSwitcher:
   showAppSwitcher: true
   appSwitcherOSDDelay: 350
-  appSwitcherFeatures: [runningApps, launchableApps, bottomActions]
+  adaptiveFollowupGraceMs: 150
+  appSwitcherFeatures: [lastWindow, runningApps, launchableApps, bottomActions]
   switcherScreenPlacement: {position: center, offsetX: 0, offsetY: 150}
   osdSize: {width: 600, height: 550}
   actionKeys: {hideKey: minus, actionKey: equal, exposeKey: period, enableHideAndActionKeys: true}
   hideOnlyFocusedAppOnMinus: false
   appSort: key
   appSortReverse: false
-appsWhereRcmdIsPaused: []
-general:
-  whenAlreadyFocusedAction: DoNothing
-  focusBehaviour: mainWindow
-  focusBehaviourSingle: mainWindow
-  focusBehaviourMulti: mainWindow
-  focusOnKeyUp: false
-  activationMode: onPress
-  fuzzySearch: false
-  searchMatchMode: contains
-  searchOptionalPrefixes:
-    - google
-    - microsoft
-    - adobe
-    - apple
-    - amazon
-    - affinity
-    - jetbrains
-    - nvidia
-    - parallels
-    - elgato
-    - logitech
-    - synology
-    - wondershare
-    - the
-    - 4k
-    - 8k
-    - 3d
-  showMenubarAppsInSearch: false
-  enableStickySpaceSearch: true
-  hidePerAppSettings: false
-ignoredApps: []
-ignoredKeys: []
-overrideUserDefaults: false
-searchPins: {}
-spaces: {spaceMode: multi, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
-stageSwitcher:
-  stageTriggerKeys: [fn]
-  actionKeys: {stageAssignKey: equal, stageCloseKey: minus, stageRepositionKey: section, stageCloseAction: moveOffScreen}
-  stageReopenClosedItems: true
-  stageSwitcherOSDDelay: 350
-  showStageSwitcher: true
-  stageSwitcherPlacement: {mirrorAppSwitcher: true}
-stages: []
-tabCycle:
-  enableTabCycle: true
-  tabCycleScope: auto
-  tabCycleSearchScope: allWindows
-  tabCycleInclude: [hidden]
-  tabCycleFocusOnKeyUp: false
-  hijackCommandTab: false
-  stickyAppSwitcher: false
-  stickyAppSwitcherScope: rcmdOnly
-  windowCycleKey: grave
-  enableWindowCycleKey: true
-  hijackWindowCycleHotkey: false
-triggers:
-  triggerKeys: [rcmd]
-  windowTriggerKeys: [ralt]
-  assignKeyTriggerKeys: [rcmd, ralt]
-  hideOnFocusTriggerKeys: [rcmd, lshift]
-  enableAssignHotkey: true
-  enableHideOthersHotkey: true
-  alwaysHideOthers: false
-windowKeyAssignments: {}
-windowKeyPatterns:
-  - {id: com.qoder.ide, pattern: ".* — [^\\w\\d]*(.)"}
-windowPatternGroups:
-  - id: code-editors
-    name: Code editor project
-    bundleIDs:
-      - com.microsoft.VSCode
-      - com.microsoft.VSCodeInsiders
-      - com.microsoft.VSCodiumInsiders
-      - com.microsoft.VSCod
-      - com.visualstudio.code
-      - com.visualstudio.code.oss
-      - com.sublimetext.4
-      - com.sublimetext.3
-      - com.sublimetext.2
-      - com.sublimetext.
-      - com.todesktop.
-    keyPattern: ".* — [^\\w\\d]*(.)"
-    titlePattern: ".* — (.+)$"
-  - {id: jetbrains, name: JetBrains IDEs, bundleIDs: [com.jetbrains.], keyPattern: '', titlePattern: "^(.+?)(?: \\[.+\\])? [–—] "}
-  - {id: safari, name: Safari, bundleIDs: [com.apple.Safari], keyPattern: "^.+? — [^\\w\\d]*(.)", titlePattern: "^.+? — (.+)$"}
-  - {id: xcode, name: Xcode, bundleIDs: [com.apple.dt.Xcode], keyPattern: '', titlePattern: "^(.+?) — "}
-  - {id: custom-1, name: Custom patterns 1, bundleIDs: [com.qoder.ide], keyPattern: ".* — [^\\w\\d]*(.)", titlePattern: ''}
+
 windowSwitcher:
-  showWindowSwitcher: true
   windowSwitcherOSDDelay: 0
   windowSwitcherAppearance: clean
-  windowKeyMode: mixed
   osdLook:
     density: comfortable
     backgroundStyle:
-      glass: {opacity: 0e+0}
+      glass: {opacity: 0}
     accentColor: system
     foregroundColor: adaptive
     keycapColor: adaptive
     keycapStyle: badge
     searchBarStyle: glassy
-    cornerRadius: 1.4e+1
-    appIconSize: 3e+1
+    cornerRadius: 14
+    appIconSize: 30
     iconStyle: native
     fontStyle: rounded
     focusStyle: bar
@@ -127,3 +66,115 @@ windowSwitcher:
   osdSize: {width: 600, height: 550}
   actionKeys: {windowMinimizeKey: minus, windowAssignKey: equal, enableWindowMinimizeAndAssignKeys: true}
   minimizeOnlyFocusedWindowOnMinus: true
+
+stageSwitcher: {actionKeys: {stageAssignKey: equal, stageCloseKey: minus, stageRepositionKey: section, stageCloseAction: moveOffScreen}, stageReopenClosedItems: true, showStageSwitcher: true}
+
+tabCycle:
+  enableTabCycle: true
+  tabCycleScope: auto
+  tabCycleSearchScope: allWindows
+  tabCycleInclude: [hidden]
+  hijackCommandTab: false
+  disableSystemCommandTabHotkey: false
+  stickyAppSwitcher: false
+  stickyAppSwitcherScope: rcmdOnly
+  windowCycleKey: grave
+  enableWindowCycleKey: true
+  hijackWindowCycleHotkey: false
+
+spaces: {spaceMode: multi, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
+
+general:
+  whenAlreadyFocusedAction: DoNothing
+  focusBehaviour: mainWindow
+  focusBehaviourSingle: mainWindow
+  focusBehaviourMulti: mainWindow
+  focusOnKeyUp: false
+  activationMode: onPress
+  searchMatchMode: contains
+  osdDisplay: activeWindow
+  searchOptionalPrefixes:
+  - google
+  - microsoft
+  - adobe
+  - apple
+  - amazon
+  - affinity
+  - jetbrains
+  - nvidia
+  - parallels
+  - elgato
+  - logitech
+  - synology
+  - wondershare
+  - the
+  - 4k
+  - 8k
+  - 3d
+  showMenubarAppsInSearch: false
+  showLensItemsInSearch: true
+  lensRowCap: 30
+  lensFetchFavicons: true
+  enableQuickKeys: true
+  editorApp: ''
+  terminalApp: ''
+  enableStickySpaceSearch: true
+
+# bundle IDs rcmd never lists
+ignoredApps: []
+
+# keys rcmd never takes
+ignoredKeys: []
+
+# bundle IDs where rcmd stops intercepting keys
+appsWhereRcmdIsPaused: []
+
+windowPatternGroups:
+- id: code-editors
+  name: Code editor project
+  bundleIDs:
+  - com.microsoft.VSCode
+  - com.microsoft.VSCodeInsiders
+  - com.microsoft.VSCodiumInsiders
+  - com.microsoft.VSCod
+  - com.visualstudio.code
+  - com.visualstudio.code.oss
+  - com.sublimetext.4
+  - com.sublimetext.3
+  - com.sublimetext.2
+  - com.sublimetext.
+  - com.todesktop.
+  keyPattern: ".* \u2014 [^\\w\\d]*(.)"
+  titlePattern: ".* \u2014 (.+)$"
+- {id: jetbrains, name: JetBrains IDEs, bundleIDs: [com.jetbrains.], keyPattern: '', titlePattern: "^(.+?)(?: \\[.+\\])? [\u2013\u2014] "}
+- {id: safari, name: Safari, bundleIDs: [com.apple.Safari], keyPattern: "^.+? \u2014 [^\\w\\d]*(.)", titlePattern: "^.+? \u2014 (.+)$"}
+- {id: xcode, name: Xcode, bundleIDs: [com.apple.dt.Xcode], keyPattern: '', titlePattern: "^(.+?) \u2014 "}
+- {id: custom-1, name: Custom patterns 1, bundleIDs: [com.qoder.ide], keyPattern: ".* \u2014 [^\\w\\d]*(.)", titlePattern: ''}
+
+windowKeyPatterns:
+- {id: com.microsoft.VSCode, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.microsoft.VSCodeInsiders, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.microsoft.VSCodiumInsiders, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.microsoft.VSCod, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.visualstudio.code, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.visualstudio.code.oss, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.sublimetext.4, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.sublimetext.3, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.sublimetext.2, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.sublimetext., pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.todesktop., pattern: ".* \u2014 [^\\w\\d]*(.)"}
+- {id: com.apple.Safari, pattern: "^.+? \u2014 [^\\w\\d]*(.)"}
+- {id: com.qoder.ide, pattern: ".* \u2014 [^\\w\\d]*(.)"}
+
+windowTitlePatterns:
+- {id: com.microsoft.VSCode, pattern: ".* \u2014 (.+)$"}
+- {id: com.microsoft.VSCodeInsiders, pattern: ".* \u2014 (.+)$"}
+- {id: com.microsoft.VSCodiumInsiders, pattern: ".* \u2014 (.+)$"}
+- {id: com.microsoft.VSCod, pattern: ".* \u2014 (.+)$"}
+- {id: com.visualstudio.code, pattern: ".* \u2014 (.+)$"}
+- {id: com.visualstudio.code.oss, pattern: ".* \u2014 (.+)$"}
+- {id: com.sublimetext.4, pattern: ".* \u2014 (.+)$"}
+- {id: com.sublimetext.3, pattern: ".* \u2014 (.+)$"}
+- {id: com.sublimetext.2, pattern: ".* \u2014 (.+)$"}
+- {id: com.sublimetext., pattern: ".* \u2014 (.+)$"}
+- {id: com.todesktop., pattern: ".* \u2014 (.+)$"}
