@@ -19,7 +19,19 @@ triggers:
   doubleTapMaxPressMs: 250
 
 # trigger + key → app
-appKeyAssignments: {}
+appKeyAssignments:
+  c: {app: /Applications/Google Chrome.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  e: {app: /Applications/Microsoft Edge.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  g: {app: /Applications/Ghostty.app, launchIfNotRunning: true, whenAlreadyFocusedAction: FollowGlobal}
+  i: {app: /Applications/Island.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  j: {app: /Applications/Cursor.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  o: {app: /Applications/Microsoft Outlook.app, launchIfNotRunning: true, whenAlreadyFocusedAction: FollowGlobal}
+  p: {app: /Applications/Microsoft PowerPoint.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  t: {app: /Applications/Microsoft Teams.app, launchIfNotRunning: true, whenAlreadyFocusedAction: FollowGlobal}
+  u: {app: /System/Applications/Calculator.app, launchIfNotRunning: true, whenAlreadyFocusedAction: FollowGlobal}
+  v: {app: /Applications/Visual Studio Code.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  w: {app: /Applications/Microsoft Word.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
+  x: {app: /Applications/Microsoft Excel.app, launchIfNotRunning: true, whenAlreadyFocusedAction: CycleWindows}
 
 # app → letter → saved window
 windowKeyAssignments: {}
@@ -85,7 +97,7 @@ tabCycle:
 spaces: {spaceMode: multi, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
 
 general:
-  whenAlreadyFocusedAction: DoNothing
+  whenAlreadyFocusedAction: Hide
   focusBehaviour: mainWindow
   focusBehaviourSingle: mainWindow
   focusBehaviourMulti: mainWindow
