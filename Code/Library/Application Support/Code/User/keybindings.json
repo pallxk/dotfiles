@@ -1,6 +1,13 @@
 // Place your key bindings in this file to override the defaults
 [
     //
+    // Bruno
+    //
+    {
+        "key": "shift+cmd+a",
+        "command": "workbench.view.extension.bruno"
+    },
+    //
     // Copilot
     //
     {
@@ -2501,11 +2508,6 @@
     {
         "key": "shift+cmd+a",
         "command": "-workbench.view.extension.azure"
-    },
-    {
-        "key": "shift+cmd+a",
-        "command": "workbench.view.extension.azure",
-        "when": "isMac && !notificationFocus && !notificationToastsVisible"
     },
     //
     // Couchbase
