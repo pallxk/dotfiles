@@ -177,9 +177,7 @@
     "**/ansible/hosts": "ini",
     "**/ansible/inventory.*": "ini",
     "inventory": "ini",
-    // ini (Surge)
-    "*.dconf": "ini",
-    "*.sgmodule": "ini",
+    // Surge
     "**/proxy/*.txt": "pip-requirements",
     "**/rule-set/*.txt": "pip-requirements",
     // JavaScript

@@ -25,5 +25,10 @@
 			"titleBar.inactiveBackground": "#4f46e5",
 			"titleBar.inactiveForeground": "#FFFFFF",
 		},
+	},
+	"extensions": {
+		"recommendations": [
+			"surgenetworks.surge-language-support"
+		]
 	}
 }
