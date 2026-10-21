@@ -1,3 +1,3 @@
 which vault > /dev/null || return
 
-complete -C /opt/homebrew/bin/vault vault
+complete -C $HOMEBREW_PREFIX/bin/vault vault

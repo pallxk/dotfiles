@@ -1,3 +1,3 @@
-if [ -d /opt/homebrew/opt/ccache/libexec ]; then
-	PATH=/opt/homebrew/opt/ccache/libexec:$PATH
+if [ -d "$HOMEBREW_PREFIX"/opt/ccache/libexec ]; then
+	PATH=$HOMEBREW_PREFIX/opt/ccache/libexec:$PATH
 fi
