@@ -3,7 +3,10 @@
 # https://ghostty.org/docs/config/reference#auto-update
 auto-update = download
 
-command = /opt/homebrew/bin/bash
+# The command to run, usually a shell. If this is not an absolute path, it'll be looked up in the PATH. If this is not set, a default will be looked up from your system. The rules for the default lookup are:
+#   SHELL environment variable
+#   passwd entry (user information)
+# command = /opt/homebrew/bin/bash
 
 copy-on-select = clipboard
 
